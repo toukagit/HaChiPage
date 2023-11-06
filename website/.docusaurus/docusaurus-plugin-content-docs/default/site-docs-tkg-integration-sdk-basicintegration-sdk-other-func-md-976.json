@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basicintegration/sdk-other-func",
+  "id": "tkg-integration/sdk-basicintegration/sdk-other-func",
+  "title": "SDK其他接口",
+  "description": "SDK其他接口包含在线参数、评价、隐私链接、用户协议、更多游戏、自动插屏开关控制、推送。",
+  "source": "@site/docs/tkg-integration/sdk-basicintegration/sdk-other-func.md",
+  "sourceDirName": "tkg-integration/sdk-basicintegration",
+  "slug": "/tkg-integration/sdk-basicintegration/sdk-other-func",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basicintegration/sdk-other-func",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK常用接口",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basicintegration/sdk-normal-func"
+  },
+  "next": {
+    "title": "说明",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config/sdk-direction"
+  }
+}

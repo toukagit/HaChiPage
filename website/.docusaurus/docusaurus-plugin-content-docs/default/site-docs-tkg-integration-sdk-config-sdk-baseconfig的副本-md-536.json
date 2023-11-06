@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-config/sdk-baseconfig的副本",
+  "id": "tkg-integration/sdk-config/sdk-baseconfig的副本",
+  "title": "SDK合规相关配置文件",
+  "description": "SDK合规相关配置涉及游戏适龄提示（包含年龄、题材）、隐私链接、用户协议链接、更多游戏链接。",
+  "source": "@site/docs/tkg-integration/sdk-config/sdk-baseconfig的副本.md",
+  "sourceDirName": "tkg-integration/sdk-config",
+  "slug": "/tkg-integration/sdk-config/sdk-baseconfig的副本",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config/sdk-baseconfig的副本",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK合规相关配置文件",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config/sdk-baseconfig"
+  },
+  "next": {
+    "title": "SDK内部在线参数控制",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config/sdk-sdkonlineconfig"
+  }
+}

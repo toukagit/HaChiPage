@@ -1,0 +1,24 @@
+{
+  "unversionedId": "api/advance-api",
+  "id": "version-3.0.1/api/advance-api",
+  "title": "Advanced API",
+  "description": "",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-3.0.1/api/advance-api.md",
+  "sourceDirName": "api",
+  "slug": "/api/advance-api",
+  "permalink": "/tkg-sdk-doc/api/advance-api",
+  "tags": [],
+  "version": "3.0.1",
+  "sidebarPosition": 98,
+  "frontMatter": {
+    "title": "Advanced API",
+    "sidebar_label": "Advanced API",
+    "description": "",
+    "sidebar_position": 98
+  },
+  "sidebar": "apiSidebar",
+  "previous": {
+    "title": "Basic API",
+    "permalink": "/tkg-sdk-doc/api/common-api"
+  }
+}

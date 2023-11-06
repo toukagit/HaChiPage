@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-test/sdk-paramconfig",
+  "id": "tkg-integration/sdk-test/sdk-paramconfig",
+  "title": "SDK相关参数配置",
+  "description": "",
+  "source": "@site/docs/tkg-integration/sdk-test/sdk-paramconfig.md",
+  "sourceDirName": "tkg-integration/sdk-test",
+  "slug": "/tkg-integration/sdk-test/sdk-paramconfig",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-paramconfig",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "工程配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings"
+  },
+  "next": {
+    "title": "SDK在线参数控制",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-onlineconfig"
+  }
+}

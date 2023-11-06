@@ -1,0 +1,19 @@
+{
+  "unversionedId": "api",
+  "id": "version-2.2.x/api",
+  "title": "FAQ2",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.2.x/api.md",
+  "sourceDirName": ".",
+  "slug": "/api",
+  "permalink": "/tkg-sdk-doc/2.2.x/api",
+  "tags": [],
+  "version": "2.2.x",
+  "sidebarPosition": 97,
+  "frontMatter": {
+    "title": "FAQ2",
+    "sidebar_label": "FAQ2",
+    "description": "",
+    "sidebar_position": 97
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-prepare",
+  "id": "version-3.0.1/tkg-integration/sdk-prepare",
+  "title": "Preparation",
+  "description": "Get the product requirements",
+  "source": "@site/versioned_docs/version-3.0.1/tkg-integration/sdk-prepare.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-prepare",
+  "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-prepare",
+  "tags": [],
+  "version": "3.0.1",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Download SDK",
+    "permalink": "/tkg-sdk-doc/zh/download"
+  },
+  "next": {
+    "title": "Installing the SDK",
+    "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-basic/sdk-import"
+  }
+}

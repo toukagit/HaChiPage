@@ -1,0 +1,19 @@
+{
+  "unversionedId": "api",
+  "id": "version-2.2.0/api",
+  "title": "FAQ2",
+  "description": "",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-2.2.0/api.md",
+  "sourceDirName": ".",
+  "slug": "/api",
+  "permalink": "/tkg-sdk-doc/api",
+  "tags": [],
+  "version": "2.2.0",
+  "sidebarPosition": 97,
+  "frontMatter": {
+    "title": "FAQ2",
+    "sidebar_label": "FAQ2",
+    "description": "",
+    "sidebar_position": 97
+  }
+}

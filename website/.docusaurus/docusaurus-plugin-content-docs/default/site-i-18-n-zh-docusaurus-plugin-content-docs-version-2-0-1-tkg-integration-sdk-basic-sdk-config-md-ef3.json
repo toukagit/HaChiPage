@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basic/sdk-config",
+  "id": "version-2.0.1/tkg-integration/sdk-basic/sdk-config",
+  "title": "SDK参数配置(Only for iOS)",
+  "description": "- ToukaSDK依赖的全部配置文件都在：`Assets/TKGSDK/Config/Scripts`目录中。",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-2.0.1/tkg-integration/sdk-basic/sdk-config.md",
+  "sourceDirName": "tkg-integration/sdk-basic",
+  "slug": "/tkg-integration/sdk-basic/sdk-config",
+  "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-basic/sdk-config",
+  "tags": [],
+  "version": "2.0.1",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK导入",
+    "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-basic/sdk-import"
+  },
+  "next": {
+    "title": "初始化",
+    "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-basic/sdk-func-init"
+  }
+}

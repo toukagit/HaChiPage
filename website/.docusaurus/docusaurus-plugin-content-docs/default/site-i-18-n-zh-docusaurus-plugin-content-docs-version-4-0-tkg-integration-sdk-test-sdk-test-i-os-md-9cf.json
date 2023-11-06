@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-test/sdk-test-iOS",
+  "id": "version-4.0/tkg-integration/sdk-test/sdk-test-iOS",
+  "title": "iOS 接入验证",
+  "description": "Xcode工程自测说明:",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0/tkg-integration/sdk-test/sdk-test-iOS.md",
+  "sourceDirName": "tkg-integration/sdk-test",
+  "slug": "/tkg-integration/sdk-test/sdk-test-iOS",
+  "permalink": "/tkg-sdk-doc/4.0/tkg-integration/sdk-test/sdk-test-iOS",
+  "tags": [],
+  "version": "4.0",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Android 接入验证",
+    "permalink": "/tkg-sdk-doc/4.0/tkg-integration/sdk-test/sdk-test-android"
+  },
+  "next": {
+    "title": "构建Android平台",
+    "permalink": "/tkg-sdk-doc/4.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-android"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-projectsettings",
+  "id": "tkg-integration/sdk-projectsettings",
+  "title": "工程配置",
+  "description": "Android",
+  "source": "@site/docs/tkg-integration/sdk-projectsettings.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-projectsettings",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK其他功能配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config/sdk-funcconfig"
+  },
+  "next": {
+    "title": "Android 集成测试",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-test-android"
+  }
+}

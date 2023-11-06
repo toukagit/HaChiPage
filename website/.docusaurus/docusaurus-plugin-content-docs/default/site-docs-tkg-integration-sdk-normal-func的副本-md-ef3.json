@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tkg-integration/sdk-normal-func的副本",
+  "id": "tkg-integration/sdk-normal-func的副本",
+  "title": "Translate your site",
+  "description": "Let's translate docs/intro.md to French.",
+  "source": "@site/docs/tkg-integration/sdk-normal-func的副本.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-normal-func的副本",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-normal-func的副本",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Translate your site",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-normal-func"
+  },
+  "next": {
+    "title": "下载SDK",
+    "permalink": "/tkg-sdk-doc/download"
+  }
+}

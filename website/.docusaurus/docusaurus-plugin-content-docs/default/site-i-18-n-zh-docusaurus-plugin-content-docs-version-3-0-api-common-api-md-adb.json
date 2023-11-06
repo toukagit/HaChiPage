@@ -1,0 +1,20 @@
+{
+  "unversionedId": "api/common-api",
+  "id": "version-3.0/api/common-api",
+  "title": "基础接口",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.0/api/common-api.md",
+  "sourceDirName": "api",
+  "slug": "/api/common-api",
+  "permalink": "/tkg-sdk-doc/api/common-api",
+  "tags": [],
+  "version": "3.0",
+  "sidebarPosition": 97,
+  "frontMatter": {
+    "title": "基础接口",
+    "sidebar_label": "基础接口",
+    "description": "",
+    "sidebar_position": 97
+  },
+  "sidebar": "apiSidebar"
+}

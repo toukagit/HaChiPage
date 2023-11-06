@@ -1,0 +1,56 @@
+{
+  "pluginId": "default",
+  "version": "4.0.0",
+  "label": "4.0.0",
+  "banner": null,
+  "badge": true,
+  "className": "docs-version-4.0.0",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "Touka Robux简介",
+        "href": "/tkg-robux-doc/",
+        "docId": "index"
+      },
+      {
+        "type": "link",
+        "label": "SDK下载",
+        "href": "/tkg-robux-doc/download",
+        "docId": "download"
+      },
+      {
+        "type": "link",
+        "label": "说明文档",
+        "href": "/tkg-robux-doc/faq",
+        "docId": "faq"
+      }
+    ]
+  },
+  "docs": {
+    "download": {
+      "id": "download",
+      "title": "SDK下载",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "faq": {
+      "id": "faq",
+      "title": "说明文档",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "index": {
+      "id": "index",
+      "title": "Touka Robux简介",
+      "description": "将Robux集成到休闲游戏中可以为游戏开发者带来很多好处，比如：",
+      "sidebar": "tutorialSidebar"
+    },
+    "selfTest": {
+      "id": "selfTest",
+      "title": "自测文档",
+      "description": ""
+    }
+  }
+}

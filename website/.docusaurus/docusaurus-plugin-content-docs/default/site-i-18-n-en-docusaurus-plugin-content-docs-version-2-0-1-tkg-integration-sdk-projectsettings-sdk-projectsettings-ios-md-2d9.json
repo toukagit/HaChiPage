@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "id": "version-2.0.1/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "title": "For iOS",
+  "description": "Unity Settings",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-2.0.1/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios.md",
+  "sourceDirName": "tkg-integration/sdk-projectsettings",
+  "slug": "/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "tags": [],
+  "version": "2.0.1",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "For Android",
+    "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-projectsettings/sdk-projectsettings-android"
+  },
+  "next": {
+    "title": "Android Integration Verification",
+    "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-test/sdk-test-android"
+  }
+}

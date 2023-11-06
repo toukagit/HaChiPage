@@ -1,0 +1,16 @@
+{
+  "unversionedId": "tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "id": "version-3.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "title": "For Android",
+  "description": "Unity Settings",
+  "source": "@site/versioned_docs/version-3.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-android.md",
+  "sourceDirName": "tkg-integration/sdk-projectsettings",
+  "slug": "/tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "tags": [],
+  "version": "3.0",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  }
+}

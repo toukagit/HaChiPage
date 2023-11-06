@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-import",
+  "id": "tkg-integration/sdk-import",
+  "title": "SDK导入",
+  "description": "请将下载后的三个package包导入工程。",
+  "source": "@site/docs/tkg-integration/sdk-import.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-import",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-import",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "准备工作",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-prepare"
+  },
+  "next": {
+    "title": "SDK常用接口",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-normal-func"
+  }
+}

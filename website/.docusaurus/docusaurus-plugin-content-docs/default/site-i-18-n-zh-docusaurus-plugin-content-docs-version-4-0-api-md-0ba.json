@@ -1,0 +1,13 @@
+{
+  "unversionedId": "api",
+  "id": "version-4.0/api",
+  "title": "api",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0/api.md",
+  "sourceDirName": ".",
+  "slug": "/api",
+  "permalink": "/tkg-sdk-doc/4.0/api",
+  "tags": [],
+  "version": "4.0",
+  "frontMatter": {}
+}

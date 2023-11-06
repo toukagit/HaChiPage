@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tkg-integration/index",
+  "id": "tkg-integration/index",
+  "title": "Integration Guides",
+  "description": "",
+  "source": "@site/docs/tkg-integration/index.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/",
+  "permalink": "/tkg-sdk-doc/tkg-integration/",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Integration Guides",
+    "sidebar_label": "Integration Guides",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Download SDK",
+    "permalink": "/tkg-sdk-doc/download"
+  },
+  "next": {
+    "title": "Preparation",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-prepare"
+  }
+}

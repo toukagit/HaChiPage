@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "id": "version-4.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "title": "构建Android平台",
+  "description": "Unity中设置",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-android.md",
+  "sourceDirName": "tkg-integration/sdk-projectsettings",
+  "slug": "/tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "permalink": "/tkg-sdk-doc/4.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "tags": [],
+  "version": "4.0",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "iOS 接入验证",
+    "permalink": "/tkg-sdk-doc/4.0/tkg-integration/sdk-test/sdk-test-iOS"
+  },
+  "next": {
+    "title": "构建iOS平台",
+    "permalink": "/tkg-sdk-doc/4.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios"
+  }
+}

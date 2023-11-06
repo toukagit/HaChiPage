@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-projectsettings/sdk-test-iOS",
+  "id": "tkg-integration/sdk-projectsettings/sdk-test-iOS",
+  "title": "iOS 集成测试",
+  "description": "",
+  "source": "@site/docs/tkg-integration/sdk-projectsettings/sdk-test-iOS.md",
+  "sourceDirName": "tkg-integration/sdk-projectsettings",
+  "slug": "/tkg-integration/sdk-projectsettings/sdk-test-iOS",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-test-iOS",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Android 集成测试",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-test-android"
+  },
+  "next": {
+    "title": "Android 集成测试",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-test-android"
+  }
+}

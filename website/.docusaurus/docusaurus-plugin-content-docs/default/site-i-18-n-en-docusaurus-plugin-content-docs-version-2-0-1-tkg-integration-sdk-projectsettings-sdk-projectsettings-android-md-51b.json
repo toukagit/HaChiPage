@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "id": "version-2.0.1/tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "title": "For Android",
+  "description": "Unity Settings",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-2.0.1/tkg-integration/sdk-projectsettings/sdk-projectsettings-android.md",
+  "sourceDirName": "tkg-integration/sdk-projectsettings",
+  "slug": "/tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "tags": [],
+  "version": "2.0.1",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Advanced Integration",
+    "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-other-func"
+  },
+  "next": {
+    "title": "For iOS",
+    "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios"
+  }
+}

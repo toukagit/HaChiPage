@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basicintegration/sdk-import",
+  "id": "tkg-integration/sdk-basicintegration/sdk-import",
+  "title": "SDK导入",
+  "description": "请将下载后的unitypackage包导入工程:",
+  "source": "@site/docs/tkg-integration/sdk-basicintegration/sdk-import.md",
+  "sourceDirName": "tkg-integration/sdk-basicintegration",
+  "slug": "/tkg-integration/sdk-basicintegration/sdk-import",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basicintegration/sdk-import",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "准备工作",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-prepare"
+  },
+  "next": {
+    "title": "SDK参数配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basicintegration/sdk-config"
+  }
+}

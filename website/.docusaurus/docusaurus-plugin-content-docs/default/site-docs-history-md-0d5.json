@@ -1,0 +1,24 @@
+{
+  "unversionedId": "history",
+  "id": "history",
+  "title": "更新日志",
+  "description": "",
+  "source": "@site/docs/history.md",
+  "sourceDirName": ".",
+  "slug": "/history",
+  "permalink": "/tkg-sdk-doc/history",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 100,
+  "frontMatter": {
+    "title": "更新日志",
+    "sidebar_label": "更新日志",
+    "description": "",
+    "sidebar_position": 100
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "常见问题",
+    "permalink": "/tkg-sdk-doc/faq"
+  }
+}

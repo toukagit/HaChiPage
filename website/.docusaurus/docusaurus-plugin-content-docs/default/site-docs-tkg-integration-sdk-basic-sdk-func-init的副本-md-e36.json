@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basic/sdk-func-init的副本",
+  "id": "tkg-integration/sdk-basic/sdk-func-init的副本",
+  "title": "初始化",
+  "description": "你需要在程序的入口方法中手动调用ToukaSDK的初始化方法且初始化方法只能调用一次。",
+  "source": "@site/docs/tkg-integration/sdk-basic/sdk-func-init的副本.md",
+  "sourceDirName": "tkg-integration/sdk-basic",
+  "slug": "/tkg-integration/sdk-basic/sdk-func-init的副本",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-func-init的副本",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "初始化",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-func-init"
+  },
+  "next": {
+    "title": "广告接入",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-func-ads"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/hachi-doc/",
+      "versions": [
+        {
+          "name": "1.0.0",
+          "label": "1.0.0",
+          "isLast": true,
+          "path": "/hachi-doc/",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "download",
+              "path": "/hachi-doc/download",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "faq",
+              "path": "/hachi-doc/faq",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "index",
+              "path": "/hachi-doc/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "selfTest",
+              "path": "/hachi-doc/selfTest",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/hachi-doc/",
+                "label": "index"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

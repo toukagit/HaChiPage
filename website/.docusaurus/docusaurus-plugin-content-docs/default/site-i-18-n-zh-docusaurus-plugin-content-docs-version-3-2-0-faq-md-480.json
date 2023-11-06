@@ -1,0 +1,28 @@
+{
+  "unversionedId": "faq",
+  "id": "version-3.2.0/faq",
+  "title": "说明文档",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.2.0/faq.md",
+  "sourceDirName": ".",
+  "slug": "/faq",
+  "permalink": "/tkg-robux-doc/3.2.0/faq",
+  "tags": [],
+  "version": "3.2.0",
+  "sidebarPosition": 96,
+  "frontMatter": {
+    "title": "说明文档",
+    "sidebar_label": "说明文档",
+    "description": "",
+    "sidebar_position": 96
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK下载",
+    "permalink": "/tkg-robux-doc/3.2.0/download"
+  },
+  "next": {
+    "title": "自测文档",
+    "permalink": "/tkg-robux-doc/3.2.0/selfTest"
+  }
+}

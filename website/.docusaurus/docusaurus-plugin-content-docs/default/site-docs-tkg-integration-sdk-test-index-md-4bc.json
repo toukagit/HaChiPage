@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tkg-integration/sdk-test/index",
+  "id": "tkg-integration/sdk-test/index",
+  "title": "Integration Verification",
+  "description": "",
+  "source": "@site/docs/tkg-integration/sdk-test/index.md",
+  "sourceDirName": "tkg-integration/sdk-test",
+  "slug": "/tkg-integration/sdk-test/",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test/",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Integration Verification",
+    "sidebar_label": "Integration Verification",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "For iOS",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios"
+  },
+  "next": {
+    "title": "Android Integration Verification",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-test-android"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-apis",
+  "id": "tkg-integration/sdk-apis",
+  "title": "SDK APIS",
+  "description": "Common",
+  "source": "@site/docs/tkg-integration/sdk-apis.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-apis",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-apis",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "iOS包工程配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios"
+  },
+  "next": {
+    "title": "Android 集成测试",
+    "permalink": "/tkg-sdk-doc/sdk-test/sdk-test-android"
+  }
+}

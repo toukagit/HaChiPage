@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-test的副本/sdk-test-android",
+  "id": "tkg-integration/sdk-test的副本/sdk-test-android",
+  "title": "Android 集成测试",
+  "description": "",
+  "source": "@site/docs/tkg-integration/sdk-test的副本/sdk-test-android.md",
+  "sourceDirName": "tkg-integration/sdk-test的副本",
+  "slug": "/tkg-integration/sdk-test的副本/sdk-test-android",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test的副本/sdk-test-android",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "iOS 集成测试",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-test-iOS"
+  },
+  "next": {
+    "title": "iOS 集成测试",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test的副本/sdk-test-iOS"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "download",
+  "id": "version-4.0.0/download",
+  "title": "SDK下载",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0.0/download.md",
+  "sourceDirName": ".",
+  "slug": "/download",
+  "permalink": "/tkg-robux-doc/download",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "SDK下载",
+    "sidebar_label": "SDK下载",
+    "description": "",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Touka Robux简介",
+    "permalink": "/tkg-robux-doc/"
+  },
+  "next": {
+    "title": "说明文档",
+    "permalink": "/tkg-robux-doc/faq"
+  }
+}

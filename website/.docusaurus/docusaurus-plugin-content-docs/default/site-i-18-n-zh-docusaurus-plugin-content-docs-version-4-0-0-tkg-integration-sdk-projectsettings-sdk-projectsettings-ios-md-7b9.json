@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "id": "version-4.0.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "title": "构建iOS平台",
+  "description": "方式一：使用指定账号构建游戏",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios.md",
+  "sourceDirName": "tkg-integration/sdk-projectsettings",
+  "slug": "/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "permalink": "/tkg-sdk-doc/4.0.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "构建Android平台",
+    "permalink": "/tkg-sdk-doc/4.0.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-android"
+  },
+  "next": {
+    "title": "提交发布",
+    "permalink": "/tkg-sdk-doc/4.0.0/tkg-integration/sdk-package"
+  }
+}

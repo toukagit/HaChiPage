@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-other-func",
+  "id": "version-3.0.1/tkg-integration/sdk-other-func",
+  "title": "Advanced Integration",
+  "description": "Game focus  changed callback",
+  "source": "@site/versioned_docs/version-3.0.1/tkg-integration/sdk-other-func.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-other-func",
+  "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-other-func",
+  "tags": [],
+  "version": "3.0.1",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Event Tracking",
+    "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-basic/sdk-func-event"
+  },
+  "next": {
+    "title": "Android Integration Verification",
+    "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-test/sdk-test-android"
+  }
+}

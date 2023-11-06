@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-config/sdk-onlineconfig",
+  "id": "tkg-integration/sdk-config/sdk-onlineconfig",
+  "title": "SDK在线参数控制",
+  "description": "",
+  "source": "@site/docs/tkg-integration/sdk-config/sdk-onlineconfig.md",
+  "sourceDirName": "tkg-integration/sdk-config",
+  "slug": "/tkg-integration/sdk-config/sdk-onlineconfig",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config/sdk-onlineconfig",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK相关参数配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config/sdk-paramconfig"
+  },
+  "next": {
+    "title": "SDK在线参数控制",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config/sdk-onlineconfig的副本"
+  }
+}

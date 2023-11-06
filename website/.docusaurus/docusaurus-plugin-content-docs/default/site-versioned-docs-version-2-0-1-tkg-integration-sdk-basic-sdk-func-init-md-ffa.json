@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basic/sdk-func-init",
+  "id": "version-2.0.1/tkg-integration/sdk-basic/sdk-func-init",
+  "title": "Initializing the SDK",
+  "description": "- The interface of the SDK is mainly in the class TKGSDKManager, and you can call through TKGSDKManager.Instance.",
+  "source": "@site/versioned_docs/version-2.0.1/tkg-integration/sdk-basic/sdk-func-init.md",
+  "sourceDirName": "tkg-integration/sdk-basic",
+  "slug": "/tkg-integration/sdk-basic/sdk-func-init",
+  "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-basic/sdk-func-init",
+  "tags": [],
+  "version": "2.0.1",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Configuration SDK (Only for iOS)",
+    "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-basic/sdk-config"
+  },
+  "next": {
+    "title": "Privacy Compliance",
+    "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-basic/sdk-func-privacy"
+  }
+}

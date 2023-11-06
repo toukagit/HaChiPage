@@ -1,0 +1,21 @@
+{
+  "unversionedId": "index",
+  "id": "version-3.0.1/index",
+  "title": "Touka SDK Introduction",
+  "description": "Touka SDK is an excellent commercial SDK. We provide a one-step compliance SDK integration. The SDK is stable, safe, and includes Data analytics/Tracking/Monetization, etc function. (Only open with  top customer)",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-3.0.1/index.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/tkg-sdk-doc/",
+  "tags": [],
+  "version": "3.0.1",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Download SDK",
+    "permalink": "/tkg-sdk-doc/download"
+  }
+}

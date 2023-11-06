@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-config的副本/sdk-direction",
+  "id": "tkg-integration/sdk-config的副本/sdk-direction",
+  "title": "说明",
+  "description": "所有配置相关的文件，都在Assets/TKGSDK/Config/Scripts目录下。",
+  "source": "@site/docs/tkg-integration/sdk-config的副本/sdk-direction.md",
+  "sourceDirName": "tkg-integration/sdk-config的副本",
+  "slug": "/tkg-integration/sdk-config的副本/sdk-direction",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config的副本/sdk-direction",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK其他功能配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config/sdk-funcconfig"
+  },
+  "next": {
+    "title": "统计和广告SDK参数",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config的副本/sdk-paramconfig"
+  }
+}

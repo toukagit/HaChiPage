@@ -1,0 +1,28 @@
+{
+  "unversionedId": "download",
+  "id": "version-4.0/download",
+  "title": "SDK下载",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0/download.md",
+  "sourceDirName": ".",
+  "slug": "/download",
+  "permalink": "/tkg-sdk-doc/4.0/download",
+  "tags": [],
+  "version": "4.0",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "SDK下载",
+    "sidebar_label": "SDK下载",
+    "description": "",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Touka SDK简介",
+    "permalink": "/tkg-sdk-doc/4.0/"
+  },
+  "next": {
+    "title": "准备工作",
+    "permalink": "/tkg-sdk-doc/4.0/tkg-integration/sdk-prepare"
+  }
+}

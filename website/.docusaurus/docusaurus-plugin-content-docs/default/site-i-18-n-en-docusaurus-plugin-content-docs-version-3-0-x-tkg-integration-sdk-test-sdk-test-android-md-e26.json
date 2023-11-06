@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-test/sdk-test-android",
+  "id": "version-3.0.x/tkg-integration/sdk-test/sdk-test-android",
+  "title": "Android Integration Verification",
+  "description": "---",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-3.0.x/tkg-integration/sdk-test/sdk-test-android.md",
+  "sourceDirName": "tkg-integration/sdk-test",
+  "slug": "/tkg-integration/sdk-test/sdk-test-android",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-test-android",
+  "tags": [],
+  "version": "3.0.x",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Advanced Integration",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-other-func"
+  },
+  "next": {
+    "title": "iOS Integration Verification",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-test-iOS"
+  }
+}

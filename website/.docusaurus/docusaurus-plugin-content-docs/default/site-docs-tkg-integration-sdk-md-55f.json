@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tkg-integration/sdk-",
+  "id": "tkg-integration/sdk-",
+  "title": "Translate your site",
+  "description": "Let's translate docs/intro.md to French.",
+  "source": "@site/docs/tkg-integration/sdk-.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK导入",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-import"
+  },
+  "next": {
+    "title": "Translate your site",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-normal-func"
+  }
+}

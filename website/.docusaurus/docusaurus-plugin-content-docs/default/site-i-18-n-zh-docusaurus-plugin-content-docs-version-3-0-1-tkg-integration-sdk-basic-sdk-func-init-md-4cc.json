@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basic/sdk-func-init",
+  "id": "version-3.0.1/tkg-integration/sdk-basic/sdk-func-init",
+  "title": "初始化",
+  "description": "- SDK的接口主要在TKGSDKManager这个类里，需要通过 TKGSDKManager.Instance 获取单例调用。",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.0.1/tkg-integration/sdk-basic/sdk-func-init.md",
+  "sourceDirName": "tkg-integration/sdk-basic",
+  "slug": "/tkg-integration/sdk-basic/sdk-func-init",
+  "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-basic/sdk-func-init",
+  "tags": [],
+  "version": "3.0.1",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK参数配置",
+    "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-basic/sdk-config"
+  },
+  "next": {
+    "title": "合规性弹窗",
+    "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-basic/sdk-func-privacy"
+  }
+}

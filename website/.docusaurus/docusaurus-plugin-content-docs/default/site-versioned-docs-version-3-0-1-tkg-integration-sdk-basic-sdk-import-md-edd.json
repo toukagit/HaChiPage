@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basic/sdk-import",
+  "id": "version-3.0.1/tkg-integration/sdk-basic/sdk-import",
+  "title": "Installing the SDK",
+  "description": "Please import the unitypackage to the project.",
+  "source": "@site/versioned_docs/version-3.0.1/tkg-integration/sdk-basic/sdk-import.md",
+  "sourceDirName": "tkg-integration/sdk-basic",
+  "slug": "/tkg-integration/sdk-basic/sdk-import",
+  "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-basic/sdk-import",
+  "tags": [],
+  "version": "3.0.1",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Preparation",
+    "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-prepare"
+  },
+  "next": {
+    "title": "Configuration SDK",
+    "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-basic/sdk-config"
+  }
+}

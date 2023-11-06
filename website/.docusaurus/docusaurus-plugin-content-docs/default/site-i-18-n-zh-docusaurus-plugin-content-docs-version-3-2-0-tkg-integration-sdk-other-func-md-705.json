@@ -1,0 +1,16 @@
+{
+  "unversionedId": "tkg-integration/sdk-other-func",
+  "id": "version-3.2.0/tkg-integration/sdk-other-func",
+  "title": "其他功能",
+  "description": "1、游戏失去/获得焦点",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.2.0/tkg-integration/sdk-other-func.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-other-func",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-other-func",
+  "tags": [],
+  "version": "3.2.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  }
+}

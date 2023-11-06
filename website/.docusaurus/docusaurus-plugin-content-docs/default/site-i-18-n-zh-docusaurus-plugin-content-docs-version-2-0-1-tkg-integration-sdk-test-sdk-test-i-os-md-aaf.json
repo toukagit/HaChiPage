@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-test/sdk-test-iOS",
+  "id": "version-2.0.1/tkg-integration/sdk-test/sdk-test-iOS",
+  "title": "iOS 接入验证",
+  "description": "国内iOS包合规相关",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-2.0.1/tkg-integration/sdk-test/sdk-test-iOS.md",
+  "sourceDirName": "tkg-integration/sdk-test",
+  "slug": "/tkg-integration/sdk-test/sdk-test-iOS",
+  "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-test/sdk-test-iOS",
+  "tags": [],
+  "version": "2.0.1",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Android 接入验证",
+    "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-test/sdk-test-android"
+  },
+  "next": {
+    "title": "提交发布",
+    "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-package"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tkg-integration/sdk-config/sdk-funcconfig的副本",
+  "id": "tkg-integration/sdk-config/sdk-funcconfig的副本",
+  "title": "SDK其他功能配置",
+  "description": "",
+  "source": "@site/docs/tkg-integration/sdk-config/sdk-funcconfig的副本.md",
+  "sourceDirName": "tkg-integration/sdk-config",
+  "slug": "/tkg-integration/sdk-config/sdk-funcconfig的副本",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config/sdk-funcconfig的副本",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK其他功能配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config/sdk-funcconfig"
+  },
+  "next": {
+    "title": "工程配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings"
+  }
+}

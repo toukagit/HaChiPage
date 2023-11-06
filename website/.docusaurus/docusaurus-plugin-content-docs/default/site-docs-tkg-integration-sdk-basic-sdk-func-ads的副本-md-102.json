@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basic/sdk-func-ads的副本",
+  "id": "tkg-integration/sdk-basic/sdk-func-ads的副本",
+  "title": "SDK常用接口",
+  "description": "SDK常用接口包含基础部分、广告、事件埋点。",
+  "source": "@site/docs/tkg-integration/sdk-basic/sdk-func-ads的副本.md",
+  "sourceDirName": "tkg-integration/sdk-basic",
+  "slug": "/tkg-integration/sdk-basic/sdk-func-ads的副本",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-func-ads的副本",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK常用接口",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-func-ads"
+  },
+  "next": {
+    "title": "SDK常用接口",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-func-init"
+  }
+}

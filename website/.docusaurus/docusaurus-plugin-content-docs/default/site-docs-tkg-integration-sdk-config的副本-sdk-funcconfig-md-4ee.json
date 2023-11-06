@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-config的副本/sdk-funcconfig",
+  "id": "tkg-integration/sdk-config的副本/sdk-funcconfig",
+  "title": "SDK其他功能配置",
+  "description": "SDK其他功能都在：TKGSDK/Config/Scripts/StaticOtherConfig.cs文件中进行配置。",
+  "source": "@site/docs/tkg-integration/sdk-config的副本/sdk-funcconfig.md",
+  "sourceDirName": "tkg-integration/sdk-config的副本",
+  "slug": "/tkg-integration/sdk-config的副本/sdk-funcconfig",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config的副本/sdk-funcconfig",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "游戏自定义在线参数控制",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config的副本/sdk-gameonlineconfig"
+  },
+  "next": {
+    "title": "Android包工程配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-projectsettings-android"
+  }
+}

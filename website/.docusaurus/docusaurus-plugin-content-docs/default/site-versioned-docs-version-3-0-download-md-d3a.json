@@ -1,0 +1,28 @@
+{
+  "unversionedId": "download",
+  "id": "version-3.0/download",
+  "title": "Download SDK",
+  "description": "",
+  "source": "@site/versioned_docs/version-3.0/download.md",
+  "sourceDirName": ".",
+  "slug": "/download",
+  "permalink": "/tkg-sdk-doc/download",
+  "tags": [],
+  "version": "3.0",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Download SDK",
+    "sidebar_label": "Download SDK",
+    "description": "",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Touka SDK Introduction",
+    "permalink": "/tkg-sdk-doc/"
+  },
+  "next": {
+    "title": "Preparation",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-prepare"
+  }
+}

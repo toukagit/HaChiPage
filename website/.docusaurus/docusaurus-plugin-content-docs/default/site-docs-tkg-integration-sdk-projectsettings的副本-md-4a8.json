@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tkg-integration/sdk-projectsettings的副本",
+  "id": "tkg-integration/sdk-projectsettings的副本",
+  "title": "工程配置",
+  "description": "",
+  "source": "@site/docs/tkg-integration/sdk-projectsettings的副本.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-projectsettings的副本",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings的副本",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "工程配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings"
+  },
+  "next": {
+    "title": "常见问题",
+    "permalink": "/tkg-sdk-doc/faq"
+  }
+}

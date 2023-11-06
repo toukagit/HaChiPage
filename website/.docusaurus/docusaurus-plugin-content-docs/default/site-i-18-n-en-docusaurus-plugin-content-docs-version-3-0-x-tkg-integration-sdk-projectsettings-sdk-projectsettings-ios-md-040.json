@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "id": "version-3.0.x/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "title": "For iOS",
+  "description": "Method 1: Build a game with a specified account",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-3.0.x/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios.md",
+  "sourceDirName": "tkg-integration/sdk-projectsettings",
+  "slug": "/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "tags": [],
+  "version": "3.0.x",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "For Android",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-projectsettings-android"
+  },
+  "next": {
+    "title": "Release",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-package"
+  }
+}

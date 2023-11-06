@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tkg-integration/index",
+  "id": "tkg-integration/index",
+  "title": "集成指引",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/current/tkg-integration/index.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/",
+  "permalink": "/tkg-sdk-doc/zh/tkg-integration/",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "集成指引",
+    "sidebar_label": "集成指引",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK下载",
+    "permalink": "/tkg-sdk-doc/zh/download"
+  },
+  "next": {
+    "title": "准备工作",
+    "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-prepare"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basicconfig/sdk-funcconfig",
+  "id": "tkg-integration/sdk-basicconfig/sdk-funcconfig",
+  "title": "SDK其他功能配置",
+  "description": "SDK其他功能都在：TKGSDK/Config/Scripts/StaticOtherConfig.cs文件中进行配置。",
+  "source": "@site/docs/tkg-integration/sdk-basicconfig/sdk-funcconfig.md",
+  "sourceDirName": "tkg-integration/sdk-basicconfig",
+  "slug": "/tkg-integration/sdk-basicconfig/sdk-funcconfig",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basicconfig/sdk-funcconfig",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "游戏自定义在线参数控制",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basicconfig/sdk-gameonlineconfig"
+  },
+  "next": {
+    "title": "说明",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config/sdk-direction"
+  }
+}

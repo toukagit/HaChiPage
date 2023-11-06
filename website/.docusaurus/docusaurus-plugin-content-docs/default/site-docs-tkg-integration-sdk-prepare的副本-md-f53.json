@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-prepare的副本",
+  "id": "tkg-integration/sdk-prepare的副本",
+  "title": "准备工作",
+  "description": "获取产品需求文档",
+  "source": "@site/docs/tkg-integration/sdk-prepare的副本.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-prepare的副本",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-prepare的副本",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "准备工作",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-prepare"
+  },
+  "next": {
+    "title": "SDK导入",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-import"
+  }
+}

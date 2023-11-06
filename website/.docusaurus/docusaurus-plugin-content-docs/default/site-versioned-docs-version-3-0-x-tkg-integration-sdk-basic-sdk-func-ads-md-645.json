@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basic/sdk-func-ads",
+  "id": "version-3.0.x/tkg-integration/sdk-basic/sdk-func-ads",
+  "title": "Advertising integration",
+  "description": "InterstitialAd",
+  "source": "@site/versioned_docs/version-3.0.x/tkg-integration/sdk-basic/sdk-func-ads.md",
+  "sourceDirName": "tkg-integration/sdk-basic",
+  "slug": "/tkg-integration/sdk-basic/sdk-func-ads",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-func-ads",
+  "tags": [],
+  "version": "3.0.x",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Privacy Compliance",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-func-privacy"
+  },
+  "next": {
+    "title": "Event Tracking",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-func-event"
+  }
+}

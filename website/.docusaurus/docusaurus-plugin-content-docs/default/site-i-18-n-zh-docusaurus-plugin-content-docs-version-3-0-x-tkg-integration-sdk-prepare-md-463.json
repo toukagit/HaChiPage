@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-prepare",
+  "id": "version-3.0.x/tkg-integration/sdk-prepare",
+  "title": "准备工作",
+  "description": "获取产品需求文档",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.0.x/tkg-integration/sdk-prepare.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-prepare",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-prepare",
+  "tags": [],
+  "version": "3.0.x",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK下载",
+    "permalink": "/tkg-sdk-doc/download"
+  },
+  "next": {
+    "title": "SDK导入",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-import"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "download",
+  "id": "version-1.0.0/download",
+  "title": "SDK下载",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/download.md",
+  "sourceDirName": ".",
+  "slug": "/download",
+  "permalink": "/hachi-doc/download",
+  "tags": [],
+  "version": "1.0.0",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "SDK下载",
+    "sidebar_label": "SDK下载",
+    "description": "",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Touka Robux简介",
+    "permalink": "/hachi-doc/"
+  },
+  "next": {
+    "title": "说明文档",
+    "permalink": "/hachi-doc/faq"
+  }
+}

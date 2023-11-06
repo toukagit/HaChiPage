@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-package",
+  "id": "version-2.2.x/tkg-integration/sdk-package",
+  "title": "提交发布",
+  "description": "iOS游戏提交",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-2.2.x/tkg-integration/sdk-package.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-package",
+  "permalink": "/tkg-sdk-doc/2.2.x/tkg-integration/sdk-package",
+  "tags": [],
+  "version": "2.2.x",
+  "sidebarPosition": 100,
+  "frontMatter": {
+    "sidebar_position": 100
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "iOS 接入验证",
+    "permalink": "/tkg-sdk-doc/2.2.x/tkg-integration/sdk-test/sdk-test-iOS"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/tkg-sdk-doc/2.2.x/faq"
+  }
+}

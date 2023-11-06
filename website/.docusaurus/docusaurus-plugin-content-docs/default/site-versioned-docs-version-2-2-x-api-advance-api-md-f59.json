@@ -1,0 +1,24 @@
+{
+  "unversionedId": "api/advance-api",
+  "id": "version-2.2.x/api/advance-api",
+  "title": "Advanced API",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.2.x/api/advance-api.md",
+  "sourceDirName": "api",
+  "slug": "/api/advance-api",
+  "permalink": "/tkg-sdk-doc/2.2.x/api/advance-api",
+  "tags": [],
+  "version": "2.2.x",
+  "sidebarPosition": 98,
+  "frontMatter": {
+    "title": "Advanced API",
+    "sidebar_label": "Advanced API",
+    "description": "",
+    "sidebar_position": 98
+  },
+  "sidebar": "apiSidebar",
+  "previous": {
+    "title": "Basic API",
+    "permalink": "/tkg-sdk-doc/2.2.x/api/common-api"
+  }
+}

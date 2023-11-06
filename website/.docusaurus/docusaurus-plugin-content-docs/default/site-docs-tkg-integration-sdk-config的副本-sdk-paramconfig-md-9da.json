@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-config的副本/sdk-paramconfig",
+  "id": "tkg-integration/sdk-config的副本/sdk-paramconfig",
+  "title": "统计和广告SDK参数",
+  "description": "只需关注文档中明确需要填的参数即可。",
+  "source": "@site/docs/tkg-integration/sdk-config的副本/sdk-paramconfig.md",
+  "sourceDirName": "tkg-integration/sdk-config的副本",
+  "slug": "/tkg-integration/sdk-config的副本/sdk-paramconfig",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config的副本/sdk-paramconfig",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "说明",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config的副本/sdk-direction"
+  },
+  "next": {
+    "title": "SDK合规相关配置文件",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config的副本/sdk-baseconfig"
+  }
+}

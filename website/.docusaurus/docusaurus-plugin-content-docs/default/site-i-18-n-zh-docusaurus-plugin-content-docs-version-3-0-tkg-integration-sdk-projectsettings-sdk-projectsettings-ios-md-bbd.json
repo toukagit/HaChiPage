@@ -1,0 +1,16 @@
+{
+  "unversionedId": "tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "id": "version-3.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "title": "构建iOS平台",
+  "description": "证书设置",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios.md",
+  "sourceDirName": "tkg-integration/sdk-projectsettings",
+  "slug": "/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+  "tags": [],
+  "version": "3.0",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  }
+}

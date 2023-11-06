@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basic/sdk-func-event",
+  "id": "version-2.1.0/tkg-integration/sdk-basic/sdk-func-event",
+  "title": "事件埋点",
+  "description": "关卡进度事件",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-2.1.0/tkg-integration/sdk-basic/sdk-func-event.md",
+  "sourceDirName": "tkg-integration/sdk-basic",
+  "slug": "/tkg-integration/sdk-basic/sdk-func-event",
+  "permalink": "/tkg-sdk-doc/2.1.0/tkg-integration/sdk-basic/sdk-func-event",
+  "tags": [],
+  "version": "2.1.0",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "广告接入",
+    "permalink": "/tkg-sdk-doc/2.1.0/tkg-integration/sdk-basic/sdk-func-ads"
+  },
+  "next": {
+    "title": "其他功能",
+    "permalink": "/tkg-sdk-doc/2.1.0/tkg-integration/sdk-other-func"
+  }
+}

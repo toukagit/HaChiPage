@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tkg-download/translate-your-site",
+  "id": "tkg-download/translate-your-site",
+  "title": "Translate your site",
+  "description": "Let's translate docs/intro.md to French.",
+  "source": "@site/docs/tkg-download/translate-your-site.md",
+  "sourceDirName": "tkg-download",
+  "slug": "/tkg-download/translate-your-site",
+  "permalink": "/tkg-sdk-doc/tkg-download/translate-your-site",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "下载SDK",
+    "permalink": "/tkg-sdk-doc/tkg-download/manage-docs-versions"
+  },
+  "next": {
+    "title": "更新日志",
+    "permalink": "/tkg-sdk-doc/history"
+  }
+}

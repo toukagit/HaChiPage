@@ -1,0 +1,270 @@
+{
+  "pluginId": "default",
+  "version": "3.0.x",
+  "label": "3.0.x",
+  "banner": null,
+  "badge": true,
+  "className": "docs-version-3.0.x",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "Touka SDK简介",
+        "href": "/tkg-sdk-doc/",
+        "docId": "index"
+      },
+      {
+        "type": "link",
+        "label": "SDK下载",
+        "href": "/tkg-sdk-doc/download",
+        "docId": "download"
+      },
+      {
+        "type": "category",
+        "label": "API",
+        "collapsible": true,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "准备工作",
+            "href": "/tkg-sdk-doc/tkg-integration/sdk-prepare",
+            "docId": "tkg-integration/sdk-prepare"
+          },
+          {
+            "type": "category",
+            "label": "基础集成",
+            "items": [
+              {
+                "type": "link",
+                "label": "SDK导入",
+                "href": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-import",
+                "docId": "tkg-integration/sdk-basic/sdk-import"
+              },
+              {
+                "type": "link",
+                "label": "SDK参数配置",
+                "href": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-config",
+                "docId": "tkg-integration/sdk-basic/sdk-config"
+              },
+              {
+                "type": "link",
+                "label": "初始化",
+                "href": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-func-init",
+                "docId": "tkg-integration/sdk-basic/sdk-func-init"
+              },
+              {
+                "type": "link",
+                "label": "合规性弹窗",
+                "href": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-func-privacy",
+                "docId": "tkg-integration/sdk-basic/sdk-func-privacy"
+              },
+              {
+                "type": "link",
+                "label": "广告接入",
+                "href": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-func-ads",
+                "docId": "tkg-integration/sdk-basic/sdk-func-ads"
+              },
+              {
+                "type": "link",
+                "label": "事件埋点",
+                "href": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-func-event",
+                "docId": "tkg-integration/sdk-basic/sdk-func-event"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "link",
+            "label": "其他功能",
+            "href": "/tkg-sdk-doc/tkg-integration/sdk-other-func",
+            "docId": "tkg-integration/sdk-other-func"
+          },
+          {
+            "type": "category",
+            "label": "接入验证",
+            "items": [
+              {
+                "type": "link",
+                "label": "Android 接入验证",
+                "href": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-test-android",
+                "docId": "tkg-integration/sdk-test/sdk-test-android"
+              },
+              {
+                "type": "link",
+                "label": "iOS 接入验证",
+                "href": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-test-iOS",
+                "docId": "tkg-integration/sdk-test/sdk-test-iOS"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "构建版本",
+            "items": [
+              {
+                "type": "link",
+                "label": "构建Android平台",
+                "href": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+                "docId": "tkg-integration/sdk-projectsettings/sdk-projectsettings-android"
+              },
+              {
+                "type": "link",
+                "label": "构建iOS平台",
+                "href": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+                "docId": "tkg-integration/sdk-projectsettings/sdk-projectsettings-ios"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "link",
+            "label": "提交发布",
+            "href": "/tkg-sdk-doc/tkg-integration/sdk-package",
+            "docId": "tkg-integration/sdk-package"
+          }
+        ]
+      },
+      {
+        "type": "link",
+        "label": "FAQ",
+        "href": "/tkg-sdk-doc/faq",
+        "docId": "faq"
+      }
+    ],
+    "apiSidebar": [
+      {
+        "type": "link",
+        "label": "基础接口",
+        "href": "/tkg-sdk-doc/api/common-api",
+        "docId": "api/common-api"
+      },
+      {
+        "type": "link",
+        "label": "其他功能",
+        "href": "/tkg-sdk-doc/api/advance-api",
+        "docId": "api/advance-api"
+      }
+    ]
+  },
+  "docs": {
+    "api": {
+      "id": "api",
+      "title": "api",
+      "description": ""
+    },
+    "api/advance-api": {
+      "id": "api/advance-api",
+      "title": "其他功能",
+      "description": "",
+      "sidebar": "apiSidebar"
+    },
+    "api/common-api": {
+      "id": "api/common-api",
+      "title": "基础接口",
+      "description": "",
+      "sidebar": "apiSidebar"
+    },
+    "download": {
+      "id": "download",
+      "title": "SDK下载",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "faq": {
+      "id": "faq",
+      "title": "FAQ",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "index": {
+      "id": "index",
+      "title": "Touka SDK简介",
+      "description": "Touka SDK  作为出色的商业化SDK，为游戏提供一站式接入合规、统计与广告变现等功能。",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-basic/sdk-config": {
+      "id": "tkg-integration/sdk-basic/sdk-config",
+      "title": "SDK参数配置",
+      "description": "- iOS 平台需要添加 USE_U8 宏定义",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-basic/sdk-func-ads": {
+      "id": "tkg-integration/sdk-basic/sdk-func-ads",
+      "title": "广告接入",
+      "description": "插屏广告",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-basic/sdk-func-event": {
+      "id": "tkg-integration/sdk-basic/sdk-func-event",
+      "title": "事件埋点",
+      "description": "关卡进度事件",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-basic/sdk-func-init": {
+      "id": "tkg-integration/sdk-basic/sdk-func-init",
+      "title": "初始化",
+      "description": "- SDK的接口主要在TKGSDKManager这个类里，需要通过 TKGSDKManager.Instance 获取单例调用。",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-basic/sdk-func-privacy": {
+      "id": "tkg-integration/sdk-basic/sdk-func-privacy",
+      "title": "合规性弹窗",
+      "description": "信息弹窗",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-basic/sdk-import": {
+      "id": "tkg-integration/sdk-basic/sdk-import",
+      "title": "SDK导入",
+      "description": "请将下载后的unitypackage包导入工程:",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-other-func": {
+      "id": "tkg-integration/sdk-other-func",
+      "title": "其他功能",
+      "description": "1、游戏失去/获得焦点",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-package": {
+      "id": "tkg-integration/sdk-package",
+      "title": "提交发布",
+      "description": "iOS游戏提交",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-prepare": {
+      "id": "tkg-integration/sdk-prepare",
+      "title": "准备工作",
+      "description": "获取产品需求文档",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-projectsettings/sdk-projectsettings-android": {
+      "id": "tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+      "title": "构建Android平台",
+      "description": "Unity中设置",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-projectsettings/sdk-projectsettings-ios": {
+      "id": "tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+      "title": "构建iOS平台",
+      "description": "方式一：使用指定账号构建游戏",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-test/sdk-test-android": {
+      "id": "tkg-integration/sdk-test/sdk-test-android",
+      "title": "Android 接入验证",
+      "description": "---",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-test/sdk-test-iOS": {
+      "id": "tkg-integration/sdk-test/sdk-test-iOS",
+      "title": "iOS 接入验证",
+      "description": "Xcode工程自测说明:",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}

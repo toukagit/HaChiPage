@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tkg-integration/sdk-config/sdk-paramconfig的副本",
+  "id": "tkg-integration/sdk-config/sdk-paramconfig的副本",
+  "title": "SDK导入",
+  "description": "请将下载后的三个package包导入工程。",
+  "source": "@site/docs/tkg-integration/sdk-config/sdk-paramconfig的副本.md",
+  "sourceDirName": "tkg-integration/sdk-config",
+  "slug": "/tkg-integration/sdk-config/sdk-paramconfig的副本",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config/sdk-paramconfig的副本",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK导入",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config/sdk-paramconfig"
+  },
+  "next": {
+    "title": "下载SDK",
+    "permalink": "/tkg-sdk-doc/download"
+  }
+}

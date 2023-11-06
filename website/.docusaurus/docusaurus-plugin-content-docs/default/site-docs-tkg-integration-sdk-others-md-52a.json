@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-others",
+  "id": "tkg-integration/sdk-others",
+  "title": "SDK其他功能",
+  "description": "SDK提供一些其他不需要调用接口来实现的功能，可根据需求进行接入。",
+  "source": "@site/docs/tkg-integration/sdk-others.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-others",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-others",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK其他接口",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-other-func"
+  },
+  "next": {
+    "title": "统计和广告SDK参数",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-config/sdk-paramconfig"
+  }
+}

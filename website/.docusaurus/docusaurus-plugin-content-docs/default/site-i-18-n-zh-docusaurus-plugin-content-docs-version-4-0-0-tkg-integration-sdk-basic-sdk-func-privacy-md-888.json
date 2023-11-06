@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basic/sdk-func-privacy",
+  "id": "version-4.0.0/tkg-integration/sdk-basic/sdk-func-privacy",
+  "title": "合规性弹窗",
+  "description": "信息弹窗",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0.0/tkg-integration/sdk-basic/sdk-func-privacy.md",
+  "sourceDirName": "tkg-integration/sdk-basic",
+  "slug": "/tkg-integration/sdk-basic/sdk-func-privacy",
+  "permalink": "/tkg-sdk-doc/4.0.0/tkg-integration/sdk-basic/sdk-func-privacy",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "初始化",
+    "permalink": "/tkg-sdk-doc/4.0.0/tkg-integration/sdk-basic/sdk-func-init"
+  },
+  "next": {
+    "title": "广告接入",
+    "permalink": "/tkg-sdk-doc/4.0.0/tkg-integration/sdk-basic/sdk-func-ads"
+  }
+}

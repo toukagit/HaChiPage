@@ -1,0 +1,24 @@
+{
+  "unversionedId": "faq的副本",
+  "id": "faq的副本",
+  "title": "常见问题",
+  "description": "",
+  "source": "@site/docs/faq的副本.md",
+  "sourceDirName": ".",
+  "slug": "/faq的副本",
+  "permalink": "/tkg-sdk-doc/faq的副本",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "frontMatter": {
+    "title": "常见问题",
+    "sidebar_label": "常见问题",
+    "description": ""
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "常见问题",
+    "permalink": "/tkg-sdk-doc/faq"
+  }
+}

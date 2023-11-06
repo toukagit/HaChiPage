@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tkg-integration/manage-docs-versions",
+  "id": "tkg-integration/manage-docs-versions",
+  "title": "SDK导入",
+  "description": "请将下载后的三个package包导入工程。",
+  "source": "@site/docs/tkg-integration/manage-docs-versions.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/manage-docs-versions",
+  "permalink": "/tkg-sdk-doc/tkg-integration/manage-docs-versions",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "10/14/2018",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "常见问题",
+    "permalink": "/tkg-sdk-doc/faq"
+  },
+  "next": {
+    "title": "Translate your site",
+    "permalink": "/tkg-sdk-doc/tkg-integration/translate-your-site"
+  }
+}

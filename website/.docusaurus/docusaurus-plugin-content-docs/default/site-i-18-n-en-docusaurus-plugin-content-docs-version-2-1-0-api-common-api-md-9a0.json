@@ -1,0 +1,24 @@
+{
+  "unversionedId": "api/common-api",
+  "id": "version-2.1.0/api/common-api",
+  "title": "Basic API",
+  "description": "",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-2.1.0/api/common-api.md",
+  "sourceDirName": "api",
+  "slug": "/api/common-api",
+  "permalink": "/tkg-sdk-doc/2.1.0/api/common-api",
+  "tags": [],
+  "version": "2.1.0",
+  "sidebarPosition": 97,
+  "frontMatter": {
+    "title": "Basic API",
+    "sidebar_label": "Basic API",
+    "description": "",
+    "sidebar_position": 97
+  },
+  "sidebar": "apiSidebar",
+  "next": {
+    "title": "Advanced API",
+    "permalink": "/tkg-sdk-doc/2.1.0/api/advance-api"
+  }
+}

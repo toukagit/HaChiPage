@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tkg-integration/sdk-projectsettings/index",
+  "id": "tkg-integration/sdk-projectsettings/index",
+  "title": "Build Package",
+  "description": "",
+  "source": "@site/docs/tkg-integration/sdk-projectsettings/index.md",
+  "sourceDirName": "tkg-integration/sdk-projectsettings",
+  "slug": "/tkg-integration/sdk-projectsettings/",
+  "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-projectsettings/",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Build Package",
+    "sidebar_label": "Build Package",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "其他功能",
+    "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-other-func"
+  },
+  "next": {
+    "title": "构建Android平台",
+    "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-projectsettings/sdk-projectsettings-android"
+  }
+}

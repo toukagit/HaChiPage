@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-test/sdk-baseconfig",
+  "id": "tkg-integration/sdk-test/sdk-baseconfig",
+  "title": "SDK合规相关配置文件",
+  "description": "SDK合规相关配置涉及游戏适龄提示（包含年龄、题材）、隐私链接、用户协议链接、更多游戏链接。",
+  "source": "@site/docs/tkg-integration/sdk-test/sdk-baseconfig.md",
+  "sourceDirName": "tkg-integration/sdk-test",
+  "slug": "/tkg-integration/sdk-test/sdk-baseconfig",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-baseconfig",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK其他功能配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-funcconfig"
+  },
+  "next": {
+    "title": "SDK APIS",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-apis"
+  }
+}

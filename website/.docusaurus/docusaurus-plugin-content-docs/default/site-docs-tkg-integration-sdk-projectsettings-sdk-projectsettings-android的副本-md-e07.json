@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-projectsettings/sdk-projectsettings-android的副本",
+  "id": "tkg-integration/sdk-projectsettings/sdk-projectsettings-android的副本",
+  "title": "iOS 包工程配置",
+  "description": "Android",
+  "source": "@site/docs/tkg-integration/sdk-projectsettings/sdk-projectsettings-android的副本.md",
+  "sourceDirName": "tkg-integration/sdk-projectsettings",
+  "slug": "/tkg-integration/sdk-projectsettings/sdk-projectsettings-android的副本",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-projectsettings-android的副本",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "iOS 包工程配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-projectsettings-android"
+  },
+  "next": {
+    "title": "Android 集成测试",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-test-android"
+  }
+}

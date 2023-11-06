@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-test/sdk-test-iOS",
+  "id": "version-4.0/tkg-integration/sdk-test/sdk-test-iOS",
+  "title": "iOS Integration Verification",
+  "description": "AppTrackingTransparency system",
+  "source": "@site/versioned_docs/version-4.0/tkg-integration/sdk-test/sdk-test-iOS.md",
+  "sourceDirName": "tkg-integration/sdk-test",
+  "slug": "/tkg-integration/sdk-test/sdk-test-iOS",
+  "permalink": "/tkg-sdk-doc/4.0/tkg-integration/sdk-test/sdk-test-iOS",
+  "tags": [],
+  "version": "4.0",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Android Integration Verification",
+    "permalink": "/tkg-sdk-doc/4.0/tkg-integration/sdk-test/sdk-test-android"
+  },
+  "next": {
+    "title": "For Android",
+    "permalink": "/tkg-sdk-doc/4.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-android"
+  }
+}

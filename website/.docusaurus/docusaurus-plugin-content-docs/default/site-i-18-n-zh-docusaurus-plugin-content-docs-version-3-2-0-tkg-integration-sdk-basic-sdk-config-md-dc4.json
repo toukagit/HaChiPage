@@ -1,0 +1,16 @@
+{
+  "unversionedId": "tkg-integration/sdk-basic/sdk-config",
+  "id": "version-3.2.0/tkg-integration/sdk-basic/sdk-config",
+  "title": "SDK参数配置",
+  "description": "- 请注意区分 国内版本SDK 和 海外版本SDK 不同配置文件及工程配置。",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.2.0/tkg-integration/sdk-basic/sdk-config.md",
+  "sourceDirName": "tkg-integration/sdk-basic",
+  "slug": "/tkg-integration/sdk-basic/sdk-config",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-config",
+  "tags": [],
+  "version": "3.2.0",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  }
+}

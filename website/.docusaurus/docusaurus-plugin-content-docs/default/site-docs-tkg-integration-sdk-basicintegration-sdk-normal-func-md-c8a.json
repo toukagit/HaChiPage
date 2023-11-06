@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basicintegration/sdk-normal-func",
+  "id": "tkg-integration/sdk-basicintegration/sdk-normal-func",
+  "title": "SDK常用接口",
+  "description": "SDK常用接口包含基础部分、广告、事件埋点。",
+  "source": "@site/docs/tkg-integration/sdk-basicintegration/sdk-normal-func.md",
+  "sourceDirName": "tkg-integration/sdk-basicintegration",
+  "slug": "/tkg-integration/sdk-basicintegration/sdk-normal-func",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basicintegration/sdk-normal-func",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK参数配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basicintegration/sdk-config"
+  },
+  "next": {
+    "title": "SDK其他接口",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basicintegration/sdk-other-func"
+  }
+}

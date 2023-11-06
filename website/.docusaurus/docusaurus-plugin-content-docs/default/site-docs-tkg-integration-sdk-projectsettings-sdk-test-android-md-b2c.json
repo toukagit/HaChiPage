@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-projectsettings/sdk-test-android",
+  "id": "tkg-integration/sdk-projectsettings/sdk-test-android",
+  "title": "Android 集成测试",
+  "description": "",
+  "source": "@site/docs/tkg-integration/sdk-projectsettings/sdk-test-android.md",
+  "sourceDirName": "tkg-integration/sdk-projectsettings",
+  "slug": "/tkg-integration/sdk-projectsettings/sdk-test-android",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-test-android",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "iOS 包工程配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/"
+  },
+  "next": {
+    "title": "iOS 集成测试",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-test-iOS"
+  }
+}

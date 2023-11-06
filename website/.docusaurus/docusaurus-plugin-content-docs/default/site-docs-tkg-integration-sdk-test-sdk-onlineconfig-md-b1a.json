@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-test/sdk-onlineconfig",
+  "id": "tkg-integration/sdk-test/sdk-onlineconfig",
+  "title": "SDK在线参数控制",
+  "description": "",
+  "source": "@site/docs/tkg-integration/sdk-test/sdk-onlineconfig.md",
+  "sourceDirName": "tkg-integration/sdk-test",
+  "slug": "/tkg-integration/sdk-test/sdk-onlineconfig",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-onlineconfig",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK相关参数配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-paramconfig"
+  },
+  "next": {
+    "title": "SDK其他功能配置",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-test/sdk-test-android"
+  }
+}

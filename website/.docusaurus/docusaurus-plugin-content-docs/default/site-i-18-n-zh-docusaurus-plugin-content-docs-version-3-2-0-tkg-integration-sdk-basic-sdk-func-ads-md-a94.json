@@ -1,0 +1,16 @@
+{
+  "unversionedId": "tkg-integration/sdk-basic/sdk-func-ads",
+  "id": "version-3.2.0/tkg-integration/sdk-basic/sdk-func-ads",
+  "title": "广告接入",
+  "description": "插屏广告",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.2.0/tkg-integration/sdk-basic/sdk-func-ads.md",
+  "sourceDirName": "tkg-integration/sdk-basic",
+  "slug": "/tkg-integration/sdk-basic/sdk-func-ads",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-basic/sdk-func-ads",
+  "tags": [],
+  "version": "3.2.0",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "unversionedId": "tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "id": "version-3.2.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "title": "构建Android平台",
+  "description": "Unity中设置",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.2.0/tkg-integration/sdk-projectsettings/sdk-projectsettings-android.md",
+  "sourceDirName": "tkg-integration/sdk-projectsettings",
+  "slug": "/tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+  "tags": [],
+  "version": "3.2.0",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  }
+}

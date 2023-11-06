@@ -1,0 +1,14 @@
+{
+  "defaultLocale": "zh",
+  "locales": [
+    "zh"
+  ],
+  "currentLocale": "zh",
+  "localeConfigs": {
+    "zh": {
+      "label": "简体中文",
+      "direction": "ltr",
+      "htmlLang": "zh-CN"
+    }
+  }
+}

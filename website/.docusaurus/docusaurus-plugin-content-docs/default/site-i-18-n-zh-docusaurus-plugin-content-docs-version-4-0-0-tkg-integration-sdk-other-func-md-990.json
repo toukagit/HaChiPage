@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-other-func",
+  "id": "version-4.0.0/tkg-integration/sdk-other-func",
+  "title": "其他功能",
+  "description": "1、游戏失去/获得焦点",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0.0/tkg-integration/sdk-other-func.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-other-func",
+  "permalink": "/tkg-sdk-doc/4.0.0/tkg-integration/sdk-other-func",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "事件埋点",
+    "permalink": "/tkg-sdk-doc/4.0.0/tkg-integration/sdk-basic/sdk-func-event"
+  },
+  "next": {
+    "title": "Android 接入验证",
+    "permalink": "/tkg-sdk-doc/4.0.0/tkg-integration/sdk-test/sdk-test-android"
+  }
+}

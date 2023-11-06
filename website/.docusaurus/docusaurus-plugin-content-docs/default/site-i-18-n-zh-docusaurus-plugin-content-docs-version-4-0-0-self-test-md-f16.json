@@ -1,0 +1,19 @@
+{
+  "unversionedId": "selfTest",
+  "id": "version-4.0.0/selfTest",
+  "title": "自测文档",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0.0/selfTest.md",
+  "sourceDirName": ".",
+  "slug": "/selfTest",
+  "permalink": "/tkg-robux-doc/selfTest",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "自测文档",
+    "sidebar_label": "自测文档",
+    "description": "",
+    "sidebar_position": 3
+  }
+}

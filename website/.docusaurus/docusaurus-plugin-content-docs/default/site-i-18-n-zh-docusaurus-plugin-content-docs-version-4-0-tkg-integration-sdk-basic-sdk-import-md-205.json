@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basic/sdk-import",
+  "id": "version-4.0/tkg-integration/sdk-basic/sdk-import",
+  "title": "SDK导入",
+  "description": "请将下载后的unitypackage包导入工程:",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0/tkg-integration/sdk-basic/sdk-import.md",
+  "sourceDirName": "tkg-integration/sdk-basic",
+  "slug": "/tkg-integration/sdk-basic/sdk-import",
+  "permalink": "/tkg-sdk-doc/4.0/tkg-integration/sdk-basic/sdk-import",
+  "tags": [],
+  "version": "4.0",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "准备工作",
+    "permalink": "/tkg-sdk-doc/4.0/tkg-integration/sdk-prepare"
+  },
+  "next": {
+    "title": "SDK参数配置",
+    "permalink": "/tkg-sdk-doc/4.0/tkg-integration/sdk-basic/sdk-config"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "index",
+  "id": "version-3.0.x/index",
+  "title": "Touka SDK简介",
+  "description": "Touka SDK  作为出色的商业化SDK，为游戏提供一站式接入合规、统计与广告变现等功能。",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.0.x/index.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/tkg-sdk-doc/",
+  "tags": [],
+  "version": "3.0.x",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "SDK下载",
+    "permalink": "/tkg-sdk-doc/download"
+  }
+}

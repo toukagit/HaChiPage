@@ -1,0 +1,19 @@
+{
+  "unversionedId": "faq",
+  "id": "version-3.0/faq",
+  "title": "FAQ",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.0/faq.md",
+  "sourceDirName": ".",
+  "slug": "/faq",
+  "permalink": "/tkg-sdk-doc/faq",
+  "tags": [],
+  "version": "3.0",
+  "sidebarPosition": 96,
+  "frontMatter": {
+    "title": "FAQ",
+    "sidebar_label": "FAQ",
+    "description": "",
+    "sidebar_position": 96
+  }
+}

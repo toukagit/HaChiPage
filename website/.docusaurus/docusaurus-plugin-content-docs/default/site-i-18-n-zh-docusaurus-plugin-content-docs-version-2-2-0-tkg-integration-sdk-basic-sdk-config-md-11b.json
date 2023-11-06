@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basic/sdk-config",
+  "id": "version-2.2.0/tkg-integration/sdk-basic/sdk-config",
+  "title": "SDK参数配置",
+  "description": "- 参数配置文件放置路径: `Assets/Configs/ `",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-2.2.0/tkg-integration/sdk-basic/sdk-config.md",
+  "sourceDirName": "tkg-integration/sdk-basic",
+  "slug": "/tkg-integration/sdk-basic/sdk-config",
+  "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-basic/sdk-config",
+  "tags": [],
+  "version": "2.2.0",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK导入",
+    "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-basic/sdk-import"
+  },
+  "next": {
+    "title": "初始化",
+    "permalink": "/tkg-sdk-doc/zh/tkg-integration/sdk-basic/sdk-func-init"
+  }
+}

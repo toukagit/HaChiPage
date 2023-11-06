@@ -1,0 +1,24 @@
+{
+  "unversionedId": "faq",
+  "id": "version-3.0.x/faq",
+  "title": "FAQ",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.0.x/faq.md",
+  "sourceDirName": ".",
+  "slug": "/faq",
+  "permalink": "/tkg-sdk-doc/faq",
+  "tags": [],
+  "version": "3.0.x",
+  "sidebarPosition": 96,
+  "frontMatter": {
+    "title": "FAQ",
+    "sidebar_label": "FAQ",
+    "description": "",
+    "sidebar_position": 96
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "提交发布",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-package"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-package",
+  "id": "version-2.0.1/tkg-integration/sdk-package",
+  "title": "Release",
+  "description": "iOS Release",
+  "source": "@site/versioned_docs/version-2.0.1/tkg-integration/sdk-package.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-package",
+  "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-package",
+  "tags": [],
+  "version": "2.0.1",
+  "sidebarPosition": 100,
+  "frontMatter": {
+    "sidebar_position": 100
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "iOS Integration Verification",
+    "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-test/sdk-test-iOS"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/tkg-sdk-doc/2.0.1/faq"
+  }
+}

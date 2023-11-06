@@ -1,0 +1,16 @@
+{
+  "unversionedId": "tkg-integration/sdk-package",
+  "id": "version-4.0.0/tkg-integration/sdk-package",
+  "title": "Release",
+  "description": "iOS Release",
+  "source": "@site/versioned_docs/version-4.0.0/tkg-integration/sdk-package.md",
+  "sourceDirName": "tkg-integration",
+  "slug": "/tkg-integration/sdk-package",
+  "permalink": "/tkg-sdk-doc/4.0.0/tkg-integration/sdk-package",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 100,
+  "frontMatter": {
+    "sidebar_position": 100
+  }
+}

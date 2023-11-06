@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tkg-integration/sdk-basic/sdk-config",
+  "id": "version-2.0.1/tkg-integration/sdk-basic/sdk-config",
+  "title": "Configuration SDK (Only for iOS)",
+  "description": "All of the config files would be found under `Assets/TKGSDK/Config/Scripts`.",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-2.0.1/tkg-integration/sdk-basic/sdk-config.md",
+  "sourceDirName": "tkg-integration/sdk-basic",
+  "slug": "/tkg-integration/sdk-basic/sdk-config",
+  "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-basic/sdk-config",
+  "tags": [],
+  "version": "2.0.1",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installing the SDK",
+    "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-basic/sdk-import"
+  },
+  "next": {
+    "title": "Initializing the SDK",
+    "permalink": "/tkg-sdk-doc/2.0.1/tkg-integration/sdk-basic/sdk-func-init"
+  }
+}

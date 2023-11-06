@@ -1,0 +1,25 @@
+{
+  "unversionedId": "sdk-test/sdk-test-android",
+  "id": "sdk-test/sdk-test-android",
+  "title": "Android 集成测试",
+  "description": "---",
+  "source": "@site/docs/sdk-test/sdk-test-android.md",
+  "sourceDirName": "sdk-test",
+  "slug": "/sdk-test/sdk-test-android",
+  "permalink": "/tkg-sdk-doc/sdk-test/sdk-test-android",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "构建iOS平台",
+    "permalink": "/tkg-sdk-doc/tkg-integration/sdk-projectsettings/sdk-projectsettings-ios"
+  },
+  "next": {
+    "title": "iOS 集成测试",
+    "permalink": "/tkg-sdk-doc/sdk-test/sdk-test-iOS"
+  }
+}

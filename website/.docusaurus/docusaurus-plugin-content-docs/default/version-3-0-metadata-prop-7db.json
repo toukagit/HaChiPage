@@ -1,0 +1,153 @@
+{
+  "pluginId": "default",
+  "version": "3.0",
+  "label": "3.0",
+  "banner": null,
+  "badge": true,
+  "className": "docs-version-3.0",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "Touka SDK Introduction",
+        "href": "/tkg-sdk-doc/",
+        "docId": "index"
+      },
+      {
+        "type": "link",
+        "label": "Download SDK",
+        "href": "/tkg-sdk-doc/download",
+        "docId": "download"
+      },
+      {
+        "type": "category",
+        "label": "API",
+        "collapsible": true,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "Preparation",
+            "href": "/tkg-sdk-doc/tkg-integration/sdk-prepare",
+            "docId": "tkg-integration/sdk-prepare"
+          },
+          {
+            "type": "link",
+            "label": "Advanced Integration",
+            "href": "/tkg-sdk-doc/tkg-integration/sdk-other-func",
+            "docId": "tkg-integration/sdk-other-func"
+          },
+          {
+            "type": "link",
+            "label": "Release",
+            "href": "/tkg-sdk-doc/tkg-integration/sdk-package",
+            "docId": "tkg-integration/sdk-package"
+          }
+        ]
+      }
+    ]
+  },
+  "docs": {
+    "api": {
+      "id": "api",
+      "title": "FAQ2",
+      "description": ""
+    },
+    "api/advance-api": {
+      "id": "api/advance-api",
+      "title": "Advanced API",
+      "description": ""
+    },
+    "api/common-api": {
+      "id": "api/common-api",
+      "title": "Basic API",
+      "description": ""
+    },
+    "download": {
+      "id": "download",
+      "title": "Download SDK",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "faq": {
+      "id": "faq",
+      "title": "FAQ",
+      "description": ""
+    },
+    "index": {
+      "id": "index",
+      "title": "Touka SDK Introduction",
+      "description": "Touka SDK is an excellent commercial SDK. We provide a one-step compliance SDK integration. The SDK is stable, safe, and includes Data analytics/Tracking/Monetization, etc function. (Only open with  top customer)",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-basic/sdk-config": {
+      "id": "tkg-integration/sdk-basic/sdk-config",
+      "title": "Configuration SDK",
+      "description": "Parameter configuration file path :  `Assets/StreamingAssets/Configs/CN|GB `"
+    },
+    "tkg-integration/sdk-basic/sdk-func-ads": {
+      "id": "tkg-integration/sdk-basic/sdk-func-ads",
+      "title": "Advertising integration",
+      "description": "InterstitialAd"
+    },
+    "tkg-integration/sdk-basic/sdk-func-event": {
+      "id": "tkg-integration/sdk-basic/sdk-func-event",
+      "title": "Event Tracking",
+      "description": "Level Progression Events"
+    },
+    "tkg-integration/sdk-basic/sdk-func-init": {
+      "id": "tkg-integration/sdk-basic/sdk-func-init",
+      "title": "Initializing the SDK",
+      "description": "- The interface of the SDK is mainly in the class TKGSDKManager, and you can call through TKGSDKManager.Instance."
+    },
+    "tkg-integration/sdk-basic/sdk-func-privacy": {
+      "id": "tkg-integration/sdk-basic/sdk-func-privacy",
+      "title": "Privacy Compliance",
+      "description": "Privacy Policy"
+    },
+    "tkg-integration/sdk-basic/sdk-import": {
+      "id": "tkg-integration/sdk-basic/sdk-import",
+      "title": "Installing the SDK",
+      "description": "Please import the unitypackage to the project."
+    },
+    "tkg-integration/sdk-other-func": {
+      "id": "tkg-integration/sdk-other-func",
+      "title": "Advanced Integration",
+      "description": "Game focus  changed callback",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-package": {
+      "id": "tkg-integration/sdk-package",
+      "title": "Release",
+      "description": "iOS Release",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-prepare": {
+      "id": "tkg-integration/sdk-prepare",
+      "title": "Preparation",
+      "description": "Get the product requirements",
+      "sidebar": "tutorialSidebar"
+    },
+    "tkg-integration/sdk-projectsettings/sdk-projectsettings-android": {
+      "id": "tkg-integration/sdk-projectsettings/sdk-projectsettings-android",
+      "title": "For Android",
+      "description": "Unity Settings"
+    },
+    "tkg-integration/sdk-projectsettings/sdk-projectsettings-ios": {
+      "id": "tkg-integration/sdk-projectsettings/sdk-projectsettings-ios",
+      "title": "For iOS",
+      "description": "Unity Settings"
+    },
+    "tkg-integration/sdk-test/sdk-test-android": {
+      "id": "tkg-integration/sdk-test/sdk-test-android",
+      "title": "Android Integration Verification",
+      "description": "---"
+    },
+    "tkg-integration/sdk-test/sdk-test-iOS": {
+      "id": "tkg-integration/sdk-test/sdk-test-iOS",
+      "title": "iOS Integration Verification",
+      "description": "AppTrackingTransparency system"
+    }
+  }
+}

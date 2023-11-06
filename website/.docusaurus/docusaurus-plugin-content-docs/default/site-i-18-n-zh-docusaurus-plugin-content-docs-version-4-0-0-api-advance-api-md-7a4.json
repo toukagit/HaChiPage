@@ -1,0 +1,24 @@
+{
+  "unversionedId": "api/advance-api",
+  "id": "version-4.0.0/api/advance-api",
+  "title": "其他功能",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0.0/api/advance-api.md",
+  "sourceDirName": "api",
+  "slug": "/api/advance-api",
+  "permalink": "/tkg-sdk-doc/4.0.0/api/advance-api",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 98,
+  "frontMatter": {
+    "title": "其他功能",
+    "sidebar_label": "其他功能",
+    "description": "",
+    "sidebar_position": 98
+  },
+  "sidebar": "apiSidebar",
+  "previous": {
+    "title": "基础接口",
+    "permalink": "/tkg-sdk-doc/4.0.0/api/common-api"
+  }
+}
