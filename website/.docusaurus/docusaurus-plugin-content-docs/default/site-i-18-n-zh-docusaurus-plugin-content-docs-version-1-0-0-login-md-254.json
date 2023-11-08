@@ -6,7 +6,7 @@
   "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/login.md",
   "sourceDirName": ".",
   "slug": "/login",
-  "permalink": "/hachi-doc/login",
+  "permalink": "/hachi-doc/zh/login",
   "tags": [],
   "version": "1.0.0",
   "sidebarPosition": 3,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "内购",
-    "permalink": "/hachi-doc/IAP"
+    "permalink": "/hachi-doc/zh/IAP"
   },
   "next": {
     "title": "其他功能",
-    "permalink": "/hachi-doc/other"
+    "permalink": "/hachi-doc/zh/other"
   }
 }

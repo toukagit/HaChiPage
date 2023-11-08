@@ -6,7 +6,7 @@
   "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/other.md",
   "sourceDirName": ".",
   "slug": "/other",
-  "permalink": "/hachi-doc/other",
+  "permalink": "/hachi-doc/zh/other",
   "tags": [],
   "version": "1.0.0",
   "sidebarPosition": 3,
@@ -19,6 +19,6 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "账号系统",
-    "permalink": "/hachi-doc/login"
+    "permalink": "/hachi-doc/zh/login"
   }
 }

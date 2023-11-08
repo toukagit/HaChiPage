@@ -11,43 +11,43 @@
       {
         "type": "link",
         "label": "HaChi SDK 简介",
-        "href": "/hachi-doc/",
+        "href": "/hachi-doc/zh/",
         "docId": "index"
       },
       {
         "type": "link",
         "label": "SDK集成",
-        "href": "/hachi-doc/download",
+        "href": "/hachi-doc/zh/download",
         "docId": "download"
       },
       {
         "type": "category",
-        "label": "广告形式",
+        "label": "Ads",
         "collapsible": true,
         "collapsed": false,
         "items": [
           {
             "type": "link",
             "label": "插屏广告",
-            "href": "/hachi-doc/hc-integration/iv",
+            "href": "/hachi-doc/zh/hc-integration/iv",
             "docId": "hc-integration/iv"
           },
           {
             "type": "link",
             "label": "激励视频广告",
-            "href": "/hachi-doc/hc-integration/rv",
+            "href": "/hachi-doc/zh/hc-integration/rv",
             "docId": "hc-integration/rv"
           },
           {
             "type": "link",
             "label": "Banner广告",
-            "href": "/hachi-doc/hc-integration/bv",
+            "href": "/hachi-doc/zh/hc-integration/bv",
             "docId": "hc-integration/bv"
           },
           {
             "type": "link",
             "label": "Native广告",
-            "href": "/hachi-doc/hc-integration/nv",
+            "href": "/hachi-doc/zh/hc-integration/nv",
             "docId": "hc-integration/nv"
           }
         ]
@@ -55,31 +55,31 @@
       {
         "type": "link",
         "label": "自定义事件",
-        "href": "/hachi-doc/events",
+        "href": "/hachi-doc/zh/events",
         "docId": "events"
       },
       {
         "type": "link",
         "label": "在线参数",
-        "href": "/hachi-doc/remoteConfig",
+        "href": "/hachi-doc/zh/remoteConfig",
         "docId": "remoteConfig"
       },
       {
         "type": "link",
         "label": "内购",
-        "href": "/hachi-doc/IAP",
+        "href": "/hachi-doc/zh/IAP",
         "docId": "IAP"
       },
       {
         "type": "link",
         "label": "账号系统",
-        "href": "/hachi-doc/login",
+        "href": "/hachi-doc/zh/login",
         "docId": "login"
       },
       {
         "type": "link",
         "label": "其他功能",
-        "href": "/hachi-doc/other",
+        "href": "/hachi-doc/zh/other",
         "docId": "other"
       }
     ]

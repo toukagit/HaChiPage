@@ -1,0 +1,24 @@
+{
+  "unversionedId": "other",
+  "id": "version-1.0.0/other",
+  "title": "Other functions",
+  "description": "",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-1.0.0/other.md",
+  "sourceDirName": ".",
+  "slug": "/other",
+  "permalink": "/hachi-doc/other",
+  "tags": [],
+  "version": "1.0.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Other functions",
+    "sidebar_label": "Other functions",
+    "description": "",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Account system",
+    "permalink": "/hachi-doc/login"
+  }
+}

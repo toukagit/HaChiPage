@@ -4,87 +4,87 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/hachi-doc/helloReact/',
-    component: ComponentCreator('/hachi-doc/helloReact/','b51'),
+    path: '/hachi-doc/zh/helloReact/',
+    component: ComponentCreator('/hachi-doc/zh/helloReact/','7bb'),
     exact: true
   },
   {
-    path: '/hachi-doc/markdown-page/',
-    component: ComponentCreator('/hachi-doc/markdown-page/','335'),
+    path: '/hachi-doc/zh/markdown-page/',
+    component: ComponentCreator('/hachi-doc/zh/markdown-page/','1d9'),
     exact: true
   },
   {
-    path: '/hachi-doc/versions/',
-    component: ComponentCreator('/hachi-doc/versions/','384'),
+    path: '/hachi-doc/zh/versions/',
+    component: ComponentCreator('/hachi-doc/zh/versions/','62c'),
     exact: true
   },
   {
-    path: '/hachi-doc/',
-    component: ComponentCreator('/hachi-doc/','4c7'),
+    path: '/hachi-doc/zh/',
+    component: ComponentCreator('/hachi-doc/zh/','f13'),
     routes: [
       {
-        path: '/hachi-doc/',
-        component: ComponentCreator('/hachi-doc/','b9b'),
+        path: '/hachi-doc/zh/',
+        component: ComponentCreator('/hachi-doc/zh/','dd1'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/hachi-doc/download/',
-        component: ComponentCreator('/hachi-doc/download/','d38'),
+        path: '/hachi-doc/zh/download/',
+        component: ComponentCreator('/hachi-doc/zh/download/','ab5'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/hachi-doc/events/',
-        component: ComponentCreator('/hachi-doc/events/','f9d'),
+        path: '/hachi-doc/zh/events/',
+        component: ComponentCreator('/hachi-doc/zh/events/','38b'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/hachi-doc/hc-integration/bv/',
-        component: ComponentCreator('/hachi-doc/hc-integration/bv/','454'),
+        path: '/hachi-doc/zh/hc-integration/bv/',
+        component: ComponentCreator('/hachi-doc/zh/hc-integration/bv/','03f'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/hachi-doc/hc-integration/iv/',
-        component: ComponentCreator('/hachi-doc/hc-integration/iv/','74f'),
+        path: '/hachi-doc/zh/hc-integration/iv/',
+        component: ComponentCreator('/hachi-doc/zh/hc-integration/iv/','ad1'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/hachi-doc/hc-integration/nv/',
-        component: ComponentCreator('/hachi-doc/hc-integration/nv/','36b'),
+        path: '/hachi-doc/zh/hc-integration/nv/',
+        component: ComponentCreator('/hachi-doc/zh/hc-integration/nv/','22f'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/hachi-doc/hc-integration/rv/',
-        component: ComponentCreator('/hachi-doc/hc-integration/rv/','ae6'),
+        path: '/hachi-doc/zh/hc-integration/rv/',
+        component: ComponentCreator('/hachi-doc/zh/hc-integration/rv/','dac'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/hachi-doc/IAP/',
-        component: ComponentCreator('/hachi-doc/IAP/','802'),
+        path: '/hachi-doc/zh/IAP/',
+        component: ComponentCreator('/hachi-doc/zh/IAP/','1ab'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/hachi-doc/login/',
-        component: ComponentCreator('/hachi-doc/login/','92c'),
+        path: '/hachi-doc/zh/login/',
+        component: ComponentCreator('/hachi-doc/zh/login/','fa9'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/hachi-doc/other/',
-        component: ComponentCreator('/hachi-doc/other/','f55'),
+        path: '/hachi-doc/zh/other/',
+        component: ComponentCreator('/hachi-doc/zh/other/','b6f'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/hachi-doc/remoteConfig/',
-        component: ComponentCreator('/hachi-doc/remoteConfig/','477'),
+        path: '/hachi-doc/zh/remoteConfig/',
+        component: ComponentCreator('/hachi-doc/zh/remoteConfig/','fd8'),
         exact: true,
         sidebar: "tutorialSidebar"
       }

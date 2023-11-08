@@ -23,7 +23,7 @@ const sidebars = {
   'download',
   {
       type: 'category',
-      label: '广告形式',
+      label: 'Ads',
       collapsible: true,
       collapsed: false,
       items: [

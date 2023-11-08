@@ -1,0 +1,28 @@
+{
+  "unversionedId": "download",
+  "id": "version-1.0.0/download",
+  "title": "SDK Integration",
+  "description": "",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-1.0.0/download.md",
+  "sourceDirName": ".",
+  "slug": "/download",
+  "permalink": "/hachi-doc/download",
+  "tags": [],
+  "version": "1.0.0",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "SDK Integration",
+    "sidebar_label": "SDK Integration",
+    "description": "",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "HaChi SDK intro",
+    "permalink": "/hachi-doc/"
+  },
+  "next": {
+    "title": "Interstitials",
+    "permalink": "/hachi-doc/hc-integration/iv"
+  }
+}

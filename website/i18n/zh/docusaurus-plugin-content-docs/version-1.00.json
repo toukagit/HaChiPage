@@ -2,13 +2,9 @@
   "version.label": {
     "message": "1.0.0",
     "description": "The label for version 1.0.0"
-  },
-  "sidebar.tutorialSidebar.category.Tutorial - Basics": {
-    "message": "Tutorial - Basics",
-    "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Tutorial - Extras": {
-    "message": "Tutorial - Extras",
-    "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  ,
+  "sidebar.tutorialSidebar.category.Ads": {
+    "message": "广告形式",
+    "description": "广告形式"
   }
 }

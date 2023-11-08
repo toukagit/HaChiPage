@@ -4,11 +4,11 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "Touka Robux Docs",
+  "title": "HaChi SDK Docs",
   "tagline": "Dinosaurs are cool",
   "titleDelimiter": "-",
   "url": "https://toukagit.github.io/hachi-doc/",
-  "baseUrl": "/hachi-doc/",
+  "baseUrl": "/hachi-doc/zh/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
@@ -17,11 +17,16 @@ export default {
   "organizationName": "toukagame",
   "projectName": "hachi-doc",
   "i18n": {
-    "defaultLocale": "zh",
+    "defaultLocale": "en",
     "locales": [
+      "en",
       "zh"
     ],
     "localeConfigs": {
+      "en": {
+        "htmlLang": "en-US",
+        "direction": "ltr"
+      },
       "zh": {
         "label": "简体中文",
         "htmlLang": "zh-CN",

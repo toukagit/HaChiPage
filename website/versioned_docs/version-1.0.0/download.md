@@ -75,9 +75,35 @@ public static string ApplovinKey = "";
 ![](/img/HCSDK/image01.png)
 ![](/img/HCSDK/image02.png)  
 
+## Unity Android平台设置
+#### 1、Player Setting设置
+- Mininum API Level 设置为22
+- Target API Level 请设置为33
+- 设置IL2CPP
+- 勾选ARMv7和ARM64
+
+![](/img/HCSDK/image04.png)  
+
+#### 2、Unity版本低于2022.3需要使用自定义gradle配置。
+"工具栏>Settings>Preferences > External Tools", 取消 "Gradle Installed with Unity (recommended)" 同时设置自定义gradle路径。<br/>
+自定义gradle版本要求大于6.7.1，推荐下载https://downloads.gradle.org/distributions/gradle-6.7.1-all.zip并解压。
+
+![](/img/HCSDK/image05.png)  
+
+#### 3、Assets/Plugins/Android/GooglePlayGamesManifest.androidlib路径不存在或者目录为空的情况下需要检查：
+1、 检查【二、参数配置】中GoogleService.json(Android)是否已经拷贝进来。<br/>
+2、重启unity编辑器。
+
+## Unity iOS平台设置
+
+![](/img/HCSDK/image06.png)  
+
 ## 初始化SDK
 ```c
-HCSDKManager.Instance.InitializeSdk(InitSdkCallback);
+void Start()
+{
+    HCSDKManager.Instance.InitializeSdk(InitSdkCallback);
+}
 
 private void InitSdkCallback()
 {

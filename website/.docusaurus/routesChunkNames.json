@@ -1,65 +1,65 @@
 {
-  "/hachi-doc/helloReact/-b51": {
+  "/hachi-doc/zh/helloReact/-7bb": {
     "component": "06f8edbc",
     "config": "5e9f5e1a",
     "__routeContextModule": "ae5123e2"
   },
-  "/hachi-doc/markdown-page/-335": {
+  "/hachi-doc/zh/markdown-page/-1d9": {
     "component": "1f391b9e",
     "content": "393be207",
     "__routeContextModule": "ae5123e2"
   },
-  "/hachi-doc/versions/-384": {
+  "/hachi-doc/zh/versions/-62c": {
     "component": "18b93cb3",
     "config": "5e9f5e1a",
     "__routeContextModule": "ae5123e2"
   },
-  "/hachi-doc/-4c7": {
+  "/hachi-doc/zh/-f13": {
     "component": "1be78505",
     "versionMetadata": "62e81aa6",
     "__routeContextModule": "2b5ec9d4"
   },
-  "/hachi-doc/-b9b": {
+  "/hachi-doc/zh/-dd1": {
     "component": "17896441",
     "content": "3ab9dcd5"
   },
-  "/hachi-doc/download/-d38": {
+  "/hachi-doc/zh/download/-ab5": {
     "component": "17896441",
     "content": "799a4290"
   },
-  "/hachi-doc/events/-f9d": {
+  "/hachi-doc/zh/events/-38b": {
     "component": "17896441",
     "content": "58ebaa23"
   },
-  "/hachi-doc/hc-integration/bv/-454": {
+  "/hachi-doc/zh/hc-integration/bv/-03f": {
     "component": "17896441",
     "content": "ac005e6c"
   },
-  "/hachi-doc/hc-integration/iv/-74f": {
+  "/hachi-doc/zh/hc-integration/iv/-ad1": {
     "component": "17896441",
     "content": "fcd0a21c"
   },
-  "/hachi-doc/hc-integration/nv/-36b": {
+  "/hachi-doc/zh/hc-integration/nv/-22f": {
     "component": "17896441",
     "content": "bb494c92"
   },
-  "/hachi-doc/hc-integration/rv/-ae6": {
+  "/hachi-doc/zh/hc-integration/rv/-dac": {
     "component": "17896441",
     "content": "5959b346"
   },
-  "/hachi-doc/IAP/-802": {
+  "/hachi-doc/zh/IAP/-1ab": {
     "component": "17896441",
     "content": "8a823093"
   },
-  "/hachi-doc/login/-92c": {
+  "/hachi-doc/zh/login/-fa9": {
     "component": "17896441",
     "content": "2549433e"
   },
-  "/hachi-doc/other/-f55": {
+  "/hachi-doc/zh/other/-b6f": {
     "component": "17896441",
     "content": "9dbed2a3"
   },
-  "/hachi-doc/remoteConfig/-477": {
+  "/hachi-doc/zh/remoteConfig/-fd8": {
     "component": "17896441",
     "content": "2b14834a"
   }
