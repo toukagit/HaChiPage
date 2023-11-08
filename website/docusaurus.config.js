@@ -12,7 +12,7 @@ favicon: 'img/favicon.ico',
 trailingSlash: true,//URL结尾加/
 baseUrlIssueBanner: false,//关闭提示Banner
 organizationName: 'toukagame',//GITHUB库主体人
-projectName: 'tkg-robux-doc',//GITHUB库名字
+projectName: 'hachi-doc',//GITHUB库名字
 
 // Language
 i18n: {

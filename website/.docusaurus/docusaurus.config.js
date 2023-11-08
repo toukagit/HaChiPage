@@ -15,7 +15,7 @@ export default {
   "trailingSlash": true,
   "baseUrlIssueBanner": false,
   "organizationName": "toukagame",
-  "projectName": "tkg-robux-doc",
+  "projectName": "hachi-doc",
   "i18n": {
     "defaultLocale": "zh",
     "locales": [
