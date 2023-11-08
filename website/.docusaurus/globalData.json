@@ -16,8 +16,33 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "faq",
-              "path": "/hachi-doc/faq",
+              "id": "events",
+              "path": "/hachi-doc/events",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "hc-integration/bv",
+              "path": "/hachi-doc/hc-integration/bv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "hc-integration/iv",
+              "path": "/hachi-doc/hc-integration/iv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "hc-integration/nv",
+              "path": "/hachi-doc/hc-integration/nv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "hc-integration/rv",
+              "path": "/hachi-doc/hc-integration/rv",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "IAP",
+              "path": "/hachi-doc/IAP",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -26,8 +51,18 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "selfTest",
-              "path": "/hachi-doc/selfTest",
+              "id": "login",
+              "path": "/hachi-doc/login",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "other",
+              "path": "/hachi-doc/other",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "remoteConfig",
+              "path": "/hachi-doc/remoteConfig",
               "sidebar": "tutorialSidebar"
             }
           ],

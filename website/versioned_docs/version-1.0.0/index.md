@@ -2,28 +2,34 @@
 sidebar_position: 1
 ---
 
-# Touka SDK Introduction
+# HaChi SDK 简介
 
-Touka SDK is an excellent commercial SDK. We provide a one-step compliance SDK integration. The SDK is stable, safe, and includes Data analytics/Tracking/Monetization, etc function. (Only open with  top customer)
+Hachi SDK简称 HC SDK，专为中重度游戏服务。请勿将其用于其他类型项目。
 
+本SDK已经聚合以下三方SDK：
 
-The SDK includes the following third-party SDK
-- Umeng
-- GameAnalytics
-- Tenjin
-- Topon
+统计
+* ThinkingData
+* Adjust
+* Firebase
 
+广告
+* AppLovin
+* Chartboost
+* DT Exchange
+* Google Ad Manager
+* Admob（Google bidding and Google AdMob）
+* InMobi
+* IronSource
+* Liftoff Monetize
+* Meta Audience Network（Facebook）
+* Mintegral
+* Pangle
+* Unity Ads
+* Yandex
 
-**Integration Process Preview**
-- Please check your Unity project to make sure you have not integrated the above SDK.
-- Please check your Unity project to make sure  you have not integrated advertising SDK to avoid having code conflict with Touka SDK.
-- We recommended cleaning up the third-party SDK you used and starting integration with the  game project.
+**注意事项 **
 
-**Integration Process Preview**  
-Please follow the following integration process and test it according to the[[SDK integration verification]](./tkg-integration/sdk-basic/../sdk-test/sdk-test-android.md)when you are finished.
-
-1. Integration Prepartion
-2. SDK integration (SDK demo for reference)
-3. Platform build
-4. Integration Verification
-5. Game launch
+检查Unity工程是否自行集成过以上SDK，如有集成请务必移除。<br/>
+检查Unity工程是否包含广告SDK，如有集成请务必移除，以免与HaChi SDK广告功能产生冲突影响变现。<br/>
+建议清理不必要的三方SDK，尽量以纯净的游戏工程开始您的接入。

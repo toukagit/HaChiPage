@@ -60,7 +60,7 @@ export default {
     "hideableSidebar": true,
     "navbar": {
       "hideOnScroll": false,
-      "title": "TKG Robux Docs",
+      "title": "HaChi SDK",
       "logo": {
         "alt": "My Site Logo",
         "src": "img/logo.svg",

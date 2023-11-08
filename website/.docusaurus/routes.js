@@ -4,41 +4,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/hachi-doc/__docusaurus/debug/',
-    component: ComponentCreator('/hachi-doc/__docusaurus/debug/','f73'),
-    exact: true
-  },
-  {
-    path: '/hachi-doc/__docusaurus/debug/config/',
-    component: ComponentCreator('/hachi-doc/__docusaurus/debug/config/','b2d'),
-    exact: true
-  },
-  {
-    path: '/hachi-doc/__docusaurus/debug/content/',
-    component: ComponentCreator('/hachi-doc/__docusaurus/debug/content/','e74'),
-    exact: true
-  },
-  {
-    path: '/hachi-doc/__docusaurus/debug/globalData/',
-    component: ComponentCreator('/hachi-doc/__docusaurus/debug/globalData/','6b1'),
-    exact: true
-  },
-  {
-    path: '/hachi-doc/__docusaurus/debug/metadata/',
-    component: ComponentCreator('/hachi-doc/__docusaurus/debug/metadata/','bd7'),
-    exact: true
-  },
-  {
-    path: '/hachi-doc/__docusaurus/debug/registry/',
-    component: ComponentCreator('/hachi-doc/__docusaurus/debug/registry/','aca'),
-    exact: true
-  },
-  {
-    path: '/hachi-doc/__docusaurus/debug/routes/',
-    component: ComponentCreator('/hachi-doc/__docusaurus/debug/routes/','73d'),
-    exact: true
-  },
-  {
     path: '/hachi-doc/helloReact/',
     component: ComponentCreator('/hachi-doc/helloReact/','b51'),
     exact: true
@@ -55,7 +20,7 @@ export default [
   },
   {
     path: '/hachi-doc/',
-    component: ComponentCreator('/hachi-doc/','de0'),
+    component: ComponentCreator('/hachi-doc/','4c7'),
     routes: [
       {
         path: '/hachi-doc/',
@@ -70,14 +35,56 @@ export default [
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/hachi-doc/faq/',
-        component: ComponentCreator('/hachi-doc/faq/','93e'),
+        path: '/hachi-doc/events/',
+        component: ComponentCreator('/hachi-doc/events/','f9d'),
         exact: true,
         sidebar: "tutorialSidebar"
       },
       {
-        path: '/hachi-doc/selfTest/',
-        component: ComponentCreator('/hachi-doc/selfTest/','d86'),
+        path: '/hachi-doc/hc-integration/bv/',
+        component: ComponentCreator('/hachi-doc/hc-integration/bv/','454'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/hachi-doc/hc-integration/iv/',
+        component: ComponentCreator('/hachi-doc/hc-integration/iv/','74f'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/hachi-doc/hc-integration/nv/',
+        component: ComponentCreator('/hachi-doc/hc-integration/nv/','36b'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/hachi-doc/hc-integration/rv/',
+        component: ComponentCreator('/hachi-doc/hc-integration/rv/','ae6'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/hachi-doc/IAP/',
+        component: ComponentCreator('/hachi-doc/IAP/','802'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/hachi-doc/login/',
+        component: ComponentCreator('/hachi-doc/login/','92c'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/hachi-doc/other/',
+        component: ComponentCreator('/hachi-doc/other/','f55'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/hachi-doc/remoteConfig/',
+        component: ComponentCreator('/hachi-doc/remoteConfig/','477'),
         exact: true,
         sidebar: "tutorialSidebar"
       }

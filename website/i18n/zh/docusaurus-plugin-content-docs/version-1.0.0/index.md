@@ -2,13 +2,34 @@
 sidebar_position: 1
 ---
 
-# Touka Robux简介
+# HaChi SDK 简介
 
-将Robux集成到休闲游戏中可以为游戏开发者带来很多好处，比如：
-1. 获得收入：Robux是一种虚拟货币，游戏玩家可以使用Robux来购买游戏内的虚拟物品、工具和其他游戏相关的项目。因此游戏玩家通过多次观看广告获取Robux,游戏开发者可以从中获得更多收入。
+Hachi SDK简称 HC SDK，专为中重度游戏服务。请勿将其用于其他类型项目。
 
-2. 吸引玩家：许多玩家会在游戏中使用Robux来购买虚拟物品和工具，使他们的游戏体验更加丰富和有趣。因此，将Robux集成到休闲游戏中可以吸引更多的玩家，提高游戏的流行度和用户参与度。
+本SDK已经聚合以下三方SDK：
 
-3. 促进游戏内消费：通过提供虚拟物品、工具和其他项目的购买选项，可以增加游戏内消费的机会，即玩家使用Robux购买游戏相关的东西。如果游戏开发者能够设计有用、有趣和有吸引力的虚拟物品和工具，并将其与Robux捆绑在一起，可以加速用户消费的速度，提高收入。
+统计
+* ThinkingData
+* Adjust
+* Firebase
 
-总的来说，将Robux集成到休闲游戏中可以使游戏更有吸引力和可玩性，同时也可以增加游戏开发者的收入和利润。
+广告
+* AppLovin
+* Chartboost
+* DT Exchange
+* Google Ad Manager
+* Admob（Google bidding and Google AdMob）
+* InMobi
+* IronSource
+* Liftoff Monetize
+* Meta Audience Network（Facebook）
+* Mintegral
+* Pangle
+* Unity Ads
+* Yandex
+
+**注意事项 **
+
+检查Unity工程是否自行集成过以上SDK，如有集成请务必移除。<br/>
+检查Unity工程是否包含广告SDK，如有集成请务必移除，以免与HaChi SDK广告功能产生冲突影响变现。<br/>
+建议清理不必要的三方SDK，尽量以纯净的游戏工程开始您的接入。

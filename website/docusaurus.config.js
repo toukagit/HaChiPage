@@ -67,12 +67,6 @@ width: 32,//Logo宽
 height: 32,//Logo高
 },
 items: [
-// {
-// type: 'doc',//类型  doc是文档
-// docId: 'intro',//导航菜单链接文档ID 可以不用
-// position: 'left',//导航菜单位置
-// label: 'Tutorial',//导航菜单名字
-// }, 
 {
   type: 'doc',
   docId: 'index',

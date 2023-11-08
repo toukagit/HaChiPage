@@ -1,0 +1,24 @@
+{
+  "unversionedId": "selfTest",
+  "id": "version-1.0.0/selfTest",
+  "title": "自测文档",
+  "description": "",
+  "source": "@site/versioned_docs/version-1.0.0/selfTest.md",
+  "sourceDirName": ".",
+  "slug": "/selfTest",
+  "permalink": "/hachi-doc/selfTest",
+  "tags": [],
+  "version": "1.0.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "自测文档",
+    "sidebar_label": "自测文档",
+    "description": "",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "自定义事件",
+    "permalink": "/hachi-doc/events"
+  }
+}

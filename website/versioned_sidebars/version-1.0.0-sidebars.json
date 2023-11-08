@@ -2,7 +2,23 @@
   "tutorialSidebar": [
     "index",
     "download",
-    "faq",
-    "selfTest"
+    {
+      "type": "category",
+      "label": "广告形式",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+          "hc-integration/iv",
+          "hc-integration/rv",
+          "hc-integration/bv",
+          "hc-integration/nv"
+      ]
+    },
+    "events",
+    "remoteConfig",
+    "IAP",
+    "login",
+    "other"
+    
   ]
 }

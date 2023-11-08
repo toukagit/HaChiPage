@@ -10,52 +10,144 @@
     "tutorialSidebar": [
       {
         "type": "link",
-        "label": "Touka Robux简介",
+        "label": "HaChi SDK 简介",
         "href": "/hachi-doc/",
         "docId": "index"
       },
       {
         "type": "link",
-        "label": "SDK下载",
+        "label": "SDK集成",
         "href": "/hachi-doc/download",
         "docId": "download"
       },
       {
-        "type": "link",
-        "label": "说明文档",
-        "href": "/hachi-doc/faq",
-        "docId": "faq"
+        "type": "category",
+        "label": "广告形式",
+        "collapsible": true,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "插屏广告",
+            "href": "/hachi-doc/hc-integration/iv",
+            "docId": "hc-integration/iv"
+          },
+          {
+            "type": "link",
+            "label": "激励视频广告",
+            "href": "/hachi-doc/hc-integration/rv",
+            "docId": "hc-integration/rv"
+          },
+          {
+            "type": "link",
+            "label": "Banner广告",
+            "href": "/hachi-doc/hc-integration/bv",
+            "docId": "hc-integration/bv"
+          },
+          {
+            "type": "link",
+            "label": "Native广告",
+            "href": "/hachi-doc/hc-integration/nv",
+            "docId": "hc-integration/nv"
+          }
+        ]
       },
       {
         "type": "link",
-        "label": "自测文档",
-        "href": "/hachi-doc/selfTest",
-        "docId": "selfTest"
+        "label": "自定义事件",
+        "href": "/hachi-doc/events",
+        "docId": "events"
+      },
+      {
+        "type": "link",
+        "label": "在线参数",
+        "href": "/hachi-doc/remoteConfig",
+        "docId": "remoteConfig"
+      },
+      {
+        "type": "link",
+        "label": "内购",
+        "href": "/hachi-doc/IAP",
+        "docId": "IAP"
+      },
+      {
+        "type": "link",
+        "label": "账号系统",
+        "href": "/hachi-doc/login",
+        "docId": "login"
+      },
+      {
+        "type": "link",
+        "label": "其他功能",
+        "href": "/hachi-doc/other",
+        "docId": "other"
       }
     ]
   },
   "docs": {
     "download": {
       "id": "download",
-      "title": "SDK下载",
+      "title": "SDK集成",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
-    "faq": {
-      "id": "faq",
-      "title": "说明文档",
+    "events": {
+      "id": "events",
+      "title": "自定义事件",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "hc-integration/bv": {
+      "id": "hc-integration/bv",
+      "title": "Banner广告",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "hc-integration/iv": {
+      "id": "hc-integration/iv",
+      "title": "插屏广告",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "hc-integration/nv": {
+      "id": "hc-integration/nv",
+      "title": "Native广告",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "hc-integration/rv": {
+      "id": "hc-integration/rv",
+      "title": "激励视频广告",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "IAP": {
+      "id": "IAP",
+      "title": "内购",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
     "index": {
       "id": "index",
-      "title": "Touka Robux简介",
-      "description": "将Robux集成到休闲游戏中可以为游戏开发者带来很多好处，比如：",
+      "title": "HaChi SDK 简介",
+      "description": "Hachi SDK简称 HC SDK，专为中重度游戏服务。请勿将其用于其他类型项目。",
       "sidebar": "tutorialSidebar"
     },
-    "selfTest": {
-      "id": "selfTest",
-      "title": "自测文档",
+    "login": {
+      "id": "login",
+      "title": "账号系统",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "other": {
+      "id": "other",
+      "title": "其他功能",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "remoteConfig": {
+      "id": "remoteConfig",
+      "title": "在线参数",
       "description": "",
       "sidebar": "tutorialSidebar"
     }

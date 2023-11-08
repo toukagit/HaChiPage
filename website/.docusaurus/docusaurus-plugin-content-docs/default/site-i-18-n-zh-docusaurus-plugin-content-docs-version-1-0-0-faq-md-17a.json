@@ -18,8 +18,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "SDK下载",
-    "permalink": "/hachi-doc/download"
+    "title": "Native广告",
+    "permalink": "/hachi-doc/hc-integration/nv"
   },
   "next": {
     "title": "自测文档",

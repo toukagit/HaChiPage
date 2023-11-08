@@ -1,0 +1,28 @@
+{
+  "unversionedId": "events",
+  "id": "version-1.0.0/events",
+  "title": "说明文档",
+  "description": "",
+  "source": "@site/versioned_docs/version-1.0.0/events.md",
+  "sourceDirName": ".",
+  "slug": "/events",
+  "permalink": "/hachi-doc/events",
+  "tags": [],
+  "version": "1.0.0",
+  "sidebarPosition": 96,
+  "frontMatter": {
+    "title": "说明文档",
+    "sidebar_label": "说明文档",
+    "description": "",
+    "sidebar_position": 96
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Native广告",
+    "permalink": "/hachi-doc/hc-integration/nv"
+  },
+  "next": {
+    "title": "自测文档",
+    "permalink": "/hachi-doc/selfTest"
+  }
+}

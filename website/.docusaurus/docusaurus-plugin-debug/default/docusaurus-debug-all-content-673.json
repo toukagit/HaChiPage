@@ -19,7 +19,7 @@
             {
               "unversionedId": "download",
               "id": "version-1.0.0/download",
-              "title": "SDK下载",
+              "title": "SDK集成",
               "description": "",
               "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/download.md",
               "sourceDirName": ".",
@@ -29,54 +29,194 @@
               "version": "1.0.0",
               "sidebarPosition": 2,
               "frontMatter": {
-                "title": "SDK下载",
-                "sidebar_label": "SDK下载",
+                "title": "SDK集成",
+                "sidebar_label": "SDK集成",
                 "description": "",
                 "sidebar_position": 2
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Touka Robux简介",
+                "title": "HaChi SDK 简介",
                 "permalink": "/hachi-doc/"
               },
               "next": {
-                "title": "说明文档",
-                "permalink": "/hachi-doc/faq"
+                "title": "插屏广告",
+                "permalink": "/hachi-doc/hc-integration/iv"
               }
             },
             {
-              "unversionedId": "faq",
-              "id": "version-1.0.0/faq",
-              "title": "说明文档",
+              "unversionedId": "events",
+              "id": "version-1.0.0/events",
+              "title": "自定义事件",
               "description": "",
-              "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/faq.md",
+              "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/events.md",
               "sourceDirName": ".",
-              "slug": "/faq",
-              "permalink": "/hachi-doc/faq",
+              "slug": "/events",
+              "permalink": "/hachi-doc/events",
               "tags": [],
               "version": "1.0.0",
               "sidebarPosition": 96,
               "frontMatter": {
-                "title": "说明文档",
-                "sidebar_label": "说明文档",
+                "title": "自定义事件",
+                "sidebar_label": "自定义事件",
                 "description": "",
                 "sidebar_position": 96
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "SDK下载",
+                "title": "Native广告",
+                "permalink": "/hachi-doc/hc-integration/nv"
+              },
+              "next": {
+                "title": "在线参数",
+                "permalink": "/hachi-doc/remoteConfig"
+              }
+            },
+            {
+              "unversionedId": "hc-integration/bv",
+              "id": "version-1.0.0/hc-integration/bv",
+              "title": "Banner广告",
+              "description": "",
+              "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/hc-integration/bv.md",
+              "sourceDirName": "hc-integration",
+              "slug": "/hc-integration/bv",
+              "permalink": "/hachi-doc/hc-integration/bv",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Banner广告",
+                "sidebar_label": "Banner广告",
+                "description": "",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "激励视频广告",
+                "permalink": "/hachi-doc/hc-integration/rv"
+              },
+              "next": {
+                "title": "Native广告",
+                "permalink": "/hachi-doc/hc-integration/nv"
+              }
+            },
+            {
+              "unversionedId": "hc-integration/iv",
+              "id": "version-1.0.0/hc-integration/iv",
+              "title": "插屏广告",
+              "description": "",
+              "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/hc-integration/iv.md",
+              "sourceDirName": "hc-integration",
+              "slug": "/hc-integration/iv",
+              "permalink": "/hachi-doc/hc-integration/iv",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "插屏广告",
+                "sidebar_label": "插屏广告",
+                "description": "",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "SDK集成",
                 "permalink": "/hachi-doc/download"
               },
               "next": {
-                "title": "自测文档",
-                "permalink": "/hachi-doc/selfTest"
+                "title": "激励视频广告",
+                "permalink": "/hachi-doc/hc-integration/rv"
+              }
+            },
+            {
+              "unversionedId": "hc-integration/nv",
+              "id": "version-1.0.0/hc-integration/nv",
+              "title": "Native广告",
+              "description": "",
+              "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/hc-integration/nv.md",
+              "sourceDirName": "hc-integration",
+              "slug": "/hc-integration/nv",
+              "permalink": "/hachi-doc/hc-integration/nv",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Native广告",
+                "sidebar_label": "Native广告",
+                "description": "",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Banner广告",
+                "permalink": "/hachi-doc/hc-integration/bv"
+              },
+              "next": {
+                "title": "自定义事件",
+                "permalink": "/hachi-doc/events"
+              }
+            },
+            {
+              "unversionedId": "hc-integration/rv",
+              "id": "version-1.0.0/hc-integration/rv",
+              "title": "激励视频广告",
+              "description": "",
+              "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/hc-integration/rv.md",
+              "sourceDirName": "hc-integration",
+              "slug": "/hc-integration/rv",
+              "permalink": "/hachi-doc/hc-integration/rv",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "激励视频广告",
+                "sidebar_label": "激励视频广告",
+                "description": "",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "插屏广告",
+                "permalink": "/hachi-doc/hc-integration/iv"
+              },
+              "next": {
+                "title": "Banner广告",
+                "permalink": "/hachi-doc/hc-integration/bv"
+              }
+            },
+            {
+              "unversionedId": "IAP",
+              "id": "version-1.0.0/IAP",
+              "title": "内购",
+              "description": "",
+              "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/IAP.md",
+              "sourceDirName": ".",
+              "slug": "/IAP",
+              "permalink": "/hachi-doc/IAP",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "内购",
+                "sidebar_label": "内购",
+                "description": "",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "在线参数",
+                "permalink": "/hachi-doc/remoteConfig"
+              },
+              "next": {
+                "title": "账号系统",
+                "permalink": "/hachi-doc/login"
               }
             },
             {
               "unversionedId": "index",
               "id": "version-1.0.0/index",
-              "title": "Touka Robux简介",
-              "description": "将Robux集成到休闲游戏中可以为游戏开发者带来很多好处，比如：",
+              "title": "HaChi SDK 简介",
+              "description": "Hachi SDK简称 HC SDK，专为中重度游戏服务。请勿将其用于其他类型项目。",
               "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/index.md",
               "sourceDirName": ".",
               "slug": "/",
@@ -89,32 +229,88 @@
               },
               "sidebar": "tutorialSidebar",
               "next": {
-                "title": "SDK下载",
+                "title": "SDK集成",
                 "permalink": "/hachi-doc/download"
               }
             },
             {
-              "unversionedId": "selfTest",
-              "id": "version-1.0.0/selfTest",
-              "title": "自测文档",
+              "unversionedId": "login",
+              "id": "version-1.0.0/login",
+              "title": "账号系统",
               "description": "",
-              "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/selfTest.md",
+              "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/login.md",
               "sourceDirName": ".",
-              "slug": "/selfTest",
-              "permalink": "/hachi-doc/selfTest",
+              "slug": "/login",
+              "permalink": "/hachi-doc/login",
               "tags": [],
               "version": "1.0.0",
               "sidebarPosition": 3,
               "frontMatter": {
-                "title": "自测文档",
-                "sidebar_label": "自测文档",
+                "title": "账号系统",
+                "sidebar_label": "账号系统",
                 "description": "",
                 "sidebar_position": 3
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "说明文档",
-                "permalink": "/hachi-doc/faq"
+                "title": "内购",
+                "permalink": "/hachi-doc/IAP"
+              },
+              "next": {
+                "title": "其他功能",
+                "permalink": "/hachi-doc/other"
+              }
+            },
+            {
+              "unversionedId": "other",
+              "id": "version-1.0.0/other",
+              "title": "其他功能",
+              "description": "",
+              "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/other.md",
+              "sourceDirName": ".",
+              "slug": "/other",
+              "permalink": "/hachi-doc/other",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "其他功能",
+                "sidebar_label": "其他功能",
+                "description": "",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "账号系统",
+                "permalink": "/hachi-doc/login"
+              }
+            },
+            {
+              "unversionedId": "remoteConfig",
+              "id": "version-1.0.0/remoteConfig",
+              "title": "在线参数",
+              "description": "",
+              "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/remoteConfig.md",
+              "sourceDirName": ".",
+              "slug": "/remoteConfig",
+              "permalink": "/hachi-doc/remoteConfig",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "在线参数",
+                "sidebar_label": "在线参数",
+                "description": "",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "自定义事件",
+                "permalink": "/hachi-doc/events"
+              },
+              "next": {
+                "title": "内购",
+                "permalink": "/hachi-doc/IAP"
               }
             }
           ],
@@ -129,12 +325,48 @@
                 "id": "download"
               },
               {
-                "type": "doc",
-                "id": "faq"
+                "type": "category",
+                "label": "广告形式",
+                "collapsible": true,
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "hc-integration/iv"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "hc-integration/rv"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "hc-integration/bv"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "hc-integration/nv"
+                  }
+                ]
               },
               {
                 "type": "doc",
-                "id": "selfTest"
+                "id": "events"
+              },
+              {
+                "type": "doc",
+                "id": "remoteConfig"
+              },
+              {
+                "type": "doc",
+                "id": "IAP"
+              },
+              {
+                "type": "doc",
+                "id": "login"
+              },
+              {
+                "type": "doc",
+                "id": "other"
               }
             ]
           },

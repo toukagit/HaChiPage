@@ -1,0 +1,28 @@
+{
+  "unversionedId": "hc-integration/ads",
+  "id": "version-1.0.0/hc-integration/ads",
+  "title": "自测文档",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/hc-integration/ads.md",
+  "sourceDirName": "hc-integration",
+  "slug": "/hc-integration/ads",
+  "permalink": "/hachi-doc/hc-integration/ads",
+  "tags": [],
+  "version": "1.0.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "自测文档",
+    "sidebar_label": "自测文档",
+    "description": "",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK集成",
+    "permalink": "/hachi-doc/download"
+  },
+  "next": {
+    "title": "说明文档",
+    "permalink": "/hachi-doc/faq"
+  }
+}
