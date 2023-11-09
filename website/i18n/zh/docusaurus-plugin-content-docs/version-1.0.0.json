@@ -1,0 +1,15 @@
+{
+  "version.label": {
+    "message": "1.0.0",
+    "description": "The label for version 1.0.0"
+}
+  ,
+  "sidebar.tutorialSidebar.category.Ad": {
+    "message": "广告形式",
+    "description": "广告形式"
+  },
+  "sidebar.tutorialSidebar.category.Build Package": {
+    "message": "构建版本",
+    "description": "构建版本"
+  }
+}

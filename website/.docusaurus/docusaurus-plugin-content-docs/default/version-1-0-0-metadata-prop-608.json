@@ -22,7 +22,7 @@
       },
       {
         "type": "category",
-        "label": "Ads",
+        "label": "Ad Formats",
         "collapsible": true,
         "collapsed": false,
         "items": [
@@ -84,7 +84,7 @@
       },
       {
         "type": "category",
-        "label": "Build",
+        "label": "构建版本",
         "items": [
           {
             "type": "link",

@@ -4,7 +4,7 @@
     "download",
     {
       "type": "category",
-      "label": "Ads",
+      "label": "Ad Formats",
       "collapsible": true,
       "collapsed": false,
       "items": [
@@ -21,7 +21,7 @@
     "other",
     {
       "type": "category",
-      "label": "Build",
+      "label": "Build Package",
       "items": [
         "sdk-projectsettings/sdk-projectsettings-ios"
       ]

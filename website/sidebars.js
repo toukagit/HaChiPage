@@ -23,7 +23,7 @@ const sidebars = {
   'download',
   {
       type: 'category',
-      label: 'Ad Format',
+      label: 'Ad',
       collapsible: true,
       collapsed: false,
       items: [
