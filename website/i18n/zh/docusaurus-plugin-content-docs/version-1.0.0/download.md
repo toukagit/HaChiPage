@@ -98,7 +98,7 @@ sidebar_position: 2
 
 #### 2、Unity版本低于2022.3需要使用自定义gradle配置。
 "工具栏>Settings>Preferences > External Tools", 取消 "Gradle Installed with Unity (recommended)" 同时设置自定义gradle路径。<br/>
-自定义gradle版本要求大于6.7.1，推荐下载https://downloads.gradle.org/distributions/gradle-6.7.1-all.zip并解压。
+自定义gradle版本要求大于6.7.1，推荐下载 https://downloads.gradle.org/distributions/gradle-6.7.1-all.zip 并解压。
 
 ![](/img/HCSDK/image05.png)  
 

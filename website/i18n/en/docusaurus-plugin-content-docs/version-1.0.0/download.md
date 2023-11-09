@@ -97,7 +97,7 @@ Configure admobID and ApplovinKey in the MAX panel:<br/>
 
 #### 2、Unity versions later than 2022.3 require a custom gradle configuration.
 "toolbar>Settings>Preferences > External Tools", Cancel "Gradle Installed with Unity (recommended)" Also set a custom gradle path.<br/>
-Custom than 6.7.1 gradle version requirements, recommend download https://downloads.gradle.org/distributions/gradle-6.7.1-all.zip and decompression.
+Custom than 6.7.1 gradle version requirements, recommend download  https://downloads.gradle.org/distributions/gradle-6.7.1-all.zip  and decompression.
 
 ![](/img/HCSDK/image05.png)  
 
