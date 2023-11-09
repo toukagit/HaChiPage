@@ -1,15 +1,16 @@
 ---
-title: "Native广告"
-sidebar_label: "Native广告"
+title: "Native"
+sidebar_label: "Native"
 description: ""
 sidebar_position: 3
 ---
 
-## 一、加载Native广告
+## 一、Loading a Native Ad
 
-调用SDK初始化后，SDK内部自动加载Native广告。
 
-## 二、展示Native广告
+After calling the SDK initialization, Native ads are automatically loaded inside the SDK.
+
+## 二、Showing a Native Ad
 ```c
 public void Button_ShowNative()
 {
@@ -22,22 +23,22 @@ API:
 void ShowNative(RectTransform pRect, Camera pCam = null, string pAdPos = "");
 ```
 
-** RectTransform **：需要展示原生广告Image的RectTransform。<br/>
-** pCam **：如果UI使用相机模式，必须使用正交相机。<br/>
-** pAdPos **：展示原生广告的位置打点。
+** RectTransform **：Need to display the RectTransform of the native AD Image.<br/>
+** pCam **：If the UI uses camera mode, you must use an orthogonal camera.<br/>
+** pAdPos **：Display native ads in the location of the dot.
 
-Native位置讲解<br/>
-<font color="#ff0000">请将nativeImage的透明度设置为0。
-这里设置为白色只是为了展示native广告的大小。<br/></font>
-需要展示native的位置：
+Native location explanation<br/>
+<font color="#ff0000">Set the transparency of nativeImage to 0.
+This is set to white just to show the size of the native AD.<br/></font>
+Need to show native location:
 
 ![](/img/HCSDK/image03.png)
 
-## 三、移除Native广告
+## 三、Removing a Native Ad
 ```c
 public void Button_RemoveNative()
 {
     HCSDKManager.Instance.RemoveNative();
 }
 ```
-<font color="#ff0000">有调用展示Native广告接口时，一定要调用移除Native广告接口，否则会出现遮挡游戏问题。<br/></font>
+<font color="#ff0000">When there is a call to display Native advertising interface, be sure to call to remove Native advertising interface, otherwise there will be a blocking game problem.<br/></font>

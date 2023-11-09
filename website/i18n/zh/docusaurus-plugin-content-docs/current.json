@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Basics": {
+    "message": "Tutorial - Basics",
+    "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Extras": {
+    "message": "Tutorial - Extras",
+    "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Integration Guides": {
+    "message": "集成指引",
+    "description": "集成指引"
+  },
+  "sidebar.tutorialSidebar.category.Basic Integration": {
+    "message": "基础集成",
+    "description": "基础集成"
+  },
+  "sidebar.tutorialSidebar.category.Integration Verification": {
+    "message": "接入验证",
+    "description": "接入验证"
+  },
+  "sidebar.tutorialSidebar.category.Build Package": {
+    "message": "构建版本",
+    "description": "构建版本"
+  }
+}

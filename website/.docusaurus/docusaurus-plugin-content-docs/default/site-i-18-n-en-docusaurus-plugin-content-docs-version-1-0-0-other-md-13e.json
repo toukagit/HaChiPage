@@ -20,5 +20,9 @@
   "previous": {
     "title": "Account system",
     "permalink": "/hachi-doc/login"
+  },
+  "next": {
+    "title": "For iOS",
+    "permalink": "/hachi-doc/sdk-projectsettings/sdk-projectsettings-ios"
   }
 }

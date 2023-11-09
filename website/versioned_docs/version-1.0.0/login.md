@@ -1,77 +1,78 @@
 ---
-title: "账号系统"
-sidebar_label: "账号系统"
+title: "Account system"
+sidebar_label: "Account system"
 description: ""
 sidebar_position: 3
 ---
 
-# 账号系统
+# Account system
 :::tip 
 
-在开始账号系统集成之前，请确认账号系统出现时机，并且选择所要支持的登录方式，我们提供游客登录、邮箱登录及第三方登录方式。        
-除了账号登录以外，我们还支持账号删除（必选）、登录方式查询（必选）、账号登出、账号绑定、强制绑定、自动登录、返回当前账号类型、返回当前是否可以自动登录。        
-HaChi SDK只提供登录接口，登录界面开发者可根据游戏UI风格和样式自行设计制作。
+Before starting the integration of the account system, please confirm the timing of the account system and select the login method to be supported. We provide visitor login, email login and third-party login methods.
+
+In addition to account login, we also support account deletion (mandatory), login method query (mandatory), account logout, account binding, mandatory binding, automatic login, return to the current account type, return to the current can automatically log in.    
+
+The HaChi SDK only provides a login interface, and the login interface developers can design and make their own according to the game UI style and style.
 
 :::
 
-### 1、账号系统出现时机
-进入游戏后直接展示登录界面，玩家必须填写/勾选信息完成登录则可进入游戏。（仅首次进入展示游戏登录界面，后续使用已选方式直接登录即可。）
-
+### 1、When the account system appears
+After entering the game, the login interface is displayed directly. Players must fill in/check the information to complete the login and enter the game. (Only enter the display game login screen for the first time, and then use the selected method to log in directly.)
 ![](/img/HCSDK/login01.png)
 
-玩家可游客静默登录立即进入游戏体验，在合适游戏位置进行账号绑定。  （非游客账号进入游戏，不显示绑定按钮。）
+Players can enter the game experience immediately by silent login, and bind the account at the appropriate game location. (Non-tourist accounts enter the game, do not show the binding button.)
 
 ![](/img/HCSDK/login02.png)
 
-### 2、说明
-1. 单独调用游客登录、Google登录、Facebook登录、Apple登录会分别返回不同的UserID。（涉及账号绑定时的情况特殊。）
-2. 注意登录是调用登录接口，登录成功后游客账号绑定到三方账号是调用绑定账号的接口，只有调用账号绑定接口时才会把游客账号和三方账号在SDK内部做一个绑定操作； 
-3. 非游客账号类型登录成功后，不提供绑定功能（即不显示绑定按钮）。 游客绑定成功后返回的登录类型是对应绑定的三方账号类型，返回的UserID和游客登录时返回的UserID一致。
+### 2、Instructions
+1. Separate calls to visitor login, Google login, Facebook login, and Apple login return different userids. (The case of account binding is special.)
+2. Note that login is to call the login interface, and binding the tourist account to the third-party account after successful login is the interface to call the binding account. Only when the account binding interface is called, the tourist account and the third-party account will be bound in the SDK.
+3. After the login of non-tourist account type is successful, the binding function is not provided (that is, the binding button is not displayed). The login type returned after the tourist is successfully bound is the type of the bound three-party account, and the returned UserID is the same as the UserID returned when the tourist logs in.
 
-### 3、账号登录
-登录类型
+### 3、Account login
+Login type
 ```c
 public enum HCLoginType
 {
-    // 游客登录
+    // GUESTER
     LOGIN_BY_GUESTER = 0,
 
-    // 邮箱账号登录（暂不支持）
+    // Email account login (not supported)
     LOGIN_BY_EMAIL = 1,
 
-    // Google登录
+    // Google
     LOGIN_BY_GOOGLE = 2,
 
-    // Facebook登录
+    // Facebook
     LOGIN_BY_FACEBOOK = 3,
 
-    // Apple登录
+    // Apple
     LOGIN_BY_Apple = 4,
 
-    // Auto登录
+    // Auto
     LOGIN_BY_AUTO = 10,
 }
 ```
 
-登录状态
+Login status
 ```c
  public enum HCLoginStatus
 {
-    // 登录成功
+    // Login successful
     LOGIN_STATUS_SUCC = 0,
 
-    // 登录被用户取消
+    // The login was cancelled by the user
     LOGIN_STATUS_CANCEL = 1,
 
-    // 自动登陆没有缓存数据
+    // Automatic login has no cached data
     LOGIN_STATUS_NO_CACHE = 2,
 
-    // 登录失败
+    // Login failure
     LOGIN_STATUS_FAILED = -1
 }
 ```
 
-登录
+Login
 ```c
 public void ButtonEvent_GuestLogin()
 {
@@ -82,17 +83,17 @@ void Start()
 {
     _loginAction = (LoginInfo) =>
     {
-        Debug.Log($"登陆回调 {LoginInfo.loginStatus} type:{LoginInfo.userInfo.loginType} msg:{LoginInfo.loginMsg} userId:{LoginInfo.userInfo.userID} token:{LoginInfo.userInfo.token}");
+        Debug.Log($"Landing callback {LoginInfo.loginStatus} type:{LoginInfo.userInfo.loginType} msg:{LoginInfo.loginMsg} userId:{LoginInfo.userInfo.userID} token:{LoginInfo.userInfo.token}");
         if (LoginInfo.loginStatus == HCLoginStatus.LOGIN_STATUS_SUCC)
         {
-            // 登陆成功
+            // Successful landing
             _userId = LoginInfo.userInfo.userID;
             _userType = LoginInfo.userInfo.loginType;
             _token = LoginInfo.userInfo.token;
         }
         else
         {
-            // 登陆失败
+            // Login failure
             _userId = "";
             _userType = HCLoginType.LOGIN_BY_GUESTER;
             _token = "";
@@ -100,46 +101,51 @@ void Start()
 };
 ```
 
-### 4、账号登出
-账号登出接口可在游戏切换账号时进行调用，做登出操作。SDK完成账号退出会给游戏回调。 无需求场景可不进行调用。
+### 4、Account logout
+The account logout interface can be invoked when the game switches the account to do the logout operation. The SDK will call back the game after completing the account exit. No requirement scenario can not be called.
+
 ```c
 HCSDKManager.Instance.Logout();
 ```
 
-### 5、登录方式查询接口
+### 5、Login Mode Query interface
 ```c
 List<HCLoginType> list = HCSDKManager.Instance.AvailableLoginChannelList();
 ```
 
-### 6、账号删除
-谷歌为了增强安卓生态的透明度，扩大用户对其数据的控制权。要求支持账号登录的游戏，必须要提供入口可使用户进行账号删除操作。必须结合界面在合适位置调用。 
+### 6、Account deletion
+In order to enhance the transparency of the Android ecosystem, Google has expanded the control of users over their data. Games that require support for account login must provide an entry for users to delete their accounts. Must be called in place with the interface.
+
 ```c
 HCSDKManager.Instance.DeleteAccount();
 ```
 
-### 7、账号绑定
-:::info 说明
-1. 账号绑定功能是为游戏内为游客登录时，把游客账号绑定到三方账号服务的。 
-2. 只能是游客账号绑定到三方账号，且该游客账号绑定一次后不能再次绑定，如再调用绑定接口，会返回已绑定账号状态码； 
-3. 游戏内可处理为绑定后不再显示绑定按钮。根据回调中的loginType为游客登录类型时才显示绑定按钮。 
-4. 游客账号绑定到三方账号后返回的UserID仍为游客账号的UserID，只是在SDK内部将二者做了绑定操作。 
-5. 只要游客账号没绑定过社交账号，就有绑定到社交账号的权利；如果社交账号已经被其他游客账号绑定过了，就有强制绑定的权利。这里会涉及到强制绑定的接口。 
-6. 当用户使用已绑定过的社交账号进行绑定操作时，游戏可自行弹出界面列出2个账号及对应游戏进度，供玩家选择该社交账号与哪个账号进行绑定。玩家选择后，调用强制绑定接口即可。
-7. <font color="#ff0000">绑定成功后游戏需要判断绑定成后后返回的UserID和当前登录的UserID是否一致，如果不一致，需要切换进度到绑定成功返回UserID的对应游戏进度（切换账号）。</font>
+### 7、Account binding
+:::info Instructions
+1. The account binding function is to bind the tourist account to the tripartite account service when the visitor logs in the game.
+2. Only the tourist account can be bound to the third party account, and the tourist account cannot be bound again after being bound once. If the binding interface is called again, the status code of the bound account will be returned;
+3. The binding button can no longer be displayed after binding. The bind button is displayed when the visitor login type is based on loginType in the callback.
+4. The UserID returned after the tourist account is bound to the third party account is still the UserID of the tourist account, but the two are bound in the SDK.
+5. As long as the tourist account has not been bound to a social account, it has the right to be bound to a social account; If the social media account has been linked to another tourist account, it has the right to force binding. This involves forcibly binding interfaces.
+6. When the user uses the bound social account to bind, the game can pop up the interface to list two accounts and the corresponding game progress, so that the player can choose which social account to bind. After the player selects, the mandatory binding interface can be called.
+7. <font color="#ff0000"> After the binding is successful, the game needs to determine whether the UserID returned after the binding is consistent with the current login UserID. If not, the progress needs to be switched to the corresponding game progress of the UserID returned after the binding is successful (switching account). </font>
 
 :::
 
 ```c
-绑定类型
+Binding type
 public enum HCBindAccountStatus
     {
-        // 绑定失败
+        // Binding failure
         BIND_CODE_FAILED = -1,
-        // 绑定成功
+        
+        // Binding successful
         BIND_CODE_SUCC = 0,
-        // 取消绑定
+        
+        // unbind
         BIND_CODE_CANCEL = 1,
-        // 已经绑定账户，需要选择
+        
+        // An account has been bound and needs to be selected
         BIND_CODE_SELECT = 2,
     }
 ```
@@ -149,28 +155,28 @@ void Start()
 {   
     _bindAccountCallback = (BindInfo) =>
     {
-    Debug.Log($"绑定回调 {BindInfo.bindStatus} type:{BindInfo.userInfo.loginType} msg:{BindInfo.bindMsg} userId:{BindInfo.userInfo.userID} token:{BindInfo.userInfo.token} userIdList:{BindInfo.userIDs}");
+    Debug.Log($"Bound callback {BindInfo.bindStatus} type:{BindInfo.userInfo.loginType} msg:{BindInfo.bindMsg} userId:{BindInfo.userInfo.userID} token:{BindInfo.userInfo.token} userIdList:{BindInfo.userIDs}");
     if (BindInfo.bindStatus == HCBindAccountStatus.BIND_CODE_SELECT)
     {
-        HCDebugger.LogDebug("绑定回调 - 选择界面");
+        HCDebugger.LogDebug("Bind callback - Select screen");
         return;
     }
 
     if (BindInfo.bindStatus == HCBindAccountStatus.BIND_CODE_SUCC)
     {
-        HCDebugger.LogDebug("绑定回调 - 绑定成功");
+        HCDebugger.LogDebug("Bind callback - Bind successfully");
         if (!BindInfo.userInfo.userID.Equals(_userId))
         {
-            HCDebugger.LogDebug($"绑定回调 - 绑定成功 - 重新登陆 userId:{BindInfo.userInfo.userID} _userId:{_userId}");
+            HCDebugger.LogDebug($"Bind callback - Bind successfully - Log in again userId:{BindInfo.userInfo.userID} _userId:{_userId}");
                     
             return;
         }
 
-            HCToast.ShowToast("绑定成功");
+            HCToast.ShowToast("Binding successful");
             return;
     }
 
-    HCToast.ShowToast($"绑定失败 {BindInfo.bindMsg}");
+    HCToast.ShowToast($"Binding failure {BindInfo.bindMsg}");
     };
 }
 
@@ -181,35 +187,35 @@ public void ButtonEvent_BindAccount()
 }
 ```
 
-### 8、强制绑定
-当用户使用已绑定过的社交账号进行绑定操作时，游戏可自行弹出界面列出2个账号及对应游戏进度，供玩家选择该社交账号与哪个账号进行绑定。玩家选择后，调用强制绑定接口即可。
+### 8、Forced binding
+When the user uses the social account that has been bound to bind the operation, the game can pop up the interface to list the two accounts and the corresponding game progress, for the player to choose which social account to bind. After the player selects, the mandatory binding interface can be called.
 ```c
 void Start()
 {   
     _bindAccountCallback = (BindInfo) =>
     {
-    Debug.Log($"绑定回调 {BindInfo.bindStatus} type:{BindInfo.userInfo.loginType} msg:{BindInfo.bindMsg} userId:{BindInfo.userInfo.userID} token:{BindInfo.userInfo.token} userIdList:{BindInfo.userIDs}");
+    Debug.Log($"Bound callback {BindInfo.bindStatus} type:{BindInfo.userInfo.loginType} msg:{BindInfo.bindMsg} userId:{BindInfo.userInfo.userID} token:{BindInfo.userInfo.token} userIdList:{BindInfo.userIDs}");
     if (BindInfo.bindStatus == HCBindAccountStatus.BIND_CODE_SELECT)
     {
-        HCDebugger.LogDebug("绑定回调 - 选择界面");
+        HCDebugger.LogDebug("Bind callback - Select screen");
         return;
     }
 
     if (BindInfo.bindStatus == HCBindAccountStatus.BIND_CODE_SUCC)
     {
-        HCDebugger.LogDebug("绑定回调 - 绑定成功");
+        HCDebugger.LogDebug("Bind callback - Bind successfully");
         if (!BindInfo.userInfo.userID.Equals(_userId))
         {
-            HCDebugger.LogDebug($"绑定回调 - 绑定成功 - 重新登陆 userId:{BindInfo.userInfo.userID} _userId:{_userId}");
+            HCDebugger.LogDebug($"Bind callback - Bind successfully - Log in again userId:{BindInfo.userInfo.userID} _userId:{_userId}");
                     
             return;
         }
 
-            HCToast.ShowToast("绑定成功");
+            HCToast.ShowToast("Binding successful");
             return;
     }
 
-    HCToast.ShowToast($"绑定失败 {BindInfo.bindMsg}");
+    HCToast.ShowToast($"Binding failure {BindInfo.bindMsg}");
     };
 }
 
@@ -219,43 +225,43 @@ public void ButtonEvent_ForceBindAccount()
 }
 ```
 
-### 9、自动登录
-SDK根据上次登录的类型进行自动登录。 可以通过IsCanAutoLogin接口来判断自动登录接口是否可用。如果在不可使用自动登录接口的情况下调用自动登录接口，会返回登录失败
+### 9、Automatic login
+The SDK automatically logs in based on the type of the last login. You can use the IsCanAutoLogin interface to determine whether the automatic login interface is available. If the automatic login interface is invoked when it is not available, a login failure message is displayed.
 ```c
 HCSDKManager.Instance.AutoLogin();
 ```
 
-### 10、返回当前账号类型
-登录成功后获取当前账号的类型，游戏侧可以根据此接口返回结果来判断是否显示绑定相关的界面.
+### 10、Returns the current account type
+After successful login, obtain the type of the current account. The game side can determine whether to display the binding interface according to the result returned by this interface.
 ```c
 HCLoginType accountType = HCSDKManager.Instance.GetAccountType();
 ```
 
-### 11、返回当前是否可以自动登录
-游戏可以根据此接口返回的结果来判断是否可以直接调用`AutoLogin`接口进行自动静默登录. 如果不可以，需要显示登录界面，然后根据玩家选择登录类型调用`Login`接口。
+### 11、Returns whether automatic login is currently available
+Based on the result returned by this interface, the game can determine whether it can directly invoke the 'AutoLogin' interface for automatic silent login. If not, you need to display the Login interface, and then call the 'login' interface according to the login type selected by the player.
 ```c
 bool isCanAutoLogin = HCAccountManager.Instance.IsCanAutoLogin();
 ```
 
 ### 12、Q&A
-** 1、 一个Google账号可对应多个游戏账号吗？ **       
-不能。一个Google账号只能对应一个游戏账号。        
+** 1、 Can one Google account correspond to multiple game accounts? **       
+No. One Google account can only correspond to one game account.  
     
-** 2、先调用游客登录，再调用Google登录，此时游客账号和Google账号会发生绑定吗？    **    
-不会。先调用游客登录，再调用Google登录，会返回新的UserID作为新的账号进行游戏。只有调用绑定接口时，才会发生游客账号和Google账号的绑定，返回同一个UserID，即游客账号的UserID，使用同一个游戏进程。        
-但游客UserID和设备ID有关，此时如果设备ID变了，那前面的没进行绑定的游客账号可能就丢掉了。        
+** 2、First call the visitor login, and then call Google login, at this time the tourist account and Google account will be bound？    **    
+No. Calling visitor login first, and then calling Google login, will return a new UserID as a new account to play the game. Only when the binding interface is called, the binding of the visitor account and Google account will occur, returning the same UserID, that is, the UserID of the visitor account, using the same game process.
+However, the tourist UserID is related to the device ID, and if the device ID changes, the previous unbound tourist account may be lost.      
     
-** 3、先用游客登录，返回UserID1，有游戏进度后，选择Google账号绑定，我的UserID会变吗？**        
-不会变。绑定后UserID仍为UserID1，只是SDK内部做了一个绑定。相当于游客账号发生绑定行为后，返回的还是原来的游客账号ID。        
+** 3、Log in as a tourist first, return UserID1, after the game progress, select Google account binding, will my UserID change？**        
+It won't change. After binding, the UserID is still UserID1, but a binding is made inside the SDK. Equivalent to the binding behavior of the tourist account, the return is still the original tourist account ID.    
     
-** 4、进游戏选择Google登录，有游戏进度后，重新进入游戏选游客登录，有游戏进度后，点Google账号绑定。此时会发生什么？**        
-绑定已有进度的Google账号时，SDK会返回给游戏2个UserID，即当前游客账号UserID和已有进度的Google账号对应的UserID，游戏可自行制作界面，给玩家选择Google账号要绑定哪个游戏进度对应的UserID。然后通过强制绑定接口把玩家选定的UserID传给SDK进行和该Google账号的强制绑定。   
+** 4、Enter the game select Google login, after the game progress, re-enter the game select visitors login, after the game progress, click Google account binding. What happens at this point？**        
+When the Google account with existing progress is bound, the SDK will return two userids to the game, that is, the UserID corresponding to the current tourist account and the Google account with existing progress. The game can make its own interface to select the UserID corresponding to the Google account to be bound. Then the UserID selected by the player is passed to the SDK through the forced binding interface to forcibly bind the Google account.   
           
-** 5、对于一进游戏默认为游客登录的游戏，我先用A设备玩有进度并绑定了我仅有的Google账号，然后我又用B设备玩有进度后也要绑定我唯一的Google账号，这时候会发生什么？  **      
-这种情况同4，都是绑定已有的Google账号。             
+** 5、For A game that defaults to visitor login, I first use device A to play progress and bind my only Google account, and then I use device B to play progress and bind my only Google account, what happens at this time? **      
+This case is the same as 4, are bound to the existing Google account.
     
-** 6、新生成的UserID会重复吗？   **     
-不会。新生成的UserID都是唯一的，不会重复。        
+** 6、Will the newly generated userids be repeated?   **     
+No. The newly generated userids are unique and will not be repeated.  
 
-** 7、Unity Editor下可以进行账号系统验证吗？   **   
-可以。Unity Editor可以进行账号系统的相关调试。
+** 7、Can I verify the account system in Unity Editor?  **   
+Agreed. The Unity Editor can debug the account system.

@@ -19,7 +19,10 @@ public void Button_ShowRV()
     /// <param name="_adPos">激励视频广告点位</param>
     /// <param name="_rewardCallback">激励视频关闭回调</param>
     /// <param name="_showFailedCallback">激励视频展示失败回调</param>
-    HCSDKManager.Instance.ShowRewardedAd(HCRVPositionName.GetDoubleCoin,RewardCallback,RewardShowFailCallback);
+    /// <param name="_useSDKToast">是否使用SDK弹框,默认开启</param>
+    
+    bool _useSDKToast = false;
+    HCSDKManager.Instance.ShowRewardedAd(HCRVPositionName.GetDoubleCoin,RewardCallback,RewardShowFailCallback,_useSDKToast);
 }
 
 private void RewardShowFailCallback()
@@ -36,4 +39,5 @@ private void RewardCallback(bool success)
 
 ** HCRVPositionName **：激励视频点位名称，请将【产品需求文档】中的激励视频广告点位名称先在 HCAdPositionName.cs - HCRVPositionName 中进行定义。<br/>
 ** RewardCallback **：激励视频关闭回调，(在此回调中处理奖励下发，true: 给用户下发奖励，false: 激励失败，不能下发奖励)<br/>
-** RewardShowFailCallback **：激励视频未成功播放回调。
+** RewardShowFailCallback **：激励视频未成功播放回调。<br/>
+** useSDKToast **： SDK 自带弹窗提示，默认开启。游戏可使用游戏弹框更契合游戏。

@@ -9,12 +9,12 @@
     "content": "393be207",
     "__routeContextModule": "ae5123e2"
   },
-  "/hachi-doc/zh/versions/-62c": {
-    "component": "18b93cb3",
+  "/hachi-doc/zh/versions/-245": {
+    "component": "f5aacbfa",
     "config": "5e9f5e1a",
     "__routeContextModule": "ae5123e2"
   },
-  "/hachi-doc/zh/-f13": {
+  "/hachi-doc/zh/-486": {
     "component": "1be78505",
     "versionMetadata": "62e81aa6",
     "__routeContextModule": "2b5ec9d4"
@@ -62,5 +62,9 @@
   "/hachi-doc/zh/remoteConfig/-fd8": {
     "component": "17896441",
     "content": "2b14834a"
+  },
+  "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios/-39f": {
+    "component": "17896441",
+    "content": "a89a0f8e"
   }
 }

@@ -1,15 +1,15 @@
 ---
-title: "Banner广告"
-sidebar_label: "Banner广告"
+title: "Banner"
+sidebar_label: "Banner"
 description: ""
 sidebar_position: 3
 ---
 
-## 一、加载Banner广告
+## 一、Loading a Banner
 
-调用SDK初始化后，SDK内部自动加载Banner广告。
+After calling the SDK initialization, the Banner advertisement is automatically loaded inside the SDK.
 
-## 二、展示Banner广告
+## 二、Showing a Banner
 ```c
 public void Button_ShowBanner()
 {
@@ -17,7 +17,8 @@ public void Button_ShowBanner()
 }
 ```
 
-## 三、隐藏Banner广告
+## 三、Hiding a Banner
+
 ```c
 public void Button_HideBanner()
 {

@@ -1,104 +1,115 @@
 ---
-title: "SDK集成"
-sidebar_label: "SDK集成"
+title: "SDK Integration"
+sidebar_label: "SDK Integration"
 description: ""
 sidebar_position: 2
 ---
-本页向您展示如何下载、导入和配置HaChi  Unity Plugin。
+This page shows you how to download, import, and configure the HaChi Unity Plugin.
 
 :::tip
 
- - **接入HaChiSDK 需要 Xcode 14.2 或更高版本**       
- - **更新新版本SDK最好先将老版本SDK删除，配置文件除外。并且导出新的Xcode或者Android Studio工程，注意不要覆盖导出到老版本SDK导出的工程。**   
+ - **Xcode 14.2 or later is required to access the HaChiSDK.**       
+ - **If you want to update a new version of the SDK, delete the old version of the SDK first, except the configuration file. And export new Xcode or Android Studio projects, be careful not to overwrite projects exported to older versions of the SDK.**   
 
 :::
 
 
-## 下载最新的Unity插件 
-<!--下载最新的Unity插件-->
-[HCSDK_1.1.0_ece3fb8.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/1.1.0/HCSDK_1.1.0_ece3fb8.unitypackage)<br/>
+## Download the latest Unity plugin<br/>
+[HCSDK_1.1.0_ece3fb8.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/1.1.0/HCSDK_1.1.0_ece3fb8.unitypackage)（[Release note](/versions)）
+<a id='click'>    </a>
 
-将插件导入Unity<br/>
-执行以下步骤导入下载的插件:<br/>
-在Unity中，选择Assets > Import Package > Custom Package…<br/>
-选择你下载的Unity Plugin文件。<br/>
-在Import Unity Package对话框中，单击Import。<br/>
+Import the plugin into Unity<br/>
+Perform the following steps to import the downloaded plug-in:<br/>
+In Unity, select Assets > Import Package > Custom Package...<br/>
+Select the Unity Plugin file you downloaded.<br/>
+In the Import Unity Package dialog box, click Import.<br/>
 
-## 参数配置
-1、将 Firebase的GoogleSerivce-info.plist(iOS)文件和GoogleService.json(Android)添加至项目Assets根目录下。（如sdk原来带有该测试文件请删掉，确保用对应游戏的参数文件）<br/>
-2、在 ** HCStaticParams.cs ** 中填写好相应的参数<br/>
+## Parameter configuration
+1、Add the Firebase GoogleSerivce-info.plist(iOS) file and GoogleService.json(Android) to the project Assets root directory. (If the sdk originally had this test file, please delete it and make sure to use the parameter file corresponding to the game)<br/>
+2、Enter the parameters in ** HCStaticParams.cs **<br/>
 
 ```c
-
-// ApplovinKey
-public static string ApplovinKey = "";
+    public static string ApplovinKey = "";
 
 #if UNITY_ANDROID
-        // 包名
-        public static string BundleID = "";
+    // Bundle id
+    public static string BundleID = "";
 
-        // Adjust token
-        public static string AdjustToken = "";
 
-        // TD ThinkingData
-        public static string TDAppID = "";
-        public static string TDServerURL = "";
+    // Adjust
+    public static string AdjustToken = "";
 
-        // Ads
-        // 插屏广告位ID
-        public static string InterAdUnitID = "";
-        //激励视频广告位ID
-        public static string RewardAdUnitID = "";
+
+    // TD ThinkingData
+    public static string TDAppID = "";
+    public static string TDServerURL = "https://ss.zolnm.com";
+
+    // Ads
+    public static string BannerAdUnitID = "";
+    public static string InterAdUnitID = "";
+
+    // Reward video AD ID in Review mode
+    public static string ReviewRewardUnitId = "";
+
+    // Online reward video AD ID
+    public static string RewardAdUnitID = "";
+    public static string NativeAdUnitID = "";
+    public static string AppOpenAdUnitID = "";
 
 #else
-        // 包名
-        public static string BundleID = "";
-        // Adjust token
-        public static string AdjustToken = "";
+    // Bundle id
+    public static string BundleID = "";
+    // Adjust
+    public static string AdjustToken = "";
 
-        // TD ThinkingData
-        public static string TDAppID = "";
-        public static string TDServerURL = "";
+    // TD ThinkingData
+    public static string TDAppID = "";
+    public static string TDServerURL = "https://ss.zolnm.com";
 
-        // Ads
-        // 插屏广告位ID
-        public static string InterAdUnitID = "";
-        //激励视频广告位ID
-        public static string RewardAdUnitID = "";
+    // Ads
+    public static string BannerAdUnitID = "";
+    public static string InterAdUnitID = "";
+    // Reward video AD ID in Review mode
+    public static string ReviewRewardUnitId = "";
+
+    // Online reward video AD ID
+    public static string RewardAdUnitID = "";
+    public static string NativeAdUnitID = "";
+    public static string AppOpenAdUnitID = "";
+
 #endif
-
 ```
 
-## 项目配置
-在 MAX 面板中配置好admobID、ApplovinKey：<br/>
+## Project configuration
+Configure admobID and ApplovinKey in the MAX panel:<br/>
 
 ![](/img/HCSDK/image01.png)
 ![](/img/HCSDK/image02.png)  
 
-## Unity Android平台设置
-#### 1、Player Setting设置
-- Mininum API Level 设置为22
-- Target API Level 请设置为33
-- 设置IL2CPP
-- 勾选ARMv7和ARM64
+## Unity Android platform setup
+#### 1、Player Setting
+- Mininum API Level is set to 22
+- Target API Level is set to 33
+- Set IL2CPP
+- Select ARMv7 and ARM64
 
 ![](/img/HCSDK/image04.png)  
 
-#### 2、Unity版本低于2022.3需要使用自定义gradle配置。
-"工具栏>Settings>Preferences > External Tools", 取消 "Gradle Installed with Unity (recommended)" 同时设置自定义gradle路径。<br/>
-自定义gradle版本要求大于6.7.1，推荐下载https://downloads.gradle.org/distributions/gradle-6.7.1-all.zip并解压。
+#### 2、Unity versions later than 2022.3 require a custom gradle configuration.
+"toolbar>Settings>Preferences > External Tools", Cancel "Gradle Installed with Unity (recommended)" Also set a custom gradle path.<br/>
+Custom than 6.7.1 gradle version requirements, recommend download https://downloads.gradle.org/distributions/gradle-6.7.1-all.zip and decompression.
 
 ![](/img/HCSDK/image05.png)  
 
-#### 3、Assets/Plugins/Android/GooglePlayGamesManifest.androidlib路径不存在或者目录为空的情况下需要检查：
-1、 检查【二、参数配置】中GoogleService.json(Android)是否已经拷贝进来。<br/>
-2、重启unity编辑器。
+#### 3、Assets/Plugins/Android/GooglePlayGamesManifest androidlib directory path does not exist or is empty cases need to check:
+1、 Check whether GoogleService.json(Android) has been copied in [Parameter Configuration ](#click).<br/>
+2、Restart the unity editor.
 
-## Unity iOS平台设置
+## Unity iOS platform setup
 
 ![](/img/HCSDK/image06.png)  
 
-## 初始化SDK
+## Initialize SDK
 ```c
 void Start()
 {
@@ -107,11 +118,11 @@ void Start()
 
 private void InitSdkCallback()
 {
-    // SDK初始化完成回调
+    // SDK initialization completes the callback
 }
 ```
-初始化方法会自动初始化以下部分：
+The initialization method automatically initializes the following parts:
 
-* AppTrackingTransparency system (iOS ATT弹框)
-* 统计
-* 广告
+* AppTrackingTransparency system (iOS ATT box)
+* Statistics
+* Advertising

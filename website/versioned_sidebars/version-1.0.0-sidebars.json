@@ -18,7 +18,14 @@
     "remoteConfig",
     "IAP",
     "login",
-    "other"
+    "other",
+    {
+      "type": "category",
+      "label": "Build",
+      "items": [
+        "sdk-projectsettings/sdk-projectsettings-ios"
+      ]
+    }
     
   ]
 }

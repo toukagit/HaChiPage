@@ -81,6 +81,20 @@
         "label": "其他功能",
         "href": "/hachi-doc/zh/other",
         "docId": "other"
+      },
+      {
+        "type": "category",
+        "label": "Build",
+        "items": [
+          {
+            "type": "link",
+            "label": "构建iOS平台",
+            "href": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios",
+            "docId": "sdk-projectsettings/sdk-projectsettings-ios"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
       }
     ]
   },
@@ -149,6 +163,12 @@
       "id": "remoteConfig",
       "title": "在线参数",
       "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "sdk-projectsettings/sdk-projectsettings-ios": {
+      "id": "sdk-projectsettings/sdk-projectsettings-ios",
+      "title": "构建iOS平台",
+      "description": "1、Cocopods",
       "sidebar": "tutorialSidebar"
     }
   }

@@ -20,6 +20,9 @@ public void Button_ShowRV()
     /// <param name="_adPos">Rewarded pos</param>
     /// <param name="_rewardCallback">Rewarded close callback</param>
     /// <param name="_showFailedCallback">Rewarded show fail callback</param>
+    /// <param name="_useSDKToast">Whether to use SDK pop-up. Enabled by default</param>
+
+    bool _useSDKToast = false;
     HCSDKManager.Instance.ShowRewardedAd(HCRVPositionName.GetDoubleCoin,RewardCallback,RewardShowFailCallback);
 }
 
@@ -38,3 +41,4 @@ private void RewardCallback(bool success)
 ** HCRVPositionName **：Reward video point name, please define the reward video advertising point name in the [Product Requirements document] first in HCAdPositionName.cs-HCRVPositionName.<br/>
 ** RewardCallback **：Reward video close callback, (in this callback to handle the reward delivery, true: to the user to send a reward, false: incentive failure, can not send a reward)<br/>
 ** RewardShowFailCallback **：Reward video failed to play callback.
+** useSDKToast **： SDK Comes with pop-up prompt, enabled by default. The game can be more compatible with the game by using the game cartridge.

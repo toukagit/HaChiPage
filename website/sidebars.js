@@ -23,21 +23,28 @@ const sidebars = {
   'download',
   {
       type: 'category',
-      label: 'Ads',
+      label: 'Ad Format',
       collapsible: true,
       collapsed: false,
       items: [
-	"hc-integration/iv",
-         "hc-integration/rv",
-         "hc-integration/bv",
-          "hc-integration/nv"
+          'hc-integration/iv',
+          'hc-integration/rv',
+          'hc-integration/bv',
+          'hc-integration/nv'
       ]
   },
   'events',
   'remoteConfig',
   'IAP',
   'login',
-   'other'
+   'other',
+  {
+      type: 'category',
+      label: 'Build',
+      items: [
+        'sdk-projectsettings/sdk-projectsettings-ios'
+      ]
+    }
   ]
 };
 

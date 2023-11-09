@@ -1,31 +1,35 @@
 ---
-title: "激励视频广告"
-sidebar_label: "激励视频广告"
+title: "Rewarded Ads"
+sidebar_label: "Rewarded Ads"
 description: ""
 sidebar_position: 2
 ---
 
-## 一、加载激励视频广告
+## 一、Loading a Rewarded Ad
 
-调用SDK初始化后，SDK内部自动加载激励视频广告。
+After calling SDK initialization, incentive video ads are automatically loaded inside the SDK.
 
-## 二、展示激励视频广告
+## 二、Showing a Rewarded Ad
+
 ```c
 public void Button_ShowRV()
 {
     /// <summary>
-    /// 播放激励视频广告
+    /// Showing a Rewarded Ad
     /// </summary>
-    /// <param name="_adPos">激励视频广告点位</param>
-    /// <param name="_rewardCallback">激励视频关闭回调</param>
-    /// <param name="_showFailedCallback">激励视频展示失败回调</param>
+    /// <param name="_adPos">Rewarded pos</param>
+    /// <param name="_rewardCallback">Rewarded close callback</param>
+    /// <param name="_showFailedCallback">Rewarded show fail callback</param>
+    /// <param name="_useSDKToast">Whether to use SDK pop-up. Enabled by default</param>
+
+    bool _useSDKToast = false;
     HCSDKManager.Instance.ShowRewardedAd(HCRVPositionName.GetDoubleCoin,RewardCallback,RewardShowFailCallback);
 }
 
 private void RewardShowFailCallback()
 {
-    // 激励视频没有加载好或者播放失败
-    HCDebugger.LogDebug("激励视频播放失败");
+    // The reward video did not load properly or failed to play
+    HCDebugger.LogDebug("Failed to play the reward video");
 }
 
 private void RewardCallback(bool success)
@@ -34,6 +38,7 @@ private void RewardCallback(bool success)
 }
 ```
 
-** HCRVPositionName **：激励视频点位名称，请将【产品需求文档】中的激励视频广告点位名称先在 HCAdPositionName.cs - HCRVPositionName 中进行定义。<br/>
-** RewardCallback **：激励视频关闭回调，(在此回调中处理奖励下发，true: 给用户下发奖励，false: 激励失败，不能下发奖励)<br/>
-** RewardShowFailCallback **：激励视频未成功播放回调。
+** HCRVPositionName **：Reward video point name, please define the reward video advertising point name in the [Product Requirements document] first in HCAdPositionName.cs-HCRVPositionName.<br/>
+** RewardCallback **：Reward video close callback, (in this callback to handle the reward delivery, true: to the user to send a reward, false: incentive failure, can not send a reward)<br/>
+** RewardShowFailCallback **：Reward video failed to play callback.
+** useSDKToast **： SDK Comes with pop-up prompt, enabled by default. The game can be more compatible with the game by using the game cartridge.

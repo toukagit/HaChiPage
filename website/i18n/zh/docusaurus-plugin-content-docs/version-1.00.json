@@ -6,5 +6,9 @@
   "sidebar.tutorialSidebar.category.Ads": {
     "message": "广告形式",
     "description": "广告形式"
+  },
+  "sidebar.tutorialSidebar.category.Build": {
+    "message": "构建版本",
+    "description": "构建版本"
   }
 }

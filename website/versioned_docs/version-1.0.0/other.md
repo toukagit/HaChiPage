@@ -1,11 +1,11 @@
 ---
-title: "其他功能"
-sidebar_label: "其他功能"
+title: "Other functions"
+sidebar_label: "Other functions"
 description: ""
 sidebar_position: 3
 ---
 
-## 一、游戏失去/获得焦点
+## 一、The game loses/gains focus
 ```c
 HCSDKManager.Instance.SetGameFocusListener((_isFocus) => {
     if (_isFocus)
@@ -18,24 +18,23 @@ HCSDKManager.Instance.SetGameFocusListener((_isFocus) => {
     }
 });
 ```
-设置游戏失去/获得焦点回调，SDK每次触发到对应情境会给回来回调。<br/>
-例如当广告开始播放的时候，你的游戏将会失去焦点。广告播放结束，返回游戏，你的游戏会获得焦点。
-
-## 二、评价
+Set the game to lose/gain focus callback, the SDK will give a callback every time triggered to the corresponding situation.<br/>
+For example, when a commercial starts playing, your game will lose focus. When the AD is over, return to the game and your game will gain focus.
+## 二、Review
 
 ```c
 HCSDKManager.Instance.Review();
 ```
-调用可弹出谷歌/苹果系统评价弹框。
+Call to pop-up Google/Apple system review box.
 
-## 三、震动
+## 三、Vibration
 ```c
-// 震动强弱：0:轻微 1:中度 2:重度
-// 震动时间: 0 ~ 1
+// Vibration strength: 0: slight 1: moderate 2: severe
+// Vibration time: 0 ~ 1
 HCSDKManager.Instance.Shake(1,0.5f);
 ```
 
-## 四、获取当前用户来源
+## 四、Gets the current user source
 ```c
 void Start()
 {
@@ -48,4 +47,4 @@ private void UserSourceListenerCallback(bool isOrganic, string network)
     HCDebugger.LogDebug("SetUserSourceListenerCallback isOrganic:" + isOrganic + "network:" + network);
 }
 ```
-用户来源回调，bool: true 自然用户 false 非自然用户
+User source callback, bool: true natural user false unnatural user

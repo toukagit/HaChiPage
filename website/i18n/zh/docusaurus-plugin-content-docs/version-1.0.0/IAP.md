@@ -12,7 +12,7 @@ sidebar_position: 3
 :::
 ## 内购接入方法
 ### 1、导入IAP插件
-导入Unity In App Purchasing插件。         
+导入Unity In App Purchasing插件。
 Unity菜单栏 -> Window -> Package Manager -> In App Purchasing -> Install。
 
 
@@ -22,7 +22,6 @@ USE_IAP
 ```
 
 ### 3、添加内购商品
-
 :::tip
   支持两种添加方式:       
   **a. 在IAPProducts.cs中预设置商品ID**         
@@ -58,7 +57,7 @@ public static class HCPurchaseProducts
 }
 ```
 
-b. 通过 **HCSDKManager.Instance.AddProducts**接口添加商品ID
+b. 通过 **HCSDKManager.Instance.AddProducts**接口添加商品ID 
 ```c
 Dictionary<string, ProductType> ProductDic = new Dictionary<string, ProductType>()
 {

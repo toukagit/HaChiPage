@@ -1,17 +1,17 @@
 ---
-title: "在线参数"
-sidebar_label: "在线参数"
+title: "Remote Config"
+sidebar_label: "Remote Config"
 description: ""
 sidebar_position: 3
 ---
 
-## 一、获取在线参数
+## 一、Get remote config
 ```c
 /// <summary>
 /// 
 /// </summary>
-/// <param name="_key">在线参数key</param>
-/// <param name="_defaultValue">在线参数默认值</param>
+/// <param name="_key">remote config key</param>
+/// <param name="_defaultValue">remote config default value</param>
 /// <returns>string/int/bool</returns>
 
 string Strvalue = HCSDKManager.Instance.GetRemoteConfigStr("TestKey01","defaultStringValue");
@@ -20,5 +20,5 @@ int intValue = HCSDKManager.Instance.GetRemoteConfigInt("TestKey01", 0);
 
 bool boolValue = HCSDKManager.Instance.GetRemoteConfigBool("TestKey01", false);
 ```
-Firebase激活失败后会返回默认参数。
+Default value are returned after Firebase activation fails.
 

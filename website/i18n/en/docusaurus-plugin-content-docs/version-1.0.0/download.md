@@ -14,9 +14,9 @@ This page shows you how to download, import, and configure the HaChi Unity Plugi
 :::
 
 
-## Download the latest Unity plugin
-
-[HCSDK_1.1.0_ece3fb8.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/1.1.0/HCSDK_1.1.0_ece3fb8.unitypackage)<br/>
+## Download the latest Unity plugin<br/>
+[HCSDK_1.1.0_ece3fb8.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/1.1.0/HCSDK_1.1.0_ece3fb8.unitypackage)（[Release note](/versions)）
+<a id='click'>    </a>
 
 Import the plugin into Unity<br/>
 Perform the following steps to import the downloaded plug-in:<br/>
@@ -29,44 +29,55 @@ In the Import Unity Package dialog box, click Import.<br/>
 2、Enter the parameters in ** HCStaticParams.cs **<br/>
 
 ```c
-
-// ApplovinKey
-public static string ApplovinKey = "";
+    public static string ApplovinKey = "";
 
 #if UNITY_ANDROID
-        // BundleID
-        public static string BundleID = "";
+    // Bundle id
+    public static string BundleID = "";
 
-        // Adjust token
-        public static string AdjustToken = "";
 
-        // TD ThinkingData
-        public static string TDAppID = "";
-        public static string TDServerURL = "";
+    // Adjust
+    public static string AdjustToken = "";
 
-        // Ads
-        // InterAdUnitID
-        public static string InterAdUnitID = "";
-        //RewardAdUnitID
-        public static string RewardAdUnitID = "";
+
+    // TD ThinkingData
+    public static string TDAppID = "";
+    public static string TDServerURL = "https://ss.zolnm.com";
+
+    // Ads
+    public static string BannerAdUnitID = "";
+    public static string InterAdUnitID = "";
+
+    // Reward video AD ID in Review mode
+    public static string ReviewRewardUnitId = "";
+
+    // Online reward video AD ID
+    public static string RewardAdUnitID = "";
+    public static string NativeAdUnitID = "";
+    public static string AppOpenAdUnitID = "";
 
 #else
-        // BundleID
-        public static string BundleID = "";
-        // Adjust token
-        public static string AdjustToken = "";
+    // Bundle id
+    public static string BundleID = "";
+    // Adjust
+    public static string AdjustToken = "";
 
-        // TD ThinkingData
-        public static string TDAppID = "";
-        public static string TDServerURL = "";
+    // TD ThinkingData
+    public static string TDAppID = "";
+    public static string TDServerURL = "https://ss.zolnm.com";
 
-        // Ads
-        // InterAdUnitID
-        public static string InterAdUnitID = "";
-        //RewardAdUnitID
-        public static string RewardAdUnitID = "";
+    // Ads
+    public static string BannerAdUnitID = "";
+    public static string InterAdUnitID = "";
+    // Reward video AD ID in Review mode
+    public static string ReviewRewardUnitId = "";
+
+    // Online reward video AD ID
+    public static string RewardAdUnitID = "";
+    public static string NativeAdUnitID = "";
+    public static string AppOpenAdUnitID = "";
+
 #endif
-
 ```
 
 ## Project configuration
@@ -91,7 +102,7 @@ Custom than 6.7.1 gradle version requirements, recommend download https://downlo
 ![](/img/HCSDK/image05.png)  
 
 #### 3、Assets/Plugins/Android/GooglePlayGamesManifest androidlib directory path does not exist or is empty cases need to check:
-1、 Check whether GoogleService.json(Android) has been copied in [2. Parameter Configuration].<br/>
+1、 Check whether GoogleService.json(Android) has been copied in [Parameter Configuration ](#click).<br/>
 2、Restart the unity editor.
 
 ## Unity iOS platform setup

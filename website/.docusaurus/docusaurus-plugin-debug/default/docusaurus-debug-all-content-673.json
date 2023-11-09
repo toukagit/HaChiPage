@@ -283,6 +283,10 @@
               "previous": {
                 "title": "账号系统",
                 "permalink": "/hachi-doc/zh/login"
+              },
+              "next": {
+                "title": "构建iOS平台",
+                "permalink": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios"
               }
             },
             {
@@ -311,6 +315,27 @@
               "next": {
                 "title": "内购",
                 "permalink": "/hachi-doc/zh/IAP"
+              }
+            },
+            {
+              "unversionedId": "sdk-projectsettings/sdk-projectsettings-ios",
+              "id": "version-1.0.0/sdk-projectsettings/sdk-projectsettings-ios",
+              "title": "构建iOS平台",
+              "description": "1、Cocopods",
+              "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/sdk-projectsettings/sdk-projectsettings-ios.md",
+              "sourceDirName": "sdk-projectsettings",
+              "slug": "/sdk-projectsettings/sdk-projectsettings-ios",
+              "permalink": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios",
+              "tags": [],
+              "version": "1.0.0",
+              "sidebarPosition": 7,
+              "frontMatter": {
+                "sidebar_position": 7
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "其他功能",
+                "permalink": "/hachi-doc/zh/other"
               }
             }
           ],
@@ -367,6 +392,18 @@
               {
                 "type": "doc",
                 "id": "other"
+              },
+              {
+                "type": "category",
+                "label": "Build",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "sdk-projectsettings/sdk-projectsettings-ios"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
               }
             ]
           },
@@ -396,7 +433,7 @@
       {
         "type": "jsx",
         "permalink": "/hachi-doc/zh/versions",
-        "source": "@site/src/pages/versions.js"
+        "source": "@site/i18n/zh/docusaurus-plugin-content-pages/versions.js"
       }
     ]
   },

@@ -2,18 +2,18 @@
 sidebar_position: 1
 ---
 
-# HaChi SDK 简介
+# HaChi SDK intro
 
-Hachi SDK简称 HC SDK，专为中重度游戏服务。请勿将其用于其他类型项目。
+The Hachi SDK, called HC SDK for short, is designed for medium to heavy games. Do not use it for other types of projects.
 
-本SDK已经聚合以下三方SDK：
+This SDK has aggregated the following three SDKS:
 
-统计
+analyze
 * ThinkingData
 * Adjust
 * Firebase
 
-广告
+ads
 * AppLovin
 * Chartboost
 * DT Exchange
@@ -28,8 +28,8 @@ Hachi SDK简称 HC SDK，专为中重度游戏服务。请勿将其用于其他�
 * Unity Ads
 * Yandex
 
-**注意事项 **
+** Matters needing attention **
 
-检查Unity工程是否自行集成过以上SDK，如有集成请务必移除。<br/>
-检查Unity工程是否包含广告SDK，如有集成请务必移除，以免与HaChi SDK广告功能产生冲突影响变现。<br/>
-建议清理不必要的三方SDK，尽量以纯净的游戏工程开始您的接入。
+Check whether the Unity project has integrated the above SDK by itself. If so, be sure to remove it. <br/>
+Check whether the Unity project contains advertising SDK. If there is integration, be sure to remove it to avoid conflict with the HaChi SDK advertising function. <br/>
+It is recommended to clean up unnecessary third party SDKS and try to start your access with pure game engineering.

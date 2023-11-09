@@ -15,58 +15,70 @@ sidebar_position: 2
 
 
 ## 下载最新的Unity插件 
-<!--下载最新的Unity插件-->
-[HCSDK_1.1.0_ece3fb8.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/1.1.0/HCSDK_1.1.0_ece3fb8.unitypackage)<br/>
+[HCSDK_1.1.0_ece3fb8.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/1.1.0/HCSDK_1.1.0_ece3fb8.unitypackage)（[更新日志](/versions)）
+<br/><a id='click'>    </a>
+
 
 将插件导入Unity<br/>
 执行以下步骤导入下载的插件:<br/>
 在Unity中，选择Assets > Import Package > Custom Package…<br/>
 选择你下载的Unity Plugin文件。<br/>
-在Import Unity Package对话框中，单击Import。<br/>
+在Import Unity Package对话框中，单击Import。
 
 ## 参数配置
 1、将 Firebase的GoogleSerivce-info.plist(iOS)文件和GoogleService.json(Android)添加至项目Assets根目录下。（如sdk原来带有该测试文件请删掉，确保用对应游戏的参数文件）<br/>
 2、在 ** HCStaticParams.cs ** 中填写好相应的参数<br/>
 
 ```c
-
-// ApplovinKey
-public static string ApplovinKey = "";
+    public static string ApplovinKey = "";
 
 #if UNITY_ANDROID
-        // 包名
-        public static string BundleID = "";
+    // Bundle id
+    public static string BundleID = "";
 
-        // Adjust token
-        public static string AdjustToken = "";
 
-        // TD ThinkingData
-        public static string TDAppID = "";
-        public static string TDServerURL = "";
+    // Adjust
+    public static string AdjustToken = "";
 
-        // Ads
-        // 插屏广告位ID
-        public static string InterAdUnitID = "";
-        //激励视频广告位ID
-        public static string RewardAdUnitID = "";
+
+    // TD ThinkingData
+    public static string TDAppID = "";
+    public static string TDServerURL = "https://ss.zolnm.com";
+
+    // Ads
+    public static string BannerAdUnitID = "";
+    public static string InterAdUnitID = "";
+
+    // 提审模式下激励视频广告位ID
+    public static string ReviewRewardUnitId = "";
+
+    // 线上激励视频广告位ID
+    public static string RewardAdUnitID = "";
+    public static string NativeAdUnitID = "";
+    public static string AppOpenAdUnitID = "";
 
 #else
-        // 包名
-        public static string BundleID = "";
-        // Adjust token
-        public static string AdjustToken = "";
+    // Bundle id
+    public static string BundleID = "";
+    // Adjust
+    public static string AdjustToken = "";
 
-        // TD ThinkingData
-        public static string TDAppID = "";
-        public static string TDServerURL = "";
+    // TD ThinkingData
+    public static string TDAppID = "";
+    public static string TDServerURL = "https://ss.zolnm.com";
 
-        // Ads
-        // 插屏广告位ID
-        public static string InterAdUnitID = "";
-        //激励视频广告位ID
-        public static string RewardAdUnitID = "";
+    // Ads
+    public static string BannerAdUnitID = "";
+    public static string InterAdUnitID = "";
+    // 提审模式下激励视频广告位ID
+    public static string ReviewRewardUnitId = "";
+
+    // 线上激励视频广告位ID
+    public static string RewardAdUnitID = "";
+    public static string NativeAdUnitID = "";
+    public static string AppOpenAdUnitID = "";
+
 #endif
-
 ```
 
 ## 项目配置
@@ -91,7 +103,7 @@ public static string ApplovinKey = "";
 ![](/img/HCSDK/image05.png)  
 
 #### 3、Assets/Plugins/Android/GooglePlayGamesManifest.androidlib路径不存在或者目录为空的情况下需要检查：
-1、 检查【二、参数配置】中GoogleService.json(Android)是否已经拷贝进来。<br/>
+1、 检查[【参数配置】](#click)中GoogleService.json(Android)是否已经拷贝进来。<br/>
 2、重启unity编辑器。
 
 ## Unity iOS平台设置

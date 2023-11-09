@@ -64,6 +64,11 @@
               "id": "remoteConfig",
               "path": "/hachi-doc/zh/remoteConfig",
               "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "sdk-projectsettings/sdk-projectsettings-ios",
+              "path": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios",
+              "sidebar": "tutorialSidebar"
             }
           ],
           "sidebars": {

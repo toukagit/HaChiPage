@@ -15,12 +15,12 @@ export default [
   },
   {
     path: '/hachi-doc/zh/versions/',
-    component: ComponentCreator('/hachi-doc/zh/versions/','62c'),
+    component: ComponentCreator('/hachi-doc/zh/versions/','245'),
     exact: true
   },
   {
     path: '/hachi-doc/zh/',
-    component: ComponentCreator('/hachi-doc/zh/','f13'),
+    component: ComponentCreator('/hachi-doc/zh/','486'),
     routes: [
       {
         path: '/hachi-doc/zh/',
@@ -85,6 +85,12 @@ export default [
       {
         path: '/hachi-doc/zh/remoteConfig/',
         component: ComponentCreator('/hachi-doc/zh/remoteConfig/','fd8'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios/',
+        component: ComponentCreator('/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios/','39f'),
         exact: true,
         sidebar: "tutorialSidebar"
       }

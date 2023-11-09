@@ -1,34 +1,34 @@
 ---
-title: "插屏广告"
-sidebar_label: "插屏广告"
+title: "Interstitials"
+sidebar_label: "Interstitials"
 description: ""
 sidebar_position: 1
 ---
 
 
 
-## 一、加载插屏广告
+## 一、Loading an Interstitial Ad
 
-调用SDK初始化后，SDK内部自动加载插屏广告。
+After calling the SDK initialization, the plug-in advertisement is automatically loaded inside the SDK.
 
-## 二、展示插屏广告
+## 二、Showing an Interstitial Ad
 ```c
 private void Button_ShowIV()
 {
     /// <summary>
-    /// 展示插屏广告
+    /// 
     /// </summary>
-    /// <param name="_adPos">插屏点位</param>
-    /// <param name="_closeCallback">插屏关闭回调</param>
+    /// <param name="_adPos">interstitial pos</param>
+    /// <param name="_closeCallback">interstitial close callback</param>
     HCSDKManager.Instance.ShowInterstitial(HCIVPositionName.IV_Success,InterAdCloseCallback);
 }
 
 
 private void InterAdCloseCallback()
 {
-    HCDebugger.LogDebug("插屏广告关闭");
+    HCDebugger.LogDebug("close interstitial ad");
 }
 ```
 
-** HCIVPositionName **：插屏广告点位名称，请将【产品需求文档】中的插屏广告点位名称先在 HCAdPositionName.cs - HCIVAdPositionName 中进行定义。<br/>
-** InterAdCloseCallback **：插屏关闭回调 
+** HCIVPositionName **：Insert advertisement point name, please first define the insert advertisement point name in the [Product Requirements document] in HCAdPositionName.cs-HCIVAdPositionName.<br/>
+** InterAdCloseCallback **：interstitial close callback

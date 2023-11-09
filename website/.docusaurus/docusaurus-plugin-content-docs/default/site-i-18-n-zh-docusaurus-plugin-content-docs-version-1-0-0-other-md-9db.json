@@ -20,5 +20,9 @@
   "previous": {
     "title": "账号系统",
     "permalink": "/hachi-doc/zh/login"
+  },
+  "next": {
+    "title": "构建iOS平台",
+    "permalink": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios"
   }
 }
