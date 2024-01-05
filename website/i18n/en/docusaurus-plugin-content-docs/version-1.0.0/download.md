@@ -15,7 +15,7 @@ This page shows you how to download, import, and configure the HaChi Unity Plugi
 
 
 ## Download the latest Unity plugin<br/>
-[HCSDK_1.1.0_ece3fb8.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/1.1.0/HCSDK_1.1.0_ece3fb8.unitypackage)（[Release note](/versions)）
+[HCSDK_2.0.0_32a0ea8.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.0.0/HCSDK_2.0.0_32a0ea8.unitypackage)（[Release note](/versions)）
 <a id='click'>    </a>
 
 Import the plugin into Unity<br/>
@@ -26,7 +26,7 @@ In the Import Unity Package dialog box, click Import.<br/>
 
 ## Parameter configuration
 1、Add the Firebase GoogleSerivce-info.plist(iOS) file and GoogleService.json(Android) to the project Assets root directory. (If the sdk originally had this test file, please delete it and make sure to use the parameter file corresponding to the game)<br/>
-2、Enter the parameters in ** HCStaticParams.cs **<br/>
+2、Enter the parameters in ** HCStaticParams.cs ** <font color="ff0000">(This parameter is not required for versions v2.0.0 or later)</font><br/>
 
 ```c
     public static string ApplovinKey = "";
@@ -80,7 +80,9 @@ In the Import Unity Package dialog box, click Import.<br/>
 #endif
 ```
 
-## Project configuration
+3. Put the configuration file in the requirements document in the Assets/StreamingAssets directory <font color="ff0000"> (new in v2.0.0) </font>
+
+## Project configuration <font color="ff0000">(This parameter is not required for versions v2.0.0 or later)</font>
 Configure admobID and ApplovinKey in the MAX panel:<br/>
 
 ![](/img/HCSDK/image01.png)
