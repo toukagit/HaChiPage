@@ -1,11 +1,107 @@
 ---
-title: "Custom event"
-sidebar_label: "Custom event"
+title: "Event Tracking"
+sidebar_label: "Event Tracking"
 description: ""
 sidebar_position: 96
 ---
+## Level Progression Events
+Level progression events are used to track and analyze the user's level behavior in the game, Including level start, level end, etc.     
 
-## 一、Set public event attributes (for TD only)
+:::tip
+<b><font color="ff0000">Attention: if you have ‘Levels’ / 'Quest' / 'Task' or 'Mission' in your game, you must integrate "Progression Events" !</font></b>         
+<br />
+
+Level Start Call: ** LevelStart **   
+Level End Call: ** LevelEnd **
+- Level has ended with succ : ** Level_Success **
+- Level has ended with failed: ** Level_Fail **
+- Before level end, restart level. eg. click Retry button in the current level: ** Level_Retry **
+- Before level end, back to home page or level list. For example click back or quit buttons in current level: ** Level_Back **
+:::
+
+### LevelStart 
+```c
+HCSDKManager.Instance.LevelEnter("1");
+
+HCSDKManager.Instance.LevelEnter(1);
+
+HCSDKManager.Instance.LevelEnter("S_1");
+```
+Call `LevelEnter` method when starting each level.
+
+API: <br />
+void LevelEnter(int level);     
+void LevelEnter(string level);
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>isRequired</td>
+    <td>Type</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td>level</td>
+    <td>Y</td>
+    <td>int/string</td>
+    <td>
+    level: current level id.         <br />
+    You can get the specific values  「Level Progress Event Access」 on your game product requirement.  
+  </td>
+  </tr>
+</table>
+
+
+### LevelEnd
+
+```c
+HCSDKManager.Instance.LevelEnd("1", StageResult.Level_Success); 
+
+HCSDKManager.Instance.LevelEnd(1, StageResult.Level_Success);
+
+HCSDKManager.Instance.LevelEnd("S_1", StageResult.Level_Fail);
+
+HCSDKManager.Instance.LevelEnd(3, StageResult.Level_Retry);
+
+HCSDKManager.Instance.LevelEnd("S_2", StageResult.Level_Back);
+```
+
+Call `LevelEnd` method when finish each level.   
+
+API:
+void LevelEnd(int level, StageResult stageResult);<br/>
+void LevelEnd(string level, StageResult stageResult);
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>isRequired</td>
+    <td>Type</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td>level</td>
+    <td>Y</td>
+    <td>int/string</td>
+    <td>
+    level: current level id.         <br />
+    You can get the specific values  「Level Progress Event Access」 on your game product requirement.  
+  </td>
+  </tr>
+  <tr>
+    <td>stageResult</td>
+    <td>Y</td>
+    <td>StageResult</td>
+    <td>
+    <b>Level_Success:</b> Level has ended with succ   <br />
+    <b>Level_Fail:</b> Level has ended with failed  <br />
+    <b>Level_Retry:</b> Before level end, restart level. eg. click Retry button in the current level <br />
+    <b>Level_Back:</b> Before level end, back to home page or level list. For example click back or quit buttons in current level
+    </td>
+  </tr>
+</table>
+
+## Set public event attributes (for TD only)
 
 ```c
 Dictionary<string, object> superProperties = new Dictionary<string, object>();
@@ -20,7 +116,7 @@ superProperties["arr"] = new List<object>() { "value" };//Array
 HCSDKManager.Instance.SetSuperProperties(superProperties);
 ```
 
-## 二、Set user properties (for TD only)
+## Set user properties (for TD only)
 ```c
 Dictionary<string, object> userProperties = new Dictionary<string, object>();
 userProperties["user_name"] = "TA";
@@ -28,7 +124,7 @@ userProperties["user_name"] = "TA";
 HCSDKManager.Instance.SetUserProperties(userProperties);
 ```
 
-## 三、User-defined event reporting
+## User-defined event reporting
 ```c
 HCSDKManager.Instance.LogEvent("Event01");
 

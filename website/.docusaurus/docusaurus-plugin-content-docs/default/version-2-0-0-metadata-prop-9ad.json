@@ -1,0 +1,175 @@
+{
+  "pluginId": "default",
+  "version": "2.0.0",
+  "label": "1.0.0",
+  "banner": null,
+  "badge": false,
+  "className": "docs-version-2.0.0",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "HaChi SDK 简介",
+        "href": "/hachi-doc/zh/",
+        "docId": "index"
+      },
+      {
+        "type": "link",
+        "label": "SDK集成",
+        "href": "/hachi-doc/zh/download",
+        "docId": "download"
+      },
+      {
+        "type": "category",
+        "label": "Ad Formats",
+        "collapsible": true,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "插屏广告",
+            "href": "/hachi-doc/zh/hc-integration/iv",
+            "docId": "hc-integration/iv"
+          },
+          {
+            "type": "link",
+            "label": "激励视频广告",
+            "href": "/hachi-doc/zh/hc-integration/rv",
+            "docId": "hc-integration/rv"
+          },
+          {
+            "type": "link",
+            "label": "Banner广告",
+            "href": "/hachi-doc/zh/hc-integration/bv",
+            "docId": "hc-integration/bv"
+          },
+          {
+            "type": "link",
+            "label": "Native广告",
+            "href": "/hachi-doc/zh/hc-integration/nv",
+            "docId": "hc-integration/nv"
+          }
+        ]
+      },
+      {
+        "type": "link",
+        "label": "自定义事件",
+        "href": "/hachi-doc/zh/events",
+        "docId": "events"
+      },
+      {
+        "type": "link",
+        "label": "在线参数",
+        "href": "/hachi-doc/zh/remoteConfig",
+        "docId": "remoteConfig"
+      },
+      {
+        "type": "link",
+        "label": "内购",
+        "href": "/hachi-doc/zh/IAP",
+        "docId": "IAP"
+      },
+      {
+        "type": "link",
+        "label": "账号系统",
+        "href": "/hachi-doc/zh/login",
+        "docId": "login"
+      },
+      {
+        "type": "link",
+        "label": "其他功能",
+        "href": "/hachi-doc/zh/other",
+        "docId": "other"
+      },
+      {
+        "type": "category",
+        "label": "构建版本",
+        "items": [
+          {
+            "type": "link",
+            "label": "构建iOS平台",
+            "href": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios",
+            "docId": "sdk-projectsettings/sdk-projectsettings-ios"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      }
+    ]
+  },
+  "docs": {
+    "download": {
+      "id": "download",
+      "title": "SDK集成",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "events": {
+      "id": "events",
+      "title": "自定义事件",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "hc-integration/bv": {
+      "id": "hc-integration/bv",
+      "title": "Banner广告",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "hc-integration/iv": {
+      "id": "hc-integration/iv",
+      "title": "插屏广告",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "hc-integration/nv": {
+      "id": "hc-integration/nv",
+      "title": "Native广告",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "hc-integration/rv": {
+      "id": "hc-integration/rv",
+      "title": "激励视频广告",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "IAP": {
+      "id": "IAP",
+      "title": "内购",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "index": {
+      "id": "index",
+      "title": "HaChi SDK 简介",
+      "description": "Hachi SDK简称 HC SDK，专为中重度游戏服务。请勿将其用于其他类型项目。",
+      "sidebar": "tutorialSidebar"
+    },
+    "login": {
+      "id": "login",
+      "title": "账号系统",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "other": {
+      "id": "other",
+      "title": "其他功能",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "remoteConfig": {
+      "id": "remoteConfig",
+      "title": "在线参数",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "sdk-projectsettings/sdk-projectsettings-ios": {
+      "id": "sdk-projectsettings/sdk-projectsettings-ios",
+      "title": "构建iOS平台",
+      "description": "1、Cocopods",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "unversionedId": "events",
   "id": "version-1.0.0/events",
-  "title": "自定义事件",
+  "title": "事件埋点",
   "description": "",
   "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/events.md",
   "sourceDirName": ".",
@@ -11,8 +11,8 @@
   "version": "1.0.0",
   "sidebarPosition": 96,
   "frontMatter": {
-    "title": "自定义事件",
-    "sidebar_label": "自定义事件",
+    "title": "事件埋点",
+    "sidebar_label": "事件埋点",
     "description": "",
     "sidebar_position": 96
   },

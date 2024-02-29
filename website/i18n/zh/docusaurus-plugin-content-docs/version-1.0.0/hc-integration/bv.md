@@ -11,9 +11,14 @@ sidebar_position: 3
 
 ## 二、展示Banner广告
 ```c
+
 public void Button_ShowBanner()
 {
-    HCSDKManager.Instance.ShowBanner();
+    /// <summary>
+    /// 展示banner广告
+    /// </summary>
+    /// <param name="_pos">banner显示位置</param>
+    HCSDKManager.Instance.ShowBanner(MaxSdkBase.BannerPosition _pos);
 }
 ```
 

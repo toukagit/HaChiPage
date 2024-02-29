@@ -1,0 +1,21 @@
+{
+  "unversionedId": "sdk-projectsettings/sdk-projectsettings-ios",
+  "id": "version-2.0.0/sdk-projectsettings/sdk-projectsettings-ios",
+  "title": "构建iOS平台",
+  "description": "方式一：使用指定账号构建游戏",
+  "source": "@site/versioned_docs/version-2.0.0/sdk-projectsettings/sdk-projectsettings-ios.md",
+  "sourceDirName": "sdk-projectsettings",
+  "slug": "/sdk-projectsettings/sdk-projectsettings-ios",
+  "permalink": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios",
+  "tags": [],
+  "version": "2.0.0",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Other functions",
+    "permalink": "/hachi-doc/zh/other"
+  }
+}

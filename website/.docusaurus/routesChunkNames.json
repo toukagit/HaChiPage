@@ -1,70 +1,107 @@
 {
+  "/hachi-doc/zh/__docusaurus/debug/-074": {
+    "component": "component---theme-debug-config-23-a-2ff",
+    "__routeContextModule": "__routeContextModule---hachi-doc-zh-docusaurus-debug-eb-3-66c"
+  },
+  "/hachi-doc/zh/__docusaurus/debug/config/-2ff": {
+    "component": "component---theme-debug-config-23-a-2ff",
+    "__routeContextModule": "__routeContextModule---hachi-doc-zh-docusaurus-debug-eb-3-66c"
+  },
+  "/hachi-doc/zh/__docusaurus/debug/content/-5f6": {
+    "component": "component---theme-debug-contentba-8-ce7",
+    "allContent": "allContent---hachi-doc-zh-docusaurus-debug-content-246-7c1",
+    "__routeContextModule": "__routeContextModule---hachi-doc-zh-docusaurus-debug-eb-3-66c"
+  },
+  "/hachi-doc/zh/__docusaurus/debug/globalData/-f58": {
+    "component": "component---theme-debug-global-dataede-0fa",
+    "__routeContextModule": "__routeContextModule---hachi-doc-zh-docusaurus-debug-eb-3-66c"
+  },
+  "/hachi-doc/zh/__docusaurus/debug/metadata/-058": {
+    "component": "component---theme-debug-site-metadata-68-e-3d4",
+    "__routeContextModule": "__routeContextModule---hachi-doc-zh-docusaurus-debug-eb-3-66c"
+  },
+  "/hachi-doc/zh/__docusaurus/debug/registry/-84b": {
+    "component": "component---theme-debug-registry-679-501",
+    "__routeContextModule": "__routeContextModule---hachi-doc-zh-docusaurus-debug-eb-3-66c"
+  },
+  "/hachi-doc/zh/__docusaurus/debug/routes/-d3c": {
+    "component": "component---theme-debug-routes-946-699",
+    "__routeContextModule": "__routeContextModule---hachi-doc-zh-docusaurus-debug-eb-3-66c"
+  },
   "/hachi-doc/zh/helloReact/-7bb": {
-    "component": "06f8edbc",
-    "config": "5e9f5e1a",
-    "__routeContextModule": "ae5123e2"
+    "component": "component---site-src-pages-hello-react-js-06-f-dd2",
+    "config": "config---hachi-doc-zh-hello-react-5-e-9-800",
+    "__routeContextModule": "__routeContextModule---hachi-doc-zh-hello-react-ae-5-694"
   },
   "/hachi-doc/zh/markdown-page/-1d9": {
-    "component": "1f391b9e",
-    "content": "393be207",
-    "__routeContextModule": "ae5123e2"
+    "component": "component---theme-mdx-page-1-f-3-b90",
+    "content": "content---hachi-doc-zh-markdown-page-393-390",
+    "__routeContextModule": "__routeContextModule---hachi-doc-zh-hello-react-ae-5-694"
   },
   "/hachi-doc/zh/versions/-245": {
-    "component": "f5aacbfa",
-    "config": "5e9f5e1a",
-    "__routeContextModule": "ae5123e2"
+    "component": "component---site-i-18-n-zh-docusaurus-plugin-content-pages-versions-jsf-5-a-c53",
+    "config": "config---hachi-doc-zh-hello-react-5-e-9-800",
+    "__routeContextModule": "__routeContextModule---hachi-doc-zh-hello-react-ae-5-694"
   },
-  "/hachi-doc/zh/-486": {
-    "component": "1be78505",
-    "versionMetadata": "62e81aa6",
-    "__routeContextModule": "2b5ec9d4"
+  "/hachi-doc/zh/-a70": {
+    "component": "component---theme-doc-page-1-be-9be",
+    "versionMetadata": "versionMetadata---hachi-doc-zh-62-e-69b",
+    "__routeContextModule": "__routeContextModule---hachi-doc-zh-2-b-5-ffd"
   },
   "/hachi-doc/zh/-dd1": {
-    "component": "17896441",
-    "content": "3ab9dcd5"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---hachi-doc-zh-3-ab-d73"
   },
   "/hachi-doc/zh/download/-ab5": {
-    "component": "17896441",
-    "content": "799a4290"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---hachi-doc-zh-download-799-4c6"
   },
   "/hachi-doc/zh/events/-38b": {
-    "component": "17896441",
-    "content": "58ebaa23"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---hachi-doc-zh-events-58-e-9ec"
   },
   "/hachi-doc/zh/hc-integration/bv/-03f": {
-    "component": "17896441",
-    "content": "ac005e6c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---hachi-doc-zh-hc-integration-bv-ac-0-bab"
   },
   "/hachi-doc/zh/hc-integration/iv/-ad1": {
-    "component": "17896441",
-    "content": "fcd0a21c"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---hachi-doc-zh-hc-integration-iv-fcd-201"
   },
   "/hachi-doc/zh/hc-integration/nv/-22f": {
-    "component": "17896441",
-    "content": "bb494c92"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---hachi-doc-zh-hc-integration-nv-bb-4-c7b"
   },
   "/hachi-doc/zh/hc-integration/rv/-dac": {
-    "component": "17896441",
-    "content": "5959b346"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---hachi-doc-zh-hc-integration-rv-595-566"
   },
   "/hachi-doc/zh/IAP/-1ab": {
-    "component": "17896441",
-    "content": "8a823093"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---hachi-doc-zh-iap-8-a-8-ed9"
   },
   "/hachi-doc/zh/login/-fa9": {
-    "component": "17896441",
-    "content": "2549433e"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---hachi-doc-zh-login-254-929"
   },
   "/hachi-doc/zh/other/-b6f": {
-    "component": "17896441",
-    "content": "9dbed2a3"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---hachi-doc-zh-other-9-db-447"
+  },
+  "/hachi-doc/zh/qa/qaandroid/-1f9": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---hachi-doc-zh-qa-qaandroid-2-ee-9d9"
+  },
+  "/hachi-doc/zh/qa/qaios/-730": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---hachi-doc-zh-qa-qaios-0-da-c25"
   },
   "/hachi-doc/zh/remoteConfig/-fd8": {
-    "component": "17896441",
-    "content": "2b14834a"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---hachi-doc-zh-remote-config-2-b-1-e9f"
   },
   "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios/-39f": {
-    "component": "17896441",
-    "content": "a89a0f8e"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---hachi-doc-zh-sdk-projectsettings-sdk-projectsettings-ios-a-89-0c6"
   }
 }

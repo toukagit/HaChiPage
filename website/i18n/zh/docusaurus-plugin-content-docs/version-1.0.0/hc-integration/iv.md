@@ -19,8 +19,10 @@ private void Button_ShowIV()
     /// 展示插屏广告
     /// </summary>
     /// <param name="_adPos">插屏点位</param>
+    /// <param name="_adPos">插屏type</param>
     /// <param name="_closeCallback">插屏关闭回调</param>
-    HCSDKManager.Instance.ShowInterstitial(HCIVPositionName.IV_Success,InterAdCloseCallback);
+
+    HCSDKManager.Instance.ShowInterstitial(HCIVPositionName _adPos, HCIVADType _IvType = HCIVADType.IV1, Action _closeCallback = null);
 }
 
 

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "qa/qaandroid",
+  "id": "version-1.0.0/qa/qaandroid",
+  "title": "Android",
+  "description": "1、如遇下边问题，请确认VPN或更换节点",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/qa/qaandroid.md",
+  "sourceDirName": "qa",
+  "slug": "/qa/qaandroid",
+  "permalink": "/hachi-doc/zh/qa/qaandroid",
+  "tags": [],
+  "version": "1.0.0",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "iOS",
+    "permalink": "/hachi-doc/zh/qa/qaios"
+  }
+}

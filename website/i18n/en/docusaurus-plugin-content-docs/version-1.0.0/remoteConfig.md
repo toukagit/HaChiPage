@@ -5,7 +5,7 @@ description: ""
 sidebar_position: 3
 ---
 
-## 一、Get remote config
+## Get remote config
 ```c
 /// <summary>
 /// 

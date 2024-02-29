@@ -49,3 +49,16 @@ private void UserSourceListenerCallback(bool isOrganic, string network)
 }
 ```
 用户来源回调，bool: true 自然用户 false 非自然用户
+
+## 五、Firebase 激活回调
+
+需在SDK初始化前设置；在此回调中可以获取最新远端在线参数。
+
+```c
+HCSDKManager.Instance.SetFirebaseFetchDataAsyncSuccess = (result)=> {
+    
+    // result = true 激活成功，false 激活失败
+    HCDebugger.LogDebug("Firebase fetch remote config result:"+result);
+    
+};
+```

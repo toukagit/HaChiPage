@@ -17,5 +17,9 @@
   "previous": {
     "title": "Other functions",
     "permalink": "/hachi-doc/other"
+  },
+  "next": {
+    "title": "iOS",
+    "permalink": "/hachi-doc/qa/qaios"
   }
 }

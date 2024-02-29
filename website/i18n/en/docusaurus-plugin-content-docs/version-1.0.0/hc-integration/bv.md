@@ -5,19 +5,23 @@ description: ""
 sidebar_position: 3
 ---
 
-## 一、Loading a Banner
+## Loading a Banner
 
 After calling the SDK initialization, the Banner advertisement is automatically loaded inside the SDK.
 
-## 二、Showing a Banner
+## Showing a Banner
 ```c
 public void Button_ShowBanner()
 {
-    HCSDKManager.Instance.ShowBanner();
+    /// <summary>
+    /// Display banner ads
+    /// </summary>
+    /// <param name="_pos">banner display location </param>
+    HCSDKManager.Instance.ShowBanner(MaxSdkBase.BannerPosition _pos);
 }
 ```
 
-## 三、Hiding a Banner
+## Hiding a Banner
 
 ```c
 public void Button_HideBanner()

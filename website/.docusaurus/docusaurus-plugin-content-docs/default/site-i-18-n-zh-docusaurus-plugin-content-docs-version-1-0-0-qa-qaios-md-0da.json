@@ -1,0 +1,25 @@
+{
+  "unversionedId": "qa/qaios",
+  "id": "version-1.0.0/qa/qaios",
+  "title": "iOS",
+  "description": "报错：",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/qa/qaios.md",
+  "sourceDirName": "qa",
+  "slug": "/qa/qaios",
+  "permalink": "/hachi-doc/zh/qa/qaios",
+  "tags": [],
+  "version": "1.0.0",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "构建iOS平台",
+    "permalink": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios"
+  },
+  "next": {
+    "title": "Android",
+    "permalink": "/hachi-doc/zh/qa/qaandroid"
+  }
+}

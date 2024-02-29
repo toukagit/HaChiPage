@@ -5,7 +5,7 @@
       "versions": [
         {
           "name": "1.0.0",
-          "label": "1.0.0",
+          "label": "2.0.0",
           "isLast": true,
           "path": "/hachi-doc/zh/",
           "mainDocId": "index",
@@ -58,6 +58,16 @@
             {
               "id": "other",
               "path": "/hachi-doc/zh/other",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "qa/qaandroid",
+              "path": "/hachi-doc/zh/qa/qaandroid",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "qa/qaios",
+              "path": "/hachi-doc/zh/qa/qaios",
               "sidebar": "tutorialSidebar"
             },
             {

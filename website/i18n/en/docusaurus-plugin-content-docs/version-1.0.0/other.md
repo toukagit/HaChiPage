@@ -5,7 +5,7 @@ description: ""
 sidebar_position: 3
 ---
 
-## 一、The game loses/gains focus
+## The game loses/gains focus
 ```c
 HCSDKManager.Instance.SetGameFocusListener((_isFocus) => {
     if (_isFocus)
@@ -20,21 +20,21 @@ HCSDKManager.Instance.SetGameFocusListener((_isFocus) => {
 ```
 Set the game to lose/gain focus callback, the SDK will give a callback every time triggered to the corresponding situation.<br/>
 For example, when a commercial starts playing, your game will lose focus. When the AD is over, return to the game and your game will gain focus.
-## 二、Review
+## Review
 
 ```c
 HCSDKManager.Instance.Review();
 ```
 Call to pop-up Google/Apple system review box.
 
-## 三、Vibration
+## Vibration
 ```c
 // Vibration strength: 0: slight 1: moderate 2: severe
 // Vibration time: 0 ~ 1
 HCSDKManager.Instance.Shake(1,0.5f);
 ```
 
-## 四、Gets the current user source
+## Gets the current user source
 ```c
 void Start()
 {
@@ -48,3 +48,16 @@ private void UserSourceListenerCallback(bool isOrganic, string network)
 }
 ```
 User source callback, bool: true natural user false unnatural user
+
+## Firebase activates the callback
+
+Must be set before SDK initialization; In this callback, you can obtain the latest remote online parameters.
+
+```c
+HCSDKManager.Instance.SetFirebaseFetchDataAsyncSuccess = (result)=> {
+    
+    // result = true The activation succeeds, false the activation fails
+    HCDebugger.LogDebug("Firebase fetch remote config result:"+result);
+    
+};
+```

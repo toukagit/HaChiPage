@@ -7,11 +7,11 @@ sidebar_position: 1
 
 
 
-## 一、Loading an Interstitial Ad
+## Loading an Interstitial Ad
 
 After calling the SDK initialization, the plug-in advertisement is automatically loaded inside the SDK.
 
-## 二、Showing an Interstitial Ad
+## Showing an Interstitial Ad
 ```c
 private void Button_ShowIV()
 {
@@ -19,8 +19,9 @@ private void Button_ShowIV()
     /// 
     /// </summary>
     /// <param name="_adPos">interstitial pos</param>
+    /// <param name="_adPos">interstitial type</param>
     /// <param name="_closeCallback">interstitial close callback</param>
-    HCSDKManager.Instance.ShowInterstitial(HCIVPositionName.IV_Success,InterAdCloseCallback);
+    HCSDKManager.Instance.ShowInterstitial(HCIVPositionName _adPos, HCIVADType _IvType = HCIVADType.IV1, Action _closeCallback = null);
 }
 
 

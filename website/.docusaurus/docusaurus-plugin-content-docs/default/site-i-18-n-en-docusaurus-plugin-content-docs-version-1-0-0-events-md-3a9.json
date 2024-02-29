@@ -1,7 +1,7 @@
 {
   "unversionedId": "events",
   "id": "version-1.0.0/events",
-  "title": "Custom event",
+  "title": "Event Tracking",
   "description": "",
   "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-1.0.0/events.md",
   "sourceDirName": ".",
@@ -11,8 +11,8 @@
   "version": "1.0.0",
   "sidebarPosition": 96,
   "frontMatter": {
-    "title": "Custom event",
-    "sidebar_label": "Custom event",
+    "title": "Event Tracking",
+    "sidebar_label": "Event Tracking",
     "description": "",
     "sidebar_position": 96
   },

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "login",
+  "id": "version-2.0.0/login",
+  "title": "Account system",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.0.0/login.md",
+  "sourceDirName": ".",
+  "slug": "/login",
+  "permalink": "/hachi-doc/zh/login",
+  "tags": [],
+  "version": "2.0.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Account system",
+    "sidebar_label": "Account system",
+    "description": "",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "In-app purchase",
+    "permalink": "/hachi-doc/zh/IAP"
+  },
+  "next": {
+    "title": "Other functions",
+    "permalink": "/hachi-doc/zh/other"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "hc-integration/iv",
+  "id": "version-2.0.0/hc-integration/iv",
+  "title": "Interstitials",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.0.0/hc-integration/iv.md",
+  "sourceDirName": "hc-integration",
+  "slug": "/hc-integration/iv",
+  "permalink": "/hachi-doc/zh/hc-integration/iv",
+  "tags": [],
+  "version": "2.0.0",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Interstitials",
+    "sidebar_label": "Interstitials",
+    "description": "",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK Integration",
+    "permalink": "/hachi-doc/zh/download"
+  },
+  "next": {
+    "title": "Rewarded Ads",
+    "permalink": "/hachi-doc/zh/hc-integration/rv"
+  }
+}

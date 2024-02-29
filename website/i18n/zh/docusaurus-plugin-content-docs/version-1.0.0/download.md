@@ -15,7 +15,7 @@ sidebar_position: 2
 
 
 ## 下载最新的Unity插件 
-[HCSDK_2.1.0_f0ea0b4.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.1.0/HCSDK_2.1.0_f0ea0b4.unitypackage)（[更新日志](/versions)）
+[HCSDK_2.2.0_ef0772a.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.0/HCSDK_2.2.0_ef0772a.unitypackage)（[更新日志](/versions)）
 <br/><a id='click'>    </a>
 
 
@@ -27,66 +27,16 @@ sidebar_position: 2
 
 ## 参数配置
 1、将 Firebase的GoogleSerivce-info.plist(iOS)文件和GoogleService.json(Android)添加至项目Assets根目录下。（如sdk原来带有该测试文件请删掉，确保用对应游戏的参数文件）<br/>
-2、在 ** HCStaticParams.cs ** 中填写好相应的参数<font color="ff0000">（v2.0.0以上版本无需设置）</font><br/>
 
-```c
-    public static string ApplovinKey = "";
+2、将需求文档中的配置文件放在 Assets/StreamingAssets 目录下即可<br/>
 
-#if UNITY_ANDROID
-    // Bundle id
-    public static string BundleID = "";
+![](/img/HCSDK/image14.png)
 
+## 项目配置
+FB SDK配置：填入Facebook App Id 以及 Client Token：<br/>
 
-    // Adjust
-    public static string AdjustToken = "";
-
-
-    // TD ThinkingData
-    public static string TDAppID = "";
-    public static string TDServerURL = "https://ss.zolnm.com";
-
-    // Ads
-    public static string BannerAdUnitID = "";
-    public static string InterAdUnitID = "";
-
-    // 提审模式下激励视频广告位ID
-    public static string ReviewRewardUnitId = "";
-
-    // 线上激励视频广告位ID
-    public static string RewardAdUnitID = "";
-    public static string NativeAdUnitID = "";
-    public static string AppOpenAdUnitID = "";
-
-#else
-    // Bundle id
-    public static string BundleID = "";
-    // Adjust
-    public static string AdjustToken = "";
-
-    // TD ThinkingData
-    public static string TDAppID = "";
-    public static string TDServerURL = "https://ss.zolnm.com";
-
-    // Ads
-    public static string BannerAdUnitID = "";
-    public static string InterAdUnitID = "";
-    // 提审模式下激励视频广告位ID
-    public static string ReviewRewardUnitId = "";
-
-    // 线上激励视频广告位ID
-    public static string RewardAdUnitID = "";
-    public static string NativeAdUnitID = "";
-    public static string AppOpenAdUnitID = "";
-
-#endif
-```
-
-3、将需求文档中的配置文件放在 Assets/StreamingAssets 目录下即可 <font color="ff0000">（v2.0.0版本新增）</font>
-## 项目配置<font color="ff0000">（v2.0.0以上版本无需设置）</font>
-在 MAX 面板中配置好admobID、ApplovinKey：<br/>
-
-![](/img/HCSDK/image01.png)
-![](/img/HCSDK/image02.png)  
+![](/img/HCSDK/image15.png)
+![](/img/HCSDK/image16.png)  
 
 ## Unity Android平台设置
 #### 1、Player Setting设置

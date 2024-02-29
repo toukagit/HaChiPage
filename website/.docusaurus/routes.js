@@ -4,6 +4,41 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/hachi-doc/zh/__docusaurus/debug/',
+    component: ComponentCreator('/hachi-doc/zh/__docusaurus/debug/','074'),
+    exact: true
+  },
+  {
+    path: '/hachi-doc/zh/__docusaurus/debug/config/',
+    component: ComponentCreator('/hachi-doc/zh/__docusaurus/debug/config/','2ff'),
+    exact: true
+  },
+  {
+    path: '/hachi-doc/zh/__docusaurus/debug/content/',
+    component: ComponentCreator('/hachi-doc/zh/__docusaurus/debug/content/','5f6'),
+    exact: true
+  },
+  {
+    path: '/hachi-doc/zh/__docusaurus/debug/globalData/',
+    component: ComponentCreator('/hachi-doc/zh/__docusaurus/debug/globalData/','f58'),
+    exact: true
+  },
+  {
+    path: '/hachi-doc/zh/__docusaurus/debug/metadata/',
+    component: ComponentCreator('/hachi-doc/zh/__docusaurus/debug/metadata/','058'),
+    exact: true
+  },
+  {
+    path: '/hachi-doc/zh/__docusaurus/debug/registry/',
+    component: ComponentCreator('/hachi-doc/zh/__docusaurus/debug/registry/','84b'),
+    exact: true
+  },
+  {
+    path: '/hachi-doc/zh/__docusaurus/debug/routes/',
+    component: ComponentCreator('/hachi-doc/zh/__docusaurus/debug/routes/','d3c'),
+    exact: true
+  },
+  {
     path: '/hachi-doc/zh/helloReact/',
     component: ComponentCreator('/hachi-doc/zh/helloReact/','7bb'),
     exact: true
@@ -20,7 +55,7 @@ export default [
   },
   {
     path: '/hachi-doc/zh/',
-    component: ComponentCreator('/hachi-doc/zh/','486'),
+    component: ComponentCreator('/hachi-doc/zh/','a70'),
     routes: [
       {
         path: '/hachi-doc/zh/',
@@ -79,6 +114,18 @@ export default [
       {
         path: '/hachi-doc/zh/other/',
         component: ComponentCreator('/hachi-doc/zh/other/','b6f'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/hachi-doc/zh/qa/qaandroid/',
+        component: ComponentCreator('/hachi-doc/zh/qa/qaandroid/','1f9'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/hachi-doc/zh/qa/qaios/',
+        component: ComponentCreator('/hachi-doc/zh/qa/qaios/','730'),
         exact: true,
         sidebar: "tutorialSidebar"
       },

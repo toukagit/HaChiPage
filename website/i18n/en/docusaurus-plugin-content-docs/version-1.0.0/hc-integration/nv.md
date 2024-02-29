@@ -5,12 +5,12 @@ description: ""
 sidebar_position: 3
 ---
 
-## 一、Loading a Native Ad
+## Loading a Native Ad
 
 
 After calling the SDK initialization, Native ads are automatically loaded inside the SDK.
 
-## 二、Showing a Native Ad
+## Showing a Native Ad
 ```c
 public void Button_ShowNative()
 {
@@ -34,7 +34,7 @@ Need to show native location:
 
 ![](/img/HCSDK/image03.png)
 
-## 三、Removing a Native Ad
+## Removing a Native Ad
 ```c
 public void Button_RemoveNative()
 {

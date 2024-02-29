@@ -1,0 +1,21 @@
+{
+  "unversionedId": "qa/qaandroid",
+  "id": "version-1.0.0/qa/qaandroid",
+  "title": "构建iOS平台",
+  "description": "1、Cocopods",
+  "source": "@site/versioned_docs/version-1.0.0/qa/qaandroid.md",
+  "sourceDirName": "qa",
+  "slug": "/qa/qaandroid",
+  "permalink": "/hachi-doc/qa/qaandroid",
+  "tags": [],
+  "version": "1.0.0",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "构建iOS平台",
+    "permalink": "/hachi-doc/qa/qaios"
+  }
+}

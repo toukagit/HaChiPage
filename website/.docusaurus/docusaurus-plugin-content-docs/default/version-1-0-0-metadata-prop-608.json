@@ -1,7 +1,7 @@
 {
   "pluginId": "default",
   "version": "1.0.0",
-  "label": "1.0.0",
+  "label": "2.0.0",
   "banner": null,
   "badge": false,
   "className": "docs-version-1.0.0",
@@ -54,7 +54,7 @@
       },
       {
         "type": "link",
-        "label": "自定义事件",
+        "label": "事件埋点",
         "href": "/hachi-doc/zh/events",
         "docId": "events"
       },
@@ -95,6 +95,26 @@
         ],
         "collapsed": true,
         "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Q&A",
+        "items": [
+          {
+            "type": "link",
+            "label": "iOS",
+            "href": "/hachi-doc/zh/qa/qaios",
+            "docId": "qa/qaios"
+          },
+          {
+            "type": "link",
+            "label": "Android",
+            "href": "/hachi-doc/zh/qa/qaandroid",
+            "docId": "qa/qaandroid"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
       }
     ]
   },
@@ -107,7 +127,7 @@
     },
     "events": {
       "id": "events",
-      "title": "自定义事件",
+      "title": "事件埋点",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
@@ -157,6 +177,18 @@
       "id": "other",
       "title": "其他功能",
       "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "qa/qaandroid": {
+      "id": "qa/qaandroid",
+      "title": "Android",
+      "description": "1、如遇下边问题，请确认VPN或更换节点",
+      "sidebar": "tutorialSidebar"
+    },
+    "qa/qaios": {
+      "id": "qa/qaios",
+      "title": "iOS",
+      "description": "报错：",
       "sidebar": "tutorialSidebar"
     },
     "remoteConfig": {

@@ -1,7 +1,7 @@
 {
   "version.label": {
-    "message": "1.0.0",
-    "description": "The label for version 1.0.0"
+    "message": "2.0.0",
+    "description": "The label for version 2.0.0"
 }
   ,
   "sidebar.tutorialSidebar.category.Ad": {
@@ -11,5 +11,10 @@
   "sidebar.tutorialSidebar.category.Build Package": {
     "message": "构建版本",
     "description": "构建版本"
+  }
+  ,
+  "sidebar.tutorialSidebar.category.QA": {
+    "message": "Q&A",
+    "description": "Q&A"
   }
 }

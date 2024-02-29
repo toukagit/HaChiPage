@@ -1,0 +1,28 @@
+{
+  "unversionedId": "events",
+  "id": "version-2.0.0/events",
+  "title": "Custom event",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.0.0/events.md",
+  "sourceDirName": ".",
+  "slug": "/events",
+  "permalink": "/hachi-doc/zh/events",
+  "tags": [],
+  "version": "2.0.0",
+  "sidebarPosition": 96,
+  "frontMatter": {
+    "title": "Custom event",
+    "sidebar_label": "Custom event",
+    "description": "",
+    "sidebar_position": 96
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Native",
+    "permalink": "/hachi-doc/zh/hc-integration/nv"
+  },
+  "next": {
+    "title": "Remote Config",
+    "permalink": "/hachi-doc/zh/remoteConfig"
+  }
+}

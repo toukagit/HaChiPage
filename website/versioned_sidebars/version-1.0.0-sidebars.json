@@ -25,6 +25,14 @@
       "items": [
         "sdk-projectsettings/sdk-projectsettings-ios"
       ]
+    },
+    {
+      "type": "category",
+      "label": "QA",
+      "items": [
+        "qa/qaios",
+        "qa/qaandroid"
+      ]
     }
     
   ]

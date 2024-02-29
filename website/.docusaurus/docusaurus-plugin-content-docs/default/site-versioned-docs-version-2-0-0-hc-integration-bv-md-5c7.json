@@ -1,0 +1,28 @@
+{
+  "unversionedId": "hc-integration/bv",
+  "id": "version-2.0.0/hc-integration/bv",
+  "title": "Banner",
+  "description": "",
+  "source": "@site/versioned_docs/version-2.0.0/hc-integration/bv.md",
+  "sourceDirName": "hc-integration",
+  "slug": "/hc-integration/bv",
+  "permalink": "/hachi-doc/zh/hc-integration/bv",
+  "tags": [],
+  "version": "2.0.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Banner",
+    "sidebar_label": "Banner",
+    "description": "",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rewarded Ads",
+    "permalink": "/hachi-doc/zh/hc-integration/rv"
+  },
+  "next": {
+    "title": "Native",
+    "permalink": "/hachi-doc/zh/hc-integration/nv"
+  }
+}

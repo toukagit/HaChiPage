@@ -5,11 +5,11 @@ description: ""
 sidebar_position: 2
 ---
 
-## 一、Loading a Rewarded Ad
+## Loading a Rewarded Ad
 
 After calling SDK initialization, incentive video ads are automatically loaded inside the SDK.
 
-## 二、Showing a Rewarded Ad
+## Showing a Rewarded Ad
 
 ```c
 public void Button_ShowRV()

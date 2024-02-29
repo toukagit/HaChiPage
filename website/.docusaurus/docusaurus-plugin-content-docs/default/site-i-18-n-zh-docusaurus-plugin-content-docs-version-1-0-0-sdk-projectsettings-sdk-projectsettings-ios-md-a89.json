@@ -17,5 +17,9 @@
   "previous": {
     "title": "其他功能",
     "permalink": "/hachi-doc/zh/other"
+  },
+  "next": {
+    "title": "iOS",
+    "permalink": "/hachi-doc/zh/qa/qaios"
   }
 }

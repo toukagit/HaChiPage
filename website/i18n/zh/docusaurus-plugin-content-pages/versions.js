@@ -23,7 +23,7 @@ function Version() {
         <div className="margin-bottom--lg">
         <h2>最新版本</h2>
         
-		<b><Link to={useBaseUrl('/download')}><font size="5">HaChiSDK v2.1.0</font></Link> </b>  <br/>
+		<b><Link to={useBaseUrl('/download')}><font size="5">HaChiSDK v2.2.0</font></Link> </b>  <br/>
         <table border="0" width="80%" align="left">
           <tr>
                     <td>SDK Name</td>
@@ -34,22 +34,47 @@ function Version() {
                   </tr>
                   <tr>
                     <td >HaChiSDK</td>
-                    <td>2.1.0</td>
-                    <td>2024-02-07</td>
+                    <td>2.2.0</td>
+                    <td>2024-02-29</td>
                     <td>
-                    1、修复bug
+                      1、优化adjust初始化时机<br/>
+                      2、新增firebase崩溃分析<br/>
+                      3、修复bug<br/>
                     </td>
                     <td>
-                    <a href="https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.1.0/HCSDK_2.1.0_f0ea0b4.unitypackage">HCSDK_2.1.0_f0ea0b4.unitypackage</a><br/>
+                    <a href="https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.0/HCSDK_2.2.0_ef0772a.unitypackage">HCSDK_2.2.0_ef0772a.unitypackage</a><br/>
                     </td>
           </tr>
           </table>
-          <br/><br/><br/><br/><br/>
+          <br/><br/><br/><br/><br/><br/>
         </div>
 
         <div className="margin-bottom--lg">
                 <h3 id="archive">历史版本</h3>
                 <hr />
+          <b><font size="4">HaChiSDK v2.1.0</font> </b>  <br/>
+          <table border="0" width="80%" align="left">
+            <tr>
+                      <td>SDK Name</td>
+                      <td>SDK Version</td>
+                      <td>Update Time</td>
+                      <td>Update Content</td>
+                      <td>Download</td>
+                    </tr>
+                    <tr>
+                      <td >HaChiSDK</td>
+                      <td>2.1.0</td>
+                      <td>2024-02-07</td>
+                      <td>
+                      1、修复bug
+                      </td>
+                      <td>
+                      <a href="https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.1.0/HCSDK_2.1.0_f0ea0b4.unitypackage">HCSDK_2.1.0_f0ea0b4.unitypackage</a><br/>
+                      </td>
+            </tr>
+            </table>
+            <br/><br/><br/><br/><br/>
+          
               <b><font size="4">HaChiSDK v2.0.0</font> </b>  <br/>
               <table border="0" width="80%" align="left">
                 <tr>
