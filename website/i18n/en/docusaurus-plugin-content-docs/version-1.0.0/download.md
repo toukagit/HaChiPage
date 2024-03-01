@@ -53,7 +53,7 @@ Custom than 6.7.1 gradle version requirements, recommend download  https://downl
 
 ![](/img/HCSDK/image05.png)  
 
-#### 3、Assets/Plugins/Android/GooglePlayGamesManifest androidlib directory path does not exist or is empty cases need to check:
+#### 3、Assets/Plugins/Android/FirebaseApp.androidlib directory path does not exist or is empty cases need to check:
 1、 Check whether GoogleService.json(Android) has been copied in [Parameter Configuration ](#click).<br/>
 2、Restart the unity editor.
 

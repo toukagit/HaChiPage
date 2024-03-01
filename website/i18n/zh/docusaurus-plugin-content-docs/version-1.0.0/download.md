@@ -53,7 +53,7 @@ FB SDK配置：填入Facebook App Id 以及 Client Token：<br/>
 
 ![](/img/HCSDK/image05.png)  
 
-#### 3、Assets/Plugins/Android/GooglePlayGamesManifest.androidlib路径不存在或者目录为空的情况下需要检查：
+#### 3、Assets/Plugins/Android/FirebaseApp.androidlib路径不存在或者目录为空的情况下需要检查：
 1、 检查[【参数配置】](#click)中GoogleService.json(Android)是否已经拷贝进来。<br/>
 2、重启unity编辑器。
 
