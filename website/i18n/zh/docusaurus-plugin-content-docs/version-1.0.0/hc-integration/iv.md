@@ -33,4 +33,5 @@ private void InterAdCloseCallback()
 ```
 
 ** HCIVPositionName **：插屏广告点位名称，请将【产品需求文档】中的插屏广告点位名称先在 HCAdPositionName.cs - HCIVAdPositionName 中进行定义。<br/>
+** HCIVADType **：插屏频次类型。默认使用 IV1。可结合【产品需求文档】如有不同插屏频次需求，可配合 IV2 使用。<br/>
 ** InterAdCloseCallback **：插屏关闭回调 

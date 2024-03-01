@@ -32,4 +32,5 @@ private void InterAdCloseCallback()
 ```
 
 ** HCIVPositionName **：Insert advertisement point name, please first define the insert advertisement point name in the [Product Requirements document] in HCAdPositionName.cs-HCIVAdPositionName.<br/>
+** HCIVADType **：Type of frequency control Default set IV1. IV2 can be used if required.<br/>
 ** InterAdCloseCallback **：interstitial close callback
