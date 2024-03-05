@@ -28,13 +28,15 @@ HCSDKManager.Instance.LevelEnter("1");
 HCSDKManager.Instance.LevelEnter(1);
 
 HCSDKManager.Instance.LevelEnter("S_1");
+
+HCSDKManager.Instance.LevelEnter("S_1",new Dictionary<string, object>() {{ "s_id", 9 },{ "s_type","10"} });
 ```
 
 ** 调用时机：** 游戏每局开始时调用。  
 
 ** API:  **    
-void LevelEnter(int level);     
-void LevelEnter(string level);
+void LevelEnter(int level,Dictionary<string, object> extraInfos = null);     
+void LevelEnter(string level,Dictionary<string, object> extraInfos = null);
 
 <table>
   <tr>
@@ -49,6 +51,15 @@ void LevelEnter(string level);
     <td>int/string</td>
     <td>
     level为正在进行的关卡序号值。      <br />    
+    具体值请参看产品需求文档中"关卡进度事件接入"  
+    </td>
+  </tr>
+    <tr>
+    <td>extraInfos</td>
+    <td>N</td>
+    <td>Dictionary</td>
+    <td>
+    拓展字段      <br />    
     具体值请参看产品需求文档中"关卡进度事件接入"  
     </td>
   </tr>
@@ -67,12 +78,14 @@ HCSDKManager.Instance.LevelEnd("S_1", StageResult.StageFail);
 HCSDKManager.Instance.LevelEnd(3, StageResult.Level_Retry);
 
 HCSDKManager.Instance.LevelEnd("S_2", StageResult.Level_Back);
+
+HCSDKManager.Instance.LevelEnd("S_2", StageResult.Level_Success,new Dictionary<string, object>() {{ "s_id", 9 },{ "s_type","10"} });
 ```
 ** 调用时机：** 游戏每局结束时调用。
 
 ** API: **    
-void LevelEnd(int _level, StageResult _stageResult);  
-void LevelEnd(string _level, StageResult _stageResult);
+void LevelEnd(int _level, StageResult _stageResult,Dictionary<string, object> extraInfos = null);  
+void LevelEnd(string _level, StageResult _stageResult,Dictionary<string, object> extraInfos = null);
 
 <table>
   <tr>
@@ -99,6 +112,15 @@ void LevelEnd(string _level, StageResult _stageResult);
     Level_Fail: 当局游戏失败  <br /><br />
     Level_Retry: 在未结算前，用户选择马上结束当局游戏并重新开始。如在当局游戏内点击重试。  <br /><br />
     Level_Back: 在未结算前，用户选择马上退出游戏并返回游戏列表界面或主界面。如在当局游戏内点击返回或退出按钮。  <br />
+    </td>
+  </tr>
+    <tr>
+    <td>extraInfos</td>
+    <td>N</td>
+    <td>Dictionary</td>
+    <td>
+    拓展字段          <br />
+    具体值请参看产品需求文档中"关卡进度事件接入"  
     </td>
   </tr>
 </table>

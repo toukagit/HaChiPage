@@ -26,12 +26,16 @@ HCSDKManager.Instance.LevelEnter("1");
 HCSDKManager.Instance.LevelEnter(1);
 
 HCSDKManager.Instance.LevelEnter("S_1");
+
+HCSDKManager.Instance.LevelEnter("S_1",new Dictionary<string, object>() {{ "s_id", 9 },{ "s_type","10"} });
+
 ```
 Call `LevelEnter` method when starting each level.
 
-API: <br />
-void LevelEnter(int level);     
-void LevelEnter(string level);
+** API: **
+
+void LevelEnter(int level,Dictionary<string, object> extraInfos = null);     
+void LevelEnter(string level,Dictionary<string, object> extraInfos = null);
 
 <table>
   <tr>
@@ -49,6 +53,15 @@ void LevelEnter(string level);
     You can get the specific values  「Level Progress Event Access」 on your game product requirement.  
   </td>
   </tr>
+      <tr>
+    <td>extraInfos</td>
+    <td>N</td>
+    <td>Dictionary</td>
+    <td>
+    Extended field      <br />    
+    You can get the specific values  「Level Progress Event Access」 on your game product requirement.  
+    </td>
+  </tr>
 </table>
 
 
@@ -64,13 +77,16 @@ HCSDKManager.Instance.LevelEnd("S_1", StageResult.Level_Fail);
 HCSDKManager.Instance.LevelEnd(3, StageResult.Level_Retry);
 
 HCSDKManager.Instance.LevelEnd("S_2", StageResult.Level_Back);
+
+HCSDKManager.Instance.LevelEnd("S_2", StageResult.Level_Success,new Dictionary<string, object>() {{ "s_id", 9 },{ "s_type","10"} });
+
 ```
 
 Call `LevelEnd` method when finish each level.   
 
-API:
-void LevelEnd(int level, StageResult stageResult);<br/>
-void LevelEnd(string level, StageResult stageResult);
+** API: **    
+void LevelEnd(int _level, StageResult _stageResult,Dictionary<string, object> extraInfos = null);  
+void LevelEnd(string _level, StageResult _stageResult,Dictionary<string, object> extraInfos = null);
 
 <table>
   <tr>
@@ -97,6 +113,15 @@ void LevelEnd(string level, StageResult stageResult);
     <b>Level_Fail:</b> Level has ended with failed  <br />
     <b>Level_Retry:</b> Before level end, restart level. eg. click Retry button in the current level <br />
     <b>Level_Back:</b> Before level end, back to home page or level list. For example click back or quit buttons in current level
+    </td>
+  </tr>
+      <tr>
+    <td>extraInfos</td>
+    <td>N</td>
+    <td>Dictionary</td>
+    <td>
+    Extended field          <br />
+    You can get the specific values  「Level Progress Event Access」 on your game product requirement.  
     </td>
   </tr>
 </table>
