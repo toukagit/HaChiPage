@@ -1,0 +1,47 @@
+[
+  {
+    "sdk_version": "2.2.0",
+    "update_time": "2024-02-29",
+    "update_content": {
+      "zh": "1、优化adjust初始化时机\n2、新增firebase崩溃分析\n3、修复bug",
+      "en": "1. Optimize the adjust initialization time.\n2. Added firebase crash analysis.\n3. Fix the bug."
+    },
+    "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.0/HCSDK_2.2.0_ef0772a.unitypackage"
+  },
+  {
+    "sdk_version": "2.1.0",
+    "update_time": "2024-02-07",
+    "update_content": {
+      "zh": "1、修复bug",
+      "en": "1. fix bugs."
+    },
+    "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.1.0/HCSDK_2.1.0_f0ea0b4.unitypackage"
+  },
+  {
+    "sdk_version": "2.0.0",
+    "update_time": "2024-01-05",
+    "update_content": {
+      "zh": "1、所有需要填写的ID均改为配置文件读取",
+      "en": "1. All ids to be filled in are read from the configuration file."
+    },
+    "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.0.0/HCSDK_2.0.0_32a0ea8.unitypackage"
+  },
+  {
+    "sdk_version": "1.1.2",
+    "update_time": "2023-11-09",
+    "update_content": {
+      "zh": "1、展示激励视频接口新增 toast 弹框参数，默认开启",
+      "en": "1. Add the toast pop-up parameter to the display incentive video interface, which is enabled by default"
+    },
+    "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/1.1.2/HCSDK_1.1.2_47527f7.unitypackage"
+  },
+  {
+    "sdk_version": "1.0.0",
+    "update_time": "2023-10-26",
+    "update_content": {
+      "zh": "1、初始版本",
+      "en": "1、Initial release"
+    },
+    "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/1.0.0/HCSDK_1.0.0_dc754a8.unitypackage"
+  }
+]
