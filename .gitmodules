@@ -1,3 +1,0 @@
-[submodule "website/output_web_page"]
-	path = website/output_web_page
-	url = https://github.com/toukagit/hachi-doc.git

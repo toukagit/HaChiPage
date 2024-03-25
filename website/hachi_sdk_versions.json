@@ -1,4 +1,40 @@
 [
+    {
+      "sdk_version": "2.2.4",
+      "update_time": "2024-03-25",
+      "update_content": {
+        "zh": "1、日志开关通过在线参数控制\n2、修复json序列化问题\n3、新增数数上报参数",
+        "en": "1.Log switch controls \n2.through online parameters, fixes json serialization problems \n3.adds ThinkingData reporting parameters."
+      },
+      "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.4/HCSDK_2.2.4_7ef2c52.unitypackage"
+    },
+    {
+      "sdk_version": "2.2.3",
+      "update_time": "2024-03-19",
+      "update_content": {
+        "zh": "1、优化激励视频广告，无激励视频时由插屏广告替补",
+        "en": "1.Optimize reward video ads, and replace them with interstitials when there is no reward video."
+      },
+      "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.1/HCSDK_2.2.1_169fb08.unitypackage"
+    },
+    {
+      "sdk_version": "2.2.2",
+      "update_time": "2024-03-11",
+      "update_content": {
+        "zh": "1、修复插屏间隔问题",
+        "en": "1.Fixed the interstitial ad spacing issue."
+      },
+      "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.1/HCSDK_2.2.1_169fb08.unitypackage"
+    },
+    {
+      "sdk_version": "2.2.1",
+      "update_time": "2024-03-11",
+      "update_content": {
+        "zh": "1、添加关卡相关事件",
+        "en": "1.Add level related events."
+      },
+      "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.1/HCSDK_2.2.1_169fb08.unitypackage"
+    },
   {
     "sdk_version": "2.2.0",
     "update_time": "2024-02-29",
