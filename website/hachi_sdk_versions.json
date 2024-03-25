@@ -15,7 +15,7 @@
         "zh": "1、优化激励视频广告，无激励视频时由插屏广告替补",
         "en": "1.Optimize reward video ads, and replace them with interstitials when there is no reward video."
       },
-      "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.1/HCSDK_2.2.1_169fb08.unitypackage"
+      "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.3/HCSDK_2.2.3_cbe60c5.unitypackage"
     },
     {
       "sdk_version": "2.2.2",
@@ -24,7 +24,7 @@
         "zh": "1、修复插屏间隔问题",
         "en": "1.Fixed the interstitial ad spacing issue."
       },
-      "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.1/HCSDK_2.2.1_169fb08.unitypackage"
+      "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.2/HCSDK_2.2.2_87deecd.unitypackage"
     },
     {
       "sdk_version": "2.2.1",
