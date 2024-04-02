@@ -1,5 +1,14 @@
 [
     {
+      "sdk_version": "2.2.5",
+      "update_time": "2024-04-02",
+      "update_content": {
+        "zh": "1、优化Admob（Android)初始化/请求",
+        "en": "1.Optimize Admob (Android) initialization/request."
+      },
+      "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.5/HCSDK_2.2.5_6b34e92.unitypackage"
+    },
+    {
       "sdk_version": "2.2.4",
       "update_time": "2024-03-25",
       "update_content": {
