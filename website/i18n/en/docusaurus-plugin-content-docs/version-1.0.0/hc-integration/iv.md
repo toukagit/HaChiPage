@@ -13,15 +13,26 @@ After calling the SDK initialization, the plug-in advertisement is automatically
 
 ## Showing an Interstitial Ad
 ```c
-private void Button_ShowIV()
+private void Button_ShowIV1()
 {
     /// <summary>
     /// 
     /// </summary>
     /// <param name="_adPos">interstitial pos</param>
-    /// <param name="_adPos">interstitial type</param>
+    /// <param name="_IvType">interstitial type</param>
     /// <param name="_closeCallback">interstitial close callback</param>
     HCSDKManager.Instance.ShowInterstitial(HCIVPositionName _adPos, HCIVADType _IvType = HCIVADType.IV1, Action _closeCallback = null);
+}
+
+private void Button_ShowIV2()
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="_adPos">interstitial pos(string type)</param>
+    /// <param name="_IvType">interstitial type</param>
+    /// <param name="_closeCallback">interstitial close callback</param>
+    HCSDKManager.Instance.ShowInterstitial(string _adPos, HCIVADType _IvType = HCIVADType.IV1, Action _closeCallback = null);
 }
 
 

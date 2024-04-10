@@ -1,5 +1,14 @@
 [
     {
+      "sdk_version": "2.2.6",
+      "update_time": "2024-04-10",
+      "update_content": {
+        "zh": "1、激励视频没准备好时允许游戏传入提示文字 \n2、网络断开时补单逻辑优化\n3、新增激励视频/插屏展示接口，允许传string 表示点位",
+        "en": "1.The reward video is not ready to allow the game to pass prompt text. \n2.Optimization of internal purchase replenishment logic when the network is disconnected. \n3.The new reward video/interstitial show interface, allowing string to represent the pos."
+      },
+      "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.6/HCSDK_2.2.6_6fda461.unitypackage"
+    },
+    {
       "sdk_version": "2.2.5",
       "update_time": "2024-04-02",
       "update_content": {

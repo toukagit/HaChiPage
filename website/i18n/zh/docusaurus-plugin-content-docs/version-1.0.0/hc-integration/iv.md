@@ -13,18 +13,29 @@ sidebar_position: 1
 
 ## 二、展示插屏广告
 ```c
-private void Button_ShowIV()
+private void Button_ShowIV1()
 {
     /// <summary>
     /// 展示插屏广告
     /// </summary>
     /// <param name="_adPos">插屏点位</param>
-    /// <param name="_adPos">插屏type</param>
+    /// <param name="_IvType">插屏type</param>
     /// <param name="_closeCallback">插屏关闭回调</param>
 
     HCSDKManager.Instance.ShowInterstitial(HCIVPositionName _adPos, HCIVADType _IvType = HCIVADType.IV1, Action _closeCallback = null);
 }
 
+private void Button_ShowIV2()
+{
+    /// <summary>
+    /// 展示插屏广告
+    /// </summary>
+    /// <param name="_adPos">插屏点位(字符串类型)</param>
+    /// <param name="_IvType">插屏type</param>
+    /// <param name="_closeCallback">插屏关闭回调</param>
+
+    HCSDKManager.Instance.ShowInterstitial(string _adPos, HCIVADType _IvType = HCIVADType.IV1, Action _closeCallback = null);
+}
 
 private void InterAdCloseCallback()
 {
