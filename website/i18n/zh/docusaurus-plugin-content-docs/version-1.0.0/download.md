@@ -15,7 +15,7 @@ sidebar_position: 2
 
 
 ## 下载最新的Unity插件 
-[HCSDK_2.2.7_e0ef7a8.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.7/HCSDK_2.2.7_e0ef7a8.unitypackage)（[更新日志](/versions)）
+[HCSDK_2.2.7_b640b3a.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.7/HCSDK_2.2.7_b640b3a.unitypackage)（[更新日志](/versions)）
 <br/><a id='click'>    </a>
 
 
