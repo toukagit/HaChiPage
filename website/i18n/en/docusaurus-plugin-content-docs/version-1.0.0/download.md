@@ -15,7 +15,7 @@ This page shows you how to download, import, and configure the HaChi Unity Plugi
 
 
 ## Download the latest Unity plugin<br/>
-[HCSDK_2.2.6_6fda461.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.6/HCSDK_2.2.6_6fda461.unitypackage)（[Release note](/versions)）
+[HCSDK_2.2.7_e0ef7a8.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.7/HCSDK_2.2.7_e0ef7a8.unitypackage)（[Release note](/versions)）
 <a id='click'>    </a>
 
 Import the plugin into Unity<br/>

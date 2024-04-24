@@ -1,5 +1,14 @@
 [
     {
+      "sdk_version": "2.2.7",
+      "update_time": "2024-04-24",
+      "update_content": {
+        "zh": "1、支持TopOn/Max双聚合 \n2、支持Firebase ABTest\n3、支持Google DMA 许可策略",
+        "en": "1.Supports TopOn/Max dual aggregation \n2.Firebase ABTest is supported. \n3.Support for Google DMA licensing policies."
+      },
+      "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.7/HCSDK_2.2.7_e0ef7a8.unitypackage"
+    },
+    {
       "sdk_version": "2.2.6",
       "update_time": "2024-04-10",
       "update_content": {
