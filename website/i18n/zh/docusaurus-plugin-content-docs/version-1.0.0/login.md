@@ -47,9 +47,15 @@ public enum HCLoginType
 
     // Apple登录
     LOGIN_BY_Apple = 4,
+    
+    // Google Play Games Services 登陆
+    LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES = 9,
 
-    // Auto登录
-    LOGIN_BY_AUTO = 10,
+    LOGIN_BY_GAMECENTER = 10,
+
+    LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES_AUTO = 101,
+
+    LOGIN_BY_GAMECENTER_AUTO = 102,
 }
 ```
 
@@ -99,6 +105,10 @@ void Start()
         }
 };
 ```
+
+登陆类型为`LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES_AUTO` , `LOGIN_BY_GAMECENTER_AUTO` 和其他社交登陆类型一样，有登陆和绑定功能， 只是首次登陆失败SDK内部会返回游客登陆类型。（其他社交登陆登陆失败就返回失败）走游客账号逻辑。 下次调用这个类型，sdk会优先走游客登陆，会尝试绑定社交类型。 <font color="#ff0000">开发者无需关心内部处理逻辑，根据登陆返回的登陆类型进行相关处理即可。（例如：游客类型显示绑定按钮）</font>
+
+
 
 ### 4、账号登出
 账号登出接口可在游戏切换账号时进行调用，做登出操作。SDK完成账号退出会给游戏回调。 无需求场景可不进行调用。

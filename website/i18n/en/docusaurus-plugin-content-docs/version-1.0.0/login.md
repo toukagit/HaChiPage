@@ -49,8 +49,14 @@ public enum HCLoginType
     // Apple
     LOGIN_BY_Apple = 4,
 
-    // Auto
-    LOGIN_BY_AUTO = 10,
+    // Google Play Games Services 登陆
+    LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES = 9,
+
+    LOGIN_BY_GAMECENTER = 10,
+
+    LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES_AUTO = 101,
+
+    LOGIN_BY_GAMECENTER_AUTO = 102,
 }
 ```
 
@@ -100,6 +106,9 @@ void Start()
         }
 };
 ```
+
+The login types LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES_AUTO, LOGIN_BY_GAMECENTER_AUTO, and others operate similarly to social login types, featuring both login and bind functionalities. However, in the event of initial login failure, the SDK internally switches to a guest login type (unlike other social logins that simply return a failure). This triggers the guest account logic. Subsequent calls to this type will prioritize guest login and attempt to bind the social type. <font color="#ff0000">Developers need not concern themselves with the internal processing logic; they should handle actions based on the returned login type (e.g., displaying a bind button for guest types).</font>
+
 
 ### 4、Account logout
 The account logout interface can be invoked when the game switches the account to do the logout operation. The SDK will call back the game after completing the account exit. No requirement scenario can not be called.
