@@ -96,10 +96,24 @@ private void PurchaseCallback(string orderID, string productName, string product
     }
     else
     {
-        //Purchase failed
+        //Restore purchase
+        if(orderAlreadyExists){
+        
+            //Restore purchase success
+        
+        }else{
+        
+           // Purchase fail
+        
+        }
     }
 }
 ```
+** Description: ** <br/>
+1. The orderAlreadyExists field is used to determine whether to restore the purchased item. <br/>
+2. When this callback is executed, the purchase is successful if orderAlreadyExists = true, and the reward should be issued again; For example, after the user has purchased an AD, uninstall and reinstall the application, and click to resume the purchase, the AD should be issued again. <br/>
+3. The purchaseResult and orderAlreadyExists fields are not both true.
+
 
 ### 5、Purchase interface
 ```c 
@@ -150,7 +164,21 @@ string productID = "com.tkkk.unitysdk.demo.a1";
 Product prodyct = HCSDKManager.Instance.GetProductInfoByID(productID);
 ```
 
-### 9、The in-app purchase is abnormal
+### 9、Restore purchase (iOS Only)
+
+```c
+HCSDKManager.Instance.RestorePurchases();
+```
+
+** Description: **<br/>
+1.for iOS products, Apple requires that if the in-purchase item contains non-consumable items, there must be a recovery purchase function. <br/>
+2.Restore the purchase function, please add according to the requirement document. The general logic is to add a restore purchase button on the setup screen. After uninstallation and reinstallation, click the Restore purchase button to restore purchased non-consumables. <br/>
+3.when there is a recoverable item, it will eventually be called to the successful purchase callback (point 4), and the game needs to ensure that the reward can be issued normally. <br/>
+4.Example: <br/>
+If an item is a non-consumable item, the reward is: remove AD and 100 gold. When resuming the purchase, only the remove AD is restored, and 100 gold coins are not restored. <br/>
+Each time the recovery purchase method is called, the successful purchase will be called back, and the game needs to add logic to judge not to repeat or hide the recovery purchase button. <br/>
+
+### 10、The in-app purchase is abnormal
 In case of payment failure, please confirm the following issues:
 - Payment callbacks must be set before SDK initialization
 - All product categories must be consistent with the background configuration, consumables, non-consumables or subscription products

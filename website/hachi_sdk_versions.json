@@ -1,5 +1,14 @@
 [
     {
+      "sdk_version": "2.2.8",
+      "update_time": "2024-05-09",
+      "update_content": {
+        "zh": "1、修复插屏与激励视频广告时间间隔不生效问题 \n2、安卓平台增加 Google Play Games Services 登录",
+        "en": "1.Fixed an issue where the interstitial and rewardVideo AD intervals did not take effect \n2.Added Google Play Games Services sign-in for Android"
+      },
+      "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.2.8/HCSDK_2.2.8_989fdee.unitypackage"
+    },
+    {
       "sdk_version": "2.2.7",
       "update_time": "2024-04-24",
       "update_content": {

@@ -164,28 +164,38 @@ void Start()
 {   
     _bindAccountCallback = (BindInfo) =>
     {
-    Debug.Log($"Bound callback {BindInfo.bindStatus} type:{BindInfo.userInfo.loginType} msg:{BindInfo.bindMsg} userId:{BindInfo.userInfo.userID} token:{BindInfo.userInfo.token} userIdList:{BindInfo.userIDs}");
-    if (BindInfo.bindStatus == HCBindAccountStatus.BIND_CODE_SELECT)
-    {
-        HCDebugger.LogDebug("Bind callback - Select screen");
-        return;
-    }
-
-    if (BindInfo.bindStatus == HCBindAccountStatus.BIND_CODE_SUCC)
-    {
-        HCDebugger.LogDebug("Bind callback - Bind successfully");
-        if (!BindInfo.userInfo.userID.Equals(_userId))
+    
+        var bindStatus = BindInfo.bindStatus;
+        var bindMsg = BindInfo.bindMsg;
+        var userIdList = BindInfo.userIDs;
+        var loginType = BindInfo.userInfo.loginType;
+        var userID = BindInfo.userInfo.userID;
+        var token = BindInfo.userInfo.token;
+        var nickName = BindInfo.userInfo.nickName;
+        var photoUrl = BindInfo.userInfo.photoUrl;
+        
+        Debug.Log($"Bound callback {BindInfo.bindStatus} type:{BindInfo.userInfo.loginType} msg:{BindInfo.bindMsg} userId:{BindInfo.userInfo.userID} token:{BindInfo.userInfo.token} userIdList:{BindInfo.userIDs}");
+        if (BindInfo.bindStatus == HCBindAccountStatus.BIND_CODE_SELECT)
         {
-            HCDebugger.LogDebug($"Bind callback - Bind successfully - Log in again userId:{BindInfo.userInfo.userID} _userId:{_userId}");
-                    
+            HCDebugger.LogDebug("Bind callback - Select screen");
             return;
         }
 
-            HCToast.ShowToast("Binding successful");
-            return;
-    }
+        if (BindInfo.bindStatus == HCBindAccountStatus.BIND_CODE_SUCC)
+        {
+            HCDebugger.LogDebug("Bind callback - Bind successfully");
+            if (!BindInfo.userInfo.userID.Equals(_userId))
+            {
+                HCDebugger.LogDebug($"Bind callback - Bind successfully - Log in again userId:{BindInfo.userInfo.userID} _userId:{_userId}");
+                        
+                return;
+            }
 
-    HCToast.ShowToast($"Binding failure {BindInfo.bindMsg}");
+                HCToast.ShowToast("Binding successful");
+                return;
+        }
+
+        HCToast.ShowToast($"Binding failure {BindInfo.bindMsg}");
     };
 }
 
