@@ -314,7 +314,7 @@
               "unversionedId": "qa/qaios",
               "id": "version-1.0.0/qa/qaios",
               "title": "iOS",
-              "description": "Error:",
+              "description": "Error1 :",
               "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-1.0.0/qa/qaios.md",
               "sourceDirName": "qa",
               "slug": "/qa/qaios",

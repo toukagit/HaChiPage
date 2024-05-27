@@ -8,7 +8,7 @@ export default {
   "tagline": "Dinosaurs are cool",
   "titleDelimiter": "-",
   "url": "https://toukagit.github.io/hachi-doc/",
-  "baseUrl": "/hachi-doc/zh/",
+  "baseUrl": "/hachi-doc/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
