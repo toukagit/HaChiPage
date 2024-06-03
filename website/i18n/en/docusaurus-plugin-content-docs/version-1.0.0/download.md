@@ -27,9 +27,11 @@ In the Import Unity Package dialog box, click Import.<br/>
 ## Parameter configuration
 1. Add the Firebase GoogleSerivce-info.plist(iOS) file and GoogleService.json(Android) file to the root directory of project Assets. (If the sdk originally had this test file, please delete it, make sure to use the parameter file corresponding to the game) <br/>
 
-2. Put the configuration file in the requirements document in the Assets/StreamingAssets directory
-
+2. Put the configuration file in the requirements document in the Assets/StreamingAssets directory<br/>
 ![](/img/HCSDK/image14.png)
+
+Note: The above documents can be found in the requirements document, as shown below：<br/>
+![](/img/HCSDK/image36.jpeg)
 
 ## Project configuration 
 

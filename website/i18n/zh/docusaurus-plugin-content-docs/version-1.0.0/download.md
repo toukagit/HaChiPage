@@ -29,8 +29,12 @@ sidebar_position: 2
 1、将 Firebase的GoogleSerivce-info.plist(iOS)文件和GoogleService.json(Android)添加至项目Assets根目录下。（如sdk原来带有该测试文件请删掉，确保用对应游戏的参数文件）<br/>
 
 2、将需求文档中的配置文件放在 Assets/StreamingAssets 目录下即可<br/>
-
 ![](/img/HCSDK/image14.png)
+
+注：上述文件均可在需求文档中找到，如下图：<br/>
+![](/img/HCSDK/image36.jpeg)
+
+
 
 ## 项目配置
 FB SDK配置：填入Facebook App Id 以及 Client Token：<br/>
