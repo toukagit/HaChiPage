@@ -1,5 +1,14 @@
 [
     {
+      "sdk_version": "2.3.0",
+      "update_time": "2024-05-31",
+      "update_content": {
+        "zh": "1、新增H5广告 \n2、优化iOS Google 绑定接口\n3、移除 Facebook 默认相关ID \n4、增加隐私跳转web接口\n5、优化iOS native 布局\n 6、新增删除全部SDK文件功能",
+        "en": "1.add H5 ads \n2.optimize iOS Google bidding interface \n3.remove Facebook default related ID \n4.add privacy jump web interface \n5.optimize iOS native layout \n6.add delete all SDK file function"
+      },
+      "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.3.0/HCSDK_2.3.0_4ea9e85.unitypackage"
+    },
+    {
       "sdk_version": "2.2.9",
       "update_time": "2024-05-27",
       "update_content": {

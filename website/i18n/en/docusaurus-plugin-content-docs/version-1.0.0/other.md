@@ -61,3 +61,16 @@ HCSDKManager.Instance.SetFirebaseFetchDataAsyncSuccess = (result)=> {
     
 };
 ```
+
+## Privacy protocol interface
+ ```c
+HCSDKManager.Instance.OpenPrivacy();
+
+```
+
+## Delete all SDK-related files
+![](/img/HCSDK/image34.jpg)
+
+After clicking, all SDK files will be removed. If the following error occurs when you reimport SDK again, please restart unity<br/>
+
+![](/img/HCSDK/image35.jpeg)

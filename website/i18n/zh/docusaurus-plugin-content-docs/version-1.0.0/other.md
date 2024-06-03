@@ -62,3 +62,18 @@ HCSDKManager.Instance.SetFirebaseFetchDataAsyncSuccess = (result)=> {
     
 };
 ```
+
+## 六、隐私协议接口
+ ```c
+HCSDKManager.Instance.OpenPrivacy();
+
+```
+
+## 七、删除所有SDK相关文件
+![](/img/HCSDK/image34.jpg)
+
+点击后会移除SDK所有文件，如果再次导入SDK报如下错误时，请重启unity<br/>
+
+![](/img/HCSDK/image35.jpeg)
+
+
