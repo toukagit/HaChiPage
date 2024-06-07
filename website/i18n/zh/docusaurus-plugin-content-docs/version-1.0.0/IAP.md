@@ -8,13 +8,15 @@ sidebar_position: 3
 # 内购 
 :::danger
  - **需要添加 USE_IAP 宏定义**   
- - **[Unity In App Purchasing 插件版本需 4.9.3 或更高](https://docs.unity3d.com/Packages/com.unity.purchasing@4.9/manual/StoresSupported.html) (UnityEditor 2020.3+)**
+ - **[Unity In App Purchasing 插件版本需 4.12.0 或更高](https://docs.unity3d.com/Packages/com.unity.purchasing@4.9/manual/StoresSupported.html) (UnityEditor 2020.3+)**
 :::
 ## 内购接入方法
 ### 1、导入IAP插件
 导入Unity In App Purchasing插件。
-Unity菜单栏 -> Window -> Package Manager -> In App Purchasing -> Install。
-
+Unity菜单栏 -> Window -> Package Manager -> In App Purchasing -> Install。<br/><br/>
+** 如果In App Purchasing插件版本不是4.12.0时，请按照以下步骤添加：**
+![](/img/HCSDK/image37.png) <br/>
+输入：com.unity.purchasing 
 
 ### 2、添加宏定义
 ```c

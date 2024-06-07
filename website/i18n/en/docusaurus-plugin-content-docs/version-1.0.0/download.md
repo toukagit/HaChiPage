@@ -15,7 +15,7 @@ This page shows you how to download, import, and configure the HaChi Unity Plugi
 
 
 ## Download the latest Unity plugin<br/>
-[HCSDK_2.3.0_4ea9e85.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.3.0/HCSDK_2.3.0_4ea9e85.unitypackage)（[Release note](/versions)）
+[HCSDK_2.3.1_83b1675.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.3.1/HCSDK_2.3.1_83b1675.unitypackage)（[Release note](/versions)）
 <a id='click'>    </a>
 
 Import the plugin into Unity<br/>
@@ -25,9 +25,9 @@ Select the Unity Plugin file you downloaded.<br/>
 In the Import Unity Package dialog box, click Import.<br/>
 
 ## Parameter configuration
-1. Add the Firebase GoogleSerivce-info.plist(iOS) file and GoogleService.json(Android) file to the root directory of project Assets. (If the sdk originally had this test file, please delete it, make sure to use the parameter file corresponding to the game) <br/>
+1. Add the Firebase ** GoogleService-Info.plist(iOS) ** file and **google-services.json(Android)** file to the root directory of project Assets. (If the sdk originally had this test file, please delete it, make sure to use the parameter file corresponding to the game) <br/>
 
-2. Put the configuration file in the requirements document in the Assets/StreamingAssets directory<br/>
+2. Put the configuration file in the requirements document in the ** Assets/StreamingAssets ** directory<br/>
 ![](/img/HCSDK/image14.png)
 
 Note: The above documents can be found in the requirements document, as shown below：<br/>
@@ -35,7 +35,7 @@ Note: The above documents can be found in the requirements document, as shown be
 
 ## Project configuration 
 
-FB SDK configuration: Fill in the Facebook App Id and Client Token: <br/>
+FB SDK configuration: Fill in the Facebook AppName(Current App Name) App Id and Client Token: <br/>
 
 ![](/img/HCSDK/image15.png)
 ![](/img/HCSDK/image16.png)  

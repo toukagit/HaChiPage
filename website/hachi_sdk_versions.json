@@ -1,5 +1,14 @@
 [
     {
+      "sdk_version": "2.3.1",
+      "update_time": "2024-06-07",
+      "update_content": {
+        "zh": "1、修复unity2021.3.28+ SDK版本Android打包失败 \n2、Google登录无Google框架时使用游客登录\n3、新增iOS/Android内购连续续订功能 \n4、更新Adjust/数数/Firebase SDK\n5、新增Adjust_Get_Success/Adjust_Get_Promote事件上报\n 6、数数自动采集添加公共事件属性 \n 7、升级Unity IAP 插件4.9.4->4.12.0 \n 8、修复数数new_device事件 \n9、修复iOS  H5广告事件打点H5_Page_Close time属性为0问题",
+        "en": "1.Fixed unity2021.3.28+ SDK version android packaging failure \n2.Google Login Use Visitor login when there is no Google framework \n3.Added continuous renewal function for iOS/Android in-app purchases \n4.Update the Adjust/TD/Firebase SDK \n5.Adjust_Get_Success/Adjust_Get_Promote Report has been added \n6.TD automatic collection adds public event attributes \n7.Upgrade Unity IAP plugin 4.9.4->4.11.0 \n8.Fixed the TD \"new_device\" event \n9.Fixed iOS H5 AD event dot H5_Page_Close time attribute 0"
+      },
+      "download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.3.1/HCSDK_2.3.1_83b1675.unitypackage"
+    },
+    {
       "sdk_version": "2.3.0",
       "update_time": "2024-05-31",
       "update_content": {

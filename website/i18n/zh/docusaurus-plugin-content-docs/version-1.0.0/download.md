@@ -15,7 +15,7 @@ sidebar_position: 2
 
 
 ## 下载最新的Unity插件 
-[HCSDK_2.3.0_4ea9e85.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.3.0/HCSDK_2.3.0_4ea9e85.unitypackage)（[更新日志](/versions)）
+[HCSDK_2.3.1_83b1675.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.3.1/HCSDK_2.3.1_83b1675.unitypackage)（[更新日志](/versions)）
 <br/><a id='click'>    </a>
 
 
@@ -26,9 +26,9 @@ sidebar_position: 2
 在Import Unity Package对话框中，单击Import。
 
 ## 参数配置
-1、将 Firebase的GoogleSerivce-info.plist(iOS)文件和GoogleService.json(Android)添加至项目Assets根目录下。（如sdk原来带有该测试文件请删掉，确保用对应游戏的参数文件）<br/>
+1、将  Firebase 的 ** GoogleService-Info.plist(iOS) ** 文件和 **google-services.json(Android) ** 添加至项目 Assets 根目录下。（如sdk原来带有该测试文件请删掉，确保用对应游戏的参数文件）<br/>
 
-2、将需求文档中的配置文件放在 Assets/StreamingAssets 目录下即可<br/>
+2、将需求文档中的配置文件放在 **Assets/StreamingAssets** 目录下即可<br/>
 ![](/img/HCSDK/image14.png)
 
 注：上述文件均可在需求文档中找到，如下图：<br/>
@@ -37,7 +37,7 @@ sidebar_position: 2
 
 
 ## 项目配置
-FB SDK配置：填入Facebook App Id 以及 Client Token：<br/>
+FB SDK配置：填入 **Facebook AppName(当前游戏名称)**、 **App Id（需求文档中查找）** 以及 **Client Token（需求文档中查找）**：<br/>
 
 ![](/img/HCSDK/image15.png)
 ![](/img/HCSDK/image16.png)  

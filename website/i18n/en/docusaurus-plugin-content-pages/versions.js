@@ -74,7 +74,7 @@ function Version() {
                         </tr>
                         </tbody>
                     </table>
-                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
 
                 {hachiSdkVersions.length > 1 ?

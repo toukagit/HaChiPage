@@ -8,13 +8,16 @@ sidebar_position: 3
 # In-app purchase
 :::danger
  - **Need to add USE_IAP macro definition**   
- - **[Unity In App Purchasing plugin version 4.9.3 or higher](https://docs.unity3d.com/Packages/com.unity.purchasing@4.9/manual/StoresSupported.html) (UnityEditor 2020.3+)**
+ - **[Unity In App Purchasing plugin version 4.12.0 or higher](https://docs.unity3d.com/Packages/com.unity.purchasing@4.9/manual/StoresSupported.html) (UnityEditor 2020.3+)**
 :::
 ## In-app purchase access method
 ### 1、Import IAP plug-in
 Import the Unity In App Purchasing plug-in.   
 Unity menu -> Window -> Package Manager -> In App Purchasing -> Install。
 
+If the version of the plug-in In App Purchasing is not 4.12.0, follow these steps to add it:
+![](/img/HCSDK/image37.png) <br/>
+input：com.unity.purchasing 
 
 ### 2、Add macro definition
 ```c
