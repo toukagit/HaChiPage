@@ -187,3 +187,22 @@ In case of payment failure, please confirm the following issues:
 - All product categories must be consistent with the background configuration, consumables, non-consumables or subscription products
 - GooglePlay China account cannot be adjusted to pay, you need to switch regions or use another region account
 - Attempts to switch between different vpn nodes due to network reasons
+
+### 11、Continue to renew products
+When the iap plug-in initializes successfully, it checks for the existence of a continuous subscription product. Please register the callback before initializing the SDK
+
+```c
+HCSDKManager.Instance.SetOnCheckSubscribeValidity((productId,validity)=>{
+
+    HCDebugger.LogDebug("OnCheckSubscribeValidity productId:"+productId+ " validity"+ validity);
+    if (validity)
+    {
+        // The goods are within the validity period
+    }
+    else
+    {
+        // Goods have expired
+    }
+});
+```
+Note: The SDK validates all subscription orders, so the callback is executed multiple times. validity returns false in the callback when the expired order is executed. validity returns true when the latest subscription order is executed if the user did not unorder the item.

@@ -181,3 +181,22 @@ HCSDKManager.Instance.RestorePurchases();
 - 所有商品类别需和后台配置一致，消耗品、非消耗品还是订阅产品
 - GooglePlay中国地区账号无法调起支付，需切换地区或使用其他地区账号
 - 网络原因，尝试切换不同vpn节点
+
+### 11、连续续订产品
+当iap插件初始化成功时会检查当前是否存在连续订阅型产品，请在初始化SDK前注册回调
+
+```c
+HCSDKManager.Instance.SetOnCheckSubscribeValidity((productId,validity)=>{
+
+    HCDebugger.LogDebug("OnCheckSubscribeValidity productId:"+productId+ " validity"+ validity);
+    if (validity)
+    {
+        // 商品在有效期内
+    }
+    else
+    {
+        // 商品已过期
+    }
+});
+```
+注：SDK会将所有订阅订单进行验证，因此该回调会执行多次，当执行到过期订单时该回调中validity会返回false，执行到最新一条订阅订单时，如果用户没有退订该商品，validity会返回true。
