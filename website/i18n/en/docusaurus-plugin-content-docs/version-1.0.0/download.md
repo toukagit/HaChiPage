@@ -15,7 +15,7 @@ This page shows you how to download, import, and configure the HaChi Unity Plugi
 
 
 ## Download the latest Unity plugin<br/>
-[HCSDK_2.3.1_40b0d93.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.3.1/HCSDK_2.3.1_40b0d93.unitypackage)（[Release note](/versions)）
+[HCSDK_2.3.2_a69a13.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.3.2/HCSDK_2.3.2_a69a13.unitypackage)（[Release note](/versions)）
 <a id='click'>    </a>
 
 Import the plugin into Unity<br/>
@@ -25,7 +25,7 @@ Select the Unity Plugin file you downloaded.<br/>
 In the Import Unity Package dialog box, click Import.<br/>
 
 ## Parameter configuration
-1. Add the Firebase ** GoogleService-Info.plist(iOS) ** file and **google-services.json(Android)** file to the root directory of project Assets. (If the sdk originally had this test file, please delete it, make sure to use the parameter file corresponding to the game) <br/>
+1, the requirements document configuration file :<br/> ** GoogleService-Info.plist **(iOS project will have this file) <br/> **google-services.json **(Android project will have this file) <br/> Added to the project Assets root directory. (If the sdk originally had this test file, please delete it, make sure to use the parameter file corresponding to the game) <br/>
 
 2. Put the configuration file in the requirements document in the ** Assets/StreamingAssets ** directory<br/>
 ![](/img/HCSDK/image14.png)
@@ -41,7 +41,10 @@ FB SDK configuration: Fill in the Facebook AppName(Current App Name) App Id and 
 ![](/img/HCSDK/image16.png)  
 
 ## Unity Android platform setup
-#### 1、Player Setting
+#### 1、Enable Android Gradle templates? Please check "Disable".
+![](/img/HCSDK/image39.png)  
+
+#### 2、Player Setting
 - Mininum API Level is set to 22
 - Target API Level is set to 33
 - Set IL2CPP
@@ -49,13 +52,16 @@ FB SDK configuration: Fill in the Facebook AppName(Current App Name) App Id and 
 
 ![](/img/HCSDK/image04.png)  
 
-#### 2、Unity versions later than 2022.3 require a custom gradle configuration.
+#### 3、Tick configuration
+![](/img/HCSDK/image38.jpg)
+
+#### 4、Unity versions later than 2022.3 require a custom gradle configuration.
 "toolbar>Settings>Preferences > External Tools", Cancel "Gradle Installed with Unity (recommended)" Also set a custom gradle path.<br/>
 Custom than 6.7.1 gradle version requirements, recommend download  https://downloads.gradle.org/distributions/gradle-6.7.1-all.zip  and decompression.
 
 ![](/img/HCSDK/image05.png)  
 
-#### 3、Assets/Plugins/Android/FirebaseApp.androidlib directory path does not exist or is empty cases need to check:
+#### 5、Assets/Plugins/Android/FirebaseApp.androidlib directory path does not exist or is empty cases need to check:
 1、 Check whether GoogleService.json(Android) has been copied in [Parameter Configuration ](#click).<br/>
 2、Restart the unity editor.
 

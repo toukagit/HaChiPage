@@ -74,3 +74,40 @@ HCSDKManager.Instance.OpenPrivacy();
 After clicking, all SDK files will be removed. If the following error occurs when you reimport SDK again, please restart unity<br/>
 
 ![](/img/HCSDK/image35.jpeg)
+
+## Sensitive word interface
+```
+
+public enum SensitiveType
+{
+    //1:Nickname (Short text)
+    //2: Chat (long text)
+    NickName = 1,
+    Chat = 2
+}
+
+public enum SensitiveAppType
+{
+    //0: Domestic app
+    //1: Wechat mini program
+    //2: Overseas app (default is 2)
+    app = 0,
+    wx_app = 1,
+    global = 2
+}
+
+HCSDKManager.Instance.CheckSensitiveWords("test title",HCSensitive.SensitiveType.Chat, (result, content) =>
+ {
+
+     if (result)
+     {
+         // Does not contain sensitive words
+     }
+     else
+     {
+         // Contains sensitive words, content is the text after removing sensitive words, sensitive words will be replaced by the symbol *
+     }
+
+ },HCSensitive.SensitiveAppType.global);
+
+```

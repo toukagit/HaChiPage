@@ -64,7 +64,7 @@ HCSDKManager.Instance.SetFirebaseFetchDataAsyncSuccess = (result)=> {
 ```
 
 ## 六、隐私协议接口
- ```c
+```c
 HCSDKManager.Instance.OpenPrivacy();
 
 ```
@@ -77,3 +77,39 @@ HCSDKManager.Instance.OpenPrivacy();
 ![](/img/HCSDK/image35.jpeg)
 
 
+## 八、敏感词接口
+```
+
+public enum SensitiveType
+{
+    //1:昵称(短文本)
+    //2:聊天(长文本) 
+    NickName = 1,
+    Chat = 2
+}
+
+public enum SensitiveAppType
+{
+    //0: 国内app
+    //1: 微信小程序
+    //2: 海外app（默认不填为2）
+    app = 0,
+    wx_app = 1,
+    global = 2
+}
+
+HCSDKManager.Instance.CheckSensitiveWords("测试文本",HCSensitive.SensitiveType.Chat, (result, content) =>
+ {
+
+     if (result)
+     {
+         // 不包含敏感词
+     }
+     else
+     {
+         // 包含敏感词，content为消除敏感词后的文本，敏感词会被替换为符号 * 
+     }
+
+ },HCSensitive.SensitiveAppType.global);
+
+```

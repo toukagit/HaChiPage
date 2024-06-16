@@ -15,7 +15,7 @@ sidebar_position: 2
 
 
 ## 下载最新的Unity插件 
-[HCSDK_2.3.1_40b0d93.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.3.1/HCSDK_2.3.1_40b0d93.unitypackage)（[更新日志](/versions)）
+[HCSDK_2.3.2_a69a13.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.3.2/HCSDK_2.3.2_a69a13.unitypackage)（[更新日志](/versions)）
 <br/><a id='click'>    </a>
 
 
@@ -26,9 +26,9 @@ sidebar_position: 2
 在Import Unity Package对话框中，单击Import。
 
 ## 参数配置
-1、将  Firebase 的 ** GoogleService-Info.plist(iOS) ** 文件和 **google-services.json(Android) ** 添加至项目 Assets 根目录下。（如sdk原来带有该测试文件请删掉，确保用对应游戏的参数文件）<br/>
+1、将需求文档中配置文件:<br/> ** GoogleService-Info.plist  **(iOS项目会有这个文件) <br/> **google-services.json **(Android项目会有这个文件) <br/>添加至项目 Assets 根目录下。（如sdk原来带有该测试文件请删掉，确保用对应游戏的参数文件）<br/>
 
-2、将需求文档中的配置文件放在 **Assets/StreamingAssets** 目录下即可<br/>
+2、将需求文档中配置文件:<br/>52593f719455c63e2c694b6a4329442b(示例，每个项目配置文件不同)<br/>e33da49e299189c9cf85cdc069cb8ee3(示例，每个项目配置文件不同)<br/>放在 **Assets/StreamingAssets** 目录下即可<br/>
 ![](/img/HCSDK/image14.png)
 
 注：上述文件均可在需求文档中找到，如下图：<br/>
@@ -43,7 +43,10 @@ FB SDK配置：填入 **Facebook AppName(当前游戏名称)**、 **App Id（需
 ![](/img/HCSDK/image16.png)  
 
 ## Unity Android平台设置
-#### 1、Player Setting设置
+#### 1、当弹出Enable Android Gradle templates？时，请勾选 "Disable"
+![](/img/HCSDK/image39.png)  
+
+#### 2、Player Setting设置
 - Mininum API Level 设置为22
 - Target API Level 请设置为33
 - 设置IL2CPP
@@ -51,13 +54,16 @@ FB SDK配置：填入 **Facebook AppName(当前游戏名称)**、 **App Id（需
 
 ![](/img/HCSDK/image04.png)  
 
-#### 2、Unity版本低于2022.3需要使用自定义gradle配置。
+#### 3、勾选配置
+![](/img/HCSDK/image38.jpg)
+
+#### 4、Unity版本低于2022.3需要使用自定义gradle配置。
 "工具栏>Settings>Preferences > External Tools", 取消 "Gradle Installed with Unity (recommended)" 同时设置自定义gradle路径。<br/>
 自定义gradle版本要求大于6.7.1，推荐下载 https://downloads.gradle.org/distributions/gradle-6.7.1-all.zip 并解压。
 
 ![](/img/HCSDK/image05.png)  
 
-#### 3、Assets/Plugins/Android/FirebaseApp.androidlib路径不存在或者目录为空的情况下需要检查：
+#### 5、Assets/Plugins/Android/FirebaseApp.androidlib路径不存在或者目录为空的情况下需要检查：
 1、 检查[【参数配置】](#click)中GoogleService.json(Android)是否已经拷贝进来。<br/>
 2、重启unity编辑器。
 
