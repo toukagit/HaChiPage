@@ -82,23 +82,23 @@ HCSDKManager.Instance.OpenPrivacy();
 
 public enum SensitiveType
 {
-    //1:昵称(短文本)
-    //2:聊天(长文本) 
+    //1:昵称(短文本国内)
+    //2:聊天(长文本国内) 
+    //3:国际业务多语言
     NickName = 1,
-    Chat = 2
+    Chat = 2,
+    Global = 3
 }
 
 public enum SensitiveAppType
 {
-    //0: 国内app
+    //0: 国内app(默认不填为0)
     //1: 微信小程序
-    //2: 海外app（默认不填为2）
     app = 0,
-    wx_app = 1,
-    global = 2
+    wx_app = 1
 }
 
-HCSDKManager.Instance.CheckSensitiveWords("测试文本",HCSensitive.SensitiveType.Chat, (result, content) =>
+HCSDKManager.Instance.CheckSensitiveWords("测试文本",HCSensitive.SensitiveType.Global, (result, content) =>
  {
 
      if (result)
@@ -110,6 +110,6 @@ HCSDKManager.Instance.CheckSensitiveWords("测试文本",HCSensitive.SensitiveTy
          // 包含敏感词，content为消除敏感词后的文本，敏感词会被替换为符号 * 
      }
 
- },HCSensitive.SensitiveAppType.global);
+ },HCSensitive.SensitiveAppType.app);
 
 ```

@@ -80,23 +80,24 @@ After clicking, all SDK files will be removed. If the following error occurs whe
 
 public enum SensitiveType
 {
-    //1:Nickname (Short text)
+    //1: Nickname (Short text)
     //2: Chat (long text)
+    //3: International business multilingual
     NickName = 1,
-    Chat = 2
+    Chat = 2,
+    Global = 3
+    
 }
 
 public enum SensitiveAppType
 {
     //0: Domestic app
     //1: Wechat mini program
-    //2: Overseas app (default is 2)
     app = 0,
-    wx_app = 1,
-    global = 2
+    wx_app = 1
 }
 
-HCSDKManager.Instance.CheckSensitiveWords("test title",HCSensitive.SensitiveType.Chat, (result, content) =>
+HCSDKManager.Instance.CheckSensitiveWords("test title",HCSensitive.SensitiveType.Global, (result, content) =>
  {
 
      if (result)
@@ -108,6 +109,6 @@ HCSDKManager.Instance.CheckSensitiveWords("test title",HCSensitive.SensitiveType
          // Contains sensitive words, content is the text after removing sensitive words, sensitive words will be replaced by the symbol *
      }
 
- },HCSensitive.SensitiveAppType.global);
+ },HCSensitive.SensitiveAppType.app);
 
 ```
