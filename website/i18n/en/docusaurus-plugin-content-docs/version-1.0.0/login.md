@@ -262,6 +262,66 @@ Based on the result returned by this interface, the game can determine whether i
 bool isCanAutoLogin = HCAccountManager.Instance.IsCanAutoLogin();
 ```
 
+<!--### 12、Log in to the account information interface（2.3.5 new）-->
+<!--#### API:-->
+<!--SDK Adds the pop-up window of account information. The interface for binding and deleting accounts and related logic can be processed through the SDK.-->
+<!--```c-->
+<!--/// <summary>-->
+<!--/// -->
+<!--/// </summary>-->
+<!--/// <param name="_loginType">Currently, only one login mode can be specified</param>-->
+<!--/// <param name="_closeCallback">The first parameter is whether the current account switchover is performed. For example, true is returned when the pop-up is closed after the account switchover succeeds. Otherwise, false is returned</param>-->
+<!--/// <param name="_closeCallback">The second parameter is: whether the current account is deleted. For example, true is returned when the pop-up is closed after the account is successfully deleted. Otherwise, false is returned</param>-->
+<!--/// <param name="_closeCallback">The third parameter is userId</param>-->
+<!--public void OpenAccountMenu(HCLoginType _loginType, Action<bool,bool,string> _closeCallback);-->
+<!---->
+<!--e.g.-->
+<!--public void Button_OpenAccountMenu()-->
+<!--{-->
+<!--    // When the interface is closed, a callback is triggered. You can determine whether the account is switched or deleted based on the parameters in the callback-->
+<!--    HCSDKManager.Instance.OpenAccountMenu(HCLoginType.LOGIN_BY_Apple, (isSwitchAccount, isDeleteAccount, userId) =>-->
+<!--    {-->
+<!--        HCDebugger.LogDebug("account menu isSwitchAccount:" + isSwitchAccount + "  isDeleteaAccount:" + isDeleteAccount + " userId:" + userId + "loginType:" + HCLoginType.LOGIN_BY_Apple.ToString());-->
+<!--    });-->
+<!--}-->
+<!--```-->
+<!--Instructions:-->
+<!--The pop-up window of account information is added to SDK. There are two states in the pop-up window of account information, one is for tourists to log in with unbound accounts (Figure 1), and the other is for bound accounts (Figure 2):-->
+<!---->
+<!--<center>-->
+<!---->
+<!--<img src="../img/HCSDK/image48.png" width="30%" height="30%"/> <img src="../img/HCSDK/image49.png" width="30%" height="30%"/>-->
+<!---->
+<!--</center>-->
+<!---->
+<!--1. Custom login is not bound to an account-->
+<!--- Click User ID to copy the user ID to the clipboard;-->
+<!--- Click the account binding button and call the login popup of the corresponding login mode. If the login mode is Google Game login, call the Google Game login popup window (for the time being, only one login mode is supported for a game). After the User successfully logs in, the User ID will be bound to the corresponding account;-->
+<!--- If it is determined that the account has a game archive when binding, the information of two archives will be displayed. After selecting one of the archives and binding successfully, the other archive will be deleted;-->
+<!---->
+<!--<center>-->
+<!---->
+<!--<img src="../img/HCSDK/image50.png" width="30%" height="30%"/>-->
+<!---->
+<!---->
+<!--</center>-->
+<!---->
+<!--- Click Delete account button, check the box twice to confirm whether to delete, click OK button to delete the current User ID and binding relationship;-->
+<!---->
+<!--<center>-->
+<!---->
+<!--<img src="../img/HCSDK/image51.png" width="30%" height="30%"/>-->
+<!---->
+<!--</center>-->
+<!---->
+<!---->
+<!---->
+<!--2. Bound account-->
+<!---->
+<!--- Click User ID to copy the user ID to the clipboard;-->
+<!--- Click the switch account button and call the corresponding login mode of the game access pop-up window. If the game access is Google Game login mode, the Google game login pop-up window will pop up (for the time being, only one login mode is supported for a game), and the game archive will be switched together after the user successfully switches the account-->
+<!--- Click Delete account button, check the box twice to confirm whether to delete, click OK button to delete the current User ID and binding relationship;-->
+
 ### 12、Q&A
 ** 1、 Can one Google account correspond to multiple game accounts? **       
 No. One Google account can only correspond to one game account.  

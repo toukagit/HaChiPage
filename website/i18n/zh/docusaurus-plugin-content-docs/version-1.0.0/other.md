@@ -113,3 +113,6 @@ HCSDKManager.Instance.CheckSensitiveWords("测试文本",HCSensitive.SensitiveTy
  },HCSensitive.SensitiveAppType.app);
 
 ```
+## 九、推送（v2.3.5新增）
+SDK支持 Firebase 推送功能，游戏只需导入Hachi SDK即可，无需任何配置。
+

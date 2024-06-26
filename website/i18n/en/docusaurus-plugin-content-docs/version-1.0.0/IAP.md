@@ -16,8 +16,14 @@ Import the Unity In App Purchasing plug-in.
 Unity menu -> Window -> Package Manager -> In App Purchasing -> Install。
 
 If the version of the plug-in In App Purchasing is not 4.12.0, follow these steps to add it:
-![](/img/HCSDK/image37.png) <br/>
-input：com.unity.purchasing 
+
+<center>
+
+<img src="../img/HCSDK/image37.png"/>
+
+</center>
+
+**input：com.unity.purchasing** 
 
 ### 2、Add macro definition
 ```c

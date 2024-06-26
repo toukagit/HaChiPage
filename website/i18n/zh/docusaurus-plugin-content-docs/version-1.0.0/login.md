@@ -256,6 +256,67 @@ HCLoginType accountType = HCSDKManager.Instance.GetAccountType();
 bool isCanAutoLogin = HCAccountManager.Instance.IsCanAutoLogin();
 ```
 
+<!--### 12、登陆账号信息界面（2.3.5新增）-->
+<!--#### API:-->
+<!--SDK增加账号信息弹窗，将账号绑定及账号删除的界面及相关逻辑可通过SDK处理。-->
+<!--```c-->
+<!--/// <summary>-->
+<!--/// -->
+<!--/// </summary>-->
+<!--/// <param name="_loginType">当前允许的第三方登录类型,只能指定一种登录方式</param>-->
+<!--/// <param name="_closeCallback">第一个参数为：当前是否执行了切换账号，如切换账号成功后关闭弹框时返回true，否则返回false</param>-->
+<!--/// <param name="_closeCallback">第二个参数为：当前是否执行了删除账号，如删除账号成功后关闭弹框时返回true，否则返回false</param>-->
+<!--/// <param name="_closeCallback">第三个参数为：userId</param>-->
+<!--public void OpenAccountMenu(HCLoginType _loginType, Action<bool,bool,string> _closeCallback);-->
+<!---->
+<!--例：-->
+<!--public void Button_OpenAccountMenu()-->
+<!--{-->
+<!--    // 界面关闭时触发回调，通过回调中参数判断是否切换/删除了账号-->
+<!--    HCSDKManager.Instance.OpenAccountMenu(HCLoginType.LOGIN_BY_Apple, (isSwitchAccount, isDeleteAccount, userId) =>-->
+<!--    {-->
+<!--        HCDebugger.LogDebug("account menu isSwitchAccount:" + isSwitchAccount + "  isDeleteaAccount:" + isDeleteAccount + " userId:" + userId + "loginType:" + HCLoginType.LOGIN_BY_Apple.ToString());-->
+<!--    });-->
+<!--}-->
+<!--```-->
+<!--说明：-->
+<!--SDK增加账号信息弹窗，账号信息弹窗共有2种状态，一种为游客登陆未绑定账号（图一），一种为已绑定账号（图二）；-->
+<!---->
+<!--<center>-->
+<!---->
+<!--<img src="../img/HCSDK/image45.png" width="30%" height="30%"/> <img src="../img/HCSDK/image43.png" width="30%" height="30%"/>-->
+<!---->
+<!--</center>-->
+<!---->
+<!--1. 游客登录未绑定账号-->
+<!--- 点击User ID可将用户ID复制到剪切板中；-->
+<!--- 点击账号绑定按钮，调用对应登录方式的登录弹窗，如接入的是谷歌游戏登录，则调用谷歌游戏登录弹窗（暂时一款游戏只支持一种登录方式），用户成功登录后将User ID和对应账号绑定；-->
+<!--- 如绑定时判断该账号已有游戏存档，则会展示2个存档的信息，选择其中一个存档绑定成功后，另一个存档将删除；-->
+<!---->
+<!--<center>-->
+<!---->
+<!--<img src="../img/HCSDK/image44.png" width="30%" height="30%"/>-->
+<!---->
+<!---->
+<!--</center>-->
+<!---->
+<!--- 点击删除账号按钮，二次弹框确认是否删除，点击确定按钮后删除当前User ID及绑定关系；-->
+<!---->
+<!--<center>-->
+<!---->
+<!--<img src="../img/HCSDK/image46.png" width="30%" height="30%"/>-->
+<!---->
+<!--</center>-->
+<!---->
+<!---->
+<!---->
+<!--2. 已绑定账号-->
+<!---->
+<!--- 点击User ID可将用户ID复制到剪切板中；-->
+<!--- 点击切换账号按钮后调用游戏接入的对应登录方式弹窗，如游戏接入的是谷歌游戏登录方式，则弹出谷歌游戏登录弹窗（暂时一款游戏只支持一种登录方式），用户成功切换账号后游戏存档一同切换-->
+<!--- 点击删除账号按钮，二次弹框确认是否删除，点击确定按钮后删除当前User ID及绑定关系；-->
+
+
 ### 12、Q&A
 ** 1、 一个Google账号可对应多个游戏账号吗？ **       
 不能。一个Google账号只能对应一个游戏账号。        

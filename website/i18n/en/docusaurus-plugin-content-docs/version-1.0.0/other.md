@@ -112,3 +112,6 @@ HCSDKManager.Instance.CheckSensitiveWords("test title",HCSensitive.SensitiveType
  },HCSensitive.SensitiveAppType.app);
 
 ```
+
+## Push notification（v2.3.5 new）
+The SDK supports Firebase push function, and the game only needs to import the Hachi SDK without any configuration.
