@@ -5,7 +5,7 @@
       "update_content": {
         "zh": "1、新增推送功能 \n 2、Android平台修复ReviewException转换异常崩溃问题",
         "en": "1.new push notification function \n 2.Android platform to fix the ReviewException conversion exception crash problem"
-      },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.3.5/HCSDK_2.3.5_6f1b955.unitypackage"
+      },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/2.3.5/HCSDK_2.3.5_57a32d5.unitypackage"
     },
     {
       "sdk_version": "2.3.4",
