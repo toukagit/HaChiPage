@@ -52,7 +52,7 @@ The SDK Version can be obtained in the ** HCNativeInterface.cs ** file, as shown
 </center>
 
 #### 3、Player Setting
-- Mininum API Level is set to 22
+- Mininum API Level is set to 23
 - Target API Level is set to 33
 - Set IL2CPP
 - Select ARMv7 and ARM64

@@ -53,7 +53,7 @@ SDK Version 可以在 ** HCNativeInterface.cs ** 文件中获取，如下图:<br
 </center>
 
 #### 3、Player Setting设置
-- Mininum API Level 设置为22
+- Mininum API Level 设置为23
 - Target API Level 请设置为33
 - 设置IL2CPP
 - 勾选ARMv7和ARM64
