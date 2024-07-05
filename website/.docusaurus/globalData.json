@@ -1,100 +1,100 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/hachi-doc/",
+      "path": "/hachi-doc/zh/",
       "versions": [
         {
           "name": "3.0.0",
           "label": "3.0.0",
           "isLast": true,
-          "path": "/hachi-doc/",
+          "path": "/hachi-doc/zh/",
           "mainDocId": "index",
           "docs": [
             {
               "id": "download",
-              "path": "/hachi-doc/download",
+              "path": "/hachi-doc/zh/download",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "events",
-              "path": "/hachi-doc/events",
+              "path": "/hachi-doc/zh/events",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "hc-integration/bv",
-              "path": "/hachi-doc/hc-integration/bv",
+              "path": "/hachi-doc/zh/hc-integration/bv",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "hc-integration/iv",
-              "path": "/hachi-doc/hc-integration/iv",
+              "path": "/hachi-doc/zh/hc-integration/iv",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "hc-integration/nv",
-              "path": "/hachi-doc/hc-integration/nv",
+              "path": "/hachi-doc/zh/hc-integration/nv",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "hc-integration/rv",
-              "path": "/hachi-doc/hc-integration/rv",
+              "path": "/hachi-doc/zh/hc-integration/rv",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "IAP",
-              "path": "/hachi-doc/IAP",
+              "path": "/hachi-doc/zh/IAP",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "index",
-              "path": "/hachi-doc/",
+              "path": "/hachi-doc/zh/",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "integration",
-              "path": "/hachi-doc/integration",
+              "path": "/hachi-doc/zh/integration",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "login",
-              "path": "/hachi-doc/login",
+              "path": "/hachi-doc/zh/login",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "other",
-              "path": "/hachi-doc/other",
+              "path": "/hachi-doc/zh/other",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "qa/qaandroid",
-              "path": "/hachi-doc/qa/qaandroid",
+              "path": "/hachi-doc/zh/qa/qaandroid",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "qa/qaios",
-              "path": "/hachi-doc/qa/qaios",
+              "path": "/hachi-doc/zh/qa/qaios",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "remoteConfig",
-              "path": "/hachi-doc/remoteConfig",
+              "path": "/hachi-doc/zh/remoteConfig",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "sdk-projectsettings/sdk-projectsettings-android",
-              "path": "/hachi-doc/sdk-projectsettings/sdk-projectsettings-android",
+              "path": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-android",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "sdk-projectsettings/sdk-projectsettings-ios",
-              "path": "/hachi-doc/sdk-projectsettings/sdk-projectsettings-ios",
+              "path": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios",
               "sidebar": "tutorialSidebar"
             }
           ],
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/hachi-doc/",
+                "path": "/hachi-doc/zh/",
                 "label": "index"
               }
             }
@@ -104,84 +104,84 @@
           "name": "1.0.0",
           "label": "2.0.0",
           "isLast": false,
-          "path": "/hachi-doc/1.0.0",
+          "path": "/hachi-doc/zh/1.0.0",
           "mainDocId": "index",
           "docs": [
             {
               "id": "download",
-              "path": "/hachi-doc/1.0.0/download",
+              "path": "/hachi-doc/zh/1.0.0/download",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "events",
-              "path": "/hachi-doc/1.0.0/events",
+              "path": "/hachi-doc/zh/1.0.0/events",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "hc-integration/bv",
-              "path": "/hachi-doc/1.0.0/hc-integration/bv",
+              "path": "/hachi-doc/zh/1.0.0/hc-integration/bv",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "hc-integration/iv",
-              "path": "/hachi-doc/1.0.0/hc-integration/iv",
+              "path": "/hachi-doc/zh/1.0.0/hc-integration/iv",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "hc-integration/nv",
-              "path": "/hachi-doc/1.0.0/hc-integration/nv",
+              "path": "/hachi-doc/zh/1.0.0/hc-integration/nv",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "hc-integration/rv",
-              "path": "/hachi-doc/1.0.0/hc-integration/rv",
+              "path": "/hachi-doc/zh/1.0.0/hc-integration/rv",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "IAP",
-              "path": "/hachi-doc/1.0.0/IAP",
+              "path": "/hachi-doc/zh/1.0.0/IAP",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "index",
-              "path": "/hachi-doc/1.0.0/",
+              "path": "/hachi-doc/zh/1.0.0/",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "login",
-              "path": "/hachi-doc/1.0.0/login",
+              "path": "/hachi-doc/zh/1.0.0/login",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "other",
-              "path": "/hachi-doc/1.0.0/other",
+              "path": "/hachi-doc/zh/1.0.0/other",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "qa/qaandroid",
-              "path": "/hachi-doc/1.0.0/qa/qaandroid",
+              "path": "/hachi-doc/zh/1.0.0/qa/qaandroid",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "qa/qaios",
-              "path": "/hachi-doc/1.0.0/qa/qaios",
+              "path": "/hachi-doc/zh/1.0.0/qa/qaios",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "remoteConfig",
-              "path": "/hachi-doc/1.0.0/remoteConfig",
+              "path": "/hachi-doc/zh/1.0.0/remoteConfig",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "sdk-projectsettings/sdk-projectsettings-ios",
-              "path": "/hachi-doc/1.0.0/sdk-projectsettings/sdk-projectsettings-ios",
+              "path": "/hachi-doc/zh/1.0.0/sdk-projectsettings/sdk-projectsettings-ios",
               "sidebar": "tutorialSidebar"
             }
           ],
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/hachi-doc/1.0.0/",
+                "path": "/hachi-doc/zh/1.0.0/",
                 "label": "index"
               }
             }

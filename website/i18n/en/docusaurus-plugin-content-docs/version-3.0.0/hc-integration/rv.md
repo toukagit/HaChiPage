@@ -44,6 +44,30 @@ private void RewardCallback(bool success)
 ```
 
 ** _adPos **：Incentive video point name, incentive video advertising point name in [Product Requirements document].<br/>
+
+
+** Requirement document：**<br/>
+
+<center>
+
+<img src="../../img/HCSDK/image60.png" width="80%" height="80%"/>
+
+</center>
+
+** e.g.：**<br/>
+
+```c
+public enum HCRVPositionName
+{
+    RV_Rocket,
+    RV_Bomb,
+    RV_Magic,
+    RV_Revive
+}
+
+HCSDKManager.Instance.ShowRewardedAd(HCRVPositionName.RV_Rocket.ToString(), (callback)=> { }, null, true,"ads not ready.");
+```
+
 ** RewardCallback **：Reward video close callback, (in this callback to handle the reward delivery, true: to the user to send a reward, false: incentive failure, can not send a reward)<br/>
 ** RewardShowFailCallback **：Reward video failed to play callback.<br/>
 ** _useSDKToast **： SDK Comes with pop-up prompt, enabled by default. The game can be more compatible with the game by using the game cartridge.<br/>

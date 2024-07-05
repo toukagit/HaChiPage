@@ -10,86 +10,86 @@
     "tutorialSidebar": [
       {
         "type": "link",
-        "label": "HaChi SDK intro",
-        "href": "/hachi-doc/1.0.0/",
+        "label": "HaChi SDK 简介",
+        "href": "/hachi-doc/zh/1.0.0/",
         "docId": "index"
       },
       {
         "type": "link",
-        "label": "SDK Integration",
-        "href": "/hachi-doc/1.0.0/download",
+        "label": "SDK集成",
+        "href": "/hachi-doc/zh/1.0.0/download",
         "docId": "download"
       },
       {
         "type": "category",
-        "label": "Ad Formats",
+        "label": "广告形式",
         "collapsible": true,
         "collapsed": false,
         "items": [
           {
             "type": "link",
-            "label": "Interstitials",
-            "href": "/hachi-doc/1.0.0/hc-integration/iv",
+            "label": "插屏广告",
+            "href": "/hachi-doc/zh/1.0.0/hc-integration/iv",
             "docId": "hc-integration/iv"
           },
           {
             "type": "link",
-            "label": "Rewarded Ads",
-            "href": "/hachi-doc/1.0.0/hc-integration/rv",
+            "label": "激励视频广告",
+            "href": "/hachi-doc/zh/1.0.0/hc-integration/rv",
             "docId": "hc-integration/rv"
           },
           {
             "type": "link",
-            "label": "Banner",
-            "href": "/hachi-doc/1.0.0/hc-integration/bv",
+            "label": "Banner广告",
+            "href": "/hachi-doc/zh/1.0.0/hc-integration/bv",
             "docId": "hc-integration/bv"
           },
           {
             "type": "link",
-            "label": "Native",
-            "href": "/hachi-doc/1.0.0/hc-integration/nv",
+            "label": "Native广告",
+            "href": "/hachi-doc/zh/1.0.0/hc-integration/nv",
             "docId": "hc-integration/nv"
           }
         ]
       },
       {
         "type": "link",
-        "label": "Event Tracking",
-        "href": "/hachi-doc/1.0.0/events",
+        "label": "事件埋点",
+        "href": "/hachi-doc/zh/1.0.0/events",
         "docId": "events"
       },
       {
         "type": "link",
-        "label": "Remote Config",
-        "href": "/hachi-doc/1.0.0/remoteConfig",
+        "label": "在线参数",
+        "href": "/hachi-doc/zh/1.0.0/remoteConfig",
         "docId": "remoteConfig"
       },
       {
         "type": "link",
-        "label": "In-app purchase",
-        "href": "/hachi-doc/1.0.0/IAP",
+        "label": "内购",
+        "href": "/hachi-doc/zh/1.0.0/IAP",
         "docId": "IAP"
       },
       {
         "type": "link",
-        "label": "Account system",
-        "href": "/hachi-doc/1.0.0/login",
+        "label": "账号系统",
+        "href": "/hachi-doc/zh/1.0.0/login",
         "docId": "login"
       },
       {
         "type": "link",
-        "label": "Other functions",
-        "href": "/hachi-doc/1.0.0/other",
+        "label": "其他功能",
+        "href": "/hachi-doc/zh/1.0.0/other",
         "docId": "other"
       },
       {
         "type": "category",
-        "label": "Build Package",
+        "label": "构建版本",
         "items": [
           {
             "type": "link",
-            "label": "For iOS",
-            "href": "/hachi-doc/1.0.0/sdk-projectsettings/sdk-projectsettings-ios",
+            "label": "构建iOS平台",
+            "href": "/hachi-doc/zh/1.0.0/sdk-projectsettings/sdk-projectsettings-ios",
             "docId": "sdk-projectsettings/sdk-projectsettings-ios"
           }
         ],
@@ -98,18 +98,18 @@
       },
       {
         "type": "category",
-        "label": "QA",
+        "label": "Q&A",
         "items": [
           {
             "type": "link",
             "label": "iOS",
-            "href": "/hachi-doc/1.0.0/qa/qaios",
+            "href": "/hachi-doc/zh/1.0.0/qa/qaios",
             "docId": "qa/qaios"
           },
           {
             "type": "link",
             "label": "Android",
-            "href": "/hachi-doc/1.0.0/qa/qaandroid",
+            "href": "/hachi-doc/zh/1.0.0/qa/qaandroid",
             "docId": "qa/qaandroid"
           }
         ],
@@ -121,85 +121,85 @@
   "docs": {
     "download": {
       "id": "download",
-      "title": "SDK Integration",
+      "title": "SDK集成",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
     "events": {
       "id": "events",
-      "title": "Event Tracking",
+      "title": "事件埋点",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
     "hc-integration/bv": {
       "id": "hc-integration/bv",
-      "title": "Banner",
+      "title": "Banner广告",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
     "hc-integration/iv": {
       "id": "hc-integration/iv",
-      "title": "Interstitials",
+      "title": "插屏广告",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
     "hc-integration/nv": {
       "id": "hc-integration/nv",
-      "title": "Native",
+      "title": "Native广告",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
     "hc-integration/rv": {
       "id": "hc-integration/rv",
-      "title": "Rewarded Ads",
+      "title": "激励视频广告",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
     "IAP": {
       "id": "IAP",
-      "title": "In-app purchase",
+      "title": "内购",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
     "index": {
       "id": "index",
-      "title": "HaChi SDK intro",
-      "description": "The Hachi SDK, called HC SDK for short, is designed for medium to heavy games. Do not use it for other types of projects.",
+      "title": "HaChi SDK 简介",
+      "description": "Hachi SDK简称 HC SDK，专为中重度游戏服务。请勿将其用于其他类型项目。",
       "sidebar": "tutorialSidebar"
     },
     "login": {
       "id": "login",
-      "title": "Account system",
+      "title": "账号系统",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
     "other": {
       "id": "other",
-      "title": "Other functions",
+      "title": "其他功能",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
     "qa/qaandroid": {
       "id": "qa/qaandroid",
       "title": "Android",
-      "description": "1、If the following problems occur, confirm the VPN or replace the node",
+      "description": "1、如遇下边问题，请确认VPN或更换节点",
       "sidebar": "tutorialSidebar"
     },
     "qa/qaios": {
       "id": "qa/qaios",
       "title": "iOS",
-      "description": "Error1 :",
+      "description": "报错1：",
       "sidebar": "tutorialSidebar"
     },
     "remoteConfig": {
       "id": "remoteConfig",
-      "title": "Remote Config",
+      "title": "在线参数",
       "description": "",
       "sidebar": "tutorialSidebar"
     },
     "sdk-projectsettings/sdk-projectsettings-ios": {
       "id": "sdk-projectsettings/sdk-projectsettings-ios",
-      "title": "For iOS",
+      "title": "构建iOS平台",
       "description": "1、Cocopods",
       "sidebar": "tutorialSidebar"
     }

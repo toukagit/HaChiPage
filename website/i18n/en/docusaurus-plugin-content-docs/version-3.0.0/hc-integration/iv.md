@@ -31,6 +31,28 @@ private void InterAdCloseCallback()
 }
 ```
 
-** _adPos **：Insert advertising spot name, insert advertising spot name in [product requirements document].<br/>
+** _adPos **：Insert advertising spot name, insert advertising spot name in [product requirements document]. You are advised to customize the enumeration according to the requirements document.<br/>
+
+** Requirements document:**<br/>
+
+<center>
+
+<img src="../../img/HCSDK/image59.png" width="80%" height="80%"/>
+
+</center>
+
+** e.g：**<br/>
+
+```c
+public enum HCIVPositionName
+{
+    IV_Success,
+    IV_Fail
+}
+
+HCSDKManager.Instance.ShowInterstitial(HCIVPositionName.IV_Success.ToString(), HCIVADType.IV1,()=> { });
+```
+
+
 ** _IvType **：Type of frequency control Default set IV1. IV2 can be used if required.<br/>
 ** _closeCallback **：interstitial close callback
