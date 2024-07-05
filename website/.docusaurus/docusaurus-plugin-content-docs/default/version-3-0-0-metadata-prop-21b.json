@@ -1,0 +1,231 @@
+{
+  "pluginId": "default",
+  "version": "3.0.0",
+  "label": "3.0.0",
+  "banner": null,
+  "badge": true,
+  "className": "docs-version-3.0.0",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "HaChi SDK intro",
+        "href": "/hachi-doc/",
+        "docId": "index"
+      },
+      {
+        "type": "link",
+        "label": "SDK Download",
+        "href": "/hachi-doc/download",
+        "docId": "download"
+      },
+      {
+        "type": "link",
+        "label": "SDK Integration",
+        "href": "/hachi-doc/integration",
+        "docId": "integration"
+      },
+      {
+        "type": "category",
+        "label": "Ad Formats",
+        "collapsible": true,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "Interstitials",
+            "href": "/hachi-doc/hc-integration/iv",
+            "docId": "hc-integration/iv"
+          },
+          {
+            "type": "link",
+            "label": "Rewarded Ads",
+            "href": "/hachi-doc/hc-integration/rv",
+            "docId": "hc-integration/rv"
+          },
+          {
+            "type": "link",
+            "label": "Banner",
+            "href": "/hachi-doc/hc-integration/bv",
+            "docId": "hc-integration/bv"
+          },
+          {
+            "type": "link",
+            "label": "Native",
+            "href": "/hachi-doc/hc-integration/nv",
+            "docId": "hc-integration/nv"
+          }
+        ]
+      },
+      {
+        "type": "link",
+        "label": "Event Tracking",
+        "href": "/hachi-doc/events",
+        "docId": "events"
+      },
+      {
+        "type": "link",
+        "label": "Remote Config",
+        "href": "/hachi-doc/remoteConfig",
+        "docId": "remoteConfig"
+      },
+      {
+        "type": "link",
+        "label": "In-app purchase",
+        "href": "/hachi-doc/IAP",
+        "docId": "IAP"
+      },
+      {
+        "type": "link",
+        "label": "Account system",
+        "href": "/hachi-doc/login",
+        "docId": "login"
+      },
+      {
+        "type": "link",
+        "label": "Other functions",
+        "href": "/hachi-doc/other",
+        "docId": "other"
+      },
+      {
+        "type": "category",
+        "label": "Build Package",
+        "items": [
+          {
+            "type": "link",
+            "label": "For iOS",
+            "href": "/hachi-doc/sdk-projectsettings/sdk-projectsettings-ios",
+            "docId": "sdk-projectsettings/sdk-projectsettings-ios"
+          },
+          {
+            "type": "link",
+            "label": "For Android",
+            "href": "/hachi-doc/sdk-projectsettings/sdk-projectsettings-android",
+            "docId": "sdk-projectsettings/sdk-projectsettings-android"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "QA",
+        "items": [
+          {
+            "type": "link",
+            "label": "iOS",
+            "href": "/hachi-doc/qa/qaios",
+            "docId": "qa/qaios"
+          },
+          {
+            "type": "link",
+            "label": "Android",
+            "href": "/hachi-doc/qa/qaandroid",
+            "docId": "qa/qaandroid"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      }
+    ]
+  },
+  "docs": {
+    "download": {
+      "id": "download",
+      "title": "SDK Download",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "events": {
+      "id": "events",
+      "title": "Event Tracking",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "hc-integration/bv": {
+      "id": "hc-integration/bv",
+      "title": "Banner",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "hc-integration/iv": {
+      "id": "hc-integration/iv",
+      "title": "Interstitials",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "hc-integration/nv": {
+      "id": "hc-integration/nv",
+      "title": "Native",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "hc-integration/rv": {
+      "id": "hc-integration/rv",
+      "title": "Rewarded Ads",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "IAP": {
+      "id": "IAP",
+      "title": "In-app purchase",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "index": {
+      "id": "index",
+      "title": "HaChi SDK intro",
+      "description": "The Hachi SDK, called HC SDK for short, is designed for medium to heavy games. Do not use it for other types of projects.",
+      "sidebar": "tutorialSidebar"
+    },
+    "integration": {
+      "id": "integration",
+      "title": "SDK Integration",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "login": {
+      "id": "login",
+      "title": "Account system",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "other": {
+      "id": "other",
+      "title": "Other functions",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "qa/qaandroid": {
+      "id": "qa/qaandroid",
+      "title": "Android",
+      "description": "1、If the following problems occur, confirm the VPN or replace the node",
+      "sidebar": "tutorialSidebar"
+    },
+    "qa/qaios": {
+      "id": "qa/qaios",
+      "title": "iOS",
+      "description": "Error1 :",
+      "sidebar": "tutorialSidebar"
+    },
+    "remoteConfig": {
+      "id": "remoteConfig",
+      "title": "Remote Config",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "sdk-projectsettings/sdk-projectsettings-android": {
+      "id": "sdk-projectsettings/sdk-projectsettings-android",
+      "title": "For Android",
+      "description": "Unity version 2022.3 or later",
+      "sidebar": "tutorialSidebar"
+    },
+    "sdk-projectsettings/sdk-projectsettings-ios": {
+      "id": "sdk-projectsettings/sdk-projectsettings-ios",
+      "title": "For iOS",
+      "description": "1、Cocopods",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}

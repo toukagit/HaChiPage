@@ -40,7 +40,7 @@ routeBasePath: '/',//文档URL
 breadcrumbs: true,//面包导航开
 showLastUpdateTime: false,//显示文档修改时间
 sidebarPath: require.resolve('./sidebars.js'),//边栏
-onlyIncludeVersions: ['1.0.0'],
+onlyIncludeVersions: ['1.0.0','3.0.0'],
 },
 pages:{
   // path:'src/pages'

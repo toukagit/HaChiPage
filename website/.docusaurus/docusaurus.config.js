@@ -8,7 +8,7 @@ export default {
   "tagline": "Dinosaurs are cool",
   "titleDelimiter": "-",
   "url": "https://toukagit.github.io/hachi-doc/",
-  "baseUrl": "/hachi-doc/zh/",
+  "baseUrl": "/hachi-doc/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
@@ -45,7 +45,8 @@ export default {
           "showLastUpdateTime": false,
           "sidebarPath": "/Users/junconglee/Desktop/TKG_Game/HaChiSDK/HaChiPage/website/sidebars.js",
           "onlyIncludeVersions": [
-            "1.0.0"
+            "1.0.0",
+            "3.0.0"
           ]
         },
         "pages": {},

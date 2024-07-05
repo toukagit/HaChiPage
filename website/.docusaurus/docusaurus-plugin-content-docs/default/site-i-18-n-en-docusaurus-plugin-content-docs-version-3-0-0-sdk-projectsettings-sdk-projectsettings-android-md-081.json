@@ -1,0 +1,25 @@
+{
+  "unversionedId": "sdk-projectsettings/sdk-projectsettings-android",
+  "id": "version-3.0.0/sdk-projectsettings/sdk-projectsettings-android",
+  "title": "For Android",
+  "description": "Unity version 2022.3 or later",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-3.0.0/sdk-projectsettings/sdk-projectsettings-android.md",
+  "sourceDirName": "sdk-projectsettings",
+  "slug": "/sdk-projectsettings/sdk-projectsettings-android",
+  "permalink": "/hachi-doc/sdk-projectsettings/sdk-projectsettings-android",
+  "tags": [],
+  "version": "3.0.0",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "For iOS",
+    "permalink": "/hachi-doc/sdk-projectsettings/sdk-projectsettings-ios"
+  },
+  "next": {
+    "title": "iOS",
+    "permalink": "/hachi-doc/qa/qaios"
+  }
+}

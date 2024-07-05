@@ -1,0 +1,28 @@
+{
+  "unversionedId": "download",
+  "id": "version-3.0.0/download",
+  "title": "SDK下载",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.0.0/download.md",
+  "sourceDirName": ".",
+  "slug": "/download",
+  "permalink": "/hachi-doc/zh/download",
+  "tags": [],
+  "version": "3.0.0",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "SDK下载",
+    "sidebar_label": "SDK下载",
+    "description": "",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "HaChi SDK 简介",
+    "permalink": "/hachi-doc/zh/"
+  },
+  "next": {
+    "title": "SDK集成",
+    "permalink": "/hachi-doc/zh/integration"
+  }
+}

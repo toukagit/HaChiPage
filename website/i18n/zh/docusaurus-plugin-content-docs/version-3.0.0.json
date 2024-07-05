@@ -1,0 +1,20 @@
+{
+  "version.label": {
+    "message": "3.0.0",
+    "description": "The label for version 3.0.0"
+}
+  ,
+  "sidebar.tutorialSidebar.category.Ad Formats": {
+    "message": "广告形式",
+    "description": "广告形式"
+  },
+  "sidebar.tutorialSidebar.category.Build Package": {
+    "message": "构建版本",
+    "description": "构建版本"
+  }
+  ,
+  "sidebar.tutorialSidebar.category.QA": {
+    "message": "Q&A",
+    "description": "Q&A"
+  }
+}

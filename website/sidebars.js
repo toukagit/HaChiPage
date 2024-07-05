@@ -21,6 +21,7 @@ const sidebars = {
   tutorialSidebar: [
   'index',
   'download',
+  'integration',
   {
       type: 'category',
       label: 'Ad',
@@ -42,7 +43,8 @@ const sidebars = {
       type: 'category',
       label: 'Build',
       items: [
-        'sdk-projectsettings/sdk-projectsettings-ios'
+        'sdk-projectsettings/sdk-projectsettings-ios',
+        'sdk-projectsettings/sdk-projectsettings-android'
       ]
     }
   ]

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "sdk-projectsettings/sdk-projectsettings-android",
+  "id": "version-3.0.0/sdk-projectsettings/sdk-projectsettings-android",
+  "title": "构建Android平台",
+  "description": "Unity版本高于2022.3",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.0.0/sdk-projectsettings/sdk-projectsettings-android.md",
+  "sourceDirName": "sdk-projectsettings",
+  "slug": "/sdk-projectsettings/sdk-projectsettings-android",
+  "permalink": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-android",
+  "tags": [],
+  "version": "3.0.0",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "构建iOS平台",
+    "permalink": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios"
+  },
+  "next": {
+    "title": "iOS",
+    "permalink": "/hachi-doc/zh/qa/qaios"
+  }
+}

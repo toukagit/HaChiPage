@@ -6,7 +6,7 @@
   "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-1.0.0/remoteConfig.md",
   "sourceDirName": ".",
   "slug": "/remoteConfig",
-  "permalink": "/hachi-doc/zh/remoteConfig",
+  "permalink": "/hachi-doc/zh/1.0.0/remoteConfig",
   "tags": [],
   "version": "1.0.0",
   "sidebarPosition": 3,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "事件埋点",
-    "permalink": "/hachi-doc/zh/events"
+    "permalink": "/hachi-doc/zh/1.0.0/events"
   },
   "next": {
     "title": "内购",
-    "permalink": "/hachi-doc/zh/IAP"
+    "permalink": "/hachi-doc/zh/1.0.0/IAP"
   }
 }

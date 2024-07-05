@@ -1,0 +1,28 @@
+{
+  "unversionedId": "hc-integration/nv",
+  "id": "version-3.0.0/hc-integration/nv",
+  "title": "Native广告",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.0.0/hc-integration/nv.md",
+  "sourceDirName": "hc-integration",
+  "slug": "/hc-integration/nv",
+  "permalink": "/hachi-doc/zh/hc-integration/nv",
+  "tags": [],
+  "version": "3.0.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Native广告",
+    "sidebar_label": "Native广告",
+    "description": "",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Banner广告",
+    "permalink": "/hachi-doc/zh/hc-integration/bv"
+  },
+  "next": {
+    "title": "事件埋点",
+    "permalink": "/hachi-doc/zh/events"
+  }
+}
