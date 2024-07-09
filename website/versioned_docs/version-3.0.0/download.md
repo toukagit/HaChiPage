@@ -8,7 +8,7 @@ This page shows you how to download, import, and configure the HaChi Unity Plugi
 
 :::tip
 
- - **Xcode 14.2 or later is required to access the HaChiSDK.**       
+ - **Xcode 14.2 or later is required to access the HachiSDK.**       
  - **If you want to update a new version of the SDK, delete the old version of the SDK first, except the configuration file. And export new Xcode or Android Studio projects, be careful not to overwrite projects exported to older versions of the SDK.**   
 
 :::

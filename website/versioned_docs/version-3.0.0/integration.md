@@ -4,7 +4,7 @@ sidebar_label: "SDK集成"
 description: ""
 sidebar_position: 2
 ---
-本页向您展示如何下载、导入和配置HaChi  Unity Plugin。
+本页向您展示如何下载、导入和配置Hachi Unity Plugin。
 
 :::tip
 

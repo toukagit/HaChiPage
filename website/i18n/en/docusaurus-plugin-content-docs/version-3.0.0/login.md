@@ -10,52 +10,45 @@ sidebar_position: 3
 
 Before starting the integration of the account system, please confirm the timing of the account system and select the login method to be supported. We provide visitor login, email login and third-party login methods.
 
-In addition to account login, we also support account deletion (mandatory), login method query (mandatory), account logout, account binding, mandatory binding, automatic login, return to the current account type, return to the current can automatically log in.    
+In addition to account login, we also support account deletion, login method query, account logout, account binding, mandatory binding, automatic login, return to the current account type, return to the current can automatically log in.    
 
-The HaChi SDK only provides a login interface, and the login interface developers can design and make their own according to the game UI style and style.
+HachiSDK provides login interface and [Login account information interface](#2log-in-to-the-account-information-interface). Developers can design and make account information interface according to game UI style and style or use the login account information interface provided by SDK.
 
 :::
 
-### 1、When the account system appears
-After entering the game, the login interface is displayed directly. Players must fill in/check the information to complete the login and enter the game. (Only enter the display game login screen for the first time, and then use the selected method to log in directly.)
-![](/img/HCSDK/login01.png)
 
-Players can enter the game experience immediately by silent login, and bind the account at the appropriate game location. (Non-tourist accounts enter the game, do not show the binding button.)
+## Common interface
 
-![](/img/HCSDK/login02.png)
-
-### 2、Instructions
-1. Separate calls to visitor login, Google login, Facebook login, and Apple login return different userids. (The case of account binding is special.)
-2. Note that login is to call the login interface, and binding the tourist account to the third-party account after successful login is the interface to call the binding account. Only when the account binding interface is called, the tourist account and the third-party account will be bound in the SDK.
-3. After the login of non-tourist account type is successful, the binding function is not provided (that is, the binding button is not displayed). The login type returned after the tourist is successfully bound is the type of the bound three-party account, and the returned UserID is the same as the UserID returned when the tourist logs in.
-
-### 3、Account login
+### 1、Account login
 Login type
 ```c
 public enum HCLoginType
 {
-    // GUESTER
+    // GUESTER login
     LOGIN_BY_GUESTER = 0,
 
     // Email account login (not supported)
     LOGIN_BY_EMAIL = 1,
 
-    // Google
+    // Google login
     LOGIN_BY_GOOGLE = 2,
 
-    // Facebook
+    // Facebook login
     LOGIN_BY_FACEBOOK = 3,
 
-    // Apple
+    // Apple login
     LOGIN_BY_Apple = 4,
 
-    // Google Play Games Services 登陆
+    // Google Play Games Services login
     LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES = 9,
 
+    // GameCenter login
     LOGIN_BY_GAMECENTER = 10,
 
+    // Google Play Games Services auto login
     LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES_AUTO = 101,
 
+    // GameCenter auto login
     LOGIN_BY_GAMECENTER_AUTO = 102,
 }
 ```
@@ -110,26 +103,109 @@ void Start()
 The login types LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES_AUTO, LOGIN_BY_GAMECENTER_AUTO, and others operate similarly to social login types, featuring both login and bind functionalities. However, in the event of initial login failure, the SDK internally switches to a guest login type (unlike other social logins that simply return a failure). This triggers the guest account logic. Subsequent calls to this type will prioritize guest login and attempt to bind the social type. <font color="#ff0000">Developers need not concern themselves with the internal processing logic; they should handle actions based on the returned login type (e.g., displaying a bind button for guest types).</font>
 
 
-### 4、Account logout
+### 2、Log in to the account information interface
+
+note:
+SDK Adds the pop-up window of account information, and processes the interface of account binding/account deletion and related logic through the SDK.<br/>
+The developer needs to act accordingly according to the information in the close callback; If the user switches the account in the pop-up interface of account information, the developer needs to switch the archive in the close callback; If the user deletes the account in the pop-up interface of account information, the developer needs to return to the main interface or exit the game (depending on the actual demand).<br/>
+If the user switches the account on the information account interface, the userId returned in the callback is the changed userId, and the developer needs to switch the archive based on the new userId.
+
+```c
+/// <summary>
+/// 
+/// </summary>
+/// <param name="_loginType">The login method used by the game is confirmed by the requirements document</param>
+/// <param name="_closeCallback">The first parameter is whether the current account switchover is performed. For example, true is returned when the pop-up is closed after the account switchover succeeds. Otherwise, false is returned</param>
+/// <param name="_closeCallback">The second parameter is: whether the current account is deleted. For example, true is returned when the pop-up is closed after the account is successfully deleted. Otherwise, false is returned</param>
+/// <param name="_closeCallback">The third parameter is: the current userId</param>
+public void OpenAccountMenu(HCLoginType _loginType, Action<bool,bool,string> _closeCallback);
+
+e.g.
+public void Button_OpenAccountMenu()
+{
+    // When the interface is closed, a callback is triggered. You can determine whether the account is switched or deleted based on the parameters in the callback
+    HCSDKManager.Instance.OpenAccountMenu(HCLoginType.LOGIN_BY_Apple, (isSwitchAccount, isDeleteAccount, userId) =>
+    {
+        HCDebugger.LogDebug("account menu isSwitchAccount:" + isSwitchAccount + "  isDeleteaAccount:" + isDeleteAccount + " userId:" + userId + "loginType:" + HCLoginType.LOGIN_BY_Apple.ToString());
+    });
+}
+```
+Instructions:
+The pop-up window of account information is added to SDK. There are two states in the pop-up window of account information, one is for tourists to log in with unbound accounts (Figure 1), and the other is for bound accounts (Figure 2):
+
+<center>
+
+<img src="../img/HCSDK/image48.png" width="30%" height="30%"/> <img src="../img/HCSDK/image49.png" width="30%" height="30%"/>
+
+</center>
+
+1. Custom login is not bound to an account
+- Click User ID to copy the user ID to the clipboard;
+- Click the account binding button and call the login popup of the corresponding login mode. If the login mode is Google Game login, call the Google Game login popup window (for the time being, only one login mode is supported for a game). After the User successfully logs in, the User ID will be bound to the corresponding account;
+- If it is determined that the account has a game archive when binding, the information of two archives will be displayed. After selecting one of the archives and binding successfully, the other archive will be deleted;
+
+<center>
+
+<img src="../img/HCSDK/image50.png" width="30%" height="30%"/>
+
+
+</center>
+
+- Click Delete account button, check the box twice to confirm whether to delete, click OK button to delete the current User ID and binding relationship;
+
+<center>
+
+<img src="../img/HCSDK/image51.png" width="30%" height="30%"/>
+
+</center>
+
+
+
+2. Bound account
+
+- Click User ID to copy the user ID to the clipboard;
+- Click the switch account button and call the corresponding login mode of the game access pop-up window. If the game access is Google Game login mode, the Google game login pop-up window will pop up (for the time being, only one login mode is supported for a game), and the game archive will be switched together after the user successfully switches the account
+- Click Delete account button, check the box twice to confirm whether to delete, click OK button to delete the current User ID and binding relationship;
+
+
+
+## Other interface
+
+### 1、When the account system appears
+After entering the game, the login interface is displayed directly. Players must fill in/check the information to complete the login and enter the game. (Only enter the display game login screen for the first time, and then use the selected method to log in directly.)
+![](/img/HCSDK/login01.png)
+
+Players can enter the game experience immediately by silent login, and bind the account at the appropriate game location. (Non-tourist accounts enter the game, do not show the binding button.)
+
+![](/img/HCSDK/login02.png)
+
+### 2、Instructions
+1. Separate calls to visitor login, Google login, Facebook login, and Apple login return different userids. (The case of account binding is special.)
+2. Note that login is to call the login interface, and binding the tourist account to the third-party account after successful login is the interface to call the binding account. Only when the account binding interface is called, the tourist account and the third-party account will be bound in the SDK.
+3. After the login of non-tourist account type is successful, the binding function is not provided (that is, the binding button is not displayed). The login type returned after the tourist is successfully bound is the type of the bound three-party account, and the returned UserID is the same as the UserID returned when the tourist logs in.
+
+
+
+### 3、Account logout
 The account logout interface can be invoked when the game switches the account to do the logout operation. The SDK will call back the game after completing the account exit. No requirement scenario can not be called.
 
 ```c
 HCSDKManager.Instance.Logout();
 ```
 
-### 5、Login Mode Query interface
+### 4、Login Mode Query interface
 ```c
 List<HCLoginType> list = HCSDKManager.Instance.AvailableLoginChannelList();
 ```
 
-### 6、Account deletion
+### 5、Account deletion
 In order to enhance the transparency of the Android ecosystem, Google has expanded the control of users over their data. Games that require support for account login must provide an entry for users to delete their accounts. Must be called in place with the interface.
 
 ```c
 HCSDKManager.Instance.DeleteAccount();
 ```
 
-### 7、Account binding
+### 6、Account binding
 :::info Instructions
 1. The account binding function is to bind the tourist account to the tripartite account service when the visitor logs in the game.
 2. Only the tourist account can be bound to the third party account, and the tourist account cannot be bound again after being bound once. If the binding interface is called again, the status code of the bound account will be returned;
@@ -206,7 +282,7 @@ public void ButtonEvent_BindAccount()
 }
 ```
 
-### 8、Forced binding
+### 7、Forced binding
 When the user uses the social account that has been bound to bind the operation, the game can pop up the interface to list the two accounts and the corresponding game progress, for the player to choose which social account to bind. After the player selects, the mandatory binding interface can be called.
 ```c
 void Start()
@@ -244,85 +320,26 @@ public void ButtonEvent_ForceBindAccount()
 }
 ```
 
-### 9、Automatic login
+### 8、Automatic login
 The SDK automatically logs in based on the type of the last login. You can use the IsCanAutoLogin interface to determine whether the automatic login interface is available. If the automatic login interface is invoked when it is not available, a login failure message is displayed.
 ```c
 HCSDKManager.Instance.AutoLogin();
 ```
 
-### 10、Returns the current account type
+### 9、Returns the current account type
 After successful login, obtain the type of the current account. The game side can determine whether to display the binding interface according to the result returned by this interface.
 ```c
 HCLoginType accountType = HCSDKManager.Instance.GetAccountType();
 ```
 
-### 11、Returns whether automatic login is currently available
+### 10、Returns whether automatic login is currently available
 Based on the result returned by this interface, the game can determine whether it can directly invoke the 'AutoLogin' interface for automatic silent login. If not, you need to display the Login interface, and then call the 'login' interface according to the login type selected by the player.
 ```c
 bool isCanAutoLogin = HCAccountManager.Instance.IsCanAutoLogin();
 ```
 
-### 12、Log in to the account information interface（2.3.5 new）
-#### API:
-SDK Adds the pop-up window of account information. The interface for binding and deleting accounts and related logic can be processed through the SDK.
-```c
-/// <summary>
-/// 
-/// </summary>
-/// <param name="_loginType">Currently, only one login mode can be specified</param>
-/// <param name="_closeCallback">The first parameter is whether the current account switchover is performed. For example, true is returned when the pop-up is closed after the account switchover succeeds. Otherwise, false is returned</param>
-/// <param name="_closeCallback">The second parameter is: whether the current account is deleted. For example, true is returned when the pop-up is closed after the account is successfully deleted. Otherwise, false is returned</param>
-/// <param name="_closeCallback">The third parameter is userId</param>
-public void OpenAccountMenu(HCLoginType _loginType, Action<bool,bool,string> _closeCallback);
+## Q&A
 
-e.g.
-public void Button_OpenAccountMenu()
-{
-    // When the interface is closed, a callback is triggered. You can determine whether the account is switched or deleted based on the parameters in the callback
-    HCSDKManager.Instance.OpenAccountMenu(HCLoginType.LOGIN_BY_Apple, (isSwitchAccount, isDeleteAccount, userId) =>
-    {
-        HCDebugger.LogDebug("account menu isSwitchAccount:" + isSwitchAccount + "  isDeleteaAccount:" + isDeleteAccount + " userId:" + userId + "loginType:" + HCLoginType.LOGIN_BY_Apple.ToString());
-    });
-}
-```
-Instructions:
-The pop-up window of account information is added to SDK. There are two states in the pop-up window of account information, one is for tourists to log in with unbound accounts (Figure 1), and the other is for bound accounts (Figure 2):
-
-<center>
-
-<img src="../img/HCSDK/image48.png" width="30%" height="30%"/> <img src="../img/HCSDK/image49.png" width="30%" height="30%"/>
-
-</center>
-
-1. Custom login is not bound to an account
-- Click User ID to copy the user ID to the clipboard;
-- Click the account binding button and call the login popup of the corresponding login mode. If the login mode is Google Game login, call the Google Game login popup window (for the time being, only one login mode is supported for a game). After the User successfully logs in, the User ID will be bound to the corresponding account;
-- If it is determined that the account has a game archive when binding, the information of two archives will be displayed. After selecting one of the archives and binding successfully, the other archive will be deleted;
-
-<center>
-
-<img src="../img/HCSDK/image50.png" width="30%" height="30%"/>
-
-
-</center>
-
-- Click Delete account button, check the box twice to confirm whether to delete, click OK button to delete the current User ID and binding relationship;
-
-<center>
-
-<img src="../img/HCSDK/image51.png" width="30%" height="30%"/>
-
-</center>
-
-
-
-2. Bound account
-
-- Click User ID to copy the user ID to the clipboard;
-- Click the switch account button and call the corresponding login mode of the game access pop-up window. If the game access is Google Game login mode, the Google game login pop-up window will pop up (for the time being, only one login mode is supported for a game), and the game archive will be switched together after the user successfully switches the account
-- Click Delete account button, check the box twice to confirm whether to delete, click OK button to delete the current User ID and binding relationship;
-
-### 13、Q&A
 ** 1、 Can one Google account correspond to multiple game accounts? **       
 No. One Google account can only correspond to one game account.  
     
@@ -344,3 +361,10 @@ No. The newly generated userids are unique and will not be repeated.
 
 ** 7、Can I verify the account system in Unity Editor?  **   
 Agreed. The Unity Editor can debug the account system.
+
+
+```
+
+
+
+

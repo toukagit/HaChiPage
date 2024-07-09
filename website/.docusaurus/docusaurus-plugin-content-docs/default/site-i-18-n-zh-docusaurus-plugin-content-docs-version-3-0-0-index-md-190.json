@@ -1,7 +1,7 @@
 {
   "unversionedId": "index",
   "id": "version-3.0.0/index",
-  "title": "HaChi SDK 简介",
+  "title": "Hachi SDK 简介",
   "description": "Hachi SDK简称 HC SDK，专为中重度游戏服务。请勿将其用于其他类型项目。",
   "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.0.0/index.md",
   "sourceDirName": ".",

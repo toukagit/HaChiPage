@@ -10,7 +10,7 @@
     "tutorialSidebar": [
       {
         "type": "link",
-        "label": "HaChi SDK 简介",
+        "label": "Hachi SDK 简介",
         "href": "/hachi-doc/zh/",
         "docId": "index"
       },
@@ -175,7 +175,7 @@
     },
     "index": {
       "id": "index",
-      "title": "HaChi SDK 简介",
+      "title": "Hachi SDK 简介",
       "description": "Hachi SDK简称 HC SDK，专为中重度游戏服务。请勿将其用于其他类型项目。",
       "sidebar": "tutorialSidebar"
     },

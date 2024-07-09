@@ -5,14 +5,9 @@ description: ""
 sidebar_position: 1
 ---
 
+SDK内部会处理插屏广告加载逻辑，游戏侧根据需要调用展示插屏广告方法即可。
 
-
-## 一、加载插屏广告
-
-调用SDK初始化后，SDK内部自动加载插屏广告。
-
-
-## 二、展示插屏广告
+## 展示插屏广告
 ```c
 private void Button_ShowIV1()
 {
@@ -33,8 +28,13 @@ private void InterAdCloseCallback()
 ```
 
 ** _adPos **：插屏广告点位名称，【产品需求文档】中的插屏广告点位名称。建议根据需求文档自定义枚举。<br/>
+** _IvType **：插屏频次类型。默认使用 IV1。可结合【产品需求文档】如有不同插屏频次需求，可配合 IV2 使用。<br/>
+** _closeCallback **：插屏关闭回调。
 
-** 需求文档：**<br/>
+
+** _adPos枚举定义示例：**<br/>
+
+例如：需求文档如下<br/>
 
 <center>
 
@@ -42,17 +42,15 @@ private void InterAdCloseCallback()
 
 </center>
 
-** 示例：**<br/>
-
 ```c
 public enum HCIVPositionName
 {
-    IV_Success,
-    IV_Fail
+    IV_Unlock,
+    IV_Auto
 }
 
-HCSDKManager.Instance.ShowInterstitial(HCIVPositionName.IV_Success.ToString(), HCIVADType.IV1,()=> { });
+HCSDKManager.Instance.ShowInterstitial(HCIVPositionName.IV_Unlock.ToString(), HCIVADType.IV1,()=> { });
 ```
 
-** _IvType **：插屏频次类型。默认使用 IV1。可结合【产品需求文档】如有不同插屏频次需求，可配合 IV2 使用。<br/>
-** _closeCallback **：插屏关闭回调 
+开发者可自定义一个全局的枚举变量，把所有HCIVPositionName定义到一起。也可直接下载此文件放到项目中进行使用。[(SDKPositionName.cs)](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/SDKPositionName.cs)
+

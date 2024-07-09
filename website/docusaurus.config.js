@@ -1,7 +1,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
-title: 'HaChi SDK Docs',
+title: 'Hachi SDK Docs',
 tagline: 'Dinosaurs are cool',
 titleDelimiter: '-',//网站标题中间加中划线默认是|
 url: 'https://toukagit.github.io/hachi-doc/',
@@ -62,7 +62,7 @@ respectPrefersColorScheme: true,//默认白色主题
 hideableSidebar: true,//可收起边栏
 navbar: {
 hideOnScroll: false,//菜单栏滚动收起
-title: 'HaChi SDK Docs',//名字同LOGO一排
+title: 'Hachi SDK Docs',//名字同LOGO一排
 logo: {
 alt: 'My Site Logo',//Logo文字提示
 src: 'img/logo.svg',//Logo图片

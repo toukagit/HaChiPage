@@ -39,11 +39,11 @@ function Version() {
             permalink="/versions"
             description="single-spa Versions page listing all documented site versions">
             <div className="container margin-vert--xl">
-                <h1>HaChi SDK Release note</h1>
+                <h1>Hachi SDK Release note</h1>
                 <div className="margin-bottom--lg">
                     <h2>Latest version</h2>
 
-                    <b><Link to={useBaseUrl('/download')}><font size="5">HaChiSDK
+                    <b><Link to={useBaseUrl('/download')}><font size="5">HachiSDK
                         v{firstSDKInfo.sdk_version}</font></Link> </b> <br/>
                     <table border="0" width="80%" align="left">
                         <tbody>
@@ -57,7 +57,7 @@ function Version() {
                         </tbody>
                         <tbody>
                         <tr>
-                            <td style={{"width": "15%"}}>HaChiSDK</td>
+                            <td style={{"width": "15%"}}>HachiSDK</td>
                             <td style={{"width": "15%"}}>{firstSDKInfo.sdk_version}</td>
                             <td style={{"width": "15%"}}>{firstSDKInfo.update_time}</td>
                             <td style={{"width": "40%"}}>
@@ -74,7 +74,7 @@ function Version() {
                         </tr>
                         </tbody>
                     </table>
-                    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
 
                 {hachiSdkVersions.length > 1 ?
@@ -85,7 +85,7 @@ function Version() {
                         {hachiSdkVersions.map((item, index) => (
                             index !== 0 &&
                             <div key={index}>
-                                <div><b><font size="4">HaChiSDK v{item.sdk_version}</font></b></div>
+                                <div><b><font size="4">HachiSDK v{item.sdk_version}</font></b></div>
                                 <div>
                                     <table border="0" width="80%">
                                         <tbody>
@@ -99,7 +99,7 @@ function Version() {
                                         </tbody>
                                         <tbody>
                                         <tr>
-                                            <td style={{"width": "15%"}}>HaChiSDK</td>
+                                            <td style={{"width": "15%"}}>HachiSDK</td>
                                             <td style={{"width": "15%"}}>{item.sdk_version}</td>
                                             <td style={{"width": "15%"}}>{item.update_time}</td>
                                             <td style={{"width": "40%"}}>

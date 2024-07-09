@@ -20,5 +20,5 @@ int intValue = HCSDKManager.Instance.GetRemoteConfigInt("TestKey01", 0);
 
 bool boolValue = HCSDKManager.Instance.GetRemoteConfigBool("TestKey01", false);
 ```
-Default value are returned after Firebase activation fails.
+The online parameters can be obtained only after the vpn is connected. If the online parameters cannot be obtained, the default values of the online parameters are returned.
 

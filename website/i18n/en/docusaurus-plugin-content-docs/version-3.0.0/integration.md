@@ -6,7 +6,7 @@ sidebar_position: 2
 ---
 This page shows you how to configure the Android/iOS platform.
 
-:::tip
+:::danger
 
  - **For the android platform, the following Settings are required. For details, see [【Build Android Platform 】](sdk-projectsettings/sdk-projectsettings-android.md)**       
 
@@ -31,7 +31,7 @@ This page shows you how to configure the Android/iOS platform.
 
 #### 3、Player Setting
 - Mininum API Level is set to 23
-- Target API Level is set to 33
+- Target API Level is set to 34
 - Set IL2CPP
 - Select ARMv7 and ARM64
 
@@ -45,21 +45,12 @@ This page shows you how to configure the Android/iOS platform.
 
 <center>
 
-<img src="../img/HCSDK/image38.jpg" width="80%" height="60%"/>
+<img src="../img/HCSDK/image38.jpeg" width="80%" height="60%"/>
 
 </center>
 
-#### 5、Unity versions later than 2022.3 require a custom gradle configuration.
-"toolbar>Settings>Preferences > External Tools", Cancel "Gradle Installed with Unity (recommended)" Also set a custom gradle path.<br/>
-Custom than 6.7.1 gradle version requirements, recommend download  https://downloads.gradle.org/distributions/gradle-6.7.1-all.zip  and decompression.
 
-<center>
-
-<img src="../img/HCSDK/image05.png" width="80%" height="80%"/>
-
-</center>
-
-#### 6、Assets/Plugins/Android/FirebaseApp.androidlib directory path does not exist or is empty cases need to check:
+#### 5、Assets/Plugins/Android/FirebaseApp.androidlib directory path does not exist or is empty cases need to check:
 1、 Check whether GoogleService.json(Android) has been copied in [ Parameter Configuration ](#parameter-configuration)<br/>
 2、Restart the unity editor.
 

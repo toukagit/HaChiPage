@@ -5,9 +5,7 @@ description: ""
 sidebar_position: 3
 ---
 
-## Loading a Banner
-
-After calling the SDK initialization, the Banner advertisement is automatically loaded inside the SDK.
+The SDK will handle the banner AD loading logic internally, and the game side can call the display/hide banner method as needed.
 
 ## Showing a Banner
 ```c

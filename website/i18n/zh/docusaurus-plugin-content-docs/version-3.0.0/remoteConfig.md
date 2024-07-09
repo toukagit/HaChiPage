@@ -20,5 +20,5 @@ int intValue = HCSDKManager.Instance.GetRemoteConfigInt("TestKey01", 0);
 
 bool boolValue = HCSDKManager.Instance.GetRemoteConfigBool("TestKey01", false);
 ```
-Firebase激活失败后会返回默认参数。
+需要挂vpn才能获取到在线参数，获取不到的情况下，返回传入的在线参数默认值。
 

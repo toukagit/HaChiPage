@@ -5,11 +5,7 @@ description: ""
 sidebar_position: 1
 ---
 
-
-
-## Loading an Interstitial Ad
-
-After calling the SDK initialization, the plug-in advertisement is automatically loaded inside the SDK.
+The SDK will handle the plug-in advertising loading logic, and the game side can call the display plug-in advertising method as needed.
 
 ## Showing an Interstitial Ad
 ```c
@@ -32,8 +28,13 @@ private void InterAdCloseCallback()
 ```
 
 ** _adPos **：Insert advertising spot name, insert advertising spot name in [product requirements document]. You are advised to customize the enumeration according to the requirements document.<br/>
+** _IvType **：Type of frequency control Default set IV1. IV2 can be used if required.<br/>
+** _closeCallback **：interstitial close callback.
 
-** Requirements document:**<br/>
+
+** _adPos enumeration definition example:**<br/>
+
+For example, the requirements document is as follows:
 
 <center>
 
@@ -50,9 +51,8 @@ public enum HCIVPositionName
     IV_Fail
 }
 
-HCSDKManager.Instance.ShowInterstitial(HCIVPositionName.IV_Success.ToString(), HCIVADType.IV1,()=> { });
+HCSDKManager.Instance.ShowInterstitial(HCIVPositionName.IV_Unlock.ToString(), HCIVADType.IV1,()=> { });
 ```
+Developers can customize a global enumeration variable to define all HCIVpositionnames together. You can also download this file directly to use in your project.[(SDKPositionName.cs)](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/SDKPositionName.cs)
 
 
-** _IvType **：Type of frequency control Default set IV1. IV2 can be used if required.<br/>
-** _closeCallback **：interstitial close callback

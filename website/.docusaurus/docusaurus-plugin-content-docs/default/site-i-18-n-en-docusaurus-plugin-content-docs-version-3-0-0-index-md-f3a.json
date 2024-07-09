@@ -1,7 +1,7 @@
 {
   "unversionedId": "index",
   "id": "version-3.0.0/index",
-  "title": "HaChi SDK intro",
+  "title": "Hachi SDK intro",
   "description": "The Hachi SDK, called HC SDK for short, is designed for medium to heavy games. Do not use it for other types of projects.",
   "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-3.0.0/index.md",
   "sourceDirName": ".",

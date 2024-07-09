@@ -33,38 +33,30 @@ USE_IAP
 ### 3、添加内购商品
 :::tip
   支持两种添加方式:       
-  **a. 在 IAPProducts.cs 中预设置商品ID（不建议）**         
+  **a. 通过 AddProductsStatic 接口添加商品(在初始化SDK接口前调用) **<br/>
   **b. 通过 AddProducts 接口添加商品**<br/>
-  **c. 通过 AddProductsStatic 接口添加商品(在初始化SDK接口前调用) **
+  
   <font color="ff0000"> 注意：添加商品类型必须和后台申请类型一致，否则可能请求不到对应商品信息。</font> <br/>
  
-    ProductType.NonConsumable  只能购买一次。适合一次性购买的商品，如额外的关卡
-    ProductType.Consumable     可以反复购买。适合虚拟货币等可消耗商品
-    ProductType.Subscription   可以反复购买和恢复。耐用品，但有效期有限（订阅）
+    ProductType.NonConsumable  只能购买一次。适合一次性购买的商品，如额外的关卡<br/>
+    ProductType.Consumable     可以反复购买。适合虚拟货币等可消耗商品<br/>
+    ProductType.Subscription   可以反复购买和恢复。耐用品，但有效期有限（订阅）<br/>
 
 :::
 
-a. 在**HCPurchaseProducts.cs**中预设置商品ID
+a. 通过 **HCSDKManager.Instance.AddProductsStatic** 接口添加商品ID 
 ```c
-public static class HCPurchaseProducts
+Dictionary<string, ProductType> ProductDic = new Dictionary<string, ProductType>()
 {
-    /// <summary>
-    /// 去广告商品ID(商品ID统一小写)
-    /// </summary>
-    public const string NoAds = "test.removeads";
+    { "com.tkkk.unitysdk.demo.1",ProductType.Consumable},
+    { "com.tkkk.unitysdk.demo.a1",ProductType.Consumable},
+    { "com.tkkk.unitysdk.demo.a12",ProductType.Consumable}
+};
 
-    public readonly static Dictionary<string, ProductType> ProductDic = new Dictionary<string, ProductType>()
-    {    
-         // ProductType.NonConsumable  只能购买一次。适合一次性购买的商品，如额外的关卡
-         // ProductType.Consumable     可以反复购买。适合虚拟货币等可消耗商品
-         // ProductType.Subscription   可以反复购买和恢复。耐用品，但有效期有限（订阅）
-        { NoAds, ProductType.NonConsumable},
-        //Add more product
-        ...
-        ...
-    };
-}
+HCSDKManager.Instance.AddProductsStatic(ProductDic);
 ```
+注：<br/>
+此方法需要在初始化SDK前调用，即初始化SDK前设置好商品信息。<br/>
 
 b. 通过 **HCSDKManager.Instance.AddProducts** 接口添加商品ID 
 ```c
@@ -78,20 +70,6 @@ Dictionary<string, ProductType> ProductDic = new Dictionary<string, ProductType>
 HCSDKManager.Instance.AddProducts(ProductDic);
 ```
 
-c. 通过 **HCSDKManager.Instance.AddProductsStatic** 接口添加商品ID 
-```c
-Dictionary<string, ProductType> ProductDic = new Dictionary<string, ProductType>()
-{
-    { "com.tkkk.unitysdk.demo.1",ProductType.Consumable},
-    { "com.tkkk.unitysdk.demo.a1",ProductType.Consumable},
-    { "com.tkkk.unitysdk.demo.a12",ProductType.Consumable}
-};
-
-HCSDKManager.Instance.AddProductsStatic(ProductDic);
-```
-注：<br/>
-此方法需要在初始化SDK前调用，即初始化SDK前设置好商品信息。<br/>
-此方法和 a 结果相同，使用此方法是为了防止更新SDK时替换HCPurchaseProducts.cs文件而导致已设置的商品信息重置。
 
 ### 4、购买监听回调
 :::danger
@@ -120,10 +98,10 @@ private void PurchaseCallback(string orderID, string productName, string product
     }
     else
     {
-        //回复购买商品
+        //恢复购买商品
         if(orderAlreadyExists){
         
-            //回复购买成功，下发非消耗品，如：去广告
+            //恢复购买成功，下发非消耗品，如：去广告
         
         }else{
         
@@ -134,7 +112,9 @@ private void PurchaseCallback(string orderID, string productName, string product
 }
 ```
 **说明：** <br/>
-1、orderAlreadyExists 字段用于判断是否是恢复购买的商品。<br/>2、当执行到此回调时，purchaseResult = true 说明购买成功，orderAlreadyExists = true时，说明此商品为回复购买的商品，此时应再次下发奖励；例如用户购买了去广告，卸载重装应用后，点击恢复购买时，应再次下发去广告商品。<br/>3、purchaseResult 字段和 orderAlreadyExists 字段不会同时为true。
+1、orderAlreadyExists 字段用于判断是否是恢复购买/补单的商品。<br/>
+2、当执行到此回调时，purchaseResult = true 说明购买成功；orderAlreadyExists = true时，说明此商品为恢复购买/补单的商品，此时应再次下发奖励；例如用户购买了去广告，卸载重装应用后，恢复购买时，应再次下发去广告商品。<br/>
+3、purchaseResult 字段和 orderAlreadyExists 字段不会同时为true。
 
 ### 5、购买商品接口
 ```c 
@@ -147,45 +127,7 @@ public void BuyProduct()
 }
 ```
 
-### 6、获取本地化价格字符串接口
-会返回带货币符号的价格字符串，如：'$1.99' '￥6.99'。
-```c
-public void GetPriceByID()
-{
-    string productID = "com.tkkk.unitysdk.demo.a1";
-   
-    // 会返回带货币符号的价格字符串，如：'$1.99' '￥6.99'
-    string price = HCSDKManager.Instance.GetPriceByID(productID);
-}
-```
-
-
-### 7、获取所有商品信息
-返回AppStore/Google Play 上所有配置的商品。
-```c
-void Start()
-{
-    HCSDKManager.Instance.OnGetProductsInfo(OnProductInfoCallback);
-}
-
- public void OnProductInfoCallback(Product[] products)
- {
-    /// ex:
-    ///     products[0].metadata.localizedTitle
-    ///     products[0].metadata.localizedPriceString
-    ///     products[0].metadata.localizedDescription
-    ///     products[0].metadata.isoCurrencyCode
- } 
-```
-
-### 8、根据商品ID获取商品信息
-```c
-string productID = "com.tkkk.unitysdk.demo.a1";
-
-Product prodyct = HCSDKManager.Instance.GetProductInfoByID(productID);
-```
-
-### 9、恢复购买（iOS）
+### 6、恢复购买（仅iOS）
 ```c
 HCSDKManager.Instance.RestorePurchases();
 ```
@@ -197,39 +139,7 @@ HCSDKManager.Instance.RestorePurchases();
 某个商品为非消耗型条目，奖励为：去广告+100金币。那恢复购买时，只恢复去广告，不恢复100金币。<br/>
 每次调用恢复购买方法，都会给购买成功回调，需游戏自己加逻辑判断不重复下发或将恢复购买按钮隐藏。<br/>
 
-### 10、内购异常
-如遇到支付失败，请确认以下问题：
-- 支付回调必须设置在SDK初始化之前
-- 所有商品类别需和后台配置一致，消耗品、非消耗品还是订阅产品
-- GooglePlay中国地区账号无法调起支付，需切换地区或使用其他地区账号
-- 网络原因，尝试切换不同vpn节点
-
-### 11、连续续订产品
-当iap插件初始化成功时会检查当前是否存在连续订阅型产品，请在初始化SDK前注册回调
-
-```c
-HCSDKManager.Instance.SetOnCheckSubscribeValidity((productId,validity)=>{
-
-    HCDebugger.LogDebug("OnCheckSubscribeValidity productId:"+productId+ " validity"+ validity);
-    if (validity)
-    {
-        // 商品在有效期内
-    }
-    else
-    {
-        // 商品已过期
-    }
-});
-```
-注：SDK会将所有订阅订单进行验证，因此该回调会执行多次，当执行到过期订单时该回调中validity会返回false，执行到最新一条订阅订单时，如果用户没有退订该商品，validity会返回true。
-
-### 12、补单
-```c
-HCSDKManager.Instance.ReadFailOrderId();
-```
-SDK会在购买成功和购买失败后主动检查本地是否包含未验证订单，未验证订单校验成功后将触发 **4、购买监听回调**，开发者也可根据实际情况主动调用补单接口进行补单逻辑。
-
-### 13、奖励下发上报
+### 7、奖励下发上报
 :::danger
  游戏必须实现此接口，完成内购事件闭环。<br/>
  游戏需要再购买成功或恢复购买成功即 purchaseResult 或 orderAlreadyExists 其中一个为true时调用该接口。
@@ -265,4 +175,78 @@ private void PurchaseCallback(string orderID, string productName, string product
                         " orderAlreadyExists:" + orderAlreadyExists);
 }
 ```
+
+
+### 8、获取本地化价格字符串接口
+会返回带货币符号的价格字符串，如：'$1.99' '￥6.99'。
+```c
+public void GetPriceByID()
+{
+    string productID = "com.tkkk.unitysdk.demo.a1";
+   
+    // 会返回带货币符号的价格字符串，如：'$1.99' '￥6.99'
+    string price = HCSDKManager.Instance.GetPriceByID(productID);
+}
+```
+
+### 9、连续续订产品
+当iap插件初始化成功时会检查当前是否存在连续订阅型产品，请在初始化SDK前注册回调。<br/>
+开发者需要在订单过期时收回续订权益，即 validity = false 时回收权益。
+
+```c
+HCSDKManager.Instance.SetOnCheckSubscribeValidity((productId,validity)=>{
+
+    HCDebugger.LogDebug("OnCheckSubscribeValidity productId:"+productId+ " validity"+ validity);
+    if (validity)
+    {
+        // 商品在有效期内
+    }
+    else
+    {
+        // 商品已过期
+    }
+});
+```
+注：SDK会将所有订阅订单进行验证，因此该回调会执行多次，当执行到过期订单时该回调中validity会返回false，执行到最新一条订阅订单时，如果用户没有退订该商品，validity会返回true。
+
+### 10、补单
+```c
+HCSDKManager.Instance.ReadFailOrderId();
+```
+SDK会在购买成功和购买失败后主动检查本地是否包含未验证订单，未验证订单校验成功后将触发 **4、购买监听回调**，开发者也可根据实际情况主动调用补单接口进行补单逻辑。
+
+### 11、获取所有商品信息
+返回AppStore/Google Play 上所有配置的商品。
+```c
+void Start()
+{
+    HCSDKManager.Instance.OnGetProductsInfo(OnProductInfoCallback);
+}
+
+ public void OnProductInfoCallback(Product[] products)
+ {
+    /// ex:
+    ///     products[0].metadata.localizedTitle
+    ///     products[0].metadata.localizedPriceString
+    ///     products[0].metadata.localizedDescription
+    ///     products[0].metadata.isoCurrencyCode
+ } 
+```
+
+### 12、根据商品ID获取商品信息
+```c
+string productID = "com.tkkk.unitysdk.demo.a1";
+
+Product prodyct = HCSDKManager.Instance.GetProductInfoByID(productID);
+```
+
+### 13、内购异常
+如遇到支付失败，请确认以下问题：
+- 支付回调必须设置在SDK初始化之前
+- 所有商品类别需和后台配置一致，消耗品、非消耗品还是订阅产品
+- GooglePlay中国地区账号无法调起支付，需切换地区或使用其他地区账号
+- 网络原因，尝试切换不同vpn节点
+
+
+
 

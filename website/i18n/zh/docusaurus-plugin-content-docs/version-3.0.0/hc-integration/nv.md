@@ -5,11 +5,9 @@ description: ""
 sidebar_position: 3
 ---
 
-## 一、加载Native广告
+SDK内部会处理native广告加载逻辑，游戏侧根据需要调用展示/隐藏native方法即可。
 
-调用SDK初始化后，SDK内部自动加载Native广告。
-
-## 二、展示Native广告
+## 展示Native广告
 ```c
 public void Button_ShowNative()
 {
@@ -33,7 +31,7 @@ Native位置讲解<br/>
 
 ![](/img/HCSDK/image03.png)
 
-## 三、移除Native广告
+## 移除Native广告
 ```c
 public void Button_RemoveNative()
 {

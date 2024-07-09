@@ -4,7 +4,7 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "HaChi SDK Docs",
+  "title": "Hachi SDK Docs",
   "tagline": "Dinosaurs are cool",
   "titleDelimiter": "-",
   "url": "https://toukagit.github.io/hachi-doc/",

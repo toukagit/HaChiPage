@@ -5,11 +5,9 @@ description: ""
 sidebar_position: 3
 ---
 
-## 一、加载Banner广告
+SDK内部会处理banner广告加载逻辑，游戏侧根据需要调用展示/隐藏banner方法即可。
 
-调用SDK初始化后，SDK内部自动加载Banner广告。
-
-## 二、展示Banner广告
+## 展示Banner广告
 ```c
 
 public void Button_ShowBanner()
@@ -22,7 +20,7 @@ public void Button_ShowBanner()
 }
 ```
 
-## 三、隐藏Banner广告
+## 隐藏Banner广告
 ```c
 public void Button_HideBanner()
 {

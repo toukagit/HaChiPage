@@ -6,7 +6,7 @@ sidebar_position: 2
 ---
 本页向您展示如何配置Android/iOS平台。
 
-:::tip
+:::danger
 
  - ** Android平台需按照如下设置，出包时请参照 [ 【构建 Android 平台】 ](sdk-projectsettings/sdk-projectsettings-android.md) **       
 
@@ -32,7 +32,7 @@ sidebar_position: 2
 
 #### 3、Player Setting设置
 - Mininum API Level 设置为23
-- Target API Level 请设置为33
+- Target API Level 请设置为34
 - 设置IL2CPP
 - 勾选ARMv7和ARM64
 
@@ -47,21 +47,11 @@ sidebar_position: 2
 
 <center>
 
-<img src="../img/HCSDK/image38.jpg" width="80%" height="60%"/>
+<img src="../img/HCSDK/image38.jpeg" width="80%" height="60%"/>
 
 </center>
 
-#### 5、Unity版本低于2022.3需要使用自定义gradle配置。
-"工具栏>Settings>Preferences > External Tools", 取消 "Gradle Installed with Unity (recommended)" 同时设置自定义gradle路径。<br/>
-自定义gradle版本要求大于6.7.1，推荐下载 https://downloads.gradle.org/distributions/gradle-6.7.1-all.zip 并解压。
-
-<center>
-
-<img src="../img/HCSDK/image05.png" width="80%" height="80%"/>
-
-</center>
-
-#### 6、Assets/Plugins/Android/FirebaseApp.androidlib路径不存在或者目录为空的情况下需要检查：
+#### 5、Assets/Plugins/Android/FirebaseApp.androidlib路径不存在或者目录为空的情况下需要检查：
 1、 检查[【参数配置】](#参数配置)中GoogleService.json(Android)是否已经拷贝进来。<br/>
 2、重启unity编辑器。
 

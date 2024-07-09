@@ -5,11 +5,9 @@ description: ""
 sidebar_position: 2
 ---
 
-## 一、加载激励视频广告
+SDK内部会处理激励视频广告加载逻辑，游戏侧根据需要调用展示激励视频广告方法即可。
 
-调用SDK初始化后，SDK内部自动加载激励视频广告。
-
-## 二、展示激励视频广告
+## 展示激励视频广告
 ```c
 public void Button_ShowRV()
 {
@@ -44,8 +42,14 @@ private void RewardCallback(bool success)
 ```
 
 ** _adPos **：激励视频点位名称，【产品需求文档】中的激励视频广告点位名称。建议根据需求文档自定义枚举。<br/>
+** RewardCallback **：激励视频关闭回调，(在此回调中处理奖励下发，true: 给用户下发奖励，false: 激励失败，不能下发奖励)<br/>
+** RewardShowFailCallback **：激励视频未成功播放回调。<br/>
+** _useSDKToast **： SDK 自带弹窗提示，默认开启。游戏可使用游戏弹框更契合游戏。<br/>
+** _toastContent **： SDK 弹框提示内容，可根据多语言展示。
 
-** 需求文档：**<br/>
+** _adPos枚举定义示例：**<br/>
+
+例如：需求文档如下<br/>
 
 <center>
 
@@ -53,21 +57,16 @@ private void RewardCallback(bool success)
 
 </center>
 
-** 示例：**<br/>
 
 ```c
 public enum HCRVPositionName
 {
-    RV_Rocket,
-    RV_Bomb,
-    RV_Magic,
-    RV_Revive
+    RV_RaisePrize,
+    RV_Offline
 }
 
-HCSDKManager.Instance.ShowRewardedAd(HCRVPositionName.RV_Rocket.ToString(), (callback)=> { }, null, true,"广告未准备好");
+HCSDKManager.Instance.ShowRewardedAd(HCRVPositionName.RV_RaisePrize.ToString(), (callback)=> { }, null, true,"广告未准备好");
 ```
 
-** RewardCallback **：激励视频关闭回调，(在此回调中处理奖励下发，true: 给用户下发奖励，false: 激励失败，不能下发奖励)<br/>
-** RewardShowFailCallback **：激励视频未成功播放回调。<br/>
-** _useSDKToast **： SDK 自带弹窗提示，默认开启。游戏可使用游戏弹框更契合游戏。<br/>
-** _toastContent **： SDK 弹框提示内容，可根据多语言展示。
+开发者可自定义一个全局的枚举变量，把所有HCRVPositionName定义到一起。也可直接下载此文件放到项目中进行使用。[(SDKPositionName.cs)](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/SDKPositionName.cs)
+
