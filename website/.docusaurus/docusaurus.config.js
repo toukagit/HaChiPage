@@ -66,7 +66,7 @@ export default {
     "hideableSidebar": true,
     "navbar": {
       "hideOnScroll": false,
-      "title": "HaChi SDK",
+      "title": "Hachi SDK",
       "logo": {
         "alt": "My Site Logo",
         "src": "img/logo.svg",
