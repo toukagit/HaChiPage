@@ -7,8 +7,11 @@ sidebar_position: 3
 
 # In-app purchase
 :::danger
- - **Need to add USE_IAP macro definition**   
- - **[Unity In App Purchasing plugin version 4.12.0 or higher](https://docs.unity3d.com/Packages/com.unity.purchasing@4.9/manual/StoresSupported.html) (UnityEditor 2020.3+)**
+ - ** Need to add USE_IAP macro definition **   
+ - ** [Unity In App Purchasing plugin version 4.12.0 or higher](https://docs.unity3d.com/Packages/com.unity.purchasing@4.9/manual/StoresSupported.html) (UnityEditor 2020.3+) **
+ - ** Must achieve [ 【7、reward issuance reporting(Must join)】 ](#7reward-issuance-reportmust-join) **
+ - ** SDK will automatically check whether the local contains unverified orders after successful purchase and failed purchase, and it is recommended that developers take the initiative to request a replacement order when entering the main interface. [[8、 replenishment]](#8replenishment)  ** 
+
 :::
 ## In-app purchase access method
 ### 1、Import IAP plug-in
@@ -113,9 +116,8 @@ private void PurchaseCallback(string orderID, string productName, string product
 }
 ```
 ** Description: ** <br/>
-1. The orderAlreadyExists field is used to determine whether to restore/replenishment the purchased item. <br/>
-2. When this callback is executed, the purchase is successful if orderAlreadyExists = true, and the reward should be issued again; For example, after the user has purchased an AD, uninstall and reinstall the application, and click to restore/replenishment the purchase, the AD should be issued again. <br/>
-3. The purchaseResult and orderAlreadyExists fields are not both true.
+1. Items are normally delivered from purchaseResult or orderAlreadyExists that is true. The game side should handle the reward itself according to the demand, and the reward can not be issued repeatedly for non-consumable items. (If the de-advertising package contains de-advertising +500 diamonds, uninstall and reinstall to resume the purchase, only need to re-reward the de-advertising, and 500 diamonds have been issued before without being issued again. <br/>
+2. The purchaseResult and orderAlreadyExists fields are not both true.
 
 
 ### 5、Purchase interface
@@ -144,7 +146,7 @@ If an item is a non-consumable item, the reward is: remove AD and 100 gold. When
 Each time the recovery purchase method is called, the successful purchase will be called back, and the game needs to add logic to judge not to repeat or hide the recovery purchase button. <br/>
 
 
-### 7、Reward issuance report
+### 7、Reward issuance report(Must join)
 :::danger
  The game must implement this interface to complete the closed loop of internal purchase events.<br/>
  This interface is invoked when one of purchaseResult or orderAlreadyExists is true from Purchaseresult.
@@ -181,7 +183,14 @@ private void PurchaseCallback(string orderID, string productName, string product
 }
 ```
 
-### 8、Gets the localized price string interface
+### 8、replenishment
+```c
+HCSDKManager.Instance.ReadFailOrderId();
+```
+The SDK will proactively check whether the local contains unverified orders after the purchase success and purchase failure. After the unverified order verification is successful, it will trigger [【4、Buy listening callback】](#4buy-listening-callback). The developer can also actively call the replenishment interface for replenishment logic according to the actual situation.
+
+
+### 9、Gets the localized price string interface
 Returns a price string with a currency symbol, such as '$1.99' '￥6.99'.
 ```c
 public void GetPriceByID()
@@ -193,7 +202,7 @@ public void GetPriceByID()
 }
 ```
 
-### 9、Continue to renew products
+### 10、Continue to renew products
 When the iap plug-in initializes successfully, it checks for the existence of a continuous subscription product. Please register the callback before initializing the SDK
 
 ```c
@@ -212,11 +221,7 @@ HCSDKManager.Instance.SetOnCheckSubscribeValidity((productId,validity)=>{
 ```
 Note: The SDK validates all subscription orders, so the callback is executed multiple times. validity returns false in the callback when the expired order is executed. validity returns true when the latest subscription order is executed if the user did not unorder the item.
 
-### 10、replenishment
-```c
-HCSDKManager.Instance.ReadFailOrderId();
-```
-The SDK will proactively check whether the local contains unverified orders after the purchase success and purchase failure. After the unverified order verification is successful, it will trigger **4, purchase monitoring callback **. The developer can also actively call the replenishment interface for replenishment logic according to the actual situation.
+
 
 
 ### 11、Get all product information

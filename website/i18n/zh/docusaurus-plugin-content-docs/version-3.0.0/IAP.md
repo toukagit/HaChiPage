@@ -9,6 +9,10 @@ sidebar_position: 3
 :::danger
  - **需要添加 USE_IAP 宏定义**   
  - **[Unity In App Purchasing 插件版本需 4.12.0 或更高](https://docs.unity3d.com/Packages/com.unity.purchasing@4.9/manual/StoresSupported.html) (UnityEditor 2020.3+)**
+ - ** 必须实现 [ 【7、奖励下发上报(必接)】 ](#7奖励下发上报必接) **
+ 
+ - ** SDK会在购买成功和购买失败后自动检查本地是否包含未验证订单，建议开发者进入主界面等时机主动请求补单。[【8、补单】](#8补单) ** 
+
 :::
 ## 内购接入方法
 ### 1、导入IAP插件
@@ -112,9 +116,8 @@ private void PurchaseCallback(string orderID, string productName, string product
 }
 ```
 **说明：** <br/>
-1、orderAlreadyExists 字段用于判断是否是恢复购买/补单的商品。<br/>
-2、当执行到此回调时，purchaseResult = true 说明购买成功；orderAlreadyExists = true时，说明此商品为恢复购买/补单的商品，此时应再次下发奖励；例如用户购买了去广告，卸载重装应用后，恢复购买时，应再次下发去广告商品。<br/>
-3、purchaseResult 字段和 orderAlreadyExists 字段不会同时为true。
+1、purchaseResult 或 orderAlreadyExists 为true时，正常下发商品。需游戏侧根据需求自行处理，对于非消耗品等，不可重复下发的奖励的情况。（如去广告礼包包含去广告+500钻石，卸载重装恢复购买，只需重新奖励去广告，而500钻石之前已经下发过无需再次下发；<br/>
+2、purchaseResult 字段和 orderAlreadyExists 字段不会同时为true。
 
 ### 5、购买商品接口
 ```c 
@@ -139,7 +142,7 @@ HCSDKManager.Instance.RestorePurchases();
 某个商品为非消耗型条目，奖励为：去广告+100金币。那恢复购买时，只恢复去广告，不恢复100金币。<br/>
 每次调用恢复购买方法，都会给购买成功回调，需游戏自己加逻辑判断不重复下发或将恢复购买按钮隐藏。<br/>
 
-### 7、奖励下发上报
+### 7、奖励下发上报(必接)
 :::danger
  游戏必须实现此接口，完成内购事件闭环。<br/>
  游戏需要再购买成功或恢复购买成功即 purchaseResult 或 orderAlreadyExists 其中一个为true时调用该接口。
@@ -176,8 +179,13 @@ private void PurchaseCallback(string orderID, string productName, string product
 }
 ```
 
+### 8、补单
+```c
+HCSDKManager.Instance.ReadFailOrderId();
+```
+SDK会在购买成功和购买失败后主动检查本地是否包含未验证订单，未验证订单校验成功后将触发 [ 【4、购买监听回调】 ](#4购买监听回调)，开发者也可根据实际情况主动调用补单接口进行补单逻辑。
 
-### 8、获取本地化价格字符串接口
+### 9、获取本地化价格字符串接口
 会返回带货币符号的价格字符串，如：'$1.99' '￥6.99'。
 ```c
 public void GetPriceByID()
@@ -189,7 +197,7 @@ public void GetPriceByID()
 }
 ```
 
-### 9、连续续订产品
+### 10、连续续订产品
 当iap插件初始化成功时会检查当前是否存在连续订阅型产品，请在初始化SDK前注册回调。<br/>
 开发者需要在订单过期时收回续订权益，即 validity = false 时回收权益。
 
@@ -209,11 +217,6 @@ HCSDKManager.Instance.SetOnCheckSubscribeValidity((productId,validity)=>{
 ```
 注：SDK会将所有订阅订单进行验证，因此该回调会执行多次，当执行到过期订单时该回调中validity会返回false，执行到最新一条订阅订单时，如果用户没有退订该商品，validity会返回true。
 
-### 10、补单
-```c
-HCSDKManager.Instance.ReadFailOrderId();
-```
-SDK会在购买成功和购买失败后主动检查本地是否包含未验证订单，未验证订单校验成功后将触发 **4、购买监听回调**，开发者也可根据实际情况主动调用补单接口进行补单逻辑。
 
 ### 11、获取所有商品信息
 返回AppStore/Google Play 上所有配置的商品。

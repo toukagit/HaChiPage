@@ -34,6 +34,9 @@ private void InterAdCloseCallback()
 
 ** _adPos enumeration definition example:**<br/>
 
+Developers can customize a global enumeration variable to define all HCIVpositionnames together. You can also download this file directly to use in your project.[(SDKPositionName.cs)](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/SDKPositionName.cs)
+
+
 For example, the requirements document is as follows:
 
 <center>
@@ -53,6 +56,6 @@ public enum HCIVPositionName
 
 HCSDKManager.Instance.ShowInterstitial(HCIVPositionName.IV_Unlock.ToString(), HCIVADType.IV1,()=> { });
 ```
-Developers can customize a global enumeration variable to define all HCIVpositionnames together. You can also download this file directly to use in your project.[(SDKPositionName.cs)](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/SDKPositionName.cs)
+
 
 

@@ -1,5 +1,13 @@
 [
     {
+      "sdk_version": "3.0.1",
+      "update_time": "2024-07-09",
+      "update_content": {
+        "zh": "1、新增登录账号信息界面",
+        "en": "1.Added the login account information page"
+      },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.0.1/HachiSDK_3.0.1_c1d7da6.unitypackage"
+    },
+    {
       "sdk_version": "3.0.0",
       "update_time": "2024-07-05",
       "update_content": {

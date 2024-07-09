@@ -34,6 +34,8 @@ private void InterAdCloseCallback()
 
 ** _adPos枚举定义示例：**<br/>
 
+开发者可自定义一个全局的枚举变量，把所有HCIVPositionName定义到一起。也可直接下载此文件放到项目中进行使用。[(SDKPositionName.cs)](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/SDKPositionName.cs)
+
 例如：需求文档如下<br/>
 
 <center>
@@ -52,5 +54,5 @@ public enum HCIVPositionName
 HCSDKManager.Instance.ShowInterstitial(HCIVPositionName.IV_Unlock.ToString(), HCIVADType.IV1,()=> { });
 ```
 
-开发者可自定义一个全局的枚举变量，把所有HCIVPositionName定义到一起。也可直接下载此文件放到项目中进行使用。[(SDKPositionName.cs)](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/SDKPositionName.cs)
+
 
