@@ -21,7 +21,7 @@ sidebar_position: 2
 :::
 
 ## 下载最新的Unity插件 
-[HachiSDK_3.0.1_c1d7da6.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.0.1/HachiSDK_3.0.1_c1d7da6.unitypackage)（[历史版本](/versions)）
+[HachiSDK_3.0.1_5764f64.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.0.1/HachiSDK_3.0.1_5764f64.unitypackage)（[历史版本](/versions)）
 <br/><a id='click'>    </a>
 将插件导入Unity<br/>
 执行以下步骤导入下载的插件:<br/>
