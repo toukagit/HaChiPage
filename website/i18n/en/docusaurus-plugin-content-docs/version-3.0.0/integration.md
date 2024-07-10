@@ -70,10 +70,21 @@ This page shows you how to configure the Android/iOS platform.
 
 ## Parameter Configuration
 1. the requirements document configuration file :<br/> ** GoogleService-Info.plist **(iOS project will have this file) <br/> **google-services.json **(Android project will have this file) <br/> Added to the project **Assets/** root directory. (If the sdk originally had this test file, please delete it, make sure to use the parameter file corresponding to the game) <br/><br/>
+
+<center>
+
 ![](/img/HCSDK/image42.png)
 
+</center>
+
+
 2. Put the configuration file in the requirements document in the ** Assets/StreamingAssets/ ** directory<br/><br/>
+
+<center>
+
 ![](/img/HCSDK/image14.png)
+
+</center>
 
 Note: The above documents can be found in the requirements document, as shown below：<br/>
 ![](/img/HCSDK/image36.jpeg)

@@ -9,7 +9,7 @@ sidebar_position: 2
 :::tip
 
  - **接入HachiSDK 需要 Xcode 14.2 或更高版本**       
- - **更新3.0.0版本时最好先将旧版本SDK删除(配置文件除外)。并且导出新的Xcode或者Android Studio工程，注意不要覆盖导出到老版本SDK导出的工程。**   
+ - **更新3.0.0版本时最好先将旧版本SDK删除(配置文件除外)([ 【七、删除所有SDK相关文件】 ](other.md))。并且导出新的Xcode或者Android Studio工程，注意不要覆盖导出到老版本SDK导出的工程。**   
 
 :::
 

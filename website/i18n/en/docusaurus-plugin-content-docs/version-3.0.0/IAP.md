@@ -18,7 +18,7 @@ sidebar_position: 3
 Import the Unity In App Purchasing plug-in.   
 Unity menu -> Window -> Package Manager -> In App Purchasing -> Install。
 
-If the version of the plug-in In App Purchasing is not 4.12.0, follow these steps to add it:
+** If you don't see version 4.12.0 In App Purchasing plug-in, follow these steps to add: Add packages by name -> Enter: com.unity.purchasing **
 
 <center>
 
@@ -26,7 +26,6 @@ If the version of the plug-in In App Purchasing is not 4.12.0, follow these step
 
 </center>
 
-**input：com.unity.purchasing** 
 
 ### 2、Add macro definition
 ```c
@@ -37,7 +36,7 @@ USE_IAP
 
 :::tip
   Two adding methods are supported:    
-  **a. Adding an item through the AddProductsStatic interface (called before initializing the SDK interface)**
+  **a. Adding an item through the AddProductsStatic interface (<font color="ff0000">called before initializing the SDK interface</font>)**
   **b. Add the product ID through the AddProducts interface**
   
   <font color="ff0000"> Note: The added product type must be the same as the background application type, otherwise the corresponding product information may not be requested.</font> <br/>
@@ -59,10 +58,11 @@ Dictionary<string, ProductType> ProductDic = new Dictionary<string, ProductType>
 
 HCSDKManager.Instance.AddProductsStatic(ProductDic);
 ```
-note：<br/>
-This method needs to be called before initializing the SDK, that is, set the product information before initializing the SDK. <br/>
-This method, which has the same result as a, is used to prevent the replacement of the HCPurchaseProducts.cs file when updating the SDK from causing the set item information to reset.
 
+<font color="ff0000">note：This method needs to be called before initializing the SDK, that is, set the product information before initializing the SDK.</font>
+
+
+<br/><br/>
 
 b. By ** HCSDKManager. Instance. AddProducts add commodity ID ** interface
 ```c
@@ -94,7 +94,8 @@ void Start()
 /// The product ID of the payment
 /// Successful payment or not
 /// Game extension field
-private void PurchaseCallback(string orderID, string productName, string productID, bool purchaseResult, string gameExtra)
+/// Whether the recovery purchase is triggered, mainly used to prompt a dialog box(iOS only)
+private void PurchaseCallback(string orderID, string productName, string productID, bool purchaseResult, string gameExtra,bool isRestore)
 {
     if (purchaseResult)
     {

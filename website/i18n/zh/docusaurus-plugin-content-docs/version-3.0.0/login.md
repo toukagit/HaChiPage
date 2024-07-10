@@ -10,7 +10,7 @@ sidebar_position: 3
 
 在开始账号系统集成之前，请确认账号系统出现时机，并且选择所要支持的登录方式，我们提供游客登录、邮箱登录及第三方登录方式。        
 除了账号登录以外，我们还支持账号删除、登录方式查询、账号登出、账号绑定、强制绑定、自动登录、返回当前账号类型、返回当前是否可以自动登录。       
-HachiSDK提供登录接口和[ 登录账号信息界面 ](#2登陆账号信息界面) ，开发者可根据游戏UI风格和样式自行设计制作或使用SDK提供的登录账号信息界面。
+HachiSDK提供登录接口和[ 登录账号信息界面 ](#2登录账号信息界面) ，开发者可根据游戏UI风格和样式自行设计制作或使用SDK提供的登录账号信息界面。
 
 :::
 
@@ -35,13 +35,13 @@ public enum HCLoginType
     // Apple登录
     LOGIN_BY_Apple = 4,
     
-    // Google Play Games Services 登陆
+    // Google Play Games Services 登录
     LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES = 9,
 
     // GameCenter 登录
     LOGIN_BY_GAMECENTER = 10,
 
-    // Google Play Games Services 自动登陆
+    // Google Play Games Services 自动登录
     LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES_AUTO = 101,
 
     // GameCenter 自动登录
@@ -59,7 +59,7 @@ public enum HCLoginType
     // 登录被用户取消
     LOGIN_STATUS_CANCEL = 1,
 
-    // 自动登陆没有缓存数据
+    // 自动登录没有缓存数据
     LOGIN_STATUS_NO_CACHE = 2,
 
     // 登录失败
@@ -78,17 +78,17 @@ void Start()
 {
     _loginAction = (LoginInfo) =>
     {
-        Debug.Log($"登陆回调 {LoginInfo.loginStatus} type:{LoginInfo.userInfo.loginType} msg:{LoginInfo.loginMsg} userId:{LoginInfo.userInfo.userID} token:{LoginInfo.userInfo.token}");
+        Debug.Log($"登录回调 {LoginInfo.loginStatus} type:{LoginInfo.userInfo.loginType} msg:{LoginInfo.loginMsg} userId:{LoginInfo.userInfo.userID} token:{LoginInfo.userInfo.token}");
         if (LoginInfo.loginStatus == HCLoginStatus.LOGIN_STATUS_SUCC)
         {
-            // 登陆成功
+            // 登录成功
             _userId = LoginInfo.userInfo.userID;
             _userType = LoginInfo.userInfo.loginType;
             _token = LoginInfo.userInfo.token;
         }
         else
         {
-            // 登陆失败
+            // 登录失败
             _userId = "";
             _userType = HCLoginType.LOGIN_BY_GUESTER;
             _token = "";
@@ -96,14 +96,18 @@ void Start()
 };
 ```
 
-登陆类型为`LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES_AUTO` , `LOGIN_BY_GAMECENTER_AUTO` 和其他社交登陆类型一样，有登陆和绑定功能， 只是首次登陆失败SDK内部会返回游客登陆类型。（其他社交登陆登陆失败就返回失败）走游客账号逻辑。 下次调用这个类型，sdk会优先走游客登陆，会尝试绑定社交类型。 <font color="#ff0000">开发者无需关心内部处理逻辑，根据登陆返回的登陆类型进行相关处理即可。（例如：游客类型显示绑定按钮）</font>
+登录类型为`LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES_AUTO` , `LOGIN_BY_GAMECENTER_AUTO` 和其他社交登录类型一样，有登录和绑定功能， 只是首次登录失败SDK内部会返回游客登录类型。（其他社交登录登录失败就返回失败）走游客账号逻辑。 下次调用这个类型，sdk会优先走游客登录，会尝试绑定社交类型。 <font color="#ff0000">开发者无需关心内部处理逻辑，根据登录返回的登录类型进行相关处理即可。（例如：游客类型显示绑定按钮）</font>
 
 
-### 2、登陆账号信息界面
-说明：
+### 2、登录账号信息界面
+说明：<br/>
 SDK增加账号信息弹窗，将账号绑定/账号删除的界面及相关逻辑通过SDK处理。<br/>
-开发者需要根据关闭回调中的信息做相应处理；如用户在账号信息弹窗界面操作了切换账号，则开发者需要在关闭回调中进行切换存档；如用户在账号信息弹窗界面操作了删除账号操作，开发者需要回到主界面或退出游戏(根据实际需求而定)。<br/>
-如果用户在信息账号界面操作了切换账号，关闭回调中返回的userId为切换后的userId，开发者需要根据新userId进行存档切换。
+开发者需要根据关闭回调（_closeCallback）中的信息做相应处理：<br/>
+ -  如用户在账号信息弹窗界面操作了切换账号，即第一个参数为true，游戏侧需根据SDK返回的切换后的userID（即第三个参数）处理游戏进度存档等。<br/>
+ - 如用户在账号信息弹窗界面操作了删除账号操作，即第二个参数为true，此时第三个参数返回的userID为空，游戏侧需根据需求回到主界面或重启游戏，重新调用登录方法进行登录。<br/>
+ - 如果2个参数同时为false，说明账号没任何改动，游戏侧无需进行任何处理。<br/>
+ 
+第一个参数和第二个参数不可能同时为true。<br/>
 
 ```c
 /// <summary>
@@ -126,7 +130,7 @@ public void Button_OpenAccountMenu()
 }
 ```
 说明：
-SDK增加账号信息弹窗，账号信息弹窗共有2种状态，一种为游客登陆未绑定账号（图一），一种为已绑定账号（图二）；
+SDK增加账号信息弹窗，账号信息弹窗共有2种状态，一种为游客登录未绑定三方账号（图一），一种为已绑定三方账号（图二）；
 
 <center>
 
@@ -137,7 +141,7 @@ SDK增加账号信息弹窗，账号信息弹窗共有2种状态，一种为游�
 1. 游客登录未绑定账号
 - 点击User ID可将用户ID复制到剪切板中；
 - 点击账号绑定按钮，调用对应登录方式的登录弹窗，如接入的是谷歌游戏登录，则调用谷歌游戏登录弹窗（暂时一款游戏只支持一种登录方式），用户成功登录后将User ID和对应账号绑定；
-- 如绑定时判断该账号已有游戏存档，则会展示2个存档的信息，选择其中一个存档绑定成功后，另一个存档将删除；
+- 如绑定时该三方账号已发生过绑定行为，则会将已绑定账号的userID和当前进程的userID都展示出来供玩家选择，玩家选择其中一个userID发生绑定后，另外userID进度将丢失;
 
 <center>
 
@@ -250,7 +254,7 @@ void Start()
             HCDebugger.LogDebug("绑定回调 - 绑定成功");
             if (!BindInfo.userInfo.userID.Equals(_userId))
             {
-                HCDebugger.LogDebug($"绑定回调 - 绑定成功 - 重新登陆 userId:{BindInfo.userInfo.userID} _userId:{_userId}");
+                HCDebugger.LogDebug($"绑定回调 - 绑定成功 - 重新登录 userId:{BindInfo.userInfo.userID} _userId:{_userId}");
                         
                 return;
             }
@@ -289,7 +293,7 @@ void Start()
         HCDebugger.LogDebug("绑定回调 - 绑定成功");
         if (!BindInfo.userInfo.userID.Equals(_userId))
         {
-            HCDebugger.LogDebug($"绑定回调 - 绑定成功 - 重新登陆 userId:{BindInfo.userInfo.userID} _userId:{_userId}");
+            HCDebugger.LogDebug($"绑定回调 - 绑定成功 - 重新登录 userId:{BindInfo.userInfo.userID} _userId:{_userId}");
                     
             return;
         }

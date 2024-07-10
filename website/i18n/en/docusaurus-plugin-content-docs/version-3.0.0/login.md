@@ -105,10 +105,14 @@ The login types LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES_AUTO, LOGIN_BY_GAMECENTER_AU
 
 ### 2、Log in to the account information interface
 
-note:
+note:<br/>
 SDK Adds the pop-up window of account information, and processes the interface of account binding/account deletion and related logic through the SDK.<br/>
-The developer needs to act accordingly according to the information in the close callback; If the user switches the account in the pop-up interface of account information, the developer needs to switch the archive in the close callback; If the user deletes the account in the pop-up interface of account information, the developer needs to return to the main interface or exit the game (depending on the actual demand).<br/>
-If the user switches the account on the information account interface, the userId returned in the callback is the changed userId, and the developer needs to switch the archive based on the new userId.
+The developer needs to act on the information in the close callback (_closeCallback) : <br/>
+- If the user switches the account in the pop-up interface of account information, that is, the first parameter is true, the game side needs to process the game progress archive according to the userID (the third parameter) returned by the SDK after the switch. <br/>
+- If the user deletes the account in the pop-up interface of account information, that is, if the second parameter is true, the userID returned by the third parameter is empty, the game side needs to return to the main interface or restart the game, and call the login method again to log in. <br/>
+- If the two parameters are false at the same time, the account has not changed and no processing is required on the game side. <br/>
+
+The first and second arguments cannot be true at the same time. <br/>
 
 ```c
 /// <summary>
@@ -131,7 +135,7 @@ public void Button_OpenAccountMenu()
 }
 ```
 Instructions:
-The pop-up window of account information is added to SDK. There are two states in the pop-up window of account information, one is for tourists to log in with unbound accounts (Figure 1), and the other is for bound accounts (Figure 2):
+The pop-up window of account information is added to the SDK. There are two states of the pop-up window of account information, one is for tourists to log in with an unbound third-party account (Figure 1), and the other is for a bound third-party account:
 
 <center>
 
@@ -142,7 +146,7 @@ The pop-up window of account information is added to SDK. There are two states i
 1. Custom login is not bound to an account
 - Click User ID to copy the user ID to the clipboard;
 - Click the account binding button and call the login popup of the corresponding login mode. If the login mode is Google Game login, call the Google Game login popup window (for the time being, only one login mode is supported for a game). After the User successfully logs in, the User ID will be bound to the corresponding account;
-- If it is determined that the account has a game archive when binding, the information of two archives will be displayed. After selecting one of the archives and binding successfully, the other archive will be deleted;
+- If the binding behavior of the three accounts has occurred, the userids of the bound accounts and the userids of the current process will be displayed for the player to select. After the player selects one of the userids to bind, the progress of the userids will be lost;
 
 <center>
 

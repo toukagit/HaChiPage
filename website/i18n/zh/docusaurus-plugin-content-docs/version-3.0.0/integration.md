@@ -66,11 +66,23 @@ sidebar_position: 2
 
 ## 参数配置
 1、将需求文档中配置文件:<br/> ** GoogleService-Info.plist  **(iOS项目会有这个文件) <br/> **google-services.json **(Android项目会有这个文件) <br/>放在 ** Assets/** 根目录下。（如sdk原来带有该测试文件请删掉，确保用对应游戏的参数文件）<br/><br/>
+
+<center>
+
 ![](/img/HCSDK/image42.png)
+
+</center>
 
 
 2、将需求文档中配置文件:<br/>52593f719455c63e2c694b6a4329442b(示例，每个项目配置文件不同)<br/>e33da49e299189c9cf85cdc069cb8ee3(示例，每个项目配置文件不同)<br/>放在 **Assets/StreamingAssets/** 目录下即可<br/><br/>
+
+<center>
+
 ![](/img/HCSDK/image14.png)
+
+</center>
+
+
 
 注：上述文件均可在需求文档中找到，如下图：<br/>
 ![](/img/HCSDK/image36.jpeg)

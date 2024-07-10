@@ -18,7 +18,7 @@ sidebar_position: 3
 ### 1、导入IAP插件
 导入Unity In App Purchasing插件。
 Unity菜单栏 -> Window -> Package Manager -> In App Purchasing -> Install。<br/><br/>
-** 如果In App Purchasing插件版本不是4.12.0时，请按照以下步骤添加：**
+** 如果In App Purchasing插件看不到4.12.0版本时，请按照以下步骤添加：按名称添加包 -> 输入：com.unity.purchasing**
 
 <center>
 
@@ -26,8 +26,6 @@ Unity菜单栏 -> Window -> Package Manager -> In App Purchasing -> Install。<b
 
 </center>
 
-
-** 输入：com.unity.purchasing  ** 
 
 ### 2、添加宏定义
 ```c
@@ -37,7 +35,7 @@ USE_IAP
 ### 3、添加内购商品
 :::tip
   支持两种添加方式:       
-  **a. 通过 AddProductsStatic 接口添加商品(在初始化SDK接口前调用) **<br/>
+  **a. 通过 AddProductsStatic 接口添加商品(<font color="ff0000">在初始化SDK接口前调用</font>) **<br/>
   **b. 通过 AddProducts 接口添加商品**<br/>
   
   <font color="ff0000"> 注意：添加商品类型必须和后台申请类型一致，否则可能请求不到对应商品信息。</font> <br/>
@@ -59,8 +57,11 @@ Dictionary<string, ProductType> ProductDic = new Dictionary<string, ProductType>
 
 HCSDKManager.Instance.AddProductsStatic(ProductDic);
 ```
-注：<br/>
-此方法需要在初始化SDK前调用，即初始化SDK前设置好商品信息。<br/>
+
+<font color="ff0000">注：此方法需要在初始化SDK前调用，即初始化SDK前设置好商品信息。</font>
+
+<br/><br/>
+
 
 b. 通过 **HCSDKManager.Instance.AddProducts** 接口添加商品ID 
 ```c
@@ -94,7 +95,8 @@ void Start()
 /// 是否成功支付
 /// 游戏扩展字段
 /// 是否为恢复购买订单
-private void PurchaseCallback(string orderID, string productName, string productID, bool purchaseResult, string gameExtra,bool orderAlreadyExists)
+/// 是否为恢复购买触发，主要用于弹框提示（仅iOS）
+private void PurchaseCallback(string orderID, string productName, string productID, bool purchaseResult, string gameExtra,bool orderAlreadyExists, bool isRestore)
 {
     if (purchaseResult)
     {

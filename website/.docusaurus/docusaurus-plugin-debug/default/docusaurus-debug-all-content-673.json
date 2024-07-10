@@ -395,7 +395,7 @@
               "unversionedId": "sdk-projectsettings/sdk-projectsettings-android",
               "id": "version-3.0.0/sdk-projectsettings/sdk-projectsettings-android",
               "title": "For Android",
-              "description": "Unity version 2022.3 or later",
+              "description": "1、Unity version 2022.3 or later",
               "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-3.0.0/sdk-projectsettings/sdk-projectsettings-android.md",
               "sourceDirName": "sdk-projectsettings",
               "slug": "/sdk-projectsettings/sdk-projectsettings-android",
