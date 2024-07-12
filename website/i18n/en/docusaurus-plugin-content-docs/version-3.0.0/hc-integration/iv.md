@@ -27,15 +27,12 @@ private void InterAdCloseCallback()
 }
 ```
 
-** _adPos **：Insert advertising spot name, insert advertising spot name in [product requirements document]. You are advised to customize the enumeration according to the requirements document.<br/>
+** _adPos **：Insert advertising spot name, insert advertising spot name in [product requirements document]. You are advised to customize the enumeration according to the required document or download the file to a customized directory.[(SDKPositionName.cs)](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/SDKPositionName.cs)<br/>
 ** _IvType **：Type of frequency control Default set IV1. IV2 can be used if required.<br/>
 ** _closeCallback **：interstitial close callback.
 
 
 ** _adPos enumeration definition example:**<br/>
-
-Developers can customize a global enumeration variable to define all HCIVpositionnames together. You can also download this file directly to use in your project.[(SDKPositionName.cs)](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/SDKPositionName.cs)
-
 
 For example, the requirements document is as follows:
 

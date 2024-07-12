@@ -27,14 +27,12 @@ private void InterAdCloseCallback()
 }
 ```
 
-** _adPos **：插屏广告点位名称，【产品需求文档】中的插屏广告点位名称。建议根据需求文档自定义枚举。<br/>
+** _adPos **：插屏广告点位名称，【产品需求文档】中的插屏广告点位名称。建议根据需求文档自定义枚举或者可直接下载此文件放到自定义目录进行使用。[(SDKPositionName.cs)](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/SDKPositionName.cs)<br/>
 ** _IvType **：插屏频次类型。默认使用 IV1。可结合【产品需求文档】如有不同插屏频次需求，可配合 IV2 使用。<br/>
 ** _closeCallback **：插屏关闭回调。
 
 
 ** _adPos枚举定义示例：**<br/>
-
-开发者可自定义一个全局的枚举变量，把所有HCIVPositionName定义到一起。也可直接下载此文件放到项目中进行使用。[(SDKPositionName.cs)](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/SDKPositionName.cs)
 
 例如：需求文档如下<br/>
 

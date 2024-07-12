@@ -114,7 +114,14 @@ HCSDKManager.Instance.CheckSensitiveWords("test title",HCSensitive.SensitiveType
 ```
 
 ## Push notification（v2.3.5 new）
-- Register notification callback
+
+- Request notification rights
+```c
+HCSDKManager.Instance.ReqNotificationPermission();
+```
+When this interface is invoked, the SDK requests notification rights.
+
+- Register notification callback(optional)
 
 ```c
 
@@ -144,11 +151,7 @@ private void OnMessageReceive(Dictionary<string, string> data)
 ```
 When notified by HCSDKManager. Instance. OnNotificationOnMessageReceived callback receives firebase backend configuration custom key-value pairs.
 
-- Request notification rights
-```c
-HCSDKManager.Instance.ReqNotificationPermission();
-```
-When this interface is invoked, the SDK requests notification rights.
+
 
 <!--- Gets whether you have notification permission-->
 <!--```c-->

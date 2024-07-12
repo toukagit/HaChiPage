@@ -114,7 +114,13 @@ HCSDKManager.Instance.CheckSensitiveWords("测试文本",HCSensitive.SensitiveTy
 
 ```
 ## 九、推送（v2.3.5新增）
-- 注册通知回调
+- 请求获取通知权限
+```c
+HCSDKManager.Instance.ReqNotificationPermission();
+```
+调用此接口时，SDK将请求通知权限。
+
+- 注册通知回调（可选）
 
 ```c
 
@@ -144,11 +150,7 @@ private void OnMessageReceive(Dictionary<string, string> data)
 ```
 当收到通知时，可通过 HCSDKManager.Instance.OnNotificationOnMessageReceived 回调接收到firebase后台配置的自定义键值对。
 
-- 请求获取通知权限
-```c
-HCSDKManager.Instance.ReqNotificationPermission();
-```
-调用此接口时，SDK将请求通知权限。
+
 <!---->
 <!--- 获取是否有通知权限-->
 <!--```c-->

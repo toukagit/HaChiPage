@@ -1,11 +1,11 @@
 [
     {
       "sdk_version": "3.0.2",
-      "update_time": "2024-07-11",
+      "update_time": "2024-07-12",
       "update_content": {
         "zh": "1、修复断网登录失败清空本地userID问题",
         "en": "1.Fixed the problem that the local userID failed to be cleared."
-      },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.0.2/HachiSDK_3.0.2_fd3ed63.unitypackage"
+      },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.0.2/HachiSDK_3.0.2_71c583e.unitypackage"
     },
     {
       "sdk_version": "3.0.1",
