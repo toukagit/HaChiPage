@@ -20,12 +20,17 @@ HCSDKManager.Instance.SetGameFocusListener((_isFocus) => {
 ```
 Set the game to lose/gain focus callback, the SDK will give a callback every time triggered to the corresponding situation.<br/>
 For example, when a commercial starts playing, your game will lose focus. When the AD is over, return to the game and your game will gain focus.
+
 ## Review
 
+Call to pop-up Google/Apple system review box.
 ```c
 HCSDKManager.Instance.Review();
 ```
-Call to pop-up Google/Apple system review box.
+
+** Google reviews need to be sent to the Google background to pop up. <br/>
+Apple needs to review before it can pop up reviews, and reviews cannot pop up on TestFlight. <br/>**
+
 
 ## Vibration
 ```c

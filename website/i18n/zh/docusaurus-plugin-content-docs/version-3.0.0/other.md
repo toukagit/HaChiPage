@@ -23,10 +23,14 @@ HCSDKManager.Instance.SetGameFocusListener((_isFocus) => {
 
 ## 二、评价
 
+调用可弹出谷歌/苹果系统评价弹框。
+
 ```c
 HCSDKManager.Instance.Review();
 ```
-调用可弹出谷歌/苹果系统评价弹框。
+
+**谷歌评价需将包体传到谷歌后台方能弹出。<br/>
+苹果需过审后才能弹出评价，TestFlight上无法弹出评价。<br/>**
 
 ## 三、震动
 ```c
