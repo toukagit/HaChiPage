@@ -225,7 +225,7 @@ Note: The SDK validates all subscription orders, so the callback is executed mul
 
 
 
-### 11、Get all product information
+### 11、Get all product information（optional）
 Return all configured items on AppStore/Google Play.
 ```c
 void Start()
@@ -243,7 +243,7 @@ void Start()
  } 
 ```
 
-### 12、Get product information based on product ID
+### 12、Get product information based on product ID（optional）
 ```c
 string productID = "com.tkkk.unitysdk.demo.a1";
 

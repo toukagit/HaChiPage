@@ -220,7 +220,7 @@ HCSDKManager.Instance.SetOnCheckSubscribeValidity((productId,validity)=>{
 注：SDK会将所有订阅订单进行验证，因此该回调会执行多次，当执行到过期订单时该回调中validity会返回false，执行到最新一条订阅订单时，如果用户没有退订该商品，validity会返回true。
 
 
-### 11、获取所有商品信息
+### 11、获取所有商品信息（可选）
 返回AppStore/Google Play 上所有配置的商品。
 ```c
 void Start()
@@ -238,7 +238,7 @@ void Start()
  } 
 ```
 
-### 12、根据商品ID获取商品信息
+### 12、根据商品ID获取商品信息（可选）
 ```c
 string productID = "com.tkkk.unitysdk.demo.a1";
 
