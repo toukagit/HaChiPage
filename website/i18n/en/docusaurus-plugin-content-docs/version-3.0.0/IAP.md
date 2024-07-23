@@ -11,6 +11,7 @@ sidebar_position: 3
  - ** [Unity In App Purchasing plugin version 4.12.0 or higher](https://docs.unity3d.com/Packages/com.unity.purchasing@4.9/manual/StoresSupported.html) (UnityEditor 2020.3+) **
  - ** Must achieve [ 【7、reward issuance reporting(Must join)】 ](#7reward-issuance-reportmust-join) **
  - ** SDK will automatically check whether the local contains unverified orders after successful purchase and failed purchase, and it is recommended that developers take the initiative to request a replacement order when entering the main interface. [[8、 replenishment]](#8replenishment)  ** 
+ - ** To test in-app purchases, you need to add your Google account to your Google Background test account first. **
 
 :::
 ## In-app purchase access method

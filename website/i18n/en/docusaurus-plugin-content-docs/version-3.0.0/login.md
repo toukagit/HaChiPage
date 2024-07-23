@@ -8,11 +8,13 @@ sidebar_position: 3
 # Account system
 :::tip 
 
-Before starting the integration of the account system, please confirm the timing of the account system and select the login method to be supported. We provide visitor login, email login and third-party login methods.
+- Before starting the integration of the account system, please confirm the timing of the account system and select the login method to be supported. We provide visitor login, email login and third-party login methods.
 
-In addition to account login, we also support account deletion, login method query, account logout, account binding, mandatory binding, automatic login, return to the current account type, return to the current can automatically log in.    
+- In addition to account login, we also support account deletion, login method query, account logout, account binding, mandatory binding, automatic login, return to the current account type, return to the current can automatically log in.    
 
-HachiSDK provides login interface and [Login account information interface](#2log-in-to-the-account-information-interface). Developers can design and make account information interface according to game UI style and style or use the login account information interface provided by SDK.
+- HachiSDK provides login interface and [Login account information interface](#2log-in-to-the-account-information-interface). Developers can design and make account information interface according to game UI style and style or use the login account information interface provided by SDK.
+
+- When you log in with Google Games, you need to add your Google account to your Google Background Test account.
 
 :::
 
