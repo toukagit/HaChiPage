@@ -25,16 +25,32 @@ If the version of Unity used is later than 2022.3, see [ 【Unity Android Platfo
 ![](/img/HCSDK/image53.png)  
 
 
-### 2.2 Problems and solutions
+### 2.2 Packing result
 
-##### 2.2.1 Make sure there is no Advertisement Legacy that comes with Unity in the Package Manager. If there is, remove it
+#### 2.2.1 Success
+After the package is successfully packaged, the following dialog box is displayed:
+
+![](/img/HCSDK/image62.png)  
+
+apk is in the **HachiBuildTemp** folder under the Assets sibling directory:
+
+![](/img/HCSDK/image63.png)  
+
+#### 2.2.2 Fail
+When packaging fails, please provide the failure log file for us to analyze the specific failure cause. The log file is in the **HachiBuildTemp** folder under the Assets sibling directory:
+
+![](/img/HCSDK/image64.png) 
+
+### 2.3 Problems and solutions
+
+##### 2.3.1 Make sure there is no Advertisement Legacy that comes with Unity in the Package Manager. If there is, remove it
     
 ![](/img/HCSDK/image54.png)  
 
-##### 2.2.2 Cannot open "java" because the developer cannot be verified
+##### 2.3.2 Cannot open "java" because the developer cannot be verified
 ![](/img/HCSDK/image55.png)  
 ![](/img/HCSDK/image56.png)  
 
-##### 2.2.3 "libnative-platform.dylib" cannot be opened because the developer cannot be verified
+##### 2.3.3 "libnative-platform.dylib" cannot be opened because the developer cannot be verified
 ![](/img/HCSDK/image57.png)  
 ![](/img/HCSDK/image58.png)  

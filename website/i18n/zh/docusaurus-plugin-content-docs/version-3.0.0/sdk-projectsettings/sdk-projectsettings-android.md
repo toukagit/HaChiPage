@@ -25,18 +25,32 @@ sidebar_position: 7
 #### 2.1.3 将刚才下载的UnityAndroidSDKTool.zip中的JDK和Gradle设置在下图中1、2位置，并设置好签名文件，点击BuildAPK或其他选项。
 ![](/img/HCSDK/image53.png)  
 
+### 2.2 打包结果
 
+#### 2.2.1 成功
+打包成功后会弹出如下弹框：
 
-### 2.2 问题及解决方案
+![](/img/HCSDK/image62.png)  
 
-##### 2.2.1 确保Package Manager中没有Unity自带的广告Advertisement Legacy，如果有还请移除此插件
+apk在Assets同级目录下的 **HachiBuildTemp** 文件夹中：
+
+![](/img/HCSDK/image63.png)  
+
+#### 2.2.2 失败
+打包失败时，请提供失败log文件，供我们分析具体失败原因，log文件在Assets同级目录下的 **HachiBuildTemp** 文件夹中：
+
+![](/img/HCSDK/image64.png) 
+
+### 2.3 问题及解决方案
+
+##### 2.3.1 确保Package Manager中没有Unity自带的广告Advertisement Legacy，如果有还请移除此插件
     
 ![](/img/HCSDK/image54.png)  
 
-##### 2.2.2 无法打开"java",因为无法验证开发者
+##### 2.3.2 无法打开"java",因为无法验证开发者
 ![](/img/HCSDK/image55.png)  
 ![](/img/HCSDK/image56.png)  
 
-##### 2.2.3 无法打开"libnative-platform.dylib",因为无法验证开发者。
+##### 2.3.3 无法打开"libnative-platform.dylib",因为无法验证开发者。
 ![](/img/HCSDK/image57.png)  
 ![](/img/HCSDK/image58.png)  

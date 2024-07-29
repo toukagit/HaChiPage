@@ -10,7 +10,7 @@ This page shows you how to download/import the Hachi Unity Plugin.
 
  - **Xcode 14.2 or later is required to access the HachiSDK.**       
  - **When updating version 3.0.0, it is best to remove the old SDK (except the configuration file)([【Delete all SDK-related files】](other.md)). And export new Xcode or Android Studio projects, be careful not to overwrite projects exported to older versions of the SDK.**   
-
+ - ** [Hachi 3.0.0 Update Notes (Developer must see)](https://pic6ktmsyi.feishu.cn/wiki/DRnRwGtEmi2qX2ksZFhce7RGnQd) **
 :::
 
 
@@ -21,7 +21,7 @@ This page shows you how to download/import the Hachi Unity Plugin.
 :::
 
 ## Download the latest Unity plugin<br/>
-[HachiSDK_3.0.4_864ce9b.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.0.4/HachiSDK_3.0.4_864ce9b.unitypackage)（[Historical version](/versions)）
+[HachiSDK_3.0.5_210b7ff.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.0.5/HachiSDK_3.0.5_210b7ff.unitypackage)（[Historical version](/versions)）
 <a id='click'>    </a>
 
 Import the plugin into Unity<br/>
