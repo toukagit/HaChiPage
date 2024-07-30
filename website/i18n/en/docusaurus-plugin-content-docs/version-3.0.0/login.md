@@ -75,9 +75,9 @@ Login status
 
 Login
 ```c
-public void ButtonEvent_GuestLogin()
+public void ButtonEvent_Login()
 {
-    HCSDKManager.Instance.Login(HCLoginType.LOGIN_BY_GUESTER, _loginAction);
+    HCSDKManager.Instance.Login(HCLoginType.LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES_AUTO, _loginAction);
 }
 
 void Start()
@@ -96,7 +96,7 @@ void Start()
         {
             // Login failure
             _userId = "";
-            _userType = HCLoginType.LOGIN_BY_GUESTER;
+            _userType = HCLoginType.LOGIN_BY_GOOGLE_PLAY_GAMES_SERVICES_AUTO;
             _token = "";
         }
 };
