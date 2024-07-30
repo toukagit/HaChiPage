@@ -11,8 +11,8 @@
       "sdk_version": "3.0.4",
       "update_time": "2024-07-18",
       "update_content": {
-        "zh": "1、修复H5广告展示时切后台回来不给回调问题",
-        "en": "1.Fixed H5 AD display when the background cut back does not give callback issue."
+        "zh": "1、修复H5广告展示时切后台回来不给回调问题 \n 2、打开账号登录界面登录类型兼容auto",
+        "en": "1.Fixed H5 AD display when the background cut back does not give callback issue.\n 2.Open the account login page Login type compatible with auto."
       },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.0.4/HachiSDK_3.0.4_864ce9b.unitypackage"
     },
     {
