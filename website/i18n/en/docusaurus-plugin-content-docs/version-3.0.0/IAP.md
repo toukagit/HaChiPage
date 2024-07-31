@@ -12,6 +12,7 @@ sidebar_position: 3
  - ** Must achieve [ 【7、reward issuance reporting(Must join)】 ](#7reward-issuance-reportmust-join) **
  - ** SDK will automatically check whether the local contains unverified orders after successful purchase and failed purchase, and it is recommended that developers take the initiative to request a replacement order when entering the main interface. [[8、 replenishment]](#8replenishment)  ** 
  - ** To test in-app purchases, you need to add your Google account to your Google Background test account first. **
+ - ** You need to click the test link on the mobile terminal to join the test account, and you cannot join the test account on the computer terminal. If the PC has been added, log out of the PC.** 
 
 :::
 ## In-app purchase access method
