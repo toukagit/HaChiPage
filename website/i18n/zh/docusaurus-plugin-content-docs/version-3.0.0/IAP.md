@@ -76,8 +76,27 @@ Dictionary<string, ProductType> ProductDic = new Dictionary<string, ProductType>
 HCSDKManager.Instance.AddProducts(ProductDic);
 ```
 
+### 4、初始化内购回调
+:::danger
+ - **初始化内购回调必须设置在SDK初始化之前**
+:::
+```c
+HCSDKManager.Instance.SetOnPurchaseInitLinstener((result,errorMsg)=>
+{
+    if (result)
+    {
+        // Iap初始化成功
+        HCDebugger.LogDebug("Iap init success");
+    }
+    else
+    {
+        // Iap初始化失败
+        HCDebugger.LogDebug("Iap init fail, errorMsg:"+errorMsg);
+    }
+});
+```
 
-### 4、购买监听回调
+### 5、购买监听回调
 :::danger
  - **支付回调必须设置在SDK初始化之前**
  - **支付回调为异步回调，回调回来时要确保游戏奖励下发正常。建议游戏侧可在支付过程中增加遮罩屏蔽用户操作**   
@@ -97,7 +116,8 @@ void Start()
 /// 游戏扩展字段
 /// 是否为恢复购买订单
 /// 是否为恢复购买触发，主要用于弹框提示（仅iOS）
-private void PurchaseCallback(string orderID, string productName, string productID, bool purchaseResult, string gameExtra,bool orderAlreadyExists, bool isRestore)
+/// 支付状态
+private void PurchaseCallback(string orderID, string productName, string productID, bool purchaseResult, string gameExtra,bool orderAlreadyExists, bool isRestore, PurchasingCode code)
 {
     if (purchaseResult)
     {
@@ -120,9 +140,28 @@ private void PurchaseCallback(string orderID, string productName, string product
 ```
 **说明：** <br/>
 1、purchaseResult 或 orderAlreadyExists 为true时，正常下发商品。需游戏侧根据需求自行处理，对于非消耗品等，不可重复下发的奖励的情况。（如去广告礼包包含去广告+500钻石，卸载重装恢复购买，只需重新奖励去广告，而500钻石之前已经下发过无需再次下发；<br/>
-2、purchaseResult 字段和 orderAlreadyExists 字段不会同时为true。
+2、purchaseResult 字段和 orderAlreadyExists 字段不会同时为true。<br/>
+3、回调中支付状态说明如下：
+```c
 
-### 5、购买商品接口
+public enum PurchasingCode
+{
+    PurchasingUnavailable,          // 无法使用系统购买功能
+    ExistingPurchasePending,        // 请求新购买时正在进行前一项购买
+    ProductUnavailable,             // 无法在商店购买商品
+    SignatureInvalid,               // 购买收据的签名验证失败
+    UserCancelled,                  // 用户选择取消而不是继续购买
+    PaymentDeclined,                // 付款出现问题
+    DuplicateTransaction,           // 当交易已经成功完成时出现的重复交易错误
+    Unknown,                        // 未识别的购买问题的通用原因
+    ServerRequestFailed,            // 客户端购买成功请求服务端失败
+    ServerAuthenticationFailed,     // 客户端购买成功服务端验证失败
+    PurchasingSuccess               // 客户端购买成功服务端验证成功
+}
+```
+
+
+### 6、购买商品接口
 ```c 
 public void BuyProduct()
 {
@@ -133,7 +172,7 @@ public void BuyProduct()
 }
 ```
 
-### 6、恢复购买（仅iOS）
+### 7、恢复购买（仅iOS）
 ```c
 HCSDKManager.Instance.RestorePurchases();
 ```
@@ -145,7 +184,7 @@ HCSDKManager.Instance.RestorePurchases();
 某个商品为非消耗型条目，奖励为：去广告+100金币。那恢复购买时，只恢复去广告，不恢复100金币。<br/>
 每次调用恢复购买方法，都会给购买成功回调，需游戏自己加逻辑判断不重复下发或将恢复购买按钮隐藏。<br/>
 
-### 7、奖励下发上报(必接)
+### 8、奖励下发上报(必接)
 :::danger
  游戏必须实现此接口，完成内购事件闭环。<br/>
  游戏需要再购买成功或恢复购买成功即 purchaseResult 或 orderAlreadyExists 其中一个为true时调用该接口。
@@ -182,13 +221,13 @@ private void PurchaseCallback(string orderID, string productName, string product
 }
 ```
 
-### 8、补单
+### 9、补单
 ```c
 HCSDKManager.Instance.ReadFailOrderId();
 ```
 SDK会在购买成功和购买失败后主动检查本地是否包含未验证订单，未验证订单校验成功后将触发 [ 【4、购买监听回调】 ](#4购买监听回调)，开发者也可根据实际情况主动调用补单接口进行补单逻辑。
 
-### 9、获取本地化价格字符串接口
+### 10、获取本地化价格字符串接口
 会返回带货币符号的价格字符串，如：'$1.99' '￥6.99'。
 ```c
 public void GetPriceByID()
@@ -200,7 +239,7 @@ public void GetPriceByID()
 }
 ```
 
-### 10、连续续订产品
+### 11、连续续订产品
 当iap插件初始化成功时会检查当前是否存在连续订阅型产品，请在初始化SDK前注册回调。<br/>
 开发者需要在订单过期时收回续订权益，即 validity = false 时回收权益。
 
@@ -221,7 +260,7 @@ HCSDKManager.Instance.SetOnCheckSubscribeValidity((productId,validity)=>{
 注：SDK会将所有订阅订单进行验证，因此该回调会执行多次，当执行到过期订单时该回调中validity会返回false，执行到最新一条订阅订单时，如果用户没有退订该商品，validity会返回true。
 
 
-### 11、获取所有商品信息（可选）
+### 12、获取所有商品信息（可选）
 返回AppStore/Google Play 上所有配置的商品。
 ```c
 void Start()
@@ -239,14 +278,14 @@ void Start()
  } 
 ```
 
-### 12、根据商品ID获取商品信息（可选）
+### 13、根据商品ID获取商品信息（可选）
 ```c
 string productID = "com.tkkk.unitysdk.demo.a1";
 
 Product prodyct = HCSDKManager.Instance.GetProductInfoByID(productID);
 ```
 
-### 13、内购异常
+### 14、内购异常
 如遇到支付失败，请确认以下问题：
 - 支付回调必须设置在SDK初始化之前
 - 所有商品类别需和后台配置一致，消耗品、非消耗品还是订阅产品

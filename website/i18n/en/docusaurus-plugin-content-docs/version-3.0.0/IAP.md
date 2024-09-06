@@ -78,7 +78,27 @@ Dictionary<string, ProductType> ProductDic = new Dictionary<string, ProductType>
 HCSDKManager.Instance.AddProducts(ProductDic);
 ```
 
-### 4、Buy listening callback
+### 4、Initialize iap callback
+:::danger
+ - **The initial callback must be set before SDK initialization**
+:::
+```c
+HCSDKManager.Instance.SetOnPurchaseInitLinstener((result,errorMsg)=>
+{
+    if (result)
+    {
+        // Iap init success
+        HCDebugger.LogDebug("Iap init success");
+    }
+    else
+    {
+        // Iap init fail
+        HCDebugger.LogDebug("Iap init fail, errorMsg:"+errorMsg);
+    }
+});
+```
+
+### 5、Buy listening callback
 :::danger
  - **Payment callbacks must be set before SDK initialization**
  - **The payment callback is an asynchronous callback, and when the callback is returned, ensure that the game reward is issued normally. It is suggested that the game side can add a mask to shield user actions during the payment process**   
@@ -97,7 +117,7 @@ void Start()
 /// Successful payment or not
 /// Game extension field
 /// Whether the recovery purchase is triggered, mainly used to prompt a dialog box(iOS only)
-private void PurchaseCallback(string orderID, string productName, string productID, bool purchaseResult, string gameExtra,bool isRestore)
+private void PurchaseCallback(string orderID, string productName, string productID, bool purchaseResult, string gameExtra,bool isRestore, PurchasingCode code)
 {
     if (purchaseResult)
     {
@@ -120,10 +140,26 @@ private void PurchaseCallback(string orderID, string productName, string product
 ```
 ** Description: ** <br/>
 1. Items are normally delivered from purchaseResult or orderAlreadyExists that is true. The game side should handle the reward itself according to the demand, and the reward can not be issued repeatedly for non-consumable items. (If the de-advertising package contains de-advertising +500 diamonds, uninstall and reinstall to resume the purchase, only need to re-reward the de-advertising, and 500 diamonds have been issued before without being issued again. <br/>
-2. The purchaseResult and orderAlreadyExists fields are not both true.
+2. The purchaseResult and orderAlreadyExists fields are not both true. <br/>
+3. The payment status in the callback is described as follows：
+```c
+public enum PurchasingCode
+{
+    PurchasingUnavailable,          // The system purchase function cannot be used
+    ExistingPurchasePending,        // The previous purchase was in progress when the new purchase was requested
+    ProductUnavailable,             // Unable to buy goods in the store
+    SignatureInvalid,               // Signature verification of purchase receipt failed
+    UserCancelled,                  // The user chose to cancel rather than continue the purchase
+    PaymentDeclined,                // Payment problem
+    DuplicateTransaction,           // A duplicate transaction error that occurs when the transaction has been successfully completed
+    Unknown,                        // Common cause of unidentified purchase problems
+    ServerRequestFailed,            // The client failed to request the server for purchase. Procedure
+    ServerAuthenticationFailed,     // The client purchase succeeds. Server authentication fails
+    PurchasingSuccess               // The client purchase succeeds. The server authentication succeeds
+}
+```
 
-
-### 5、Purchase interface
+### 6、Purchase interface
 ```c 
 public void BuyProduct()
 {
@@ -134,7 +170,7 @@ public void BuyProduct()
 }
 ```
 
-### 6、Restore purchase (iOS Only)
+### 7、Restore purchase (iOS Only)
 
 ```c
 HCSDKManager.Instance.RestorePurchases();
@@ -149,7 +185,7 @@ If an item is a non-consumable item, the reward is: remove AD and 100 gold. When
 Each time the recovery purchase method is called, the successful purchase will be called back, and the game needs to add logic to judge not to repeat or hide the recovery purchase button. <br/>
 
 
-### 7、Reward issuance report(Must join)
+### 8、Reward issuance report(Must join)
 :::danger
  The game must implement this interface to complete the closed loop of internal purchase events.<br/>
  This interface is invoked when one of purchaseResult or orderAlreadyExists is true from Purchaseresult.
@@ -186,14 +222,14 @@ private void PurchaseCallback(string orderID, string productName, string product
 }
 ```
 
-### 8、replenishment
+### 9、replenishment
 ```c
 HCSDKManager.Instance.ReadFailOrderId();
 ```
 The SDK will proactively check whether the local contains unverified orders after the purchase success and purchase failure. After the unverified order verification is successful, it will trigger [【4、Buy listening callback】](#4buy-listening-callback). The developer can also actively call the replenishment interface for replenishment logic according to the actual situation.
 
 
-### 9、Gets the localized price string interface
+### 10、Gets the localized price string interface
 Returns a price string with a currency symbol, such as '$1.99' '￥6.99'.
 ```c
 public void GetPriceByID()
@@ -205,7 +241,7 @@ public void GetPriceByID()
 }
 ```
 
-### 10、Continue to renew products
+### 11、Continue to renew products
 When the iap plug-in initializes successfully, it checks for the existence of a continuous subscription product. Please register the callback before initializing the SDK
 
 ```c
@@ -227,7 +263,7 @@ Note: The SDK validates all subscription orders, so the callback is executed mul
 
 
 
-### 11、Get all product information（optional）
+### 12、Get all product information（optional）
 Return all configured items on AppStore/Google Play.
 ```c
 void Start()
@@ -245,14 +281,14 @@ void Start()
  } 
 ```
 
-### 12、Get product information based on product ID（optional）
+### 13、Get product information based on product ID（optional）
 ```c
 string productID = "com.tkkk.unitysdk.demo.a1";
 
 Product prodyct = HCSDKManager.Instance.GetProductInfoByID(productID);
 ```
 
-### 13、The in-app purchase is abnormal
+### 14、The in-app purchase is abnormal
 In case of payment failure, please confirm the following issues:
 - Payment callbacks must be set before SDK initialization
 - All product categories must be consistent with the background configuration, consumables, non-consumables or subscription products

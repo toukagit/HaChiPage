@@ -1,5 +1,13 @@
 [
     {
+    "sdk_version": "3.0.6",
+    "update_time": "2024-09-06",
+    "update_content": {
+      "zh": "1、添加IAP初始化回调 \n 2、购买回调添加购买状态码 \n 3、优化H5 Ads埋点",
+      "en": "1. Add IAP initialization callback \n 2. Purchase callback add purchase status code \n 3. Optimize the H5 Ads burial point"
+    },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.0.6/HachiSDK_3.0.6_930e44e.unitypackage"
+  },
+    {
     "sdk_version": "3.0.5",
     "update_time": "2024-07-29",
     "update_content": {
