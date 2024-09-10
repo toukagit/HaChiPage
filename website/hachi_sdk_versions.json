@@ -1,4 +1,11 @@
-[
+[{
+    "sdk_version": "3.0.7",
+    "update_time": "2024-09-10",
+    "update_content": {
+      "zh": "1、修复断网重连后同一个商品没办法再次购买问题",
+      "en": "1. Fixed the problem that the same item cannot be purchased again after the network is disconnected"
+    },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.0.7/HachiSDK_3.0.7_f7ddd75.unitypackage"
+  },
     {
     "sdk_version": "3.0.6",
     "update_time": "2024-09-06",
