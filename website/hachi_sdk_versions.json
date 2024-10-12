@@ -1,5 +1,13 @@
 [
     {
+    "sdk_version": "3.0.9",
+    "update_time": "2024-10-12",
+    "update_content": {
+      "zh": "1、修复h5广告重复初始化firebase问题 \n 2、修复topon广告回调不在主线程执行问题 \n 3、归因信息回传新增Facebook数据",
+      "en": "1. Fixed h5 AD duplicate initialization firebase issue \n 2. AFixed topon AD callbacks not executing on the main thread \n 3. Attributing information back added Facebook data"
+    },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.0.9/HachiSDK_3.0.9_9307dfc.unitypackage"
+  },
+    {
         "sdk_version": "3.0.8",
         "update_time": "2024-09-26",
         "update_content": {
