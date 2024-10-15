@@ -1,11 +1,11 @@
 [
     {
     "sdk_version": "3.1.0",
-    "update_time": "2024-10-14",
+    "update_time": "2024-10-15",
     "update_content": {
-      "zh": "1、修复Facebook回传数据报错问题",
-      "en": "1. Fixed an issue with Facebook sending back data incorrectly"
-    },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.1.0/HachiSDK_3.1.0_976e889.unitypackage"
+      "zh": "1、修复Facebook回传数据报错问题 \n 2、修复在线参数获取事件重复上报、部分事件eventname不合法问题",
+      "en": "1. Fixed an issue with Facebook sending back data incorrectly \n 2. Fixed Repeated reports of online parameter acquisition events and invalid eventnames of some events"
+    },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.1.0/HachiSDK_3.1.0_f5d05ab.unitypackage"
   },
     {
     "sdk_version": "3.0.9",
