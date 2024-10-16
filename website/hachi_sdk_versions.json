@@ -1,5 +1,13 @@
 [
     {
+    "sdk_version": "3.1.1",
+    "update_time": "2024-10-16",
+    "update_content": {
+      "zh": "1、修复Sdk导致崩溃问题",
+      "en": "1. Fix Sdk crash issue"
+    },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.1.1/HachiSDK_3.1.1_557eabc.unitypackage"
+  },
+    {
     "sdk_version": "3.1.0",
     "update_time": "2024-10-15",
     "update_content": {
