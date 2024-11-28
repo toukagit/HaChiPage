@@ -13,10 +13,10 @@ Level progression events are used to track and analyze the user's level behavior
 
 Level Start Call: ** LevelStart **   
 Level End Call: ** LevelEnd **
-- Level has ended with succ : ** Level_Success **
-- Level has ended with failed: ** Level_Fail **
-- Before level end, restart level. eg. click Retry button in the current level: ** Level_Retry **
-- Before level end, back to home page or level list. For example click back or quit buttons in current level: ** Level_Back **
+- Level has ended with succ : ** Success **
+- Level has ended with failed: ** Fail **
+- Before level end, restart level. eg. click Retry button in the current level: ** Retry **
+- Before level end, back to home page or level list. For example click back or quit buttons in current level: ** Back **
 :::
 
 ### LevelStart 
@@ -68,17 +68,17 @@ void LevelEnter(string level,Dictionary<string, object> extraInfos = null);
 ### LevelEnd
 
 ```c
-HCSDKManager.Instance.LevelEnd("1", StageResult.Level_Success); 
+HCSDKManager.Instance.LevelEnd("1", StageResult.Success); 
 
-HCSDKManager.Instance.LevelEnd(1, StageResult.Level_Success);
+HCSDKManager.Instance.LevelEnd(1, StageResult.Success);
 
-HCSDKManager.Instance.LevelEnd("S_1", StageResult.Level_Fail);
+HCSDKManager.Instance.LevelEnd("S_1", StageResult.Fail);
 
-HCSDKManager.Instance.LevelEnd(3, StageResult.Level_Retry);
+HCSDKManager.Instance.LevelEnd(3, StageResult.Retry);
 
-HCSDKManager.Instance.LevelEnd("S_2", StageResult.Level_Back);
+HCSDKManager.Instance.LevelEnd("S_2", StageResult.Back);
 
-HCSDKManager.Instance.LevelEnd("S_2", StageResult.Level_Success,new Dictionary<string, object>() {{ "s_id", 9 },{ "s_type","10"} });
+HCSDKManager.Instance.LevelEnd("S_2", StageResult.Success,new Dictionary<string, object>() {{ "s_id", 9 },{ "s_type","10"} });
 
 ```
 
@@ -109,10 +109,10 @@ void LevelEnd(string _level, StageResult _stageResult,Dictionary<string, object>
     <td>Y</td>
     <td>StageResult</td>
     <td>
-    <b>Level_Success:</b> Level has ended with succ   <br />
-    <b>Level_Fail:</b> Level has ended with failed  <br />
-    <b>Level_Retry:</b> Before level end, restart level. eg. click Retry button in the current level <br />
-    <b>Level_Back:</b> Before level end, back to home page or level list. For example click back or quit buttons in current level
+    <b>Success:</b> Level has ended with succ   <br />
+    <b>Fail:</b> Level has ended with failed  <br />
+    <b>Retry:</b> Before level end, restart level. eg. click Retry button in the current level <br />
+    <b>Back:</b> Before level end, back to home page or level list. For example click back or quit buttons in current level
     </td>
   </tr>
       <tr>

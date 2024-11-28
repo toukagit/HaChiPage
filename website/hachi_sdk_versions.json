@@ -1,4 +1,11 @@
-[
+[{
+    "sdk_version": "3.1.4",
+    "update_time": "2024-11-28",
+    "update_content": {
+      "zh": "1、新增已购订阅商品信息查询接口",
+      "en": "1. Added the interface for querying information about purchased and subscribed products"
+    },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.1.4/HachiSDK_3.1.4_2c3d3ff.unitypackage"
+  },
     {
     "sdk_version": "3.1.1",
     "update_time": "2024-10-16",

@@ -139,7 +139,7 @@ private void PurchaseCallback(string orderID, string productName, string product
 }
 ```
 **说明：** <br/>
-1、purchaseResult 或 orderAlreadyExists 为true时，正常下发商品。需游戏侧根据需求自行处理，对于非消耗品等，不可重复下发的奖励的情况。（如去广告礼包包含去广告+500钻石，卸载重装恢复购买，只需重新奖励去广告，而500钻石之前已经下发过无需再次下发；<br/>
+1、purchaseResult 或 orderAlreadyExists 为true时，正常下发商品。需游戏侧根据需求自行处理，对于非消耗品等，不可重复下发的奖励的情况。（如去广告礼包包含去广告+500钻石，卸载重装恢复购买，只需重新奖励去广告，而500钻石之前已经下发过无需再次下发，具体逻辑以需求文档为准）<br/>
 2、purchaseResult 字段和 orderAlreadyExists 字段不会同时为true。<br/>
 3、回调中支付状态说明如下：
 ```c
@@ -239,25 +239,59 @@ public void GetPriceByID()
 }
 ```
 
-### 11、连续续订产品
-当iap插件初始化成功时会检查当前是否存在连续订阅型产品，请在初始化SDK前注册回调。<br/>
-开发者需要在订单过期时收回续订权益，即 validity = false 时回收权益。
+### 11、查询连续订阅产品信息 (v3.1.4 新增)
+SDK支持以下两种方式查询已购买的连续订阅产品的信息：
+#### 11.1 注册回调
+初始化SDK前注册回调，当IAP插件初始化成功后SDK会检查当前是否存在连续订阅型产品信息。<br/>
+开发者可在在订单过期时收回续订权益，即 validity = false 时或HCSubscribeData中Is_expired = 1时回收权益。（具体表现可根据需求文档而定）
 
 ```c
-HCSDKManager.Instance.SetOnCheckSubscribeValidity((productId,validity)=>{
+public void SetOnCheckSubscribeValidity(Action<string, bool, HCSubscribeData> onCheckSubscribeValidityAction);
 
-    HCDebugger.LogDebug("OnCheckSubscribeValidity productId:"+productId+ " validity"+ validity);
-    if (validity)
-    {
-        // 商品在有效期内
-    }
-    else
-    {
-        // 商品已过期
-    }
+例：
+HCSDKManager.Instance.SetOnCheckSubscribeValidity((productId,validity,data)=>
+{
+    // productId 商品ID
+    // validity 是否过期 fales：过期，true：未过期
+    // data 订阅型商品信息
+    HCDebugger.LogDebug("SubscribeData ===> "+JsonConvert.SerializeObject(data));
 });
 ```
-注：SDK会将所有订阅订单进行验证，因此该回调会执行多次，当执行到过期订单时该回调中validity会返回false，执行到最新一条订阅订单时，如果用户没有退订该商品，validity会返回true。
+#### 11.2 主动查询
+开发者可在合适的时机主动调用查询接口查询订阅型商品信息
+```c
+public void CheckSubsribeDataByProductId(string productId,Action<HCSubscribeData> onCheckSubsribeByProductIdAction);
+
+例：
+HCSDKManager.Instance.CheckSubsribeDataByProductId("productId", (data) =>
+{
+    // 商品ID
+    // data 订阅型商品信息
+    HCDebugger.LogDebug("SubscribeData ===> "+JsonConvert.SerializeObject(data));
+});
+
+```
+
+
+连续订阅商品信息** HCSubscribeData **说明如下：
+
+```c
+
+        public int Illegal_order;       // 0:代表合法订单，1:代表非法订单
+        public string Illegal_msg;      // 非法订单信息
+        public string Environment;      // production & sandbox
+        public string Purchase_time;    // 订阅时间，单位毫秒
+        public int Is_subscribed;       // 是否订阅过 0：未订阅过，1：订阅过
+        public int Is_expired;          // 是否过期 0未过期，1：已过期
+        public int Is_cancelled;        // 0：未取消，1：已取消
+        public int Is_free_trial;       // 0：不是免费试用，1：是免费试用
+        public int Is_auto_renewing;    // 是否自动续订 0：非自动，1：自动 
+        public string Remaining_time;   // 订阅到期剩余时间，单位毫秒
+        public string Expiry_time;      // 过期时间，单位毫秒
+        public string Latest_order_id;  // 当前订阅的最新订单号
+        public string Product_id;       // 产品ID
+        
+```
 
 
 ### 12、获取所有商品信息（可选）

@@ -13,10 +13,10 @@ sidebar_position: 96
 
 1、游戏每局开始时调用「关卡开始事件」: ** LevelEnter **  
 2、游戏每局结束时调用「关卡结束事件 」: ** LevelEnd **
-- 当局游戏成功: ** Level_Success **
-- 当局游戏失败: ** Level_Fail **
-- 在未结算前，用户选择马上结束当局游戏并重新开始。如在当局游戏内点击重试: ** Level_Retry **
-- 在未结算前，用户选择马上退出游戏并返回游戏列表界面或主界面。如在当局游戏内点击返回或退出按钮: ** Level_Back **
+- 当局游戏成功: ** Success **
+- 当局游戏失败: ** Fail **
+- 在未结算前，用户选择马上结束当局游戏并重新开始。如在当局游戏内点击重试: ** Retry **
+- 在未结算前，用户选择马上退出游戏并返回游戏列表界面或主界面。如在当局游戏内点击返回或退出按钮: ** Back **
 
 :::
 
@@ -69,17 +69,17 @@ void LevelEnter(string level,Dictionary<string, object> extraInfos = null);
 
 ### 关卡结束事件 
 ```c
-HCSDKManager.Instance.LevelEnd("1", StageResult.Level_Success); 
+HCSDKManager.Instance.LevelEnd("1", StageResult.Success); 
 
-HCSDKManager.Instance.LevelEnd(1, StageResult.Level_Success);
+HCSDKManager.Instance.LevelEnd(1, StageResult.Success);
 
-HCSDKManager.Instance.LevelEnd("S_1", StageResult.StageFail);
+HCSDKManager.Instance.LevelEnd("S_1", StageResult.Fail);
 
-HCSDKManager.Instance.LevelEnd(3, StageResult.Level_Retry);
+HCSDKManager.Instance.LevelEnd(3, StageResult.Retry);
 
-HCSDKManager.Instance.LevelEnd("S_2", StageResult.Level_Back);
+HCSDKManager.Instance.LevelEnd("S_2", StageResult.Back);
 
-HCSDKManager.Instance.LevelEnd("S_2", StageResult.Level_Success,new Dictionary<string, object>() {{ "s_id", 9 },{ "s_type","10"} });
+HCSDKManager.Instance.LevelEnd("S_2", StageResult.Success,new Dictionary<string, object>() {{ "s_id", 9 },{ "s_type","10"} });
 ```
 ** 调用时机：** 游戏每局结束时调用。
 
@@ -108,10 +108,10 @@ void LevelEnd(string _level, StageResult _stageResult,Dictionary<string, object>
     <td>Y</td>
     <td>StageResult</td>
     <td>
-    Level_Success: 当局游戏成功  <br /><br />
-    Level_Fail: 当局游戏失败  <br /><br />
-    Level_Retry: 在未结算前，用户选择马上结束当局游戏并重新开始。如在当局游戏内点击重试。  <br /><br />
-    Level_Back: 在未结算前，用户选择马上退出游戏并返回游戏列表界面或主界面。如在当局游戏内点击返回或退出按钮。  <br />
+        Success: 当局游戏成功  <br /><br />
+        Fail: 当局游戏失败  <br /><br />
+        Retry: 在未结算前，用户选择马上结束当局游戏并重新开始。如在当局游戏内点击重试。  <br /><br />
+        Back: 在未结算前，用户选择马上退出游戏并返回游戏列表界面或主界面。如在当局游戏内点击返回或退出按钮。  <br />
     </td>
   </tr>
     <tr>

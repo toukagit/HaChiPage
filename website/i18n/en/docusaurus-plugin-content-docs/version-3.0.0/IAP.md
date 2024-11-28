@@ -139,7 +139,7 @@ private void PurchaseCallback(string orderID, string productName, string product
 }
 ```
 ** Description: ** <br/>
-1. Items are normally delivered from purchaseResult or orderAlreadyExists that is true. The game side should handle the reward itself according to the demand, and the reward can not be issued repeatedly for non-consumable items. (If the de-advertising package contains de-advertising +500 diamonds, uninstall and reinstall to resume the purchase, only need to re-reward the de-advertising, and 500 diamonds have been issued before without being issued again. <br/>
+1. Items are normally delivered from purchaseResult or orderAlreadyExists that is true. The game side should handle the reward itself according to the demand, and the reward can not be issued repeatedly for non-consumable items. (If the de-advertising package contains de-advertising +500 diamonds, uninstall and reinstall to resume the purchase, only need to re-reward the de-advertising, and 500 diamonds have been issued before without being issued again,For details about the logic, see the requirements document)<br/>
 2. The purchaseResult and orderAlreadyExists fields are not both true. <br/>
 3. The payment status in the callback is described as follows：
 ```c
@@ -241,26 +241,59 @@ public void GetPriceByID()
 }
 ```
 
-### 11、Continue to renew products
-When the iap plug-in initializes successfully, it checks for the existence of a continuous subscription product. Please register the callback before initializing the SDK
+### 11、Query Continuous Subscription product information (v3.1.4 new)
+The SDK supports two ways to query information about purchased continuous subscription products:
+#### 11.1 Registration callback
+Register the callback before initializing the SDK. When the IAP plug-in initializes successfully, the SDK checks whether continuous subscription product information exists.<br/>
+The developer can reclaim the renewal benefits when the order expires, i.e., when validity = false or Is_expired = 1 in HCSubscribeData. (Specific performance can be determined according to the requirements document)
 
 ```c
-HCSDKManager.Instance.SetOnCheckSubscribeValidity((productId,validity)=>{
+public void SetOnCheckSubscribeValidity(Action<string, bool, HCSubscribeData> onCheckSubscribeValidityAction);
 
-    HCDebugger.LogDebug("OnCheckSubscribeValidity productId:"+productId+ " validity"+ validity);
-    if (validity)
-    {
-        // The goods are within the validity period
-    }
-    else
-    {
-        // Goods have expired
-    }
+e.g.：
+HCSDKManager.Instance.SetOnCheckSubscribeValidity((productId,validity,data)=>
+{
+    // productId 
+    // validity Indicates whether the validity is expired. fales: the validity is expired. true: the validity is not expired
+    // data Subscription-based product information
+    HCDebugger.LogDebug("SubscribeData ===> "+JsonConvert.SerializeObject(data));
 });
 ```
-Note: The SDK validates all subscription orders, so the callback is executed multiple times. validity returns false in the callback when the expired order is executed. validity returns true when the latest subscription order is executed if the user did not unorder the item.
+#### 11.2 Active query
+Developers can actively call the query interface at the right time to query subscription commodity information
+```c
+public void CheckSubsribeDataByProductId(string productId,Action<HCSubscribeData> onCheckSubsribeByProductIdAction);
+
+e.g.：
+HCSDKManager.Instance.CheckSubsribeDataByProductId("productId", (data) =>
+{
+    // productId
+    // data Subscription-based product information
+    HCDebugger.LogDebug("SubscribeData ===> "+JsonConvert.SerializeObject(data));
+});
+
+```
 
 
+Continuous Subscription Product Information ** HCSubscribeData ** Description is as follows:
+
+```c
+
+    public int Illegal_order;       // 0: indicates a legal order, 1: indicates an illegal order
+    public string Illegal_msg;      // Illegal order information
+    public string Environment;      // production & sandbox
+    public string Purchase_time;    // Subscription time, in milliseconds
+    public int Is_subscribed;       // Subscribed or not 0: Not subscribed. 1: subscribed
+    public int Is_expired;          // Expired 0 Not expired, 1: expired
+    public int Is_cancelled;        // 0: not canceled. 1: canceled
+    public int Is_free_trial;       // 0: not a free trial, 1: a free trial
+    public int Is_auto_renewing;    // Whether to renew automatically 0: not automatic, 1: automatic
+    public string Remaining_time;   // Time remaining for subscription expiration, in milliseconds
+    public string Expiry_time;      // Expiration time, in milliseconds
+    public string Latest_order_id;  // The latest order number for your current subscription
+    public string Product_id;       // Product ID
+        
+```
 
 
 ### 12、Get all product information（optional）
