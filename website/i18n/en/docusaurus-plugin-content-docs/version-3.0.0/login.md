@@ -173,7 +173,18 @@ The pop-up window of account information is added to the SDK. There are two stat
 - Click the switch account button and call the corresponding login mode of the game access pop-up window. If the game access is Google Game login mode, the Google game login pop-up window will pop up (for the time being, only one login mode is supported for a game), and the game archive will be switched together after the user successfully switches the account
 - Click Delete account button, check the box twice to confirm whether to delete, click OK button to delete the current User ID and binding relationship;
 
+### 3、Login account information interface multi-language setting interface
+```c
+/// <summary>
+/// Set multiple languages on the account page, for example, en/ja/ko/ru/vi/zh/ zh-hk/zh-tw, if the system language is not set
+/// </summary>
+/// <param name="languageCode"></param>
+public void SetAccountMenuLanguageCode(string languageCode);
 
+e.g.
+HCSDKManager.Instance.SetAccountMenuLanguageCode("en");
+```
+The game can set the language of the login account information interface through this interface, and display the system language when it is not set.
 
 ## Other interface
 

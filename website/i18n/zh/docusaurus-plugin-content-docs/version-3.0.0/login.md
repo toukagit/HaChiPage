@@ -168,6 +168,20 @@ SDK增加账号信息弹窗，账号信息弹窗共有2种状态，一种为游�
 - 点击切换账号按钮后调用游戏接入的对应登录方式弹窗，如游戏接入的是谷歌游戏登录方式，则弹出谷歌游戏登录弹窗（暂时一款游戏只支持一种登录方式），用户成功切换账号后游戏存档一同切换
 - 点击删除账号按钮，二次弹框确认是否删除，点击确定按钮后删除当前User ID及绑定关系；
 
+
+### 3、登录账号信息界面多语言设置接口
+```c
+/// <summary>
+/// 设置账号页面多语言，如：en/ja/ko/ru/vi/zh/zh-HK/zh-TW，若不设置显示系统语言
+/// </summary>
+/// <param name="languageCode"></param>
+public void SetAccountMenuLanguageCode(string languageCode);
+
+例：
+HCSDKManager.Instance.SetAccountMenuLanguageCode("en");
+```
+游戏可通过该接口设置登录账号信息界面的语言，不设置时显示系统语言。
+
 ## 其他接口
 
 
