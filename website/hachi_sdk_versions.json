@@ -9,7 +9,7 @@
     "sdk_version": "3.1.7",
     "update_time": "2024-12-05",
     "update_content": {
-      "zh": "1、修复LevelEnd事件报错问题",
+      "zh": "1、LevelEnd 兼容extroInfo不能传空问题",
       "en": "1. Fixed the LevelEnd event error."
     },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.1.7/HachiSDK_3.1.7_9db0247.unitypackage"
   },{
