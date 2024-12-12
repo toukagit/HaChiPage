@@ -15,7 +15,7 @@ sidebar_position: 3
  - ** 测试内购时，需需要先把谷歌账号添加到Google后台测试账号中。 **
  - ** 需用手机端点击测试链接加入测试账号，不能使用电脑端加入测试账号；如果电脑端已加入则需退出电脑端登录。** 
 :::
-## 内购接入方法
+## 一、内购接入方法
 ### 1、导入IAP插件
 导入Unity In App Purchasing插件。
 Unity菜单栏 -> Window -> Package Manager -> In App Purchasing -> Install。<br/><br/>
@@ -326,6 +326,139 @@ Product prodyct = HCSDKManager.Instance.GetProductInfoByID(productID);
 - GooglePlay中国地区账号无法调起支付，需切换地区或使用其他地区账号
 - 网络原因，尝试切换不同vpn节点
 
+## 二、服务端对接（可选）
+SDK支付成功后，游戏根据回调获取支付结果。 有服务器的游戏优先接入SDK服务器支付回调接口，支付成功后，由SDK服务器通知游戏服务器进行商品下发。单机游戏确保收到客户端支付成功回调后发放商品。         
 
+### 第三方游戏回调前期准备
+1、找对接方获取游戏端授权加密sercret。       
+2、提供游戏端回调地址给对接方进行回调地址配置。
+### 游戏端回调地址接口说明
+** 1、请求方式: post        **      
+** 2、header授权:   **   ``` Authorization: secretkey  ```               
+** 3、Body json        **      
+<table>
+  <tr>
+    <td>参数</td>
+    <td>类型</td>
+    <td>是否必填</td>
+    <td>描述</td>
+    <td>示例值</td>
+  </tr>
+  <tr>
+    <td>env</td>
+    <td>String</td>
+    <td>是</td>
+    <td>环境变量（qa:测试环境; prod:线上环境）</td>
+    <td>prod</td>
+  </tr>
+    <tr>
+    <td>platform</td>
+    <td>String</td>
+    <td>是</td>
+    <td>平台（android/ios）</td>
+    <td>android</td>
+  </tr>
+    <tr>
+    <td>pkg</td>
+    <td>String</td>
+    <td>是</td>
+    <td>游戏包名</td>
+    <td>com.test.demo</td>
+  </tr>
+    <tr>
+    <td>user_id</td>
+    <td>String</td>
+    <td>是</td>
+    <td>用户ID</td>
+    <td>0cc852594cb2dfd0381af38f687b44906</td>
+  </tr>
+  <tr>
+    <td>product_id</td>
+    <td>String</td>
+    <td>是</td>
+    <td>商品ID</td>
+    <td>com.tkkk.unitysdk.demo.a1</td>
+  </tr>
+  <tr>
+    <td>order_id</td>
+    <td>String</td>
+    <td>是</td>
+    <td>订单ID</td>
+    <td>GPA.3340-7674-3284-90321</td>
+  </tr>
+  <tr>
+    <td>price</td>
+    <td>String</td>
+    <td>是</td>
+    <td>价格</td>
+    <td>1.99</td>
+  </tr>
+  <tr>
+    <td>currency</td>
+    <td>String</td>
+    <td>是</td>
+    <td>货币单位</td>
+    <td>USD</td>
+  </tr>
+  <tr>
+    <td>game_extra_param</td>
+    <td>String</td>
+    <td>否</td>
+    <td>游戏扩展字段</td>
+    <td>game_extra_param_value</td>
+  </tr>
+  <tr>
+    <td>ts</td>
+    <td>String</td>
+    <td>是</td>
+    <td>时间戳</td>
+    <td>1692346624</td>
+  </tr>
+  <tr>
+    <td>sign</td>
+    <td>String</td>
+    <td>是</td>
+    <td>加密值</td>
+    <td>33dasfdewffggg</td>
+  </tr>
+</table>
+
+```c
+body json样例（secretkey: 64f1b1fb8efadc41dcd29d5c）
+{
+    "env": "qa",
+    "platform": "android",
+    "pkg": "com.test.demo",
+    "user_id": "0cc852594cb2dfd0381af38f687b44906",
+    "product_id": "com.tkkk.unitysdk.demo.a1",
+    "order_id": "GPA.3340-7674-3284-90321",
+    "price": "1.99",
+    "currency": "USD",
+    "game_extra_param":"game_extra_param_value"
+    "ts": "1692346624",
+    "sign": "c9e91f2b7d28eec1130df9ddea5697e8"
+}
+
+```
+
+** 4、加密方式：**  
+sign值为：按照返回参数顺序-md5(参数对应值1+参数对应值2+参数对应值n+secretkey), +代表连接符，不参与计算
+
+```c
+$sign = md5("qa"+"android"+"com.test.demo"+"0cc852594cb2dfd0381af38f687b44906"+"com.tkkk.unitysdk.demo.a1"+"GPA.3340-7674-3284-90321"+"1.99"+"USD"+"game_extra_param_value"+"1692346624"+$secretKey)
+```
+
+** 5、重试机制 **   
+在5个小时内最多重试10次，直到返回的http status为200且输出"success"为止。
+  - 第一次 35秒
+  - 第二次 40秒
+  - 第三次 115秒
+  - 第四次 150秒
+  - 第五次 385秒
+  - 第六次 755秒
+  - 第七次 1500秒
+  - 第八次 2610秒
+  - 第九次 4230秒
+  - 第十次 6850秒
 
 

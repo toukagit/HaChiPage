@@ -328,3 +328,141 @@ In case of payment failure, please confirm the following issues:
 - GooglePlay China account cannot be adjusted to pay, you need to switch regions or use another region account
 - Attempts to switch between different vpn nodes due to network reasons
 
+## Server Integration (Optional)
+After a successful payment through the SDK, the game retrieves the payment result via a callback. For games with a server, it is recommended to prioritize integration with the SDK server's payment callback interface. After a successful payment, the SDK server will notify the game server to deliver the purchased goods. In the case of standalone games, ensure that the goods are delivered to the player after receiving a successful payment callback from the client.
+
+       
+
+### Preparation for third-party game callback
+1、Obtain game-side authorization encryption secret from the integration partner.       
+2、Provide the game-side callback URL to the integration partner for configuration.
+### Game-side Callback Address Interface Description
+** 1、Request Method: Post        **      
+** 2、Header Authorization:  ``` Authorization: secretkey  ```                        **      
+** 3、Body Json        **      
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Type</td>
+    <td>isRequired</td>
+    <td>Des</td>
+    <td>Example Value</td>
+  </tr>
+  <tr>
+    <td>env</td>
+    <td>String</td>
+    <td>Y</td>
+    <td>Environment <br/>(qa: test; prod: production)</td>
+    <td>prod</td>
+  </tr>
+    <tr>
+    <td>platform</td>
+    <td>String</td>
+    <td>Y</td>
+    <td>platform（android/ios）</td>
+    <td>android</td>
+  </tr>
+    <tr>
+    <td>pkg</td>
+    <td>String</td>
+    <td>Y</td>
+    <td>package name</td>
+    <td>com.test.demo</td>
+  </tr>
+    <tr>
+    <td>user_id</td>
+    <td>String</td>
+    <td>Y</td>
+    <td>UserID</td>
+    <td>0cc852594cb2dfd0381af38f687b44906</td>
+  </tr>
+  <tr>
+    <td>product_id</td>
+    <td>String</td>
+    <td>Y</td>
+    <td>Product ID</td>
+    <td>com.tkkk.unitysdk.demo.a1</td>
+  </tr>
+  <tr>
+    <td>order_id</td>
+    <td>String</td>
+    <td>Y</td>
+    <td>Order ID</td>
+    <td>GPA.3340-7674-3284-90321</td>
+  </tr>
+  <tr>
+    <td>price</td>
+    <td>String</td>
+    <td>Y</td>
+    <td>Price</td>
+    <td>1.99</td>
+  </tr>
+  <tr>
+    <td>currency</td>
+    <td>String</td>
+    <td>Y</td>
+    <td>Currency</td>
+    <td>USD</td>
+  </tr>
+  <tr>
+    <td>game_extra_param</td>
+    <td>String</td>
+    <td>N</td>
+    <td>Game Extra Param</td>
+    <td>game_extra_param_value</td>
+  </tr>
+  <tr>
+    <td>ts</td>
+    <td>String</td>
+    <td>Y</td>
+    <td>Timestamp</td>
+    <td>1692346624</td>
+  </tr>
+  <tr>
+    <td>sign</td>
+    <td>String</td>
+    <td>Y</td>
+    <td>Encrypted Value</td>
+    <td>33dasfdewffggg</td>
+  </tr>
+</table>
+
+```c
+Body JSON Example （secretkey: 64f1b1fb8efadc41dcd29d5c）
+{
+    "env": "qa",
+    "platform": "android",
+    "pkg": "com.test.demo",
+    "user_id": "0cc852594cb2dfd0381af38f687b44906",
+    "product_id": "com.tkkk.unitysdk.demo.a1",
+    "order_id": "GPA.3340-7674-3284-90321",
+    "price": "1.99",
+    "currency": "USD",
+    "game_extra_param":"game_extra_param_value"
+    "ts": "1692346624",
+    "sign": "c9e91f2b7d28eec1130df9ddea5697e8"
+}
+
+```
+
+** 4、Encryption Method **  
+Calculate the value of the "Sign" field by concatenating the parameter values (parameter value 1 + parameter value 2 + parameter value n + secret key) in the order of the returned parameters, and then applying MD5 encryption. The "+" sign is used as a connector and is not included in the calculation.
+
+```c
+$sign = md5("qa"+"android"+"com.test.demo"+"0cc852594cb2dfd0381af38f687b44906"+"com.tkkk.unitysdk.demo.a1"+"GPA.3340-7674-3284-90321"+"1.99"+"USD"+"game_extra_param_value"+"1692346624"+$secretKey)
+```
+
+** 5、Retry Mechanism **   
+Retry up to 10 times within a 5-hour timeframe with the following intervals:
+
+Retry 1: After 35 seconds   <br/>
+Retry 2: After 40 seconds   <br/>
+Retry 3: After 115 seconds   <br/>
+Retry 4: After 150 seconds   <br/>
+Retry 5: After 385 seconds   <br/>
+Retry 6: After 755 seconds   <br/>
+Retry 7: After 1500 seconds   <br/>
+Retry 8: After 2610 seconds   <br/>
+Retry 9: After 4230 seconds   <br/>
+Retry 10: After 6850 seconds   <br/>
+Continue retrying until the returned HTTP status is 200 and the output is 'success'.
