@@ -1,11 +1,22 @@
-[{
+[
+    {
+        "sdk_version": "3.1.9",
+        "update_time": "2024-12-16",
+        "update_content": {
+          "zh": "1、修复内购订阅类型商品在进程中过期/退订再次购买时，订阅查询接口返回信息不正确问题",
+          "en": "1. Fixed the issue that the information returned by the subscription query interface was incorrect when the in-purchase subscription type item was purchased again when it expired/unsubscribed during the process."
+        },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.1.9/HachiSDK_3.1.9_6bb8c2e.unitypackage"
+      },
+    
+  {
     "sdk_version": "3.1.8",
     "update_time": "2024-12-10",
     "update_content": {
       "zh": "1、登录账号信息界面添加多语言设置接口",
       "en": "1. Add a multi-language setting interface to the login account information screen."
     },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.1.8/HachiSDK_3.1.8_ff758ee.unitypackage"
-  },{
+  },
+  {
     "sdk_version": "3.1.7",
     "update_time": "2024-12-05",
     "update_content": {
