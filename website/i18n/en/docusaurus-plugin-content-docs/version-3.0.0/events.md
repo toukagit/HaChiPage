@@ -34,8 +34,7 @@ Call `LevelEnter` method when starting each level.
 
 ** API: **
 
-void LevelEnter(int level,Dictionary<string, object> extraInfos = null);     
-void LevelEnter(string level,Dictionary<string, object> extraInfos = null);
+void LevelEnter(object level,Dictionary<string, object> extraInfos = null);     
 
 <table>
   <tr>
@@ -85,9 +84,7 @@ HCSDKManager.Instance.LevelEnd("S_2", StageResult.Success,new Dictionary<string,
 Call `LevelEnd` method when finish each level.   
 
 ** API: **    
-void LevelEnd(int _level, StageResult _stageResult,Dictionary<string, object> extraInfos = null);  
-void LevelEnd(string _level, StageResult _stageResult,Dictionary<string, object> extraInfos = null);
-
+void LevelEnd(object _level, StageResult _stageResult,Dictionary<string, object> extraInfos = null);
 <table>
   <tr>
     <td>Name</td>
