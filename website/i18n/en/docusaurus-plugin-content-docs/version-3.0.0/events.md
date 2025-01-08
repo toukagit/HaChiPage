@@ -11,7 +11,7 @@ Level progression events are used to track and analyze the user's level behavior
 <b><font color="ff0000">Attention: if you have ‘Levels’ / 'Quest' / 'Task' or 'Mission' in your game, you must integrate "Progression Events" !</font></b>         
 <br />
 
-Level Start Call: ** LevelStart **   
+Level Start Call: ** LevelEnter **   
 Level End Call: ** LevelEnd **
 - Level has ended with succ : ** Success **
 - Level has ended with failed: ** Fail **
@@ -34,7 +34,8 @@ Call `LevelEnter` method when starting each level.
 
 ** API: **
 
-void LevelEnter(object level,Dictionary<string, object> extraInfos = null);     
+void LevelEnter(int level,Dictionary<string, object> extraInfos = null);    
+void LevelEnter(string level,Dictionary<string, object> extraInfos = null);     
 
 <table>
   <tr>
@@ -84,7 +85,9 @@ HCSDKManager.Instance.LevelEnd("S_2", StageResult.Success,new Dictionary<string,
 Call `LevelEnd` method when finish each level.   
 
 ** API: **    
-void LevelEnd(object _level, StageResult _stageResult,Dictionary<string, object> extraInfos = null);
+void LevelEnd(int _level, StageResult _stageResult,Dictionary<string, object> extraInfos = null);    
+void LevelEnd(string _level, StageResult _stageResult,Dictionary<string, object> extraInfos = null);
+
 <table>
   <tr>
     <td>Name</td>

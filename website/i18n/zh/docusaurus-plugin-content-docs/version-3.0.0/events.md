@@ -35,7 +35,8 @@ HCSDKManager.Instance.LevelEnter("S_1",new Dictionary<string, object>() {{ "s_id
 ** 调用时机：** 游戏每局开始时调用。  
 
 ** API:  **    
-void LevelEnter(object level,Dictionary<string, object> extraInfos = null);     
+void LevelEnter(int level,Dictionary<string, object> extraInfos = null);    
+void LevelEnter(string level,Dictionary<string, object> extraInfos = null);     
 
 <table>
   <tr>
@@ -83,7 +84,8 @@ HCSDKManager.Instance.LevelEnd("S_2", StageResult.Success,new Dictionary<string,
 ** 调用时机：** 游戏每局结束时调用。
 
 ** API: **    
-void LevelEnd(object _level, StageResult _stageResult,Dictionary<string, object> extraInfos = null);
+void LevelEnd(int _level, StageResult _stageResult,Dictionary<string, object> extraInfos = null);    
+void LevelEnd(string _level, StageResult _stageResult,Dictionary<string, object> extraInfos = null);
 
 <table>
   <tr>
