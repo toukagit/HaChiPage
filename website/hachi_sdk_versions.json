@@ -1,5 +1,13 @@
 [
     {
+        "sdk_version": "3.2.1",
+        "update_time": "2025-01-09",
+        "update_content": {
+          "zh": "1、修复关闭账号信息界面时回调不触发问题",
+          "en": "1. Fixed an issue where callback does not trigger when closing the account information screen"
+        },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.2.1/HachiSDK_3.2.1_c8bf847.unitypackage"
+      },
+{
         "sdk_version": "3.2.0",
         "update_time": "2025-01-08",
         "update_content": {
