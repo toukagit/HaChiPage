@@ -31,7 +31,8 @@ const sidebars = {
           'hc-integration/iv',
           'hc-integration/rv',
           'hc-integration/bv',
-          'hc-integration/nv'
+          'hc-integration/nv',
+          'hc-integration/sp',
       ]
   },
   'events',

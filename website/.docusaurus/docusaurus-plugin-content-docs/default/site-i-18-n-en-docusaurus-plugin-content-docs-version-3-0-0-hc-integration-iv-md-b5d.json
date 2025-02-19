@@ -1,7 +1,7 @@
 {
   "unversionedId": "hc-integration/iv",
   "id": "version-3.0.0/hc-integration/iv",
-  "title": "Interstitials",
+  "title": "Interstitial",
   "description": "",
   "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-3.0.0/hc-integration/iv.md",
   "sourceDirName": "hc-integration",
@@ -11,8 +11,8 @@
   "version": "3.0.0",
   "sidebarPosition": 1,
   "frontMatter": {
-    "title": "Interstitials",
-    "sidebar_label": "Interstitials",
+    "title": "Interstitial",
+    "sidebar_label": "Interstitial",
     "description": "",
     "sidebar_position": 1
   },
@@ -22,7 +22,7 @@
     "permalink": "/hachi-doc/integration"
   },
   "next": {
-    "title": "Rewarded Ads",
+    "title": "Rewarded",
     "permalink": "/hachi-doc/hc-integration/rv"
   }
 }

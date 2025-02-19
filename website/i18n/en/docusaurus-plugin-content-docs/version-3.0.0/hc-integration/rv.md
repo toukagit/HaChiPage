@@ -1,6 +1,6 @@
 ---
-title: "Rewarded Ads"
-sidebar_label: "Rewarded Ads"
+title: "Rewarded"
+sidebar_label: "Rewarded"
 description: ""
 sidebar_position: 2
 ---

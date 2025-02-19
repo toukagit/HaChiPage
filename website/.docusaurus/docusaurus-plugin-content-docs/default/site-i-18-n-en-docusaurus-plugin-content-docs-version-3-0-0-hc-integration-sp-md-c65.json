@@ -1,0 +1,28 @@
+{
+  "unversionedId": "hc-integration/sp",
+  "id": "version-3.0.0/hc-integration/sp",
+  "title": "App Open",
+  "description": "",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-3.0.0/hc-integration/sp.md",
+  "sourceDirName": "hc-integration",
+  "slug": "/hc-integration/sp",
+  "permalink": "/hachi-doc/hc-integration/sp",
+  "tags": [],
+  "version": "3.0.0",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "App Open",
+    "sidebar_label": "App Open",
+    "description": "",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Native",
+    "permalink": "/hachi-doc/hc-integration/nv"
+  },
+  "next": {
+    "title": "Event Tracking",
+    "permalink": "/hachi-doc/events"
+  }
+}

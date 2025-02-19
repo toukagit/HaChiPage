@@ -110,7 +110,7 @@ export default [
   },
   {
     path: '/hachi-doc/zh/',
-    component: ComponentCreator('/hachi-doc/zh/','9ea'),
+    component: ComponentCreator('/hachi-doc/zh/','719'),
     routes: [
       {
         path: '/hachi-doc/zh/',
@@ -151,6 +151,12 @@ export default [
       {
         path: '/hachi-doc/zh/hc-integration/rv/',
         component: ComponentCreator('/hachi-doc/zh/hc-integration/rv/','546'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/hachi-doc/zh/hc-integration/sp/',
+        component: ComponentCreator('/hachi-doc/zh/hc-integration/sp/','ca7'),
         exact: true,
         sidebar: "tutorialSidebar"
       },

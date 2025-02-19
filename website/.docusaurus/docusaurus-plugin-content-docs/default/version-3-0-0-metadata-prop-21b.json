@@ -55,6 +55,12 @@
             "label": "Native广告",
             "href": "/hachi-doc/zh/hc-integration/nv",
             "docId": "hc-integration/nv"
+          },
+          {
+            "type": "link",
+            "label": "开屏广告",
+            "href": "/hachi-doc/zh/hc-integration/sp",
+            "docId": "hc-integration/sp"
           }
         ]
       },
@@ -164,6 +170,12 @@
     "hc-integration/rv": {
       "id": "hc-integration/rv",
       "title": "激励视频广告",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "hc-integration/sp": {
+      "id": "hc-integration/sp",
+      "title": "开屏广告",
       "description": "",
       "sidebar": "tutorialSidebar"
     },

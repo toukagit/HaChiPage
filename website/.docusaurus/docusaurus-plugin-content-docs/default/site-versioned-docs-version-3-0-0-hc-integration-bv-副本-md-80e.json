@@ -1,0 +1,19 @@
+{
+  "unversionedId": "hc-integration/bv_副本",
+  "id": "version-3.0.0/hc-integration/bv_副本",
+  "title": "Banner",
+  "description": "",
+  "source": "@site/versioned_docs/version-3.0.0/hc-integration/bv_副本.md",
+  "sourceDirName": "hc-integration",
+  "slug": "/hc-integration/bv_副本",
+  "permalink": "/hachi-doc/zh/hc-integration/bv_副本",
+  "tags": [],
+  "version": "3.0.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Banner",
+    "sidebar_label": "Banner",
+    "description": "",
+    "sidebar_position": 3
+  }
+}

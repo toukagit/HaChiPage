@@ -41,6 +41,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "hc-integration/sp",
+              "path": "/hachi-doc/zh/hc-integration/sp",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "IAP",
               "path": "/hachi-doc/zh/IAP",
               "sidebar": "tutorialSidebar"

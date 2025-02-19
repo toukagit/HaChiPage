@@ -18,8 +18,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Native",
-    "permalink": "/hachi-doc/hc-integration/nv"
+    "title": "App Open",
+    "permalink": "/hachi-doc/hc-integration/sp"
   },
   "next": {
     "title": "Remote Config",

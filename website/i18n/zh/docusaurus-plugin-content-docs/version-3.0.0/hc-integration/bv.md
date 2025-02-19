@@ -18,14 +18,14 @@ public void Button_ShowBanner()
     /// <summary>
     /// 展示banner广告
     /// </summary>
-    /// <param name="_bannerType">banner类型，Admob折叠banner/max传统banner</param>
-    /// <param name="_googlePos">Admob折叠banner位置，默认底部居中</param>
-    /// <param name="_maxPos">max传统banner位置，默认底部居中</param>
-
-    HCSDKManager.Instance.ShowBanner(HCAdsManager.HCBannerType.Admob, GoogleMobileAds.Api.AdPosition.Bottom, MaxSdkBase.BannerPosition.BottomCenter);
+    /// <param name="_bannerType">banner类型，Collapsible折叠banner/Normal传统banner</param>
+    /// <param name="_googlePos">banner位置，默认底部居中</param>
+    /// 
+    
+    HCSDKManager.Instance.ShowBanner(HCAdsManager.HCBannerType.Collapsible, GoogleMobileAds.Api.AdPosition.Bottom);
 }
 ```
-说明：使用Admob折叠banner时，如果没填充则会展示max传统banner。
+说明：传入可折叠类型时，SDK会根据可折叠banner广告ID去请求广告，在返回的banner类型中，不一定是折叠banner，也有可能返回的是普通banner；因此在调用展示banner时，可能会展示普通banner。
 
 ## 隐藏Banner广告
 ```c

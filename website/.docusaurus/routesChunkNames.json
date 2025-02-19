@@ -75,7 +75,7 @@
     "component": "17896441",
     "content": "a89a0f8e"
   },
-  "/hachi-doc/zh/-9ea": {
+  "/hachi-doc/zh/-719": {
     "component": "1be78505",
     "versionMetadata": "0e2e07dc",
     "__routeContextModule": "2b5ec9d4"
@@ -107,6 +107,10 @@
   "/hachi-doc/zh/hc-integration/rv/-546": {
     "component": "17896441",
     "content": "ac80e4e0"
+  },
+  "/hachi-doc/zh/hc-integration/sp/-ca7": {
+    "component": "17896441",
+    "content": "95db1500"
   },
   "/hachi-doc/zh/IAP/-39d": {
     "component": "17896441",

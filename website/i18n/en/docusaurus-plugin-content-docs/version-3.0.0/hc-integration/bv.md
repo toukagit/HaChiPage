@@ -16,15 +16,15 @@ public void Button_ShowBanner()
     /// <summary>
     /// show banner ad
     /// </summary>
-    /// <param name="_bannerType">banner type，Admob collapses banner/max tradition banner</param>
-    /// <param name="_googlePos">Admob collapses the banner position, with the default bottom centered</param>
-    /// <param name="_maxPos">max traditional banner position, centered at the bottom by default</param>
+    /// <param name="_bannerType">banner type Collapses banner/Normal banner</param>
+    /// <param name="_googlePos">the banner position, with the default bottom centered</param>
+    /// 
 
-    HCSDKManager.Instance.ShowBanner(HCAdsManager.HCBannerType.Admob, GoogleMobileAds.Api.AdPosition.Bottom, MaxSdkBase.BannerPosition.BottomCenter);
+    HCSDKManager.Instance.ShowBanner(HCAdsManager.HCBannerType.Collapsible, GoogleMobileAds.Api.AdPosition.Bottom);
 }
 ```
 
-Note: When folding the banner with Admob, the max traditional banner will be displayed if it is not filled.
+Note: When a collapsible type is passed, the SDK will request an ad based on the collapsible banner ad ID. However, the returned banner type is not necessarily a collapsible banner; it could also be a regular banner. Therefore, when displaying the banner, a regular banner might be shown.
 
 ## Hiding a Banner
 
