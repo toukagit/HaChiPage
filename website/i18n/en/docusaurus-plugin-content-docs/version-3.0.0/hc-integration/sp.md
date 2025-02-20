@@ -13,5 +13,12 @@ When a program starts up, it is referred to as a **cold start**. When the progra
 The SDK controls the loading and display of open screen ads.
 
 ## Best practice
-The preferred way to use open screen ads on a cold start is to use the load screen to load game or app assets, and display ads only on the load screen. <br/> For example, if the game has a load scenario, close the load scenario and load the game scenario when the SDK initialization callback is received. <br/>SDK initialization callback see [【SDK Integration - Initialize SDK】](integration.md)
+It is best to display an open screen AD in loading scene, and the developer must receive the initialization callback before entering the main scene of the game. <br/>
+Internal logic: the developer calls the SDK initialization method,
+- If the screen switch is on, the load screen advertisement will be displayed.
+    - The load advertisement in 5s will be displayed normally, and the initialization callback will be given when the open screen advertisement is closed;
+    - If the on-screen advertisement is not ready after 5s, the initialization will be directly callback, and the cold start advertisement will not be displayed this time; (5s can be controlled by online parameters)
+- If the screen switch is off, the initialization callback is also directly performed; 
+
+SDK initialization callback see [【SDK Integration - Initialize SDK】](integration.md)
 
