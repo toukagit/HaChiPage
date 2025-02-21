@@ -336,6 +336,8 @@ After a successful payment through the SDK, the game retrieves the payment resul
 ### Preparation for third-party game callback
 1、Obtain game-side authorization encryption secret from the integration partner.       
 2、Provide the game-side callback URL to the integration partner for configuration.
+
+Currently, only one payment callback address can be configured in the background. If the payment callback is required to multiple servers, the R&D server must perform interface forwarding. For example, synchronous forwarding to an online server and a test server.
 ### Game-side Callback Address Interface Description
 ** 1、Request Method: Post        **      
 ** 2、Header Authorization:  ``` Authorization: secretkey  ```                        **      
