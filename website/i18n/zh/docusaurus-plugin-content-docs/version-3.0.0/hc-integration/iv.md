@@ -7,19 +7,41 @@ sidebar_position: 1
 
 SDK内部会处理插屏广告加载逻辑，游戏侧根据需要调用展示插屏广告方法即可。
 
+
+## 插屏广告是否可用
+
+```c  
+HCSDKManager.Instance.IsInterstitialReady("IV_Unlock", HCIVADType.IV1)
+```
+
 ## 展示插屏广告
 ```c
+
+/// <summary>
+/// 展示插屏广告
+/// </summary>
+/// <param name="_adPos">插屏点位</param>
+/// <param name="_IvType">插屏type</param>
+/// <param name="_closeCallback">插屏关闭回调</param>
+HCSDKManager.Instance.ShowInterstitial("IV_Unlock", HCIVADType.IV1, Action _closeCallback);
+
+
+e.g.
+public enum HCIVPositionName
+{
+    IV_Unlock,
+    IV_Auto
+}
+
 private void Button_ShowIV1()
 {
-    /// <summary>
-    /// 展示插屏广告
-    /// </summary>
-    /// <param name="_adPos">插屏点位</param>
-    /// <param name="_IvType">插屏type</param>
-    /// <param name="_closeCallback">插屏关闭回调</param>
-
-    HCSDKManager.Instance.ShowInterstitial("IV_Unlock", HCIVADType.IV1, _closeCallback);
+    
+    if(HCSDKManager.Instance.IsInterstitialReady(HCIVPositionName.IV_Unlock.ToString(), HCIVADType.IV1))
+    {
+        HCSDKManager.Instance.ShowInterstitial(HCIVPositionName.IV_Unlock.ToString(), HCIVADType.IV1, InterAdCloseCallback);
+    }
 }
+
 
 private void InterAdCloseCallback(bool result)
 {
@@ -32,6 +54,7 @@ private void InterAdCloseCallback(bool result)
         HCDebugger.LogDebug("插屏未准备好或因条件导致未展示插屏");
     }
 }
+
 ```
 
 ** _adPos **：插屏广告点位名称，【产品需求文档】中的插屏广告点位名称。建议根据需求文档自定义枚举或者可直接下载此文件放到自定义目录进行使用。[(SDKPositionName.cs)](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/SDKPositionName.cs)<br/>

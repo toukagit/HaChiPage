@@ -7,10 +7,16 @@ sidebar_position: 1
 
 The SDK will handle the plug-in advertising loading logic, and the game side can call the display plug-in advertising method as needed.
 
+##  Interstitial Ad isReady 
+
+```c  
+HCSDKManager.Instance.IsInterstitialReady("IV_Unlock", HCIVADType.IV1)
+```
+
+
 ## Showing an Interstitial Ad
 ```c
-private void Button_ShowIV1()
-{
+
     /// <summary>
     /// 
     /// </summary>
@@ -18,20 +24,36 @@ private void Button_ShowIV1()
     /// <param name="_IvType">interstitial type</param>
     /// <param name="_closeCallback">interstitial close callback</param>
     HCSDKManager.Instance.ShowInterstitial("IV_Unlock", HCIVADType.IV1, Action _closeCallback);
-}
 
 
-private void InterAdCloseCallback(bool result)
-{
-    if(result)
+    e.g.
+    public enum HCIVPositionName
     {
-       HCDebugger.LogDebug("close interstitial");
+        IV_Unlock,
+        IV_Auto
     }
-    else
+
+    private void Button_ShowIV1()
     {
-        HCDebugger.LogDebug("The interstitial ad is not ready or failed to display due to certain conditions");
+        
+        if(HCSDKManager.Instance.IsInterstitialReady(HCIVPositionName.IV_Unlock.ToString(), HCIVADType.IV1))
+        {
+            HCSDKManager.Instance.ShowInterstitial(HCIVPositionName.IV_Unlock.ToString(), HCIVADType.IV1, InterAdCloseCallback);
+        }
     }
-}
+
+
+    private void InterAdCloseCallback(bool result)
+    {
+        if(result)
+        {
+           HCDebugger.LogDebug("close interstitial");
+        }
+        else
+        {
+            HCDebugger.LogDebug("The interstitial ad is not ready or failed to display due to certain conditions");
+        }
+    }
 ```
 
 ** _adPos **：Insert advertising spot name, insert advertising spot name in [product requirements document]. You are advised to customize the enumeration according to the required document or download the file to a customized directory.[(SDKPositionName.cs)](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/SDKPositionName.cs)<br/>
@@ -54,9 +76,10 @@ For example, the requirements document is as follows:
 ```c
 public enum HCIVPositionName
 {
-    IV_Success,
-    IV_Fail
+    IV_Unlock,
+    IV_Auto
 }
+
 
 HCSDKManager.Instance.ShowInterstitial(HCIVPositionName.IV_Unlock.ToString(), HCIVADType.IV1,(result)=> 
 {

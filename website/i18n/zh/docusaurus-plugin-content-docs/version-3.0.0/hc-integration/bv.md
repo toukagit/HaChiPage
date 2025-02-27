@@ -35,3 +35,44 @@ public void Button_HideBanner()
 }
 ```
 
+
+## 横幅广告关闭按钮
+折叠横幅广告不显示关闭按钮。只有普通横幅广告显示。通过回调来处理横幅广告关闭按钮的位置。
+
+### 示例
+
+![](/img/HCSDK/image65.png)
+
+### 在SDK初始化之前设置回调
+
+```c
+
+// bool：显示/隐藏横幅右上角的关闭按钮，默认情况下需要隐藏。
+// Vector2：广告的像素大小。注意UI大小的转换。
+public void SetBannerCustomCloseBtnDisplayChanged(Action<bool, Vector2> _bannerCustomCloseBtnChanged)
+
+例：
+HCSDKManager.Instance.SetBannerCustomCloseBtnDisplayChanged(DealBannerCustomCloseBtnDisplay);
+```
+### 接收回调，处理关闭按钮的显示和隐藏，并设置按钮的位置
+
+```c
+private void DealBannerCustomCloseBtnDisplay(bool _isDisplay, Vector2 _adsSize)
+{
+    if (_isDisplay)
+    {
+        float scaleFactor = canvas.scaleFactor;
+
+        bannerClosebtn.gameObject.SetActive(true);
+        RectTransform buttonRectTransform = bannerClosebtn.GetComponent<RectTransform>(); 
+        Debug.Log("Close Btn Pos, x : " + _adsSize.x / 2 + " , y : " + _adsSize.y + " , scaleFactor:" + scaleFactor);
+        float x = _adsSize.x / 2 / scaleFactor;
+        float y = _adsSize.y / scaleFactor;
+        buttonRectTransform.anchoredPosition = new Vector2(x, y);
+    }
+    else
+    {
+        bannerClosebtn.gameObject.SetActive(false);
+    }
+}
+```
