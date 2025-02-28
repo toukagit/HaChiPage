@@ -1,10 +1,10 @@
 [{
         "sdk_version": "3.5.2",
-        "update_time": "2025-02-27",
+        "update_time": "2025-02-28",
         "update_content": {
           "zh": "1、更新ToponSdk",
           "en": "1. Update ToponSdk"
-        },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.5.2/HachiSDK_3.5.2_73c53af2.unitypackage"
+        },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.5.2/HachiSDK_3.5.2_7f5500a9.unitypackage"
       }, 
 {
         "sdk_version": "3.5.0",
