@@ -1,4 +1,12 @@
 [{
+        "sdk_version": "3.5.3",
+        "update_time": "2025-03-03",
+        "update_content": {
+          "zh": "1、Admob聚合在Unity主线程上触发广告事件",
+          "en": "1. The Admob Aggregation SDK triggers AD events on the Unity main thread"
+        },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.5.3/HachiSDK_3.5.3_20c4c8fb.unitypackage"
+      }, 
+{
         "sdk_version": "3.5.2",
         "update_time": "2025-02-28",
         "update_content": {
