@@ -308,9 +308,9 @@
     "303": {
       "js": [
         {
-          "file": "assets/js/runtime~main.da5ae734.js",
-          "hash": "7ef8dc816bab7f50",
-          "publicPath": "/hachi-doc/zh/assets/js/runtime~main.da5ae734.js"
+          "file": "assets/js/runtime~main.40e8c916.js",
+          "hash": "1a8529b7cfe6b229",
+          "publicPath": "/hachi-doc/zh/assets/js/runtime~main.40e8c916.js"
         }
       ]
     },
@@ -362,9 +362,9 @@
     "402": {
       "js": [
         {
-          "file": "assets/js/c7cf392d.835bf721.js",
-          "hash": "3e172382ea3b7088",
-          "publicPath": "/hachi-doc/zh/assets/js/c7cf392d.835bf721.js"
+          "file": "assets/js/c7cf392d.1127a47d.js",
+          "hash": "e79fe09ed60c5f16",
+          "publicPath": "/hachi-doc/zh/assets/js/c7cf392d.1127a47d.js"
         }
       ]
     },

@@ -328,6 +328,14 @@ In case of payment failure, please confirm the following issues:
 - GooglePlay China account cannot be adjusted to pay, you need to switch regions or use another region account
 - Attempts to switch between different vpn nodes due to network reasons
 
+
+### 15、Products with ads removed must be accepted
+After the successful purchase of unadvertised goods, the following interface needs to be called to remove screen insertion ads, open screen ads, and banner ads.
+```c
+HCTools.SetRemoveAds();
+```
+
+
 ## Server Integration (Optional)
 After a successful payment through the SDK, the game retrieves the payment result via a callback. For games with a server, it is recommended to prioritize integration with the SDK server's payment callback interface. After a successful payment, the SDK server will notify the game server to deliver the purchased goods. In the case of standalone games, ensure that the goods are delivered to the player after receiving a successful payment callback from the client.
 

@@ -326,6 +326,14 @@ Product prodyct = HCSDKManager.Instance.GetProductInfoByID(productID);
 - GooglePlay中国地区账号无法调起支付，需切换地区或使用其他地区账号
 - 网络原因，尝试切换不同vpn节点
 
+
+### 15、含去广告商品必接
+去广告商品购买成功后需调用以下接口来去除插屏广告、开屏广告、横幅广告。
+```c
+HCTools.SetRemoveAds();
+```
+
+
 ## 二、服务端对接（可选）
 SDK支付成功后，游戏根据回调获取支付结果。 有服务器的游戏优先接入SDK服务器支付回调接口，支付成功后，由SDK服务器通知游戏服务器进行商品下发。单机游戏确保收到客户端支付成功回调后发放商品。         
 
