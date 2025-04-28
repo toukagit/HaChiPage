@@ -1,4 +1,11 @@
 [{
+        "sdk_version": "3.5.4",
+        "update_time": "2025-04-28",
+        "update_content": {
+          "zh": "1、更新ToponSdk v6.4.69 & MaxSdk v13.1.0",
+          "en": "1. Update ToponSdk v6.4.69 and MaxSdk v13.1.0"
+        },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.5.4/HachiSDK_3.5.4_ba6947ac.unitypackage"
+      }, {
         "sdk_version": "3.5.3",
         "update_time": "2025-03-03",
         "update_content": {
