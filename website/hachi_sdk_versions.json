@@ -1,4 +1,11 @@
 [{
+        "sdk_version": "3.5.5",
+        "update_time": "2025-04-29",
+        "update_content": {
+          "zh": "1、播放插屏广告接口新增参数，可用于开发者自定义弹框后播放插屏",
+          "en": "1. A new parameter has been added to the interface for playing interstitial ads, which can now be used by developers to customize the playback of interstitial ads after pop-up boxes"
+        },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.5.5/HachiSDK_3.5.5_ba6947ac.unitypackage"
+      },{
         "sdk_version": "3.5.4",
         "update_time": "2025-04-28",
         "update_content": {
