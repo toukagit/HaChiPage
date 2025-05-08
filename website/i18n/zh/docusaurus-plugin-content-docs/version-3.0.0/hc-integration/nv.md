@@ -7,6 +7,20 @@ sidebar_position: 3
 
 SDK内部会处理native广告加载逻辑，游戏侧根据需要调用展示/隐藏native方法即可。
 
+## Native广告是否可用
+```c
+var isNativeReady = HCSDKManager.Instance.IsNativeAdReady();
+
+if (isNativeReady)
+{
+    HCDebugger.LogDebug("Native广告准备好了");
+
+}else
+{
+    HCDebugger.LogDebug("Native广告没有准备好");
+}
+```
+
 ## 展示Native广告
 ```c
 public void Button_ShowNative()

@@ -5,7 +5,7 @@ description: ""
 sidebar_position: 3
 ---
 
-## 一、游戏失去/获得焦点
+## 游戏失去/获得焦点
 ```c
 HCSDKManager.Instance.SetGameFocusListener((_isFocus) => {
     if (_isFocus)
@@ -21,7 +21,7 @@ HCSDKManager.Instance.SetGameFocusListener((_isFocus) => {
 设置游戏失去/获得焦点回调，SDK每次触发到对应情境会给回来回调。<br/>
 例如当广告开始播放的时候，你的游戏将会失去焦点。广告播放结束，返回游戏，你的游戏会获得焦点。
 
-## 二、评价
+## 评价
 
 调用可弹出谷歌/苹果系统评价弹框。
 
@@ -32,14 +32,14 @@ HCSDKManager.Instance.Review();
 **谷歌评价需将包体传到谷歌后台方能弹出。<br/>
 苹果需过审后才能弹出评价，TestFlight上无法弹出评价。<br/>**
 
-## 三、震动
+## 震动
 ```c
 // 震动强弱：0:轻微 1:中度 2:重度
 // 震动时间: 0 ~ 1
 HCSDKManager.Instance.Shake(1,0.5f);
 ```
 
-## 四、获取当前用户来源
+## 获取当前用户来源
 ```c
 void Start()
 {
@@ -54,7 +54,7 @@ private void UserSourceListenerCallback(bool isOrganic, string network)
 ```
 用户来源回调，bool: true 自然用户 false 非自然用户
 
-## 五、Firebase 激活回调
+## Firebase 激活回调
 
 需在SDK初始化前设置；在此回调中可以获取最新远端在线参数。
 
@@ -67,13 +67,13 @@ HCSDKManager.Instance.SetFirebaseFetchDataAsyncSuccess = (result)=> {
 };
 ```
 
-## 六、隐私协议接口
+## 隐私协议接口
 ```c
 HCSDKManager.Instance.OpenPrivacy();
 
 ```
 
-## 七、删除所有SDK相关文件
+## 删除所有SDK相关文件
 ![](/img/HCSDK/image34.jpg)
 
 点击后会移除SDK所有文件，如果再次导入SDK报如下错误时，请重启unity<br/>
@@ -81,7 +81,7 @@ HCSDKManager.Instance.OpenPrivacy();
 ![](/img/HCSDK/image35.jpeg)
 
 
-## 八、敏感词接口
+## 敏感词接口
 ```
 
 public enum SensitiveType
@@ -117,7 +117,7 @@ HCSDKManager.Instance.CheckSensitiveWords("测试文本",HCSensitive.SensitiveTy
  },HCSensitive.SensitiveAppType.app);
 
 ```
-## 九、推送（v2.3.5新增）
+## 推送（v2.3.5新增）
 - 请求获取通知权限
 ```c
 HCSDKManager.Instance.ReqNotificationPermission();
@@ -154,6 +154,31 @@ private void OnMessageReceive(Dictionary<string, string> data)
 ```
 当收到通知时，可通过 HCSDKManager.Instance.OnNotificationOnMessageReceived 回调接收到firebase后台配置的自定义键值对。
 
+## 多语言翻译接口（v3.5.6新增）
+
+```c 
+public enum TranslateType
+{
+    //1:聊天（缓存1个小时）
+    //2:Other（缓存1个月）
+    Chat = 1,
+    Other = 2
+}
+
+
+/// <summary>
+/// 多语言翻译接口
+/// </summary>
+/// <param name="text">要翻译的文本内容</param>
+/// <param name="type">类型1：聊天，2：其他（公告、邮件等）</param>
+/// <param name="targetLang">要翻译的目标语言，eg. zh-cn; ja-jp; ko-kr; vi-vi 等</param>
+/// <param name="_action">是否翻译成功，true：翻译成功，false 翻译失败; 文本返回空字符串</param>
+public void TranslateWords(string text, TranslateType type, string targetLang, Action<bool, string> _action)
+{
+    HCTranslate.Instance.TranslateWords(text, type, targetLang, _action);
+}
+
+```
 
 <!---->
 <!--- 获取是否有通知权限-->

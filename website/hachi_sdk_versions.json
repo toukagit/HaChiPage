@@ -1,4 +1,11 @@
 [{
+        "sdk_version": "3.5.6",
+        "update_time": "2025-05-08",
+        "update_content": {
+          "zh": "1、更新Adjust v5.3.0 \n 2、新增多语言翻译接口",
+          "en": "1. Update Adjust v5.3.0 \n2. Add multiple language translation interfaces"
+        },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.5.6/HachiSDK_3.5.6_a9c2fcf.unitypackage"
+      },{
         "sdk_version": "3.5.5",
         "update_time": "2025-04-29",
         "update_content": {

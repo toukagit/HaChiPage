@@ -7,6 +7,26 @@ sidebar_position: 2
 
 The SDK will handle the incentive video AD loading logic, and the game side can call the display intercalation AD method as needed.
 
+## Is Rewarded ad available
+```c
+public void Button_IsRRewardAdReady()
+{
+    
+    var isRewardReady = HCSDKManager.Instance.IsRewardedAdReady();
+
+    if (isRewardReady)
+    {
+        HCDebugger.LogDebug("Rewarded ad ready");
+
+    }else
+    {
+        HCDebugger.LogDebug("Rewarded ad not ready");
+    }
+}
+
+
+```
+
 ## Showing a Rewarded Ad
 
 ```c

@@ -7,6 +7,26 @@ sidebar_position: 2
 
 SDK内部会处理激励视频广告加载逻辑，游戏侧根据需要调用展示激励视频广告方法即可。
 
+## 激励视频广告是否可用
+```c
+public void Button_IsRRewardAdReady()
+{
+    
+    var isRewardReady = HCSDKManager.Instance.IsRewardedAdReady();
+
+    if (isRewardReady)
+    {
+        HCDebugger.LogDebug("激励视频广告准备好了");
+
+    }else
+    {
+        HCDebugger.LogDebug("激励视频广告没有准备好");
+    }
+}
+
+
+```
+
 ## 展示激励视频广告
 ```c
 public void Button_ShowRV()

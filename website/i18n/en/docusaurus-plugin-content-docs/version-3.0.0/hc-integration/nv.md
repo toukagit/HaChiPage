@@ -7,6 +7,20 @@ sidebar_position: 3
 
 The SDK will handle the native AD loading logic internally, and the game side can call the display/hide native method as needed.
 
+## Is Native ad available
+```c
+var isNativeReady = HCSDKManager.Instance.IsNativeAdReady();
+
+if (isNativeReady)
+{
+    HCDebugger.LogDebug("Native ad is ready ");
+
+}else
+{
+    HCDebugger.LogDebug("Native ad not ready");
+}
+```
+
 ## Showing a Native Ad
 ```c
 public void Button_ShowNative()

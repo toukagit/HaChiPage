@@ -8,22 +8,23 @@ sidebar_position: 1
 SDK内部会处理插屏广告加载逻辑，游戏侧根据需要调用展示插屏广告方法即可。
 
 
-## 插屏广告是否可用
-
-```c  
-HCSDKManager.Instance.IsInterstitialReady("IV_Unlock", HCIVADType.IV1)
-```
-
 ## 展示插屏广告
 ```c
+public struct HandCallbackInfo
+{
+    public string msg;
+    public bool isReady;
+}
+
 
 /// <summary>
 /// 展示插屏广告
 /// </summary>
 /// <param name="_adPos">插屏点位</param>
 /// <param name="_IvType">插屏type</param>
-/// <param name="_closeCallback">插屏关闭回调</param>
-HCSDKManager.Instance.ShowInterstitial("IV_Unlock", HCIVADType.IV1, Action _closeCallback);
+/// <param name="_closeCallback">插屏关闭回调,true：正常关闭，false：规则限制或未准备好</param>
+/// <param name="_handleCallback">通常用于游戏关闭自定义去广告弹框后再展示插屏广告</param>
+HCSDKManager.Instance.ShowInterstitial("IV_Unlock", HCIVADType.IV1, Action<bool> _closeCallback = null ,Action<HandCallbackInfo, Action> _handleCallback = null);
 
 
 e.g.
@@ -35,24 +36,34 @@ public enum HCIVPositionName
 
 private void Button_ShowIV1()
 {
-    
-    if(HCSDKManager.Instance.IsInterstitialReady(HCIVPositionName.IV_Unlock.ToString(), HCIVADType.IV1))
+    HCSDKManager.Instance.ShowInterstitial(HCIVPositionName.IV_Unlock.ToString(), HCIVADType.IV1, (interstitialClose) =>
+    {   
+        if (interstitialClose)
+        {
+            // iv 显示完成，玩家主动关闭
+            
+        }
+        else
+        {
+            // 被规则限制，或者iv没有准备好 
+            
+        }
+    }, (handlerInfo, action) =>
     {
-        HCSDKManager.Instance.ShowInterstitial(HCIVPositionName.IV_Unlock.ToString(), HCIVADType.IV1, InterAdCloseCallback);
-    }
-}
+        if (handlerInfo.isReady)
+        {
+            // iv 准备好了，游戏可以做相关逻辑 
+            
+            
+            // 游戏逻辑处理完成后可以调用action.Invoke(); 来显示广告， 如果不需要显示（购买了去广告）就不需要调用action.Invoke();
+            action.Invoke();
+        }
+        else
+        {
+            // iv 没有准备好
 
-
-private void InterAdCloseCallback(bool result)
-{
-    if(result)
-    {
-       HCDebugger.LogDebug("插屏广告关闭");
-    }
-    else
-    {
-        HCDebugger.LogDebug("插屏未准备好或因条件导致未展示插屏");
-    }
+        }
+    });
 }
 
 ```

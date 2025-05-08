@@ -156,7 +156,31 @@ private void OnMessageReceive(Dictionary<string, string> data)
 ```
 When notified by HCSDKManager. Instance. OnNotificationOnMessageReceived callback receives firebase backend configuration custom key-value pairs.
 
+## Multilingual translation interface (v3.5.6 new)
 
+```c 
+public enum TranslateType
+{
+    //1:Chat (cached for 1 hour)
+    //2:Other (Cache for 1 month)
+    Chat = 1,
+    Other = 2
+}
+
+
+/// <summary>
+/// Multilingual translation interface
+/// </summary>
+/// <param name="text">The text content to be translated</param>
+/// <param name="type">Type 1: Chat, 2: Others (Announcements, emails, etc.)</param>
+/// <param name="targetLang">The target language to be translated, e.g. zh-cn; ja-jp;  ko-kr;  vi-vi, etc</param>
+/// <param name="_action">Whether the translation was successful or not, true: The translation was successful, false: The translation failed; The text returns an empty string</param>
+public void TranslateWords(string text, TranslateType type, string targetLang, Action<bool, string> _action)
+{
+    HCTranslate.Instance.TranslateWords(text, type, targetLang, _action);
+}
+
+```
 
 <!--- Gets whether you have notification permission-->
 <!--```c-->

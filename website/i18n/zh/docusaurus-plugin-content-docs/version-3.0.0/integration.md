@@ -31,7 +31,7 @@ sidebar_position: 2
 </center>
 
 #### 3、Player Setting设置
-- Mininum API Level 设置为23
+- Mininum API Level 设置为24
 - Target API Level 请设置为34
 - 设置IL2CPP
 - 勾选ARMv7和ARM64

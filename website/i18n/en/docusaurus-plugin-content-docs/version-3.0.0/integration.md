@@ -30,7 +30,7 @@ This page shows you how to configure the Android/iOS platform.
 </center>
 
 #### 3、Player Setting
-- Mininum API Level is set to 23
+- Mininum API Level is set to 24
 - Target API Level is set to 34
 - Set IL2CPP
 - Select ARMv7 and ARM64
