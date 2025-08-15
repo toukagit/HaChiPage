@@ -31,7 +31,7 @@ This page shows you how to configure the Android/iOS platform.
 
 #### 3、Player Setting
 - Mininum API Level is set to 24
-- Target API Level is set to 34
+- Target API Level is set to 35
 - Set IL2CPP
 - Select ARMv7 and ARM64
 
@@ -78,11 +78,12 @@ This page shows you how to configure the Android/iOS platform.
 </center>
 
 
-2. Put the configuration file in the requirements document in the ** Assets/StreamingAssets/ ** directory<br/><br/>
+2. According to the different platforms (iOS/Android) will be in the requirements document configuration files in the corresponding directory: <br/> c014eb2a1f1c20f7c698aeb70c2f7af8 (sample, Each project configuration file) <br/> e214b831d2278f4a08305c521ba98e92 (example, each project configuration file) <br/>
+When the Android/iOS package names are the same, the configuration file names are also the same.
 
 <center>
 
-![](/img/HCSDK/image14.png)
+<img src="../img/HCSDK/image14.png" width="40%" height="60%"/> <img src="../img/HCSDK/image66.png" width="40%" height="60%"/>
 
 </center>
 

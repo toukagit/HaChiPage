@@ -230,7 +230,7 @@
     "sdk-projectsettings/sdk-projectsettings-android": {
       "id": "sdk-projectsettings/sdk-projectsettings-android",
       "title": "构建Android平台",
-      "description": "1、Unity版本高于2022.3",
+      "description": "如果使用Mac电脑打包：请现在终端执行命令：sudo spctl --master-disable ，输入电脑密码后即允许安装身份不明开发者软件。",
       "sidebar": "tutorialSidebar"
     },
     "sdk-projectsettings/sdk-projectsettings-ios": {

@@ -119,7 +119,8 @@ SDK增加账号信息弹窗，将账号绑定/账号删除的界面及相关逻�
 /// <param name="_closeCallback">第一个参数为：当前是否执行了切换账号，如切换账号成功后关闭弹框时返回true，否则返回false</param>
 /// <param name="_closeCallback">第二个参数为：当前是否执行了删除账号，如删除账号成功后关闭弹框时返回true，否则返回false</param>
 /// <param name="_closeCallback">第三个参数为：当前userId</param>
-public void OpenAccountMenu(HCLoginType _loginType, Action<bool,bool,string> _closeCallback);
+/// <param name="openResult">第四个参数为是否打开成功,true：打开成功，false：打开失败,msg：失败原因</param>
+public void OpenAccountMenu(HCLoginType _loginType, Action<bool,bool,string> _closeCallback,Action<bool,string> openResult);
 
 例：
 public void Button_OpenAccountMenu()
@@ -128,6 +129,9 @@ public void Button_OpenAccountMenu()
     HCSDKManager.Instance.OpenAccountMenu(HCLoginType.LOGIN_BY_Apple, (isSwitchAccount, isDeleteAccount, userId) =>
     {
         HCDebugger.LogDebug("account menu isSwitchAccount:" + isSwitchAccount + "  isDeleteaAccount:" + isDeleteAccount + " userId:" + userId + "loginType:" + HCLoginType.LOGIN_BY_Apple.ToString());
+    },(result,msg)=>
+    {
+        HCDebugger.LogDebug("account menu result:"+result+" msg:"+msg);
     });
 }
 ```

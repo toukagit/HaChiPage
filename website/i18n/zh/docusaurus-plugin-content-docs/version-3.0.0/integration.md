@@ -32,7 +32,7 @@ sidebar_position: 2
 
 #### 3、Player Setting设置
 - Mininum API Level 设置为24
-- Target API Level 请设置为34
+- Target API Level 请设置为35
 - 设置IL2CPP
 - 勾选ARMv7和ARM64
 
@@ -74,14 +74,14 @@ sidebar_position: 2
 </center>
 
 
-2、将需求文档中配置文件:<br/>52593f719455c63e2c694b6a4329442b(示例，每个项目配置文件不同)<br/>e33da49e299189c9cf85cdc069cb8ee3(示例，每个项目配置文件不同)<br/>放在 **Assets/StreamingAssets/** 目录下即可<br/><br/>
+2、根据不同平台（iOS/Android）将需求文档中配置文件放在对应的目录下:<br/>c014eb2a1f1c20f7c698aeb70c2f7af8(示例，每个项目配置文件不同)<br/>e214b831d2278f4a08305c521ba98e92(示例，每个项目配置文件不同)<br/>
+Android/iOS包名一致时配置文件名称相同。
 
 <center>
 
-![](/img/HCSDK/image14.png)
+<img src="../img/HCSDK/image14.png" width="40%" height="60%"/> <img src="../img/HCSDK/image66.png" width="40%" height="60%"/>
 
 </center>
-
 
 
 注：上述文件均可在需求文档中找到，如下图：<br/>

@@ -124,7 +124,8 @@ The first and second arguments cannot be true at the same time. <br/>
 /// <param name="_closeCallback">The first parameter is whether the current account switchover is performed. For example, true is returned when the pop-up is closed after the account switchover succeeds. Otherwise, false is returned</param>
 /// <param name="_closeCallback">The second parameter is: whether the current account is deleted. For example, true is returned when the pop-up is closed after the account is successfully deleted. Otherwise, false is returned</param>
 /// <param name="_closeCallback">The third parameter is: the current userId</param>
-public void OpenAccountMenu(HCLoginType _loginType, Action<bool,bool,string> _closeCallback);
+/// <param name="openResult">The fourth parameter indicates whether it opened successfully. true: Opened successfully, false: opened failed,msg: reason for failure.</param>
+public void OpenAccountMenu(HCLoginType _loginType, Action<bool,bool,string> _closeCallback,Action<bool,string> openResult);
 
 e.g.
 public void Button_OpenAccountMenu()
@@ -133,6 +134,9 @@ public void Button_OpenAccountMenu()
     HCSDKManager.Instance.OpenAccountMenu(HCLoginType.LOGIN_BY_Apple, (isSwitchAccount, isDeleteAccount, userId) =>
     {
         HCDebugger.LogDebug("account menu isSwitchAccount:" + isSwitchAccount + "  isDeleteaAccount:" + isDeleteAccount + " userId:" + userId + "loginType:" + HCLoginType.LOGIN_BY_Apple.ToString());
+    },(result,msg)=>
+    {
+        HCDebugger.LogDebug("account menu result:"+result+" msg:"+msg);
     });
 }
 ```
