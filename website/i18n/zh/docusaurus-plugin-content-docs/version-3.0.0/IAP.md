@@ -8,7 +8,7 @@ sidebar_position: 3
 # 内购 
 :::danger
  - **需要添加 USE_IAP 宏定义**   
- - **[Unity In App Purchasing 插件版本需 4.12.0 或更高](https://docs.unity3d.com/Packages/com.unity.purchasing@4.9/manual/StoresSupported.html) (UnityEditor 2020.3+)**
+ - **[Unity In App Purchasing 插件版本需 4.13.0 或更高](https://docs.unity3d.com/Packages/com.unity.purchasing@4.13/manual/StoresSupported.html) (UnityEditor 2021.3.14+)**
  - ** 必须实现 [ 【8、奖励下发上报(必接)】 ](#8奖励下发上报必接) **
  
  - ** SDK会在购买成功和购买失败后自动检查本地是否包含未验证订单，建议开发者进入主界面等时机主动请求补单。[【9、补单】](#9补单) ** 
