@@ -20,7 +20,7 @@ sidebar_position: 3
 Import the Unity In App Purchasing plug-in.   
 Unity menu -> Window -> Package Manager -> In App Purchasing -> Install。
 
-** If you don't see version 4.12.0 In App Purchasing plug-in, follow these steps to add: Add packages by name -> Enter: com.unity.purchasing **
+** If you don't see version 4.13.0 In App Purchasing plug-in, follow these steps to add: Add packages by name -> Enter: com.unity.purchasing **
 
 <center>
 
