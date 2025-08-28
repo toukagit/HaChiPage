@@ -1,4 +1,11 @@
 [{
+        "sdk_version": "3.5.8",
+        "update_time": "2025-08-28",
+        "update_content": {
+          "zh": "1、移除Android H5 SDK",
+          "en": "1. Delete Android H5 SDK"
+        },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/3.5.8/HachiSDK_3.5.8_0945bbfe.unitypackage"
+      },{
         "sdk_version": "3.5.7",
         "update_time": "2025-08-15",
         "update_content": {
