@@ -6,7 +6,7 @@
   "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.0.0/IAP.md",
   "sourceDirName": ".",
   "slug": "/IAP",
-  "permalink": "/hachi-doc/zh/IAP",
+  "permalink": "/hachi-doc/zh/3.0.0/IAP",
   "tags": [],
   "version": "3.0.0",
   "sidebarPosition": 3,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "在线参数",
-    "permalink": "/hachi-doc/zh/remoteConfig"
+    "permalink": "/hachi-doc/zh/3.0.0/remoteConfig"
   },
   "next": {
     "title": "账号系统",
-    "permalink": "/hachi-doc/zh/login"
+    "permalink": "/hachi-doc/zh/3.0.0/login"
   }
 }

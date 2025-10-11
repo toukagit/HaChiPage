@@ -1,0 +1,28 @@
+{
+  "unversionedId": "other",
+  "id": "version-4.0.0/other",
+  "title": "Other functions",
+  "description": "",
+  "source": "@site/versioned_docs/version-4.0.0/other.md",
+  "sourceDirName": ".",
+  "slug": "/other",
+  "permalink": "/hachi-doc/zh/other",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Other functions",
+    "sidebar_label": "Other functions",
+    "description": "",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Account system",
+    "permalink": "/hachi-doc/zh/login"
+  },
+  "next": {
+    "title": "For iOS",
+    "permalink": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios"
+  }
+}

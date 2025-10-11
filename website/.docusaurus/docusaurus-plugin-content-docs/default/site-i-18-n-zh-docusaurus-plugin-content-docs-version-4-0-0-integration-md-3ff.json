@@ -1,0 +1,28 @@
+{
+  "unversionedId": "integration",
+  "id": "version-4.0.0/integration",
+  "title": "SDK集成",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0.0/integration.md",
+  "sourceDirName": ".",
+  "slug": "/integration",
+  "permalink": "/hachi-doc/zh/integration",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "SDK集成",
+    "sidebar_label": "SDK集成",
+    "description": "",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK下载",
+    "permalink": "/hachi-doc/zh/download"
+  },
+  "next": {
+    "title": "插屏广告",
+    "permalink": "/hachi-doc/zh/hc-integration/iv"
+  }
+}

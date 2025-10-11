@@ -1,0 +1,28 @@
+{
+  "unversionedId": "events",
+  "id": "version-4.0.0/events",
+  "title": "Event Tracking",
+  "description": "",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-4.0.0/events.md",
+  "sourceDirName": ".",
+  "slug": "/events",
+  "permalink": "/hachi-doc/events",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 96,
+  "frontMatter": {
+    "title": "Event Tracking",
+    "sidebar_label": "Event Tracking",
+    "description": "",
+    "sidebar_position": 96
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "App Open",
+    "permalink": "/hachi-doc/hc-integration/sp"
+  },
+  "next": {
+    "title": "Remote Config",
+    "permalink": "/hachi-doc/remoteConfig"
+  }
+}

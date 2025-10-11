@@ -1,12 +1,12 @@
 {
   "unversionedId": "index",
   "id": "version-4.0.0/index",
-  "title": "Touka Robux简介",
-  "description": "将Robux集成到休闲游戏中可以为游戏开发者带来很多好处，比如：",
+  "title": "Hachi SDK 简介",
+  "description": "Hachi SDK简称 HC SDK，专为中重度游戏服务。请勿将其用于其他类型项目。",
   "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0.0/index.md",
   "sourceDirName": ".",
   "slug": "/",
-  "permalink": "/tkg-robux-doc/",
+  "permalink": "/hachi-doc/zh/",
   "tags": [],
   "version": "4.0.0",
   "sidebarPosition": 1,
@@ -16,6 +16,6 @@
   "sidebar": "tutorialSidebar",
   "next": {
     "title": "SDK下载",
-    "permalink": "/tkg-robux-doc/download"
+    "permalink": "/hachi-doc/zh/download"
   }
 }

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "hc-integration/sp",
+  "id": "version-4.0.0/hc-integration/sp",
+  "title": "Banner",
+  "description": "",
+  "source": "@site/versioned_docs/version-4.0.0/hc-integration/sp.md",
+  "sourceDirName": "hc-integration",
+  "slug": "/hc-integration/sp",
+  "permalink": "/hachi-doc/zh/hc-integration/sp",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Banner",
+    "sidebar_label": "Banner",
+    "description": "",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Native",
+    "permalink": "/hachi-doc/zh/hc-integration/nv"
+  },
+  "next": {
+    "title": "Event Tracking",
+    "permalink": "/hachi-doc/zh/events"
+  }
+}

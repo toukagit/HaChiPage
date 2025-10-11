@@ -1,0 +1,28 @@
+{
+  "unversionedId": "other",
+  "id": "version-4.0.0/other",
+  "title": "其他功能",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0.0/other.md",
+  "sourceDirName": ".",
+  "slug": "/other",
+  "permalink": "/hachi-doc/zh/other",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "其他功能",
+    "sidebar_label": "其他功能",
+    "description": "",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "账号系统",
+    "permalink": "/hachi-doc/zh/login"
+  },
+  "next": {
+    "title": "构建iOS平台",
+    "permalink": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios"
+  }
+}

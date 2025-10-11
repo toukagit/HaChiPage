@@ -75,77 +75,146 @@
     "component": "17896441",
     "content": "a89a0f8e"
   },
-  "/hachi-doc/zh/-719": {
+  "/hachi-doc/zh/3.0.0/-5b9": {
     "component": "1be78505",
     "versionMetadata": "0e2e07dc",
     "__routeContextModule": "2b5ec9d4"
   },
-  "/hachi-doc/zh/-e17": {
+  "/hachi-doc/zh/3.0.0/-7c8": {
     "component": "17896441",
     "content": "1907c225"
   },
-  "/hachi-doc/zh/download/-b5c": {
+  "/hachi-doc/zh/3.0.0/download/-e96": {
     "component": "17896441",
     "content": "e8f30cd6"
   },
-  "/hachi-doc/zh/events/-86a": {
+  "/hachi-doc/zh/3.0.0/events/-787": {
     "component": "17896441",
     "content": "22d41f4c"
   },
-  "/hachi-doc/zh/hc-integration/bv/-562": {
+  "/hachi-doc/zh/3.0.0/hc-integration/bv/-a39": {
     "component": "17896441",
     "content": "bb3c2517"
   },
-  "/hachi-doc/zh/hc-integration/iv/-ada": {
+  "/hachi-doc/zh/3.0.0/hc-integration/iv/-84e": {
     "component": "17896441",
     "content": "df77b6bd"
   },
-  "/hachi-doc/zh/hc-integration/nv/-72f": {
+  "/hachi-doc/zh/3.0.0/hc-integration/nv/-c39": {
     "component": "17896441",
     "content": "bc0f1227"
   },
-  "/hachi-doc/zh/hc-integration/rv/-546": {
+  "/hachi-doc/zh/3.0.0/hc-integration/rv/-615": {
     "component": "17896441",
     "content": "ac80e4e0"
   },
-  "/hachi-doc/zh/hc-integration/sp/-ca7": {
+  "/hachi-doc/zh/3.0.0/hc-integration/sp/-0eb": {
     "component": "17896441",
     "content": "95db1500"
   },
-  "/hachi-doc/zh/IAP/-39d": {
+  "/hachi-doc/zh/3.0.0/IAP/-eef": {
     "component": "17896441",
     "content": "c7cf392d"
   },
-  "/hachi-doc/zh/integration/-d75": {
+  "/hachi-doc/zh/3.0.0/integration/-5da": {
     "component": "17896441",
     "content": "3571cf02"
   },
-  "/hachi-doc/zh/login/-09c": {
+  "/hachi-doc/zh/3.0.0/login/-3d7": {
     "component": "17896441",
     "content": "0aeaa03f"
   },
-  "/hachi-doc/zh/other/-990": {
+  "/hachi-doc/zh/3.0.0/other/-f6f": {
     "component": "17896441",
     "content": "d5a4a089"
   },
-  "/hachi-doc/zh/qa/qaandroid/-3d0": {
+  "/hachi-doc/zh/3.0.0/qa/qaandroid/-f8e": {
     "component": "17896441",
     "content": "e2859e01"
   },
-  "/hachi-doc/zh/qa/qaios/-c5e": {
+  "/hachi-doc/zh/3.0.0/qa/qaios/-e8e": {
     "component": "17896441",
     "content": "de215e04"
   },
-  "/hachi-doc/zh/remoteConfig/-724": {
+  "/hachi-doc/zh/3.0.0/remoteConfig/-539": {
     "component": "17896441",
     "content": "e0c75b86"
   },
-  "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-android/-a61": {
+  "/hachi-doc/zh/3.0.0/sdk-projectsettings/sdk-projectsettings-android/-d84": {
     "component": "17896441",
     "content": "8ddfb081"
   },
-  "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios/-f4c": {
+  "/hachi-doc/zh/3.0.0/sdk-projectsettings/sdk-projectsettings-ios/-dec": {
     "component": "17896441",
     "content": "602928a2"
+  },
+  "/hachi-doc/zh/-a85": {
+    "component": "1be78505",
+    "versionMetadata": "1d34c4d7",
+    "__routeContextModule": "2b5ec9d4"
+  },
+  "/hachi-doc/zh/-f06": {
+    "component": "17896441",
+    "content": "bfcb10c1"
+  },
+  "/hachi-doc/zh/download/-fd3": {
+    "component": "17896441",
+    "content": "9073b204"
+  },
+  "/hachi-doc/zh/events/-cac": {
+    "component": "17896441",
+    "content": "3873e7f8"
+  },
+  "/hachi-doc/zh/hc-integration/bv/-a21": {
+    "component": "17896441",
+    "content": "4f9c4a76"
+  },
+  "/hachi-doc/zh/hc-integration/iv/-a77": {
+    "component": "17896441",
+    "content": "f9be541d"
+  },
+  "/hachi-doc/zh/hc-integration/rv/-b79": {
+    "component": "17896441",
+    "content": "8c1bb3cb"
+  },
+  "/hachi-doc/zh/hc-integration/sp/-016": {
+    "component": "17896441",
+    "content": "e1e83811"
+  },
+  "/hachi-doc/zh/IAP/-0a4": {
+    "component": "17896441",
+    "content": "577963da"
+  },
+  "/hachi-doc/zh/integration/-b11": {
+    "component": "17896441",
+    "content": "3ff2ccde"
+  },
+  "/hachi-doc/zh/login/-162": {
+    "component": "17896441",
+    "content": "166d81e3"
+  },
+  "/hachi-doc/zh/other/-bce": {
+    "component": "17896441",
+    "content": "d7d0b377"
+  },
+  "/hachi-doc/zh/qa/qaandroid/-a7c": {
+    "component": "17896441",
+    "content": "e9fe8c51"
+  },
+  "/hachi-doc/zh/qa/qaios/-176": {
+    "component": "17896441",
+    "content": "3d14ed11"
+  },
+  "/hachi-doc/zh/remoteConfig/-566": {
+    "component": "17896441",
+    "content": "36760615"
+  },
+  "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-android/-0d0": {
+    "component": "17896441",
+    "content": "faf86735"
+  },
+  "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios/-001": {
+    "component": "17896441",
+    "content": "d6083321"
   }
 }

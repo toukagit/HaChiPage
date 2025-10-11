@@ -46,7 +46,8 @@ export default {
           "sidebarPath": "/Users/junconglee/Desktop/TKG_Game/HaChiSDK/HaChiPage/website/sidebars.js",
           "onlyIncludeVersions": [
             "1.0.0",
-            "3.0.0"
+            "3.0.0",
+            "4.0.0"
           ]
         },
         "pages": {},

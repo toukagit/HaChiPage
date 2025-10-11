@@ -1,0 +1,40 @@
+{
+  "tutorialSidebar": [
+    "index",
+    "download",
+    "integration",
+    {
+      "type": "category",
+      "label": "Ad Formats",
+      "collapsible": true,
+      "collapsed": false,
+      "items": [
+        "hc-integration/iv",
+        "hc-integration/rv",
+        "hc-integration/bv",
+        "hc-integration/sp"
+      ]
+    },
+    "events",
+    "remoteConfig",
+    "IAP",
+    "login",
+    "other",
+    {
+      "type": "category",
+      "label": "Build Package",
+      "items": [
+        "sdk-projectsettings/sdk-projectsettings-ios",
+        "sdk-projectsettings/sdk-projectsettings-android"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "QA",
+      "items": [
+        "qa/qaios",
+        "qa/qaandroid"
+      ]
+    }
+  ]
+}

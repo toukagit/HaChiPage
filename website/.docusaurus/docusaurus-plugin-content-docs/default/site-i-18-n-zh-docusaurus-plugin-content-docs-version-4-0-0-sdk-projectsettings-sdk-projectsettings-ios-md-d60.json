@@ -1,0 +1,25 @@
+{
+  "unversionedId": "sdk-projectsettings/sdk-projectsettings-ios",
+  "id": "version-4.0.0/sdk-projectsettings/sdk-projectsettings-ios",
+  "title": "构建iOS平台",
+  "description": "1、Cocopods",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0.0/sdk-projectsettings/sdk-projectsettings-ios.md",
+  "sourceDirName": "sdk-projectsettings",
+  "slug": "/sdk-projectsettings/sdk-projectsettings-ios",
+  "permalink": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "其他功能",
+    "permalink": "/hachi-doc/zh/other"
+  },
+  "next": {
+    "title": "构建Android平台",
+    "permalink": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-android"
+  }
+}

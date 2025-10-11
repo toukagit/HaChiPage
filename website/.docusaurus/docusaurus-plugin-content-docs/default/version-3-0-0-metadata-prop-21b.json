@@ -2,28 +2,28 @@
   "pluginId": "default",
   "version": "3.0.0",
   "label": "3.0.0",
-  "banner": null,
+  "banner": "unmaintained",
   "badge": true,
   "className": "docs-version-3.0.0",
-  "isLast": true,
+  "isLast": false,
   "docsSidebars": {
     "tutorialSidebar": [
       {
         "type": "link",
         "label": "Hachi SDK 简介",
-        "href": "/hachi-doc/zh/",
+        "href": "/hachi-doc/zh/3.0.0/",
         "docId": "index"
       },
       {
         "type": "link",
         "label": "SDK下载",
-        "href": "/hachi-doc/zh/download",
+        "href": "/hachi-doc/zh/3.0.0/download",
         "docId": "download"
       },
       {
         "type": "link",
         "label": "SDK集成",
-        "href": "/hachi-doc/zh/integration",
+        "href": "/hachi-doc/zh/3.0.0/integration",
         "docId": "integration"
       },
       {
@@ -35,31 +35,31 @@
           {
             "type": "link",
             "label": "插屏广告",
-            "href": "/hachi-doc/zh/hc-integration/iv",
+            "href": "/hachi-doc/zh/3.0.0/hc-integration/iv",
             "docId": "hc-integration/iv"
           },
           {
             "type": "link",
             "label": "激励视频广告",
-            "href": "/hachi-doc/zh/hc-integration/rv",
+            "href": "/hachi-doc/zh/3.0.0/hc-integration/rv",
             "docId": "hc-integration/rv"
           },
           {
             "type": "link",
             "label": "Banner广告",
-            "href": "/hachi-doc/zh/hc-integration/bv",
+            "href": "/hachi-doc/zh/3.0.0/hc-integration/bv",
             "docId": "hc-integration/bv"
           },
           {
             "type": "link",
             "label": "Native广告",
-            "href": "/hachi-doc/zh/hc-integration/nv",
+            "href": "/hachi-doc/zh/3.0.0/hc-integration/nv",
             "docId": "hc-integration/nv"
           },
           {
             "type": "link",
             "label": "开屏广告",
-            "href": "/hachi-doc/zh/hc-integration/sp",
+            "href": "/hachi-doc/zh/3.0.0/hc-integration/sp",
             "docId": "hc-integration/sp"
           }
         ]
@@ -67,31 +67,31 @@
       {
         "type": "link",
         "label": "事件埋点",
-        "href": "/hachi-doc/zh/events",
+        "href": "/hachi-doc/zh/3.0.0/events",
         "docId": "events"
       },
       {
         "type": "link",
         "label": "在线参数",
-        "href": "/hachi-doc/zh/remoteConfig",
+        "href": "/hachi-doc/zh/3.0.0/remoteConfig",
         "docId": "remoteConfig"
       },
       {
         "type": "link",
         "label": "内购",
-        "href": "/hachi-doc/zh/IAP",
+        "href": "/hachi-doc/zh/3.0.0/IAP",
         "docId": "IAP"
       },
       {
         "type": "link",
         "label": "账号系统",
-        "href": "/hachi-doc/zh/login",
+        "href": "/hachi-doc/zh/3.0.0/login",
         "docId": "login"
       },
       {
         "type": "link",
         "label": "其他功能",
-        "href": "/hachi-doc/zh/other",
+        "href": "/hachi-doc/zh/3.0.0/other",
         "docId": "other"
       },
       {
@@ -101,13 +101,13 @@
           {
             "type": "link",
             "label": "构建iOS平台",
-            "href": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios",
+            "href": "/hachi-doc/zh/3.0.0/sdk-projectsettings/sdk-projectsettings-ios",
             "docId": "sdk-projectsettings/sdk-projectsettings-ios"
           },
           {
             "type": "link",
             "label": "构建Android平台",
-            "href": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-android",
+            "href": "/hachi-doc/zh/3.0.0/sdk-projectsettings/sdk-projectsettings-android",
             "docId": "sdk-projectsettings/sdk-projectsettings-android"
           }
         ],
@@ -121,13 +121,13 @@
           {
             "type": "link",
             "label": "iOS",
-            "href": "/hachi-doc/zh/qa/qaios",
+            "href": "/hachi-doc/zh/3.0.0/qa/qaios",
             "docId": "qa/qaios"
           },
           {
             "type": "link",
             "label": "Android",
-            "href": "/hachi-doc/zh/qa/qaandroid",
+            "href": "/hachi-doc/zh/3.0.0/qa/qaandroid",
             "docId": "qa/qaandroid"
           }
         ],

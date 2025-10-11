@@ -1,0 +1,28 @@
+{
+  "unversionedId": "IAP",
+  "id": "version-4.0.0/IAP",
+  "title": "In-app purchase",
+  "description": "",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-4.0.0/IAP.md",
+  "sourceDirName": ".",
+  "slug": "/IAP",
+  "permalink": "/hachi-doc/IAP",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "In-app purchase",
+    "sidebar_label": "In-app purchase",
+    "description": "",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Remote Config",
+    "permalink": "/hachi-doc/remoteConfig"
+  },
+  "next": {
+    "title": "Account system",
+    "permalink": "/hachi-doc/login"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "qa/qaios",
+  "id": "version-4.0.0/qa/qaios",
+  "title": "iOS",
+  "description": "Error1 :",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-4.0.0/qa/qaios.md",
+  "sourceDirName": "qa",
+  "slug": "/qa/qaios",
+  "permalink": "/hachi-doc/qa/qaios",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "For Android",
+    "permalink": "/hachi-doc/sdk-projectsettings/sdk-projectsettings-android"
+  },
+  "next": {
+    "title": "Android",
+    "permalink": "/hachi-doc/qa/qaandroid"
+  }
+}

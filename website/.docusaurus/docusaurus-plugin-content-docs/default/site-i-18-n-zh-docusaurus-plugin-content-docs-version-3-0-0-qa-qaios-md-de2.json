@@ -6,7 +6,7 @@
   "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-3.0.0/qa/qaios.md",
   "sourceDirName": "qa",
   "slug": "/qa/qaios",
-  "permalink": "/hachi-doc/zh/qa/qaios",
+  "permalink": "/hachi-doc/zh/3.0.0/qa/qaios",
   "tags": [],
   "version": "3.0.0",
   "sidebarPosition": 7,
@@ -16,10 +16,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "构建Android平台",
-    "permalink": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-android"
+    "permalink": "/hachi-doc/zh/3.0.0/sdk-projectsettings/sdk-projectsettings-android"
   },
   "next": {
     "title": "Android",
-    "permalink": "/hachi-doc/zh/qa/qaandroid"
+    "permalink": "/hachi-doc/zh/3.0.0/qa/qaandroid"
   }
 }

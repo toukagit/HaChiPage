@@ -6,7 +6,7 @@
   "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-3.0.0/other.md",
   "sourceDirName": ".",
   "slug": "/other",
-  "permalink": "/hachi-doc/other",
+  "permalink": "/hachi-doc/3.0.0/other",
   "tags": [],
   "version": "3.0.0",
   "sidebarPosition": 3,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Account system",
-    "permalink": "/hachi-doc/login"
+    "permalink": "/hachi-doc/3.0.0/login"
   },
   "next": {
     "title": "For iOS",
-    "permalink": "/hachi-doc/sdk-projectsettings/sdk-projectsettings-ios"
+    "permalink": "/hachi-doc/3.0.0/sdk-projectsettings/sdk-projectsettings-ios"
   }
 }

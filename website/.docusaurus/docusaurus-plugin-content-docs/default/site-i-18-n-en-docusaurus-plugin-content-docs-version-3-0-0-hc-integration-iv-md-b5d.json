@@ -6,7 +6,7 @@
   "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-3.0.0/hc-integration/iv.md",
   "sourceDirName": "hc-integration",
   "slug": "/hc-integration/iv",
-  "permalink": "/hachi-doc/hc-integration/iv",
+  "permalink": "/hachi-doc/3.0.0/hc-integration/iv",
   "tags": [],
   "version": "3.0.0",
   "sidebarPosition": 1,
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "SDK Integration",
-    "permalink": "/hachi-doc/integration"
+    "permalink": "/hachi-doc/3.0.0/integration"
   },
   "next": {
     "title": "Rewarded",
-    "permalink": "/hachi-doc/hc-integration/rv"
+    "permalink": "/hachi-doc/3.0.0/hc-integration/rv"
   }
 }

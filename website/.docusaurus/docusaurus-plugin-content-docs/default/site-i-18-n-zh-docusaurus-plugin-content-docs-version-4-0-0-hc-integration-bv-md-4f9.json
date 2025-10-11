@@ -1,0 +1,28 @@
+{
+  "unversionedId": "hc-integration/bv",
+  "id": "version-4.0.0/hc-integration/bv",
+  "title": "Banner广告",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0.0/hc-integration/bv.md",
+  "sourceDirName": "hc-integration",
+  "slug": "/hc-integration/bv",
+  "permalink": "/hachi-doc/zh/hc-integration/bv",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Banner广告",
+    "sidebar_label": "Banner广告",
+    "description": "",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "激励视频广告",
+    "permalink": "/hachi-doc/zh/hc-integration/rv"
+  },
+  "next": {
+    "title": "开屏广告",
+    "permalink": "/hachi-doc/zh/hc-integration/sp"
+  }
+}

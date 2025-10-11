@@ -1,0 +1,28 @@
+{
+  "unversionedId": "events",
+  "id": "version-4.0.0/events",
+  "title": "事件埋点",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0.0/events.md",
+  "sourceDirName": ".",
+  "slug": "/events",
+  "permalink": "/hachi-doc/zh/events",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 96,
+  "frontMatter": {
+    "title": "事件埋点",
+    "sidebar_label": "事件埋点",
+    "description": "",
+    "sidebar_position": 96
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "开屏广告",
+    "permalink": "/hachi-doc/zh/hc-integration/sp"
+  },
+  "next": {
+    "title": "在线参数",
+    "permalink": "/hachi-doc/zh/remoteConfig"
+  }
+}

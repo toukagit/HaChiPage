@@ -1,0 +1,25 @@
+{
+  "unversionedId": "sdk-projectsettings/sdk-projectsettings-ios",
+  "id": "version-4.0.0/sdk-projectsettings/sdk-projectsettings-ios",
+  "title": "For iOS",
+  "description": "1、Cocopods",
+  "source": "@site/versioned_docs/version-4.0.0/sdk-projectsettings/sdk-projectsettings-ios.md",
+  "sourceDirName": "sdk-projectsettings",
+  "slug": "/sdk-projectsettings/sdk-projectsettings-ios",
+  "permalink": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-ios",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Other functions",
+    "permalink": "/hachi-doc/zh/other"
+  },
+  "next": {
+    "title": "For iOS",
+    "permalink": "/hachi-doc/zh/sdk-projectsettings/sdk-projectsettings-android"
+  }
+}

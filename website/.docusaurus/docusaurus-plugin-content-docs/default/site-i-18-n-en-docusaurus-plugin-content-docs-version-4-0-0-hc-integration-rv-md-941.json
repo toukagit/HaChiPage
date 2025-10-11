@@ -1,0 +1,28 @@
+{
+  "unversionedId": "hc-integration/rv",
+  "id": "version-4.0.0/hc-integration/rv",
+  "title": "Rewarded",
+  "description": "",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-4.0.0/hc-integration/rv.md",
+  "sourceDirName": "hc-integration",
+  "slug": "/hc-integration/rv",
+  "permalink": "/hachi-doc/hc-integration/rv",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Rewarded",
+    "sidebar_label": "Rewarded",
+    "description": "",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Interstitial",
+    "permalink": "/hachi-doc/hc-integration/iv"
+  },
+  "next": {
+    "title": "Banner",
+    "permalink": "/hachi-doc/hc-integration/bv"
+  }
+}

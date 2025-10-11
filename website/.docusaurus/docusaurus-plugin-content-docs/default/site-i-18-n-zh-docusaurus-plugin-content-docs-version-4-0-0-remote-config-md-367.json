@@ -1,0 +1,28 @@
+{
+  "unversionedId": "remoteConfig",
+  "id": "version-4.0.0/remoteConfig",
+  "title": "在线参数",
+  "description": "",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/version-4.0.0/remoteConfig.md",
+  "sourceDirName": ".",
+  "slug": "/remoteConfig",
+  "permalink": "/hachi-doc/zh/remoteConfig",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "在线参数",
+    "sidebar_label": "在线参数",
+    "description": "",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "事件埋点",
+    "permalink": "/hachi-doc/zh/events"
+  },
+  "next": {
+    "title": "内购",
+    "permalink": "/hachi-doc/zh/IAP"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "unversionedId": "events",
+  "id": "version-4.0.0/events",
+  "title": "Event Tracking",
+  "description": "",
+  "source": "@site/versioned_docs/version-4.0.0/events.md",
+  "sourceDirName": ".",
+  "slug": "/events",
+  "permalink": "/hachi-doc/zh/events",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 96,
+  "frontMatter": {
+    "title": "Event Tracking",
+    "sidebar_label": "Event Tracking",
+    "description": "",
+    "sidebar_position": 96
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Banner",
+    "permalink": "/hachi-doc/zh/hc-integration/sp"
+  },
+  "next": {
+    "title": "Remote Config",
+    "permalink": "/hachi-doc/zh/remoteConfig"
+  }
+}

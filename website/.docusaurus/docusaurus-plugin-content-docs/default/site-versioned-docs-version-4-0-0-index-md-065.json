@@ -1,0 +1,21 @@
+{
+  "unversionedId": "index",
+  "id": "version-4.0.0/index",
+  "title": "HaChi SDK intro",
+  "description": "The Hachi SDK, called HC SDK for short, is designed for medium to heavy games. Do not use it for other types of projects.",
+  "source": "@site/versioned_docs/version-4.0.0/index.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/hachi-doc/zh/",
+  "tags": [],
+  "version": "4.0.0",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "SDK Integration",
+    "permalink": "/hachi-doc/zh/download"
+  }
+}

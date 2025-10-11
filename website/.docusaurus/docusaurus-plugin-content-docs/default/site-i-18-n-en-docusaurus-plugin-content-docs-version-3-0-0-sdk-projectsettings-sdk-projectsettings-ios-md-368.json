@@ -6,7 +6,7 @@
   "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-3.0.0/sdk-projectsettings/sdk-projectsettings-ios.md",
   "sourceDirName": "sdk-projectsettings",
   "slug": "/sdk-projectsettings/sdk-projectsettings-ios",
-  "permalink": "/hachi-doc/sdk-projectsettings/sdk-projectsettings-ios",
+  "permalink": "/hachi-doc/3.0.0/sdk-projectsettings/sdk-projectsettings-ios",
   "tags": [],
   "version": "3.0.0",
   "sidebarPosition": 7,
@@ -16,10 +16,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Other functions",
-    "permalink": "/hachi-doc/other"
+    "permalink": "/hachi-doc/3.0.0/other"
   },
   "next": {
     "title": "For Android",
-    "permalink": "/hachi-doc/sdk-projectsettings/sdk-projectsettings-android"
+    "permalink": "/hachi-doc/3.0.0/sdk-projectsettings/sdk-projectsettings-android"
   }
 }
