@@ -49,10 +49,10 @@ public void Button_HideBanner()
 
 // bool：显示/隐藏横幅右上角的关闭按钮，默认情况下需要隐藏。
 // Vector2：广告的像素大小。注意UI大小的转换。
-public void OnBannerCloseButtonVisibilityChanged(Action<bool, Vector2> _bannerCustomCloseBtnChanged)
+public void RegisterBannerCloseButtonHandler(Action<bool, Vector2> _bannerCustomCloseBtnChanged)
 
 例：
-HachiMgr.Instance.OnBannerCloseButtonVisibilityChanged(DealBannerCustomCloseBtnDisplay);
+HachiMgr.Instance.RegisterBannerCloseButtonHandler(DealBannerCustomCloseBtnDisplay);
 ```
 ### 接收回调，处理关闭按钮的显示和隐藏，并设置按钮的位置
 

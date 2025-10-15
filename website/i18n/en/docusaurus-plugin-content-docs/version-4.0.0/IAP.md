@@ -83,7 +83,7 @@ HachiMgr.Instance.AddProducts(ProductDic);
  - **The initial callback must be set before SDK initialization**
 :::
 ```c
-HachiMgr.Instance.SetOnPurchaseInitLinstener((result,errorMsg)=>
+HachiMgr.Instance.RegisterPurchaseInitializationHandler((result,errorMsg)=>
 {
     if (result)
     {
@@ -108,7 +108,7 @@ HachiMgr.Instance.SetOnPurchaseInitLinstener((result,errorMsg)=>
 void Start()
 {
     // Set the purchase listening callback
-    HachiMgr.Instance.RegisterProductsInfoHandler(PurchaseCallback);
+    HachiMgr.Instance.RegisterPurchaseCompletionHandler(PurchaseCallback);
 }
 
 /// Apple/Google Pay order number
@@ -262,10 +262,10 @@ HachiMgr.Instance.RegisterSubscriptionValidityHandler((productId,validity,data)=
 #### 11.2 Active query
 Developers can actively call the query interface at the right time to query subscription commodity information
 ```c
-public void RegisterSubscriptionValidityHandler(string productId,Action<HMSubscribeData> onCheckSubsribeByProductIdAction);
+public void QuerySubscriptionDataByProductId(string productId,Action<HMSubscribeData> onCheckSubsribeByProductIdAction);
 
 e.g.：
-HachiMgr.Instance.RegisterSubscriptionValidityHandler("productId", (data) =>
+HachiMgr.Instance.QuerySubscriptionDataByProductId("productId", (data) =>
 {
     // productId
     // data Subscription-based product information

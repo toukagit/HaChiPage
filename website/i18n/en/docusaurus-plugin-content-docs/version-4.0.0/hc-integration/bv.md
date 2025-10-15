@@ -48,10 +48,10 @@ The currently expanded banners do not display a close button. Only small banners
 
 // bool ： Show/hide the close button in the upper right corner of the banner，It needs to be hidden by default.
 // Vector2 ： The pixel size of the advertisement. Note the conversion with the UI size. 
-public void OnBannerCloseButtonVisibilityChanged(Action<bool, Vector2> _bannerCustomCloseBtnChanged)
+public void RegisterBannerCloseButtonHandler(Action<bool, Vector2> _bannerCustomCloseBtnChanged)
 
 e.g.
-HachiMgr.Instance.OnBannerCloseButtonVisibilityChanged(DealBannerCustomCloseBtnDisplay);
+HachiMgr.Instance.RegisterBannerCloseButtonHandler(DealBannerCustomCloseBtnDisplay);
 ```
 ### Receive the callback to handle the display and hiding of the close button and set the position of the button
 
