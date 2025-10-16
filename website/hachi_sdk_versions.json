@@ -1,4 +1,11 @@
 [{
+        "sdk_version": "4.0.1",
+        "update_time": "2025-10-16",
+        "update_content": {
+          "zh": "1、新增获取云存储/云存储详情URL接口\n 2、模拟器下解析配置文件",
+          "en": "1. A new interface for obtaining cloud storage/cloud storage details URL has been added.\n 2. Parse the configuration file in the editor"
+        },"download": "https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/4.0.1/HachiSdk_4.0.1_7dcf6dae.unitypackage"
+      },{
         "sdk_version": "4.0.0",
         "update_time": "2025-10-11",
         "update_content": {

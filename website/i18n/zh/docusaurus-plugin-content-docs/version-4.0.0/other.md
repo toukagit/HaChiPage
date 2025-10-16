@@ -163,6 +163,26 @@ public void TranslateText(string text, TranslateType type, string targetLang, Ac
 
 ```
 
+## 获取云存储保存URL接口（v4.0.1新增）
+```c 
+/// <summary>
+/// 获取云存储保存URL 
+/// </summary>
+/// <returns></returns>
+
+var storeUrl = HachiMgr.Instance.GetCloudStorageUrl();
+```
+
+## 获取云存储详情URL接口（v4.0.1新增）
+```c 
+/// <summary>
+/// 获取云存储详情URL 
+/// </summary>
+/// <returns></returns>
+
+var storeDetailUrl = HachiMgr.Instance.GetCloudStorageDetailUrl();
+```
+
 <!---->
 <!--- 获取是否有通知权限-->
 <!--```c-->

@@ -165,6 +165,26 @@ public void TranslateWords(string text, TranslateType type, string targetLang, A
 
 ```
 
+## Get the URL interface for cloud storage save (v4.0.1 new)
+```c
+/// <summary>
+/// Get the cloud storage save URL
+/// </summary>
+/// <returns></returns>
+
+var storeUrl = HachiMgr.Instance.GetCloudStorageUrl();
+```
+
+## Get the URL interface for cloud storage details (v4.0.1 new)
+```c
+/// <summary>
+/// Get the URL for cloud storage details
+/// </summary>
+/// <returns></returns>
+
+var storeDetailUrl = HachiMgr.Instance.GetCloudStorageDetailUrl();
+```
+
 <!--- Gets whether you have notification permission-->
 <!--```c-->
 <!--var permission = HachiMgr.Instance.IsGrantedNotificationPermission();-->
