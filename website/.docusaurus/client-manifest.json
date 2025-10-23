@@ -305,9 +305,9 @@
     "1303": {
       "js": [
         {
-          "file": "assets/js/runtime~main.7bc02563.js",
-          "hash": "f8b0973c4d41aecc",
-          "publicPath": "/hachi-doc/zh/assets/js/runtime~main.7bc02563.js"
+          "file": "assets/js/runtime~main.1d7c25fc.js",
+          "hash": "48d429c426eacc42",
+          "publicPath": "/hachi-doc/zh/assets/js/runtime~main.1d7c25fc.js"
         }
       ]
     },
@@ -359,9 +359,9 @@
     "2048": {
       "js": [
         {
-          "file": "assets/js/f5aacbfa.ae5d8ecf.js",
-          "hash": "4f45544e30b54995",
-          "publicPath": "/hachi-doc/zh/assets/js/f5aacbfa.ae5d8ecf.js"
+          "file": "assets/js/f5aacbfa.70509a38.js",
+          "hash": "64e324afb049263a",
+          "publicPath": "/hachi-doc/zh/assets/js/f5aacbfa.70509a38.js"
         }
       ]
     },
@@ -503,9 +503,9 @@
     "4524": {
       "js": [
         {
-          "file": "assets/js/9073b204.b2640809.js",
-          "hash": "74f2ae3cb9caa0ba",
-          "publicPath": "/hachi-doc/zh/assets/js/9073b204.b2640809.js"
+          "file": "assets/js/9073b204.d475cf89.js",
+          "hash": "a7f58c0f827fda27",
+          "publicPath": "/hachi-doc/zh/assets/js/9073b204.d475cf89.js"
         }
       ]
     },
