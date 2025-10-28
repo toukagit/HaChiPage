@@ -14,8 +14,8 @@ sidebar_position: 7
 
 ![](/img/HCSDK/image20.jpg)
 
-**报错2：**
-![](/img/HCSDK/image32.jpeg)
+**报错2：dyld[18167]: Library not loaded: **
+
+![](/img/HCSDK/image73.png)
 **解决方案：**
-打开当前工程目录，找到Podfile文件，做下图修改（移除指定版本号）
-![](/img/HCSDK/image33.jpeg)
+ ([ 【构建iOS平台】 ](sdk-projectsettings/sdk-projectsettings-ios.md))

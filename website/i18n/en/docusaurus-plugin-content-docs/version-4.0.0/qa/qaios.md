@@ -14,9 +14,8 @@ sidebar_position: 7
 
 ![](/img/HCSDK/image20.jpg)
 
-**Error2 :**
-![](/img/HCSDK/image32.jpeg)
+**Error2 : dyld[18167]: Library not loaded:**
+![](/img/HCSDK/image73.png)
 
 **Solution:**
-Open the current project directory, find the Podfile file, and make the following changes (remove the specified version number).
-![](/img/HCSDK/image33.jpeg)
+ ([ 【For iOS】 ](sdk-projectsettings/sdk-projectsettings-ios.md))
