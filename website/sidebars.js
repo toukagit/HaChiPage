@@ -39,6 +39,7 @@ const sidebars = {
   'remoteConfig',
   'IAP',
   'login',
+  'policy',
    'other',
   {
       type: 'category',

@@ -218,7 +218,7 @@ export default [
   },
   {
     path: '/hachi-doc/zh/',
-    component: ComponentCreator('/hachi-doc/zh/','a85'),
+    component: ComponentCreator('/hachi-doc/zh/','537'),
     routes: [
       {
         path: '/hachi-doc/zh/',
@@ -283,6 +283,12 @@ export default [
       {
         path: '/hachi-doc/zh/other/',
         component: ComponentCreator('/hachi-doc/zh/other/','bce'),
+        exact: true,
+        sidebar: "tutorialSidebar"
+      },
+      {
+        path: '/hachi-doc/zh/policy/',
+        component: ComponentCreator('/hachi-doc/zh/policy/','e26'),
         exact: true,
         sidebar: "tutorialSidebar"
       },

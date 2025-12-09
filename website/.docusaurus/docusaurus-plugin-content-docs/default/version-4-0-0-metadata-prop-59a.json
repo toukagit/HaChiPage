@@ -84,6 +84,12 @@
       },
       {
         "type": "link",
+        "label": "政策合规",
+        "href": "/hachi-doc/zh/policy",
+        "docId": "policy"
+      },
+      {
+        "type": "link",
         "label": "其他功能",
         "href": "/hachi-doc/zh/other",
         "docId": "other"
@@ -194,6 +200,12 @@
     "other": {
       "id": "other",
       "title": "其他功能",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "policy": {
+      "id": "policy",
+      "title": "政策合规",
       "description": "",
       "sidebar": "tutorialSidebar"
     },

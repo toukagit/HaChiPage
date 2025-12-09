@@ -148,7 +148,7 @@
     "component": "17896441",
     "content": "602928a2"
   },
-  "/hachi-doc/zh/-a85": {
+  "/hachi-doc/zh/-537": {
     "component": "1be78505",
     "versionMetadata": "1d34c4d7",
     "__routeContextModule": "2b5ec9d4"
@@ -196,6 +196,10 @@
   "/hachi-doc/zh/other/-bce": {
     "component": "17896441",
     "content": "d7d0b377"
+  },
+  "/hachi-doc/zh/policy/-e26": {
+    "component": "17896441",
+    "content": "bcb60a20"
   },
   "/hachi-doc/zh/qa/qaandroid/-a7c": {
     "component": "17896441",

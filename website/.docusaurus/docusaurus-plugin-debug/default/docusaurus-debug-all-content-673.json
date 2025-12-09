@@ -285,8 +285,8 @@
                 "permalink": "/hachi-doc/IAP"
               },
               "next": {
-                "title": "Other functions",
-                "permalink": "/hachi-doc/other"
+                "title": "Policy compliance",
+                "permalink": "/hachi-doc/policy"
               }
             },
             {
@@ -309,12 +309,40 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Account system",
-                "permalink": "/hachi-doc/login"
+                "title": "Policy compliance",
+                "permalink": "/hachi-doc/policy"
               },
               "next": {
                 "title": "For iOS",
                 "permalink": "/hachi-doc/sdk-projectsettings/sdk-projectsettings-ios"
+              }
+            },
+            {
+              "unversionedId": "policy",
+              "id": "version-4.0.0/policy",
+              "title": "Policy compliance",
+              "description": "",
+              "source": "@site/i18n/en/docusaurus-plugin-content-docs/version-4.0.0/policy.md",
+              "sourceDirName": ".",
+              "slug": "/policy",
+              "permalink": "/hachi-doc/policy",
+              "tags": [],
+              "version": "4.0.0",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Policy compliance",
+                "sidebar_label": "Policy compliance",
+                "description": "",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Account system",
+                "permalink": "/hachi-doc/login"
+              },
+              "next": {
+                "title": "Other functions",
+                "permalink": "/hachi-doc/other"
               }
             },
             {
@@ -495,6 +523,10 @@
               {
                 "type": "doc",
                 "id": "login"
+              },
+              {
+                "type": "doc",
+                "id": "policy"
               },
               {
                 "type": "doc",

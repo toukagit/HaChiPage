@@ -66,6 +66,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "policy",
+              "path": "/hachi-doc/zh/policy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "qa/qaandroid",
               "path": "/hachi-doc/zh/qa/qaandroid",
               "sidebar": "tutorialSidebar"
