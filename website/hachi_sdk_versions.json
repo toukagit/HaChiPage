@@ -1,10 +1,10 @@
 [{
-        "sdk_version": "4.0.5",
-        "update_time": "2026-03-17",
+        "sdk_version": "4.0.6",
+        "update_time": "2026-04-15",
         "update_content": {
           "zh": "1、修复admob Android平台获取不到价格问题",
           "en": "1. Fix the issue where Admob fails to obtain the price on the Android platform."
-        },"download": "https://touka-pkg.oss-cn-beijing.aliyuncs.com/HachiSdk/4.0.5/HachiSdk_4.0.5_ee5c103b.unitypackage"
+        },"download": "https://touka-pkg.oss-cn-beijing.aliyuncs.com/HachiSdk/4.0.6/HachiSdk_4.0.6_919a8b3c.unitypackage"
       },{
         "sdk_version": "4.0.3",
         "update_time": "2025-10-28",
