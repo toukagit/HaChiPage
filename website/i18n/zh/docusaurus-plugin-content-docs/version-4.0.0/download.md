@@ -22,7 +22,7 @@ sidebar_position: 2
 :::
 
 ## 下载最新的Unity插件 
-海外：[HachiSdk_4.0.6_919a8b3c.unitypackage](https://touka-pkg.oss-cn-beijing.aliyuncs.com/HachiSdk/4.0.6/HachiSdk_4.0.6_919a8b3c.unitypackage)（[历史版本](/versions)）
+海外：[HachiSdk_4.0.7_b9cfb71d.unitypackage](https://touka-pkg.oss-cn-beijing.aliyuncs.com/HachiSdk/4.0.7/HachiSdk_4.0.7_b9cfb71d.unitypackage)（[历史版本](/versions)）
 
 国内：[HachiSdk_4.0.4_4d05cf86.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/4.0.4/HachiSdk_4.0.4_4d05cf86.unitypackage)
 
