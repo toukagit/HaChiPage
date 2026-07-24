@@ -8,7 +8,7 @@ sidebar_position: 3
 # 内购 
 :::danger
  - **需要添加 USE_IAP 宏定义**   
- - **[Unity In App Purchasing 插件版本需 4.13.0 或更高](https://docs.unity3d.com/Packages/com.unity.purchasing@4.13/manual/StoresSupported.html) (UnityEditor 2021.3.14+)**
+ - **[Unity In App Purchasing 插件版本需 4.15.1 或更高](https://docs.unity3d.com/Packages/com.unity.purchasing@4.15/manual/StoresSupported.html) (UnityEditor 2021.3.14+)**
  - ** 必须实现 [ 【8、奖励下发上报(必接)】 ](#8奖励下发上报必接) **
  
  - ** SDK会在购买成功和购买失败后自动检查本地是否包含未验证订单，建议开发者进入主界面等时机主动请求补单。[【9、补单】](#9补单) ** 
@@ -17,9 +17,13 @@ sidebar_position: 3
 :::
 ## 一、内购接入方法
 ### 1、导入IAP插件
-导入Unity In App Purchasing插件。
-Unity菜单栏 -> Window -> Package Manager -> In App Purchasing -> Install。<br/><br/>
-** 如果In App Purchasing插件看不到4.13.0版本时，请按照以下步骤添加：按名称添加包 -> 输入：com.unity.purchasing**
+
+1. 打开 Unity 编辑器，在顶部菜单栏选择 Window → Package Manager
+2. 在 Package Manager 窗口左上角，点击 + 按钮，选择 Add package by name...
+3. 在弹出的输入框中填写以下信息：
+  - Name：com.unity.purchasing
+  - Version：4.15.1
+4. 点击 Add 按钮，等待插件下载并安装完成
 
 <center>
 

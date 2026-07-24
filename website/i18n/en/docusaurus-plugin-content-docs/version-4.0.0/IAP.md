@@ -8,7 +8,7 @@ sidebar_position: 3
 # In-app purchase
 :::danger
  - ** Need to add USE_IAP macro definition **   
- - ** [Unity In App Purchasing plugin version 4.13.0 or higher](https://docs.unity3d.com/Packages/com.unity.purchasing@4.13/manual/StoresSupported.html) (UnityEditor 2021.3.14+) **
+ - ** [Unity In App Purchasing plugin version 4.15.1 or higher](https://docs.unity3d.com/Packages/com.unity.purchasing@4.15/manual/StoresSupported.html) (UnityEditor 2021.3.14+) **
  - ** Must achieve [ 【8、reward issuance reporting(Must join)】 ](#8reward-issuance-reportmust-join) **
  - ** SDK will automatically check whether the local contains unverified orders after successful purchase and failed purchase, and it is recommended that developers take the initiative to request a replacement order when entering the main interface. [[9、 replenishment]](#9replenishment)  ** 
  - ** To test in-app purchases, you need to add your Google account to your Google Background test account first. **
@@ -17,10 +17,12 @@ sidebar_position: 3
 :::
 ## In-app purchase access method
 ### 1、Import IAP plug-in
-Import the Unity In App Purchasing plug-in.   
-Unity menu -> Window -> Package Manager -> In App Purchasing -> Install。
-
-** If you don't see version 4.13.0 In App Purchasing plug-in, follow these steps to add: Add packages by name -> Enter: com.unity.purchasing **
+1. Open the Unity Editor, then select Window → Package Manager from the top menu bar
+2. In the upper left corner of the Package Manager window, click the + button and select Add package by name. ..
+3. In the pop-up input box, fill in the following information:
+  - Name：com.unity.purchasing
+  - Version：4.15.1
+4. Click the Add button and wait for the plugin to finish downloading and installing
 
 <center>
 

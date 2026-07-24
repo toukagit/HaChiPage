@@ -10,7 +10,7 @@ sidebar_position: 7
  It has been verified that the target35 Android package can be built using versions 2021.3.14 and 2022.3.56.
 :::
 
-## Build Android target35
+## Build Android target36
 ### 1 Download JDK/Gradle
  [UnityAndroidSDKTool35.zip](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/UnityAndroidSDKTool35.zip)
 

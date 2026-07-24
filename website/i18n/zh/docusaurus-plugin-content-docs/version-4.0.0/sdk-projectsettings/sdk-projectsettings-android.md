@@ -11,7 +11,7 @@ sidebar_position: 7
 :::
 
 
-## Android target35 出包
+## Android target36 出包
 ### 1 下载JDK/Gradle
  [UnityAndroidSDKTool35.zip](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/UnityAndroidSDKTool35.zip)
 
