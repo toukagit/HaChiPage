@@ -45,7 +45,7 @@ function Version() {
 
                     <b><Link to={useBaseUrl('/download')}><font size="5">HachiSDK
                         v{firstSDKInfo.sdk_version}</font></Link> </b> <br/>
-                    <table border="0" width="80%" align="left">
+                    <table border="0" width="80%">
                         <tbody>
                         <tr>
                             <td style={{"width": "15%"}}>SDK Name</td>
@@ -74,7 +74,6 @@ function Version() {
                         </tr>
                         </tbody>
                     </table>
-                    <br/><br/><br/><br/><br/><br/><br/>
                 </div>
 
                 {hachiSdkVersions.length > 1 ?
