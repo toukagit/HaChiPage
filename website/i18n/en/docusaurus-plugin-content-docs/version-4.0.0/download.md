@@ -21,7 +21,7 @@ This page shows you how to download/import the Hachi Unity Plugin.
 :::
 
 ## Download the latest Unity plugin<br/>
-Overseas：[HachiSdk_4.1.1_c289342f.unitypackage](https://touka-pkg.oss-cn-beijing.aliyuncs.com/HachiSdk/4.1.1/HachiSdk_4.1.1_c289342f.unitypackage)（[Historical version](/versions)）
+Overseas：[HachiSdk_4.1.1_e7f503ec.unitypackage](https://touka-pkg.oss-cn-beijing.aliyuncs.com/HachiSdk/4.1.1/HachiSdk_4.1.1_e7f503ec.unitypackage)（[Historical version](/versions)）
 <a id='click'>    </a>
 
 ChinaMainland：[HachiSdk_4.0.4_4d05cf86.unitypackage](https://touka-artifacts.oss-cn-beijing.aliyuncs.com/TKG%20%E5%8F%91%E8%A1%8C%E6%8A%80%E6%9C%AF/Hachi%20SDK/Unity/4.0.4/HachiSdk_4.0.4_4d05cf86.unitypackage)
