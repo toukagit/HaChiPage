@@ -1,5 +1,14 @@
 
 [{
+    "sdk_version": "4.1.2",
+    "update_time": "2026-07-29",
+    "update_content": {
+      "zh": "1、二次初始化SDK时直接返回初始化回调",
+      "en": "1. Directly return the initialization callback when initializing the SDK for the second time."
+    },"download": "https://touka-pkg.oss-cn-beijing.aliyuncs.com/HachiSdk/4.1.2/HachiSdk_4.1.2_b4eb0399.unitypackage"
+  },
+
+{
     "sdk_version": "4.1.1",
     "update_time": "2026-07-27",
     "update_content": {
